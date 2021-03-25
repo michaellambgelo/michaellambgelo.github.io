@@ -12,7 +12,7 @@ I've hosted various blogs across different platforms. Way back in the day I play
 
 I want to use this blog to document a new sandbox project to explore **cluster computing** concepts. 
 
-# To Build a Computer Cluster
+## To Build a Computer Cluster
 
 A _computer cluster_ is a set of computers working together and viewed as a single system. The individual computers that make up a cluster are called _nodes_.
 
@@ -29,7 +29,7 @@ Here's what I've purchased so far:
 | 2 | USB Type C Cable, Anker [3-Pack, 6 ft] | [Amazon](https://www.amazon.com/gp/product/B07VZZ8LXC/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1) | $17 |
 #
 
-# Goals
+## Goals
 - Set up and network a compute cluster with 6 nodes
 - Learn to install, configure, deploy, and maintain containers using Kubernetes
 - Learn to write Ansible Playbooks (exploring infrastructure automation)
