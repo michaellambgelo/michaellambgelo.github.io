@@ -6,7 +6,7 @@ category: cluster computing
 
 ## Welcome to my newly refabricated weblog!
 
-I've hosted various blogs across different platforms. Way back in the day I played around with Geocities and Xanga. Then there were the blessed days of Posterous. Most recently I hosted a blog using Ghost. In this latest foray, I'll be running one attached to my Github profile using Github:Pages and attempting to focus on more technical subjects.
+I've hosted various blogs across different platforms. Way back in the day I played around with Geocities and Xanga. Then there were the blessed days of Posterous. Most recently I hosted a blog using Ghost. In this latest foray, I'll be running one attached to my Github profile using Github:Pages with focus on more technical subjects.
 
 ## What I'm working on right now
 
@@ -27,8 +27,6 @@ Here's what I've purchased so far:
 | 1   | CAT 6 Ethernet Cable - 10 Pack (1.5 ft)            |   [Amazon](https://www.amazon.com/gp/product/B00GBBSX92/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1)   |        $13 |
 | 2   | AUKEY USB Charger 4 Ports                          |   [Amazon](https://www.amazon.com/gp/product/B084Z2DCPP/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1)   |        $13 |
 | 2   | USB Type C Cable, Anker [3-Pack, 6 ft]             |   [Amazon](https://www.amazon.com/gp/product/B07VZZ8LXC/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1)   |        $17 |
-
-#
 
 ## Goals
 
