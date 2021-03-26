@@ -10,7 +10,7 @@ category: cluster computing
 The cluster is built and looking good! With a bare metal set up, the next step is to get the operating system provisioned and loaded onto the SD cards. After that, it's time to power up the Pis and get them established on my local network.
 
 # Installing the Operating System
-For this installation, I've gone with the latest available Raspberry Pi OS from the RPi Foundation. It's the default, and if anything is true it's that the default mode is the easiest to set up and what's easy is likely what's going to keep happening. My goal here is to set up a cluster that enables the deployment of containers, choosing the right OS for the job. 
+For this installation, I've gone with the latest available Raspberry Pi OS from the RPi Foundation. It's the default, and if anything is true it's that the default mode is the easiest to set up and what's easy is likely what's going to keep happening. My goal here is to set up a cluster that enables the deployment of containers. Choosing the right OS for the job is simple in this case because Raspberry Pi OS is built for these machines.
 
 Using the [Raspberry Pi Imager](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) it was easy to get the SD cards flashed and ready to go.
 
