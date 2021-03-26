@@ -30,7 +30,9 @@ I used `nmap` to figure out the IP addresses of the individual nodes.
 nmap -sT -p 22 192.168.1.0/24
 ```
 
-From there, I assigned each node a static IP address so that they will always be accessible from predictable and known locations. I'm not very creative, so my naming scheme was simply `node*` so my hostnames inventory looks like this:
+The arguments here specify TCP connections using port 22 within the given IP range.
+
+From the report nmap provided I determined each node's dynamically-assigned IP address. I then assigned each node a static IP address so that they will always be accessible from predictable and known locations. I'm not very creative, so my naming scheme was simply `node*` so my hostnames inventory looks like this:
 
 ```
 node1
@@ -41,5 +43,13 @@ node5
 node6
 ```
 
+## Security Side Note
+I can sometimes take it for granted that installing a fresh OS with SSH enabled means it's an unsecured Linux box running on my network and that it's on me to change the default password, so I'll note here for posterity that setting up a cluster with unsecured nodes is NOT good. The first thing you should do is change the default credentials.
+
+The default user and password for Raspberry Pi OS is `pi` and `raspberry`.
+
 # What's next
-Ansible
+- Ansible
+    - Installation
+    - Configuration
+    - Hello, world
