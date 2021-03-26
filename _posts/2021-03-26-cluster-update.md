@@ -7,12 +7,12 @@ category: cluster computing
 # Pis on a Rack
 ![photo of bare metal pi cluster](/img/pi-cluster-bare-metal.png)
 
-The cluster is physically together! The next step is to get the operating system provisioned and loaded onto the SD cards.
+The cluster is built and looking good! With a bare metal set up, the next step is to get the operating system provisioned and loaded onto the SD cards. After that, it's time to power up the Pis and get them established on my local network.
 
 # Installing the Operating System
-For this installation, I'm going with the latest available Raspberry Pi OS from the RPi Foundation. It's the default, and if I've learned anything it's that the default mode is the easiest to set up and what's easy is likely what's going to keep happening.
+For this installation, I've gone with the latest available Raspberry Pi OS from the RPi Foundation. It's the default, and if anything is true it's that the default mode is the easiest to set up and what's easy is likely what's going to keep happening. My goal here is to set up a cluster that enables the deployment of containers, choosing the right OS for the job. 
 
-Using the [Raspberry Pi Imager](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) it's easy to get the SD cards flashed and ready to go.
+Using the [Raspberry Pi Imager](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) it was easy to get the SD cards flashed and ready to go.
 
 The only additional step I took here was enabling SSH on each Pi by mounting the SD card and executing the following command (from Mac OS)
 
@@ -32,7 +32,7 @@ nmap -sT -p 22 192.168.1.0/24
 
 The arguments here specify TCP connections using port 22 within the given IP range.
 
-From the report nmap provided I determined each node's dynamically-assigned IP address. I then assigned each node a static IP address so that they will always be accessible from predictable and known locations. I'm not very creative, so my naming scheme was simply `node*` so my hostnames inventory looks like this:
+From the report nmap provided I determined each node's dynamically-assigned IP address. I then assigned each node a static IP address so that they will always be accessible from predictable and known locations. I'm not very creative; my naming scheme was simply `node*` so my hostnames inventory looks like this:
 
 ```
 node1
