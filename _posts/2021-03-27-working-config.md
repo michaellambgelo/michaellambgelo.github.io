@@ -6,7 +6,7 @@ category: cluster computing
 
 # Managing Remote Access
 
-Yesterday's post included a stern reminder that when setting up a new Pi it is important to change the default password of the `pi` user. In most distributed computing environments is it also best practice to create individual user accounts to manage access to the various nodes on the network.
+Yesterday's post included a reminder that when setting up a new Pi it is important to change the default password of the `pi` user. In most distributed computing environments is it also best practice to create individual user accounts to manage access to the various nodes on the network.
 
 My preference is to have a user that can access each node without needing to type a password. This is accomplished with our favorite remote access tool SSH.
 
@@ -56,4 +56,6 @@ Number of key(s) added:        1
 
 ## Result
 
-Following this process on each node makes it easy to use my main computer as a workspace and perform tasks. Now that I can connect to each node individually, my next goal is to install Ansible and get some basic automations going.
+Following this process on each node makes it easy to use my main computer as a workspace and perform tasks. Now that I can connect to each node individually, my next goal is to install Ansible and dive into what sort of automations I can tinker with.
+
+Additionally, because I know Ansible only needs to be installed on one node and its agentless operation requires SSH access, I have also generated an SSH key on `node1` and copied the ID to all the other nodes so that Ansible will be able to perform actions as `michael`.
