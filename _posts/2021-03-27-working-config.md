@@ -40,7 +40,7 @@ sudo raspi-config
 
 `raspi-config` brings up an interactive menu. Here I set the hostname and timezone.
 
-## #. Copy the workspace SSH public key to the node
+## 3. Copy the workspace SSH public key to the node
 
 From my main computer I use `ssh-copy-id` which will install my public key onto the node.
 
