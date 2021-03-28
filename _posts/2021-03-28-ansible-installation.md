@@ -73,3 +73,5 @@ As depicted below, all the hosts were successfully `ping`ed!
 ## Conclusion
 
 I've got a control node ready to execute playbooks on the cluster. 
+
+The only other cluster-related topic I want to delve into now is Kubernetes, so that is what I'll be working to set up this week.
