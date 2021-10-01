@@ -1,11 +1,12 @@
 # michaellambgelo.github.io #
-=============
 
 This is a blog written and maintained by Michael Lamb
 
 ## About ##
 
-Michael Lamb is a software engineer living in Jackson, Mississippi. He graduated from Mississippi State University with a bachelor of science in Software Engineering.
+Michael Lamb is a software engineer living in Jackson, Mississippi. He graduated from Mississippi State University with a bachelor of science in Software Engineering. He is happily employed full-time creating microservices using Java and Spring technologies but is open to consulting. 
+
+[michael@michaellamb.dev](mailto:michael@michaellamb.dev)
 
 ## Credit ##
 
