@@ -19,3 +19,5 @@ I also added a new private repo for code related to my automation task.
 # What's Coming Up
 
 C Spire Business is bringing back its premier tech event Bytes & Bites in Birmingham, AL (and beyond!) on 21 October 2021. If you're a business or IT leader [register now](http://cspi.re/tpW350GfWSX) for this free event. 
+
+![green pepper plant photo from 30 Sept](/img/2021-09-30-pepper-plant.jpg)
