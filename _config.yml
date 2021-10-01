@@ -323,12 +323,15 @@ social_links :
 #   - project :
 #     name : gh-pages-blog
 #     url : https://github.com/thedereck/gh-pages-blog
-# github_projects :
-#   header : GitHub Projects
-#   projects :
-#   - project :
-#     name : gh-pages-blog
-#     url : https://github.com/thedereck/gh-pages-blog
+github_projects :
+  header : GitHub Repos
+  projects :
+  - project :
+    name : hello-go
+    url : https://github.com/michaellambgelo/hello-go
+  - project :
+    name : michaellambgelo.github.io
+    url : https://github.com/michaellambgelo/michaellambgelo.github.io
 
 
 # These are links to other websites outside of the blog that are not part of
