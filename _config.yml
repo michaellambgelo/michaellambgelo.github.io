@@ -1,3 +1,8 @@
+# gh-pages jekyll configuration
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme
+
 # The following configuration items need set up specifically for your site
 #
 # name - This is the site name. The site name is used in the title of
