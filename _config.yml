@@ -306,6 +306,11 @@ social_links :
       name : Twitter
       font_awesome_icon : icon-twitter
       url : https://twitter.com/themichaellamb
+    - link : 
+      enabled : true
+      name : Medium
+      font_awesome_icon : fa-medium
+      url : https://medium.com/@themichaellamb
 
 
 # These are a list of GitHub projects that the blog owner would like to
