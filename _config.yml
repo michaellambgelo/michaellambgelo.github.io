@@ -379,6 +379,9 @@ external_links :
     - link :
       name : My Letterboxd Profile
       url : https://letterboxd.com/michaellamb/
+    - link :
+      name : Find me on Medium
+      url : https://medium.com/@themichaellamb
 
 
 # These are the Bootstrap settings. These Bootstrap settings will control both
@@ -581,7 +584,7 @@ disqus :
 #     enabled : true
 #     tracking_id : UA-1234567
 analytics :
-  enabled : false
+  enabled : true
   google_analytics :
-    enabled : false
-    tracking_id : UA-1234567
+    enabled : true
+    tracking_id : UA-158074190-1
