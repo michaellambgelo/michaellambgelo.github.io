@@ -26,7 +26,7 @@
 name : Michael Lamb | Blog
 brand : Michael Lamb | Blog
 description : A blog written and maintained by Michael Lamb
-url : https://michaellambgelo.github.io
+url : https://michaellamb.dev
 email : michael@michaellamb.dev
 author: Michael Lamb
 
@@ -39,7 +39,7 @@ exclude : [ README.md , version.txt ]
 # Replace the number with the default number of blot posts you want on each
 # page. A value of 0 will indicate that you don't want to paginate, and all
 # blog posts will be on the index page.
-paginate : 10
+paginate : 3
 
 
 # To put a alert or notice on every page served, change the appropriate value
@@ -166,7 +166,7 @@ favicon :
 #     enabled : true
 sections:
   brief_bio :
-    enabled : false
+    enabled : true
     image :
       enabled : false
       url : false
@@ -179,11 +179,11 @@ sections:
   social_links :
     enabled : true
   github_projects :
-    enabled : false
+    enabled : true
   external_links :
     enabled : true
   archive :
-    enabled : false
+    enabled : true
   categories :
     enabled : false
   tags :
@@ -212,7 +212,7 @@ sections:
 #     enabled : false
 navbar :
   archive :
-    enabled : true
+    enabled : false
   categories :
     enabled : true
   tags :
@@ -222,7 +222,7 @@ navbar :
   social_links :
     enabled : false
   external_links :
-    enabled : false
+    enabled : true
 
 
 # The social links are links to various social networking sites. Although
@@ -359,6 +359,18 @@ social_links :
 #     - link :
 #       name : The Dereck
 #       url: https://thedereck.github.io
+external_links :
+  header : My Digital Spaces
+  links :
+    - link :
+      name : C Spire Gaming Discord
+      url : http://discord.cspiregaming.com
+    - link :
+      name : A Ғ Ғ I L I A T I O N (Discord)
+      url : https://discord.gg/6NnX6K6Rcv
+    - link :
+      name : My Letterboxd Profile
+      url : https://letterboxd.com/michaellamb/
 
 
 # These are the Bootstrap settings. These Bootstrap settings will control both
