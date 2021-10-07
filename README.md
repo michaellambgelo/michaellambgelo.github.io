@@ -2,6 +2,8 @@
 
 This is a blog written and maintained by Michael Lamb
 
+Available at https://michaellamb.dev
+
 ## About ##
 
 Michael Lamb is a software engineer living in Jackson, Mississippi. He graduated from Mississippi State University with a bachelor of science in Software Engineering. He is happily employed full-time creating microservices using Java and Spring technologies but is open to consulting.
