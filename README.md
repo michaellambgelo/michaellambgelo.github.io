@@ -2,7 +2,7 @@
 
 This is a blog written and maintained by Michael Lamb
 
-Available at https://michaellamb.dev
+Available at <https://michaellamb.dev>
 
 ## About ##
 
