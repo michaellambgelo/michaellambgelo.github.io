@@ -87,7 +87,7 @@ func main() {
 ## Notes
 
 - the `log` and `errors` packages are golang builtins
-- I would want to use constants for error messages, e.g., `errors.New(UNEXPECTED_ERROR)` or `errors.New(EXTERNAL_SERVICE_ERROR)`
+- I would want to use constants for error messages, e.g., `errors.New(UNEXPECTED_ERROR)` or `errors.New(EXTERNAL_SERVICE_ERROR)` however Go does not support this pattern since it alternates between camelCase and PascalCase to denote variables which are global to a file vs. global to a package (respectively)
 
 ## Willow
 
