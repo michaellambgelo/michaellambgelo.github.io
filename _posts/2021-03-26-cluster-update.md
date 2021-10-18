@@ -3,13 +3,14 @@ layout: post
 title: Pi Cluster Update
 category: cluster computing
 ---
-
 # Pis on a Rack
+
 ![photo of bare metal pi cluster](/img/pi-cluster-bare-metal.png)
 
 The cluster is built and looking good! With a bare metal set up, the next step is to get the operating system provisioned and loaded onto the SD cards. After that, it's time to power up the Pis and get them established on my local network.
 
-# Installing the Operating System
+## Installing the Operating System
+
 For this installation, I've gone with the latest available Raspberry Pi OS from the RPi Foundation. It's the default, and if anything is true it's that the default mode is the easiest to set up and what's easy is likely what's going to keep happening. My goal here is to set up a cluster that enables the deployment of containers. Choosing the right OS for the job is simple in this case because Raspberry Pi OS is built for these machines.
 
 Using the [Raspberry Pi Imager](https://www.raspberrypi.org/blog/raspberry-pi-imager-imaging-utility/) it was easy to get the SD cards flashed and ready to go.
@@ -22,7 +23,8 @@ touch /Volumes/boot/ssh
 
 If you don't already know what SSH is, there are [plenty of YouTube videos](https://www.youtube.com/watch?v=ORcvSkgdA58&ab_channel=Computerphile) to help you out. It's a common tool used to connect to computers, and the above command simply creates a file called `ssh` that the OS will look for to automatically enable SSH when the Pi nodes boot for the first time.
 
-# Networking the Cluster
+## Networking the Cluster
+
 ![photo of networked pi cluster](/img/pi-cluster-networked.png)
 I used `nmap` to figure out the IP addresses of the individual nodes.
 
@@ -43,13 +45,15 @@ node5
 node6
 ```
 
-## Security Side Note
+## Security Side
+
 I can sometimes take it for granted that installing a fresh OS with SSH enabled means it's an unsecured Linux box running on my network and that it's on me to change the default password, so I'll note here for posterity that setting up a cluster with unsecured nodes is NOT good. The first thing you should do is change the default credentials.
 
 The default user and password for Raspberry Pi OS is `pi` and `raspberry`.
 
-# What's next
+## What's next
+
 - Ansible
-    - Installation
-    - Configuration
-    - Hello, world
+  - Installation
+  - Configuration
+  - Hello, world
