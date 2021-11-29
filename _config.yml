@@ -288,11 +288,6 @@ social_links :
   links :
     - link :
       enabled : true
-      name : Facebook
-      font_awesome_icon : icon-facebook
-      url : https://www.facebook.com/michaellambgelo/
-    - link :
-      enabled : true
       name : GitHub
       font_awesome_icon : icon-github-alt
       url : https://github.com/michaellambgelo
