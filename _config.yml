@@ -588,3 +588,5 @@ analytics :
   google_analytics :
     enabled : true
     tracking_id : UA-158074190-1
+
+theme: jekyll-theme-cayman
