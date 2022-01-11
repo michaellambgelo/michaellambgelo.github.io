@@ -35,7 +35,7 @@ description : A blog written and maintained by Michael Lamb
 url : https://michaellamb.dev
 email : michael@michaellamb.dev
 author: Michael Lamb
-
+image: "/seo/default.png"
 
 # The following is a list of files to exclude from inclusion in the
 # generated gh-pages website.
