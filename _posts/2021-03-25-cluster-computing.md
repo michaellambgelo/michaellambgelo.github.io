@@ -2,7 +2,7 @@
 layout: post
 title: What I'm working on right now
 category: cluster computing
-image : "seo/default.png"
+image : "/seo/default.png"
 ---
 
 ## Welcome to my newly refabricated weblog!
