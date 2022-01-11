@@ -2,6 +2,7 @@
 layout : post
 title : Swagger UI and Go
 category : golang
+image : "seo/default.png"
 ---
 
 ## What is Swagger?

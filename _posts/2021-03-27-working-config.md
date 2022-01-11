@@ -2,6 +2,7 @@
 layout: post
 title: Workspace Configuration
 category: cluster computing
+image : "seo/default.png"
 ---
 ## Managing Remote Access
 

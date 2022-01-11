@@ -2,6 +2,7 @@
 layout: post
 title: Ansible Installation
 category: cluster computing
+image : "seo/default.png"
 ---
 
 ## What is Ansible?

@@ -590,3 +590,5 @@ analytics :
     tracking_id : UA-158074190-1
 
 theme: jekyll-theme-cayman
+
+- jekyll-seo-tag
