@@ -4,7 +4,7 @@ title: Pi Cluster Update
 category: cluster computing
 image : "/seo/default.png"
 ---
-# Pis on a Rack
+## Pis on a Rack
 
 ![photo of bare metal pi cluster](/img/pi-cluster-bare-metal.png)
 
@@ -37,7 +37,7 @@ The arguments here specify TCP connections using port 22 within the given IP ran
 
 From the report nmap provided I determined each node's dynamically-assigned IP address. I then assigned each node a static IP address so that they will always be accessible from predictable and known locations. I'm not very creative; my naming scheme was simply `node*` so my hostnames inventory looks like this:
 
-```
+```raw
 node1
 node2
 node3
