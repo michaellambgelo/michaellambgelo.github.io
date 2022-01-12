@@ -10,6 +10,10 @@ Michael Lamb is a software engineer living in Jackson, Mississippi. He graduated
 
 [michael@michaellamb.dev](mailto:michael@michaellamb.dev)
 
+## Resources ##
+
+[jekyll-seo-tag usage](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md)
+
 ## Credit ##
 
 This website was built using the gh-pages-blog project.

@@ -2,9 +2,10 @@
 layout: post
 title: What I'm working on right now
 category: cluster computing
+image : "/seo/2021-03-25.png"
 ---
 
-## Welcome to my newly refabricated weblog!
+## Welcome to my newly refabricated weblog
 
 I've hosted various blogs across different platforms. Way back in the day I played around with Geocities and Xanga. Then there were the blessed days of Posterous. Most recently I hosted a blog using Ghost. In this latest foray, I'll be running one attached to my Github profile using Github:Pages with focus on more technical subjects.
 

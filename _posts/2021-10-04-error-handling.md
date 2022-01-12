@@ -2,6 +2,7 @@
 layout : post
 title : Error Handling
 category : golang
+image : "/seo/2021-10-04.png"
 ---
 
 I am continuing to learn more about Go and its history.
