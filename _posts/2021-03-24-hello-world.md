@@ -6,7 +6,7 @@ image : "/seo/hello-world.png"
 
 ## welcome to my blog
 
-My name is Michael Lamb. I'm a software engineer currently living in Jackson, Missisippi and I like to write, so that's why this blog exists.
+My name is Michael Lamb. I'm a software engineer currently living in Jackson, Mississippi and I like to write, so that's why this blog exists.
 
 If you want to get to know me better, here's a few things about my life:
 
