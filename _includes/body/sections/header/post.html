@@ -38,7 +38,7 @@
 			<small>
 				<div class="span3 offset1">
 					{% if site.font_awesome.enabled %}
-						<i class="icon-user"></i> 
+						<i class="fas fa-user"></i> 
 					{% endif %}
 					Authored by 
 					{% if page.author %}
@@ -49,7 +49,7 @@
 					<br>
 
 					{% if site.font_awesome.enabled %}
-						<i class="icon-pencil"></i> 
+						<i class="fas fa-pencil-alt"></i> 
 					{% endif %}
 					Published on {{ page.date | date_to_long_string }}.
 					<br>
@@ -58,7 +58,7 @@
 				<div class="span3">
 					{% if page.category.size > 0 %}
 						{% if site.font_awesome.enabled %}
-							<i class="icon-folder-open"></i> 
+							<i class="fas fa-folder-open"></i> 
 						{% endif %}
 						Category: 
 						<a href="{{ site.url }}/filter.html?category={{ page.category | replace: ' ', '___' | downcase }}">
@@ -69,7 +69,7 @@
 
 					{% if page_tags_present %}
 						{% if site.font_awesome.enabled %}
-							<i class="icon-tags"></i> 
+							<i class="fas fa-tags"></i> 
 						{% endif %}
 						Tags: 
 						{% assign page_tag_first = true %}
