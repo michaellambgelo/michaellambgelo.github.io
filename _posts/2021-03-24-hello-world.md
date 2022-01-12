@@ -6,9 +6,9 @@ image : "/seo/hello-world.png"
 
 ## welcome to my blog
 
-My name is Michael Lamb. I'm a software engineer currently living in Jackson, Mississippi and I like to write, so that's why this blog exists.
+My name is Michael Lamb. I'm a software engineer currently living in Jackson, Mississippi, and I like to write so that's why this blog exists.
 
-If you want to get to know me better, here's a few things about my life:
+If you want to get to know me better here are a few things about my life:
 
 1. I founded [JXN Film Club](jxnfilm.club)  and am co-host on [JXN Film Club The Podcast](https://anchor.fm/jxnfilmclub) because I love movies. Check out my [Letterboxd stats](https://letterboxd.com/michaellamb/stats/). Follow the film club on Instagram [@jxnfilmclub](https://www.instagram.com/jxnfilmclub/) and [join us on Discord](https://discord.jxnfilm.club).
 2. I work full-time in software and application development for [C Spire](https://cspire.com) across all 3 lines of business.
