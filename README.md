@@ -26,7 +26,7 @@ This website was built using the gh-pages-blog project.
 
 [jQuery](http://jquery.com/) by jQuery Foundation
 
-[Font Awesome 3.0](http://fortawesome.github.com/Font-Awesome/) by Dave Gandy
+[Font Awesome 5](https://fontawesome.com/)
 
 [syntax.css](https://github.com/mojombo/jekyll) by Tom Preston-Werner
 
