@@ -16,6 +16,6 @@ If you want to get to know me better here are a few things about my life:
 
 ![my cats](/img/my-cats.jpg)
 
-I have deployed this blog for free using Github Pages. The source code for this blog is kept on my GitHub and the repository README has more details about the technologies used to build [michaellamb.dev](https://michaellamb.dev).
+I deployed this blog for free using Github Pages. The source code for this blog is kept on my GitHub and the repository README has more details about the technologies used to build [michaellamb.dev](https://michaellamb.dev).
 
 If you have any sponsorship inquiries please email me at [michael@michaellamb.dev](mailto:michael@michaellamb.dev)
