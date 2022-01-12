@@ -41,7 +41,7 @@ image: "/seo/default.png"
 					<small>
 						<div class="span3 offset1">
 							{% if site.font_awesome.enabled %}
-								<i class="icon-user"></i> 
+								<i class="fas fa-user"></i> 
 							{% endif %}
 							Authored by 
 							{% if p.author %}
@@ -52,7 +52,7 @@ image: "/seo/default.png"
 							<br>
 
 							{% if site.font_awesome.enabled %}
-								<i class="icon-pencil"></i> 
+								<i class="fas fa-pencil-alt"></i> 
 							{% endif %}
 							Published on {{ p.date | date_to_long_string }}.
 							<br>
@@ -68,7 +68,7 @@ image: "/seo/default.png"
 
 							{% if enable_disqus_show_comments %}
 								{% if site.font_awesome.enabled %}
-									<i class="icon-comments"></i> 
+									<i class="fas fa-comments"></i> 
 								{% endif %}
 								<a href="{{ site.url }}{{ p.url }}#disqus_thread">Comments</a>
 								<br>
@@ -78,7 +78,7 @@ image: "/seo/default.png"
 						<div class="span3">
 							{% if p.category.size > 0 %}
 								{% if site.font_awesome.enabled %}
-									<i class="icon-folder-open"></i> 
+									<i class="fas fa-folder-open"></i> 
 								{% endif %}
 								Category: 
 								<a href="{{ site.url }}/filter.html?category={{ p.category | replace: ' ', '___' | downcase }}">
@@ -104,7 +104,7 @@ image: "/seo/default.png"
 								{% endcapture %}
 
 								{% if site.font_awesome.enabled %}
-									<i class="icon-tags"></i> 
+									<i class="fas fa-tags"></i> 
 								{% endif %}
 								Tags: 
 								{% assign index_post_first_tag = true %}

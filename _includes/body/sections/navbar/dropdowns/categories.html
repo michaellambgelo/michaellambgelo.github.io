@@ -22,7 +22,7 @@
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 					{% if site.font_awesome.enabled %}
-						<i class="icon-folder-close"></i> 
+						<i class="fas fa-folder"></i> 
 					{% endif %}
 					Categories 
 					<b class="caret"></b>
@@ -39,7 +39,7 @@
 							<li class="dropdown-submenu">
 								<a tabindex="-1" href="#">
 									{% if site.font_awesome.enabled %}
-										<i class="icon-folder-open"></i> 
+										<i class="fas fa-folder-open"></i> 
 									{% endif %}
 									{{ navbar_category | replace: '___', ' ' }} 
 								</a>
@@ -53,7 +53,7 @@
 											<li>
 												<a href="{{ site.url }}{{ navbar_category_p.url }}">
 													{% if site.font_awesome.enabled %}
-														<i class="icon-pencil"></i> 
+														<i class="fas fa-pencil-alt"></i> 
 													{% endif %}
 													{{ navbar_category_p.title }}
 												</a>

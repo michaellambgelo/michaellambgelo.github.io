@@ -45,7 +45,7 @@
 			post_div = post_div + '<small><div class="span3 offset1">';
 
 			{% if site.font_awesome.enabled %}
-				post_div = post_div + '<i class="icon-user"></i> ';
+				post_div = post_div + '<i class="fas fa-user"></i> ';
 			{% endif %}
 			post_div = post_div + 'Authored by ';
 			{% if page.author %}
@@ -56,13 +56,13 @@
 			post_div = post_div + "<br>";
 
 			{% if site.font_awesome.enabled %}
-				post_div = post_div + '<i class="icon-pencil"></i> ';
+				post_div = post_div + '<i class="fas fa-pencil"></i> ';
 			{% endif %}
 			post_div = post_div + 'Published on ' + post.date + '.<br></div><div class="span3">';
 
 			if (post.category !== null && post.category.length > 0) {
 				{% if site.font_awesome.enabled %}
-					post_div = post_div + '<i class="icon-folder-open"></i> ';
+					post_div = post_div + '<i class="fas fa-folder-open"></i> ';
 				{% endif %}
 				post_div = post_div + 'Category: ' +
 					'<a href="{{ site.url }}/filter.html?category=' +
@@ -73,7 +73,7 @@
 
 			if (post.tags !== null && post.tags.length > 0) {
 				{% if site.font_awesome.enabled %}
-					post_div = post_div + '<i class="icon-tags"></i> ';
+					post_div = post_div + '<i class="fas fa-tags"></i> ';
 				{% endif %}
 				post_div = post_div + 'Tags: ';
 				var prev_tag = '';
