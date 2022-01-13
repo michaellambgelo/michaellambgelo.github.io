@@ -45,7 +45,7 @@ exclude : [ README.md , version.txt ]
 # Replace the number with the default number of blot posts you want on each
 # page. A value of 0 will indicate that you don't want to paginate, and all
 # blog posts will be on the index page.
-paginate : 3
+paginate : 1
 
 
 # To put a alert or notice on every page served, change the appropriate value
