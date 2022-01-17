@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Using VB-Audio tools to share audio via Discord
-image : "/seo/2022-01-22.png"
+image : "/seo/2022-01-15.png"
 ---
 
 ## Problem
