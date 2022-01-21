@@ -7,7 +7,7 @@ category : cluster computing
 
 ## k8s -> k3s
 
-In March 2021 I first posted about setting up a Pi cluster. Initially, I had tried (and subsequently failed) to set up a full-fledged Kubernetes (k8s) cluster. Then, I discovered k3s, a lightweight distribution of Kubernetes designed for edge environments (which also works on ARM devices). It ships with an embedded sqlite3 database when setting up a server node as default storage but it is trivial to use etcd3/MySQL/PostgreSQL if desired. I was very pleased with how simple the k3s launcher is and it made the entire installation experience straightforward.
+In March 2021 I first posted about setting up a Pi cluster. Initially, I had tried (and subsequently failed) to set up a full-fledged Kubernetes (k8s) cluster. Then, I discovered k3s, a lightweight distribution of Kubernetes designed for edge environments (which also works on ARM devices). It ships with an embedded sqlite3 database as default storage when setting up a server node but it is trivial to use etcd3/MySQL/PostgreSQL if desired. I was very pleased with how simple the k3s launcher is and it made the entire installation experience straightforward.
 
 ## Architecture
 
