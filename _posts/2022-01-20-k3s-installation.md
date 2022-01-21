@@ -17,7 +17,13 @@ I based my installation on [the single-server setup with an embedded database](h
 
 ## Installation
 
-__Note__ During the installation process I encountered this error: `[INFO]  Failed to find memory cgroup, you may need to add "cgroup_memory=1 cgroup_enable=memory" to your linux cmdline (/boot/cmdline.txt on a Raspberry Pi)`. To resolve the issue, I added the recommended flags to the linux cmdline as the error message suggests on each node before installing k3s.
+__Note__ During the installation process I encountered this error:
+
+```bash
+[INFO]  Failed to find memory cgroup, you may need to add "cgroup_memory=1 cgroup_enable=memory" to your linux cmdline (/boot/cmdline.txt on a Raspberry Pi)
+```
+
+To resolve the issue, I added the recommended flags to the linux cmdline as the error message suggests on each node before installing k3s.
 
 On `node1` I installed k3s.
 
