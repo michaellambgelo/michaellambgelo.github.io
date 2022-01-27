@@ -36,7 +36,7 @@ I am currently working remotely full-time but I try to visit the office at least
 
 Once a month I organize a big movie night with [JXN Film Club](jxnfilm.club). Check out the [Instagram](instagram.com/jxnfilmclub) and feel free to DM me on there (no guarantees it's actually me though, like 5 people have access to that account).
 
-Finally, I'm working on some reporting automations for the church I attend called Foundry. There's no other software engineers there but the church uses Planning Center which has a REST API. I chose to use Go, which is a new language for me, but since there is no other software engineer there I have instructed the church to pray for more.
+Finally, I'm working on some reporting automations for the church I attend called Foundry. There's no other software engineers there but the church uses Planning Center which has a REST API. I chose to use Go, which is a new language for me, but since there is no other software engineer there I have instructed the church to pray for more so I have someone to talk to about it.
 
 ## JXN
 
