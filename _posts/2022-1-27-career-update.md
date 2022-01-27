@@ -43,3 +43,5 @@ Finally, I'm working on some reporting automations for the church I attend calle
 In conclusion, I want to say thank you to my family, especially my loving mother who has helped me get my home into shape.
 
 I cannot wait to see what 2022 has in store!
+
+![Crystal Lake](/img/crystal-lake.jpeg)
