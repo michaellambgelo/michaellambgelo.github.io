@@ -6,17 +6,17 @@ image : "/seo/career-update.png"
 
 ## Don't Get Too Excited
 
-I have no plans to leave C Spire, nor do I have plans to leave Jackson, MS. These are separate concerns to varied audiences but I wanted to nip that in the bud.
+I have no plans to leave C Spire, nor do I have plans to leave Jackson, MS. These are separate concerns to varied audiences but I wanted to nip any notion of that kind of change in the bud.
 
 ## Software Developer II
 
 This is my current title. It has pretty good equity at other companies in addition to the fortunate fact that I enjoy being a developer at C Spire. I started at C Spire as a Software Developer I in December 2016. Three years ago I was promoted to Developer II. My entire tenure I've been full-time on a team called Customer Applications. We are primarily responsible for customer relationship management applications, both in-house and integrated into managed software services providers like Salesforce and ConnectWise.
 
-Most of the time I'm writing Java code. We consume microservices, but we were also inspired by them and have created some of our own which have provided helpful data services to sales operations as well as inventory and asset management.
+Most of the time I'm writing Java code. We consume microservices using REST APIs, but we were also inspired by them and have created some of our own which have provided helpful data services to sales operations as well as inventory and asset management.
 
 ## Thank You
 
-I've had the privilege of working with many talented developers and analysts across the years. I'd like to spend a moment to say thanks to everyone I can think of (please don't be mad if I haven't included you! I've had to do a lot of digging to be this grateful)
+I've had the privilege of working with many talented developers and analysts across the years. I'd like to spend a moment to say thanks to everyone I can think of (please don't be mad if I haven't included you! I've had to do a lot of digging to be this grateful and it is likely I have missed some names)  
 
 ## C Spire - Past
 
