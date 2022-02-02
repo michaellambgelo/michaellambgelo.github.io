@@ -380,9 +380,6 @@ external_links :
     - link :
       name : My Letterboxd Profile
       url : https://letterboxd.com/michaellamb/
-    - link :
-      name : Find me on Medium
-      url : https://medium.com/@themichaellamb
 
 
 # These are the Bootstrap settings. These Bootstrap settings will control both
