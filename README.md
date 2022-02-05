@@ -1,6 +1,6 @@
 # michaellambgelo.github.io #
 
-This is a blog written and maintained by Michael Lamb
+This is a tech & life blog written and maintained by Michael Lamb
 
 Available at <https://michaellamb.dev>
 
