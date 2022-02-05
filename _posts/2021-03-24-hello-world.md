@@ -2,6 +2,7 @@
 layout : post
 title : Hello, world!
 image : "/seo/hello-world.png"
+tags: life-update
 ---
 
 ## welcome to my blog

@@ -2,6 +2,7 @@
 layout : post
 title : Career Update - 2022
 image : "/seo/career-update.png"
+tags: life-update
 ---
 
 ## Don't Get Too Excited
