@@ -74,7 +74,7 @@ favicon :
   enabled : true
   local :
     enabled : true
-    partial_url : /img/ghpb-favicon.png
+    partial_url : /img/favicon.png
     type : png
   remote :
     enabled : false
