@@ -1,0 +1,223 @@
+---
+layout : post
+title : Distributed Systems pt.0
+image : "/seo/2022-02-13.png"
+category : distributed-systems
+---
+_This post is a work in progress._
+
+## Introduction
+
+Distributed computing systems are an important reality to wrestle with at many levels of technical exposure. Similar to the concept of a _cluster_ I discussed in [this blog post][cluster], a _distributed system_ is "a collection of autonomous computing elements that appears to its users as a single coherent system" (van Steen, Tanenbaum). Distributed computing environments introduce new dynamics which can affect application development. Enterprise-level corporations (< 500-1000 employees) are best known to operate in distributed environments, and any organization larger than that is guaranteed to use distributed computing. To contrast a cluster from a distributed system, I would say that a cluster can be part of a distributed system but a distributed system can contain any number of clusters.
+
+It is common for someone new to a distributed system to make some basic assumptions which will cause more issues given time. These assumptions are known as the Fallacies of Distributed Computing.
+
+## Fallacies of Distributed Computing
+
+The fallacies of distributed computing are:
+
+1. The network is reliable;
+2. Latency is zero;
+3. Bandwidth is infinite;
+4. The network is secure;
+5. Topology doesn't change;
+6. There is one administrator;
+7. Transport cost is zero;
+8. The network is homogeneous.
+
+## Reading List
+
+The reading list below is a copy of the currently available version written by [Christopher Meiklejohn](http://christophermeiklejohn.com/distributed/systems/2013/07/12/readings-in-distributed-systems.html).
+
+### Consensus
+
+The problems of establishing consensus in a distributed system.
+
+* [In Search of an Understandable Consensus Algorithm][raft]
+  <span class="author">Diego Ongaro, John Ousterhout</span>
+  <span class="date">2013</span>
+* [A Simple Totally Ordered Broadcast Protocol][zab]
+  <span class="author">Benjamin Reed, Flavio P. Junqueira</span>
+  <span class="date">2008</span>
+* [Paxos Made Live - An Engineering Perspective][paxoslive]
+  <span class="author">Tushar Deepak Chandra, Robert Griesemer, Joshua Redstone</span>
+  <span class="date">2007</span>
+* [The Chubby Lock Service for Loosely-Coupled Distributed Systems][chubby]
+  <span class="author">Mike Burrows</span>
+  <span class="date">2006</span>
+* [Paxos Made Simple][paxossimple]
+  <span class="author">Leslie Lamport</span>
+  <span class="date">2001</span>
+* [Impossibility of Distributed Consensus with One Faulty Process][flp]
+  <span class="author">Michael Fischer, Nancy Lynch, Michael Patterson</span>
+  <span class="date">1985</span>
+* [The Byzantine Generals Problem][generals]
+  <span class="author">Leslie Lamport</span>
+  <span class="date">1982</span>
+
+### Consistency
+
+Types of consistency, and practical solutions to solving ensuring atomic
+operations across a set of replicas.
+
+* [Highly Available Transactions: Virtues and Limitations][hat]
+  <span class="author">Peter Bailis, Aaron Davidson, Alan Fekete, Ali Ghodsi, Joseph M. Hellerstein, Ion Stoica</span>
+  <span class="date">2013</span>
+* [Consistency Tradeoffs in Modern Distributed Database System Design][pacelc]
+  <span class="author">Daniel J. Abadi</span>
+  <span class="date">2012</span>
+* [CAP Twelve Years Later: How the "Rules" Have Changed][cap12]
+  <span class="author">Eric Brewer</span>
+  <span class="date">2012</span>
+* [Calvin: Fast Distributed Transactions for Partitioned Database Systems][calvin]
+  <span class="author">Alexander Thomson, Thaddeus Diamond, Shu-Chun Weng, Kun Ren, Philip Shao, Daniel J. Abadi</span>
+  <span class="date">2012</span>
+* [Optimistic Replication][optimistic]
+  <span class="author">Yasushi Saito and Marc Shapiro</span>
+  <span class="date">2005</span>
+* [Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services][cap]
+  <span class="author">Seth Gilbert, Nancy Lynch</span>
+  <span class="date">2002</span>
+* [Harvest, Yield, and Scalable Tolerant Systems][harvest]
+  <span class="author">Armando Fox, Eric A. Brewer</span>
+  <span class="date">1999</span>
+* [Linearizability: A Correctness Condition for Concurrent Objects][linearizability]
+  <span class="author">Maurice P. Herlihy, Jeannette M. Wing</span>
+  <span class="date">1990</span>
+* [Time, Clocks, and the Ordering of Events in a Distributed System][clocks]
+  <span class="author">Leslie Lamport</span>
+  <span class="date">1978</span>
+
+### Conflict-free data structures
+
+Studies on data structures which do not require coordination to ensure
+convergence to the correct value.
+
+* [A Comprehensive Study of Convergent and Commutative Replicated Data Types][crdt1]
+  <span class="author">Mark Shapiro, Nuno Preguiça, Carlos Baquero, Marek Zawirski</span>
+  <span class="date">2011</span>
+* [A Commutative Replicated Data Type For Cooperative Editing][treedoc]
+  <span class="author">Nuno Preguica, Joan Manuel Marques, Marc Shapiro, Mihai Letia</span>
+  <span class="date">2009</span>
+* [CRDTs: Consistency Without Concurrency Control][crdt2]
+  <span class="author">Mihai Letia, Nuno Preguiça, Marc Shapiro</span>
+  <span class="date">2009</span>
+
+### Distributed programming
+
+Languages aimed towards disorderly distributed programming as well as
+case studies on problems in distributed programming.
+
+* [Logic and Lattices for Distributed Programming][blooml]
+  <span class="author">Neil Conway, William Marczak, Peter Alvaro, Joseph M. Hellerstein, David Maier</span>
+  <span class="date">2012</span>
+* [Dedalus: Datalog in Time and Space][dedalus]
+  <span class="author">Peter Alvaro, William R. Marczak, Neil Conway, Joseph M. Hellerstein, David Maier, Russell Sears</span>
+  <span class="date">2011</span>
+* [MapReduce: Simplified Data Processing on Large Clusters][mapreduce]
+  <span class="author">Jeffrey Dean, Sanjay Ghemawat</span>
+  <span class="date">2004</span>
+* [A Note On Distributed Computing][computing]
+  <span class="author">Samuel C. Kendall, Jim Waldo, Ann Wollrath, Geoff Wyant</span>
+  <span class="date">1994</span>
+
+### Systems
+
+Implemented and theoretical distributed systems.
+
+* [Spanner: Google’s Globally-Distributed Database][spanner]
+  <span class="author">James C. Corbett, Jeffrey Dean, Michael Epstein, Andrew Fikes, Christopher Frost, JJ Furman,Sanjay Ghemawat, Andrey Gubarev, Christopher Heiser, Peter Hochschild, Wilson Hsieh,Sebastian Kanthak, Eugene Kogan, Hongyi Li, Alexander Lloyd, Sergey Melnik, David Mwaura,David Nagle, Sean Quinlan, Rajesh Rao, Lindsay Rolig, Yasushi Saito, Michal Szymaniak,Christopher Taylor, Ruth Wang, Dale Woodford</span>
+  <span class="date">2012</span>
+* [ZooKeeper: Wait-free coordination for Internet-scale systems][zookeeper]
+  <span class="author">Patrick Hunt, Mahadev Konar, Flavio P. Junqueira, Benjamin Reed</span>
+  <span class="date">2010</span>
+* [A History Of The Virtual Synchrony Replication Model][synchrony]
+  <span class="author">Ken Birman</span>
+  <span class="date">2010</span>
+* [Cassandra — A Decentralized Structured Storage System][cassandra]
+  <span class="author">Avinash Lakshman, Prashant Malik</span>
+  <span class="date">2009</span>
+* [Dynamo: Amazon’s Highly Available Key-Value Store][dynamo]
+  <span class="author">Giuseppe DeCandia, Deniz Hastorun, Madan Jampani, Gunavardhan Kakulapati, Avinash Lakshman, Alex Pilchin, Swaminathan Sivasubramanian, Peter Vosshall and Werner Vogels</span>
+  <span class="date">2007</span>
+* [Stasis: Flexible Transactional Storage][stasis]
+  <span class="author">Russell Sears, Eric Brewer</span>
+  <span class="date">2006</span>
+* [Bigtable: A Distributed Storage System for Structured Data][bigtable]
+  <span class="author">Fay Chang, Jeffrey Dean, Sanjay Ghemawat, Wilson C. Hsieh, Deborah A. Wallach, Mike Burrows, Tushar Chandra, Andrew Fikes, and Robert E. Gruber</span>
+  <span class="date">2006</span>
+* [The Google File System][gfs]
+  <span class="author">Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung</span>
+  <span class="date">2003</span>
+* [Lessons from Giant-Scale Services][gss]
+  <span class="author">Eric A. Brewer</span>
+  <span class="date">2001</span>
+* [Towards Robust Distributed Systems][trds]
+  <span class="author">Eric A. Brewer</span>
+  <span class="date">2000</span>
+* [Cluster-Based Scalable Network Services][sns]
+  <span class="author">Armando Fox, Steven D. Gribble, Yatin Chawathe, Eric A. Brewer, Paul Gauthier</span>
+  <span class="date">1997</span>
+* [The Process Group Approach to Reliable Distributed Computing][isis]
+  <span class="author">Ken Birman</span>
+  <span class="date">1993</span>
+
+### Books
+
+Overviews and details covering many of the above papers and concepts compiled into single resources.
+
+* [Distributed Systems: for fun and profit][distsys_fun-profit]
+  <span class="author">Mikito Takada</span>
+  <span class="date">2013</span>
+* [Programming Distributed Computing Systems: A Foundational Approach][progdist_foundational-approach]
+  <span class="author">Carlos A.Varela, Gul Agha</span>
+  <span class="date">2013</span>
+* [Guide to Reliable Distributed Systems: Building High-Assurance Applications and Cloud-Hosted Services][guide_reliable_dist_systems]
+  <span class="author">Ken Birman</span>
+  <span class="date">2012</span>
+* [Introduction to Reliable and Secure Distributed Programming][intro_reilable-secure-dist-programming]
+  <span class="author">Christian Cachin, Rachid Guerraoui, Luís Rodrigues</span>
+  <span class="date">2011</span>
+
+[cluster]: https://michaellamb.dev/cluster%20computing/2021/03/25/cluster-computing.html
+[pacelc]: http://cs-www.cs.yale.edu/homes/dna/papers/abadi-pacelc.pdf
+[pull]: https://github.com/cmeiklejohn/cmeiklejohn.github.io/blob/master/_posts/2013-07-12-readings-in-distributed-systems.markdown?
+[optimistic]: https://pdfs.semanticscholar.org/40c4/7420fdda6b715430153437ac77d62d1da6d8.pdf
+[redbook]: http://www.amazon.com/Readings-Database-Systems-Joseph-Hellerstein/dp/0262693143
+[raft]: https://raft.github.io/raft.pdf
+[paxoslive]: http://research.google.com/pubs/pub33002.html
+[dynamo]: http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/decandia07dynamo.pdf
+[crdt1]: http://hal.upmc.fr/docs/00/55/55/88/PDF/techreport.pdf
+[hat]: http://www.bailis.org/papers/hat-vldb2014.pdf
+[linearizability]: http://cs.brown.edu/~mph/HerlihyW90/p463-herlihy.pdf
+[paxossimple]: http://www.cs.utexas.edu/users/lorenzo/corsi/cs380d/past/03F/notes/paxos-simple.pdf
+[generals]: http://www.cs.cornell.edu/courses/cs614/2004sp/papers/lsp82.pdf
+[flp]: http://macs.citadel.edu/rudolphg/csci604/ImpossibilityofConsensus.pdf
+[treedoc]: http://hal.inria.fr/docs/00/44/59/75/PDF/icdcs09-treedoc.pdf
+[zab]: https://pdfs.semanticscholar.org/f333/798a4bd5b415c6aa7c24ad1719d82de03163.pdf
+[computing]: http://dl.acm.org/citation.cfm?id=974938
+[blooml]: http://db.cs.berkeley.edu/papers/UCB-lattice-tr.pdf
+[dedalus]: http://db.cs.berkeley.edu/papers/datalog2011-dedalus.pdf
+[clocks]: http://lamport.azurewebsites.net/pubs/time-clocks.pdf
+[harvest]: http://radlab.cs.berkeley.edu/people/fox/static/pubs/pdf/c18.pdf
+[crdt2]: http://hal.archives-ouvertes.fr/docs/00/39/79/81/PDF/RR-6956.pdf
+[mapreduce]: http://research.google.com/archive/mapreduce.html
+[cassandra]: http://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf
+[synchrony]: http://www.cs.cornell.edu/ken/History.pdf
+[stasis]: http://www.cs.berkeley.edu/~brewer/sears-2006.pdf
+[isis]: http://www.cs.cornell.edu/projects/spinglass/public_pdfs/Process%20Group%20Approach.pdf
+[cap]: http://www.glassbeam.com/sites/all/themes/glassbeam/images/blog/10.1.1.67.6951.pdf
+[bigtable]: http://research.google.com/archive/bigtable-osdi06.pdf
+[chubby]: http://research.google.com/archive/chubby-osdi06.pdf
+[gfs]: http://research.google.com/archive/gfs.html
+[distsys_fun-profit]: http://book.mixu.net/distsys/
+[cap12]: http://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed
+[sns]: http://www.cs.berkeley.edu/%7Ebrewer/papers/TACC-sosp.pdf
+[progdist_foundational-approach]: http://www.amazon.com/Programming-Distributed-Computing-Systems-Foundational/dp/0262018985
+[intro_reilable-secure-dist-programming]: http://www.distributedprogramming.net/
+[guide_reliable_dist_systems]: http://www.amazon.com/Guide-Reliable-Distributed-Systems-High-Assurance/dp/1447124154
+[gss]: http://www.cs.berkeley.edu/%7Ebrewer/papers/GiantScale-IEEE.pdf
+[trds]: http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf
+[spanner]: https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf
+[zookeeper]: https://www.usenix.org/legacy/event/usenix10/tech/full_papers/Hunt.pdf
+[calvin]: http://cs.yale.edu/homes/thomson/publications/calvin-sigmod12.pdf
