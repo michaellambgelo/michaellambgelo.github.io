@@ -31,11 +31,27 @@ Running `make zip` was a requirement from the assignment and so I included it he
 
 Shout out to Hannah Thiessen (referenced here by her former name, Hannah Church) who helped write the client implementation of go-back-_n_. We spent a long, long Saturday in Butler Hall working on just that portion alone. JJ Kemp observed our work, as was his way.
 
+[![client includes and namespace](/img/2022-02-16-client-includes.png)][clientLink]
+
+Libraries included in the client provide basic i/o and networking.
+
+`packet.h` provides a class to represent individual packets sent between the client and server. Constants are defined to represent the type of packet received; `PACKET_ACK` describes a packet from the server acknowledging receipt; `PACKET_DATA` describes a packet from the client with data; `PACKET_EOT_SERV2CLI` is a one-time packet type which tells the client to close; `PACKET_EOT_CLI2SERV` is a one-time packet type which tells the server to close because of the end of transmission.
+
+The client uses libraries in the `std` namespace.
+
 ### `server.cpp`
 
 [![server author comment](/img/2022-02-16-server-author.png)][serverLink]
 
 The best resource I found for the basics of getting a server up and running was from [linuxhowtos.org](https://www.linuxhowtos.org/C_C++/socket.htm). I referenced it here because I'm a good boy who doesn't want to plagiarize. Always give credit.
+
+[![server includes and namespace](/img/2022-02-16-server-includes.png)][serverLink]
+
+Libraries included in the server provide basic i/o and networking.
+
+`packet.h` provides a class to represent individual packets sent between the client and server. Constants are defined to represent the type of packet received; `PACKET_ACK` describes a packet from the server acknowledging receipt; `PACKET_DATA` describes a packet from the client with data; `PACKET_EOT_SERV2CLI` is a one-time packet type which tells the client to close; `PACKET_EOT_CLI2SERV` is a one-time packet type which tells the server to close because of the end of transmission.
+
+The server uses libraries in the `std` namespace.
 
 [repo]:https://github.com/michaellambgelo/DataComm/tree/master/PA2
 [makefileLink]: https://github.com/michaellambgelo/DataComm/blob/master/PA2/makefile
