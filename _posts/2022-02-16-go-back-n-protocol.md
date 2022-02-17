@@ -17,7 +17,7 @@ Usually, servers are programs that run as services on an operating system for hi
 
 ### `makefile`
 
-[![makefile](/img/2022-02-16-makefile.png)](makefileLink)
+[![makefile](/img/2022-02-16-makefile.png)][makefileLink]
 
 I was constantly rebuilding the entire distributed system and running it locally on my machine. My makefile here creates the necessary executable files from source in order: first create the `packet.o` executable, then use `packet.o` to build the client and server executables. Running `make main` accomplishes all of this. Because the client and server are tiny the build process executed in less than a second which made the feedback loop very quick when I was writing this.
 
@@ -27,13 +27,13 @@ Running `make zip` was a requirement from the assignment and so I included it he
 
 ### `client.cpp`
 
-[![client author comment](/img/2022-02-16-client-author.png)](clientLink)
+[![client author comment](/img/2022-02-16-client-author.png)][clientLink]
 
 Shout out to Hannah Thiessen (referenced here by her former name, Hannah Church) who helped write the client implementation of go-back-_n_. We spent a long, long Saturday in Butler Hall working on just that portion alone. JJ Kemp observed our work, as was his way.
 
 ### `server.cpp`
 
-[![server author comment](/img/2022-02-16-server-author.png)](serverLink)
+[![server author comment](/img/2022-02-16-server-author.png)][serverLink]
 
 The best resource I found for the basics of getting a server up and running was from [linuxhowtos.org](https://www.linuxhowtos.org/C_C++/socket.htm). I referenced it here because I'm a good boy who doesn't want to plagiarize. Always give credit.
 
