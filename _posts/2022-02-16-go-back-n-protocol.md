@@ -39,6 +39,10 @@ Libraries included in the client provide basic i/o and networking.
 
 The client uses libraries in the `std` namespace.
 
+[![client command line arguments check](/img/2022-02-16-client-cli-args.png)][clientLink]
+
+Command line arguments to the client configure how the client will connect to the emulator program, provided as part of the assignment as an executable with its own CLI. The server connects to the opposite send/receive ports to enable two-way messaging with the client. The filename argument specifies what file to parse into packets for messaging.
+
 ### `server.cpp`
 
 [![server author comment](/img/2022-02-16-server-author.png)][serverLink]
@@ -79,6 +83,10 @@ If the return value would result in a reserved port number, the `while` loop wou
 [![server error function](/img/2022-02-16-server-error.png)][serverLink]
 
 The `error` method provides a convenient way to fail fast by printing out a custom error message and exiting. I've learned a lot about error handling since this program but this is still one of the most elegant pieces of code I've ever seen.
+
+[![server command line arguments check](/img/2022-02-16-server-cli-args.png)][serverLink]
+
+Command line arguments to the server configure how the server will connect to the emulator program, provided as part of the assignment as an executable with its own CLI. The client connects to the opposite send/receive ports to enable two-way messaging with the server. The filename argument specifies which file to use for logging messages.
 
 [repo]:https://github.com/michaellambgelo/DataComm/tree/master/PA2
 [makefileLink]: https://github.com/michaellambgelo/DataComm/blob/master/PA2/makefile
