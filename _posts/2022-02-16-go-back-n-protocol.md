@@ -43,6 +43,12 @@ The client uses libraries in the `std` namespace.
 
 Command line arguments to the client configure how the client will connect to the emulator program, provided as part of the assignment as an executable with its own CLI. The server connects to the opposite send/receive ports to enable two-way messaging with the client. The filename argument specifies what file to parse into packets for messaging.
 
+[![client variables init](/img/2022-02-16-client-init.png)][clientLink]
+
+Here's what's going on in this snippet: everything here lives in the `main` function. This sets up networking i/o and file i/o, as well as some tracking variables related to packet messaging and logging including a timeout for `ACK` responses from the server.
+
+If I were to refactor this code, I would separate the network and file i/o from the main logic for sending packets to the server. The separations would either move the relevant parts to separate functions or into an individual class. Though there is some overlap between the client and server in regards to file and network i/o, I can imagine creating indivual classes for each concern would still result in client-specific and server-specific i/o classes.
+
 ### `server.cpp`
 
 [![server author comment](/img/2022-02-16-server-author.png)][serverLink]
@@ -71,7 +77,7 @@ int randomPort(int n_port) //pick a random port
     int val = n_port;
     srand(time(NULL));
     while(val == n_port && val < 1024) //ensure r_ is different from n_
-                                       //ensure r_ is not a reserved port
+                                       //ensure r_ is not a reserved port below 1024
         val = rand() % 65535;
 
     return val;
