@@ -13,9 +13,7 @@ This was one of three programming assignments for a class called Data Communicat
 
 Usually, servers are programs that run as services on an operating system for high availability to accept clients. Because this particular client/server implementation was for a class assignment I opted to close my server once the program requirements are satisfied. Obviously this wasn't built for any sort of production use and is provided only as educational material.
 
-## Files
-
-### `makefile`
+## `makefile`
 
 [![makefile](/img/2022-02-16-makefile.png)][makefileLink]
 
@@ -25,7 +23,7 @@ Running `make zip` was a requirement from the assignment and so I included it he
 
 `make clean` deletes all executables in the directory
 
-### `client.cpp`
+## `client.cpp`
 
 [![client author comment](/img/2022-02-16-client-author.png)][clientLink]
 
@@ -49,7 +47,7 @@ Here's what's going on in this snippet: everything here lives in the `main` func
 
 If I were to refactor this code, I would separate the network and file i/o from the main logic for sending packets to the server. The separations would either move the relevant parts to separate functions or into an individual class. Though there is some overlap between the client and server in regards to file and network i/o, I can imagine creating indivual classes for each concern would still result in client-specific and server-specific i/o classes.
 
-### `server.cpp`
+## `server.cpp`
 
 [![server author comment](/img/2022-02-16-server-author.png)][serverLink]
 
