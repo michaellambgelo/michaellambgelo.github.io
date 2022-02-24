@@ -7,11 +7,11 @@ category : distributed-systems
 
 ## An algorithm solving for a lossy network
 
-In what was probably my favorite college course I implemented a client/server system which would transmit messages across a lossy network. A client connects to the server to send a file. By tracking packet acknowledgements from the server, the client should repeat lost packets by using a go-back- _n_ protocol where _n_ is limited to 8 packets.
+In what was probably my favorite college course I implemented a client/server system which would transmit messages across a lossy network. A client connects to the server to send a file. By tracking packet acknowledgements from the server, the client should repeat lost packets by using a go-back- _n_ protocol where _n_ is limited to 7 packets.
 
-This was one of three programming assignments for a class called Data Communication Networks. I took this in the spring semester of 2016. My professor was Dr. Maxwell Young. In this post, I'll give an overview of [my archived repo available on GitHub][repo]. This assignment was foundational to my understanding of distributed systems. Using an emulator program to simulate a lossy network, I learned the importance of writing resilient code.
+This was one of three programming assignments for a class called Data Communication Networks. I took this in the spring semester of 2016. My professor was Dr. Maxwell Young. In this post, I'll give an overview of [my archived repo available on GitHub][repo]. This assignment was foundational to my understanding of distributed systems. Using an emulator program written by Dr. Young to simulate a lossy network, I learned the importance of writing resilient code by enforcing an algorithmic protocol we referred to as go-back- _n_ which is used by the client to ensure that all data was received by the server. The server would keep track of what packets it receives from a client and will only accept the expected sequence number. Below, you'll find my comments on the code I submitted as part of this assignment. We were permitted a partner when writing the algorithm itself, but the networking code we were expected to complete on our own.
 
-Usually, servers are programs that run as services on an operating system for high availability to accept clients. Because this particular client/server implementation was for a class assignment I opted to close my server once the program requirements are satisfied. Obviously this wasn't built for any sort of production use and is provided only as educational material.
+Usually, a server is a program that runs as a service on an operating system for high availability to accept any number of clients. Because this particular client/server implementation was for a class assignment I opted to close my server once the program requirements are satisfied. Obviously this wasn't built for any sort of production use and is provided only as educational material.
 
 ## `makefile`
 
