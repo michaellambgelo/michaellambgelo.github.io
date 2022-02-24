@@ -27,7 +27,7 @@ Running `make zip` was a requirement from the assignment and so I included it he
 
 [![client author comment](/img/2022-02-16-client-author.png)][clientLink]
 
-Shout out to Hannah Thiessen (referenced here by her former name, Hannah Church) who helped write the client implementation of go-back-_n_. We spent a long, long Saturday in Butler Hall working on just that portion alone. JJ Kemp observed our work, as was his way.
+Shout out to Hannah Thiessen (referenced here by her former name, Hannah Church) who helped write the client implementation of go-back- _n_. We spent a long, long Saturday in Butler Hall working on just that portion alone. JJ Kemp observed our work, as was his way.
 
 [![client includes and namespace](/img/2022-02-16-client-includes.png)][clientLink]
 
