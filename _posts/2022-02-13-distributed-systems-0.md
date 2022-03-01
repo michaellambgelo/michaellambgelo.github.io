@@ -2,7 +2,7 @@
 layout : post
 title : Distributed Systems pt.0
 image : "/seo/2022-02-13.png"
-category : distributed-systems
+category : distributed systems
 ---
 _This post is a work in progress._
 
