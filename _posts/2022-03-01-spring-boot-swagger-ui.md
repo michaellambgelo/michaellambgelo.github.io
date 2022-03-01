@@ -23,7 +23,7 @@ In this post I will show how I integrated Springfox Swagger UI into my Spring Bo
 
 This configuration assumes an existing Spring Boot project and integrates io.springfox/swagger-boot-starter (version 3.0.0).
 
-## `pom.xml`
+## pom.xml
 
 Add the Springfox Spring Boot starter dependency.
 
@@ -54,7 +54,7 @@ In this file, only two annotations need to be added to the base class:
 @EnableSwagger2
 ```
 
-## `AppConfiguration.java`
+## AppConfiguration.java
 
 If it doesn't exist yet, create a new Java class called `AppConfiguration.java`. The class itself will be empty but it will have a few annotations that will enable Springfox to scan the application code and identify endpoints.
 
@@ -67,7 +67,7 @@ public class AppConfiguration {
 }
 ```
 
-## `SpringConfig.java`
+## SpringConfig.java
 
 `SpringConfig.java` will implement the `WebMvcConfigurer` interface. It will override a couple of methods so that Spring Boot can serve Swagger UI alongside the Spring Boot app.
 
