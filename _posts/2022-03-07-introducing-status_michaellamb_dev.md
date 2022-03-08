@@ -5,6 +5,8 @@ image : "/seo/2020-03-07.png"
 category : cluster computing
 ---
 
+Using Docker, I wanted to create a new subdomain pointing to my Pi cluster to show the uptime for the cluster.
+
 ## What is Docker
 
 Docker combines an application and its depdencies in a package which can be executed in a isolated container runtime.
