@@ -20,6 +20,7 @@ plugins:
 # author - The default author for all posts. This can be overridden in the
 # front matter of a post.
 name : Michael Lamb
+title : Michael Lamb
 brand : Michael Lamb
 description : A tech & life blog written and maintained by Michael Lamb
 url : https://michaellamb.dev
