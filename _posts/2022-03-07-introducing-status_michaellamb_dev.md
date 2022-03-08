@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Introducing status.michaellamb.dev
-image : "/seo/2020-03-07.png"
+image : "/seo/2022-03-07.png"
 category : cluster computing
 ---
 
