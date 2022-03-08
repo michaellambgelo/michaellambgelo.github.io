@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Introducting status.michaellamb.dev
+title : Introducing status.michaellamb.dev
 image : "/seo/2020-03-07.png"
 category : cluster computing
 ---
