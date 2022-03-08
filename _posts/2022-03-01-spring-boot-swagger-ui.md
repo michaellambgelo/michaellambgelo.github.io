@@ -7,7 +7,7 @@ image : "/seo/2022-03-01.png"
 
 Spring Boot is a powerful project from the Spring ecosystem which enables developers to maximize their leverage of Spring applications. Standalone projects can be generated at [start.spring.io](https://start.spring.io) with any other additional dependencies of Spring project included in just a few clicks.
 
-I have created a Spring Boot demo project available from my GitHub. I plan to use this project to demonstrate some tasks I perform regularly in Spring Boot.
+I have created a [Spring Boot demo project available on my GitHub](https://github.com/michaellambgelo/demo). I plan to use this project to demonstrate some tasks I perform regularly in Spring Boot.
 
 [![Spring Logo](https://spring.io/images/spring-logo.svg)](https://spring.io/projects/spring-boot)
 

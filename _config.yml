@@ -288,7 +288,7 @@ social_links :
       font_awesome_icon : fab fa-linkedin
       url : https://www.linkedin.com/in/michael-lamb-ms/
     - link :
-      enabled : true
+      enabled : false
       name : Twitter
       font_awesome_icon : fab fa-twitter
       url : https://twitter.com/themichaellamb
