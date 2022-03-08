@@ -9,7 +9,7 @@ Using Docker, I wanted to create a new subdomain pointing to my Pi cluster to sh
 
 ## What is Docker
 
-Docker combines an application and its depdencies in a package which can be executed in a isolated container runtime.
+Docker combines an application and its depdencies in a package which can be executed in an isolated container runtime.
 
 ## VM vs Container
 
