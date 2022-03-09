@@ -367,7 +367,7 @@ external_links :
       url : https://status.michaellamb.dev
     - link :
       name : Spring Boot demo
-      url : https://demo.michaellamb.dev
+      url : https://demo.michaellamb.dev/swagger-ui/
 
 # These are the Bootstrap settings. These Bootstrap settings will control both
 # the theme and responsive settings of this site.
