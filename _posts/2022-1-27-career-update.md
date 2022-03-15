@@ -29,11 +29,13 @@ Michael Tran (CustApps manager); Brandon Baas (fellow CustApps); Dr. Lynsey Naug
 
 ## What's Next
 
-In 2022, I am expecting good things. I believe in my team and I know that we can figure things out together. Since I've been a developer for 5 years, I'm interested in staying close to that world. As anyone might expect working at an enterprise corporation for some time it isn't always clear what responsibilities are _paid_ if you have a certain role. It is a necessary boundary to communicate, as at C Spire the next role for me is **System Analyst** continuing my work with CustApps and the SA position has had trouble with outside hires and contractors. The best SAs have come from the developers who are already familiar with the systems in place. I'm afraid there's a certain vocabulary that simply comes with time and it takes years of exposure to get the level of fluency some of our SAs have.
+In 2022, I am expecting good things. I believe in my team and I know that we can figure things out together. Since I've been a developer for 5 years, I'm interested in staying close to that world. At C Spire the next role for me is **System Analyst** continuing my work with CustApps. The best SAs have come from the developers who are already familiar with the systems in place and I believe I am a strong candidate because of my institutional knowledge.
 
 ## Hustle
 
-I am currently working remotely full-time but I try to visit the office at least once per week for our team meetings (thank God for this week's negative covid test) and some of the side-project work I have includes setting up my own home network. It's a lot like building a neighborhood: I have a gaming pc, an edge-compute kubernetes cluster, my work laptop, and a Pi I use for research.
+I am currently working remotely full-time but I try to visit the office for our team meetings or for regular touchbases, just to check in.
+
+Some of the side-project work I have includes setting up my own home network. It's a lot like building a neighborhood: I have a gaming pc, an edge-compute cluster, my work laptop, and a Pi I use for research. I'm planning on setting up a NAS soon, I may have need of a place to host some databases.
 
 Once a month I organize a big movie night with [JXN Film Club](jxnfilm.club). Check out the [Instagram](instagram.com/jxnfilmclub) and feel free to DM me on there (no guarantees it's actually me though, like 5 people have access to that account).
 
