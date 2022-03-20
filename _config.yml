@@ -20,6 +20,7 @@ plugins:
 # author - The default author for all posts. This can be overridden in the
 # front matter of a post.
 name : Michael Lamb
+title : Michael Lamb
 brand : Michael Lamb
 description : A tech & life blog written and maintained by Michael Lamb
 url : https://michaellamb.dev
@@ -218,7 +219,7 @@ navbar :
   social_links :
     enabled : false
   external_links :
-    enabled : true
+    enabled : false
 
 
 # The social links are links to various social networking sites. Although
@@ -288,7 +289,7 @@ social_links :
       font_awesome_icon : fab fa-linkedin
       url : https://www.linkedin.com/in/michael-lamb-ms/
     - link :
-      enabled : true
+      enabled : false
       name : Twitter
       font_awesome_icon : fab fa-twitter
       url : https://twitter.com/themichaellamb
@@ -359,21 +360,14 @@ github_projects :
 #       name : The Dereck
 #       url: https://thedereck.github.io
 external_links :
-  header : My Digital Spaces
+  header : michaellamb.dev Services
   links :
     - link :
-      name : C Spire Gaming Discord
-      url : http://discord.cspiregaming.com
+      name : Status
+      url : https://status.michaellamb.dev
     - link :
-      name : jxnfilmclub
-      url : http://discord.jxnfilm.club
-    - link :
-      name : A Ғ Ғ I L I A T I O N (Discord)
-      url : https://discord.gg/6NnX6K6Rcv
-    - link :
-      name : My Letterboxd Profile
-      url : https://letterboxd.com/michaellamb/
-
+      name : Spring Boot demo
+      url : https://demo.michaellamb.dev/swagger-ui/
 
 # These are the Bootstrap settings. These Bootstrap settings will control both
 # the theme and responsive settings of this site.
