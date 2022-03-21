@@ -180,11 +180,11 @@ sections:
   external_links :
     enabled : true
   archive :
-    enabled : true
+    enabled : false
   categories :
-    enabled : false
+    enabled : true
   tags :
-    enabled : false
+    enabled : true
 
 
 # The navbar settings determine what menus are displayed on the navbar at the
@@ -209,11 +209,11 @@ sections:
 #     enabled : false
 navbar :
   archive :
-    enabled : false
+    enabled : true
   categories :
-    enabled : true
+    enabled : false
   tags :
-    enabled : true
+    enabled : false
   github_projects :
     enabled : false
   social_links :
