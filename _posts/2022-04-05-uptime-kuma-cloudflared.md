@@ -5,7 +5,7 @@ category: cluster computing
 image : "/seo/2022-04-05.png"
 ---
 
-Uptime Kuma, the project behind [status.michaellamb.dev](https://status.michaellamb.dev), recently merged a [pull request][pull-request] which adds an intereting ease-of-use feature: integration with Cloudflare's tunneling technology using `cloudflared`, a tunnel client which simplifies proxying requests from behind a firewall.
+Uptime Kuma, the project behind [status.michaellamb.dev](https://status.michaellamb.dev), recently merged a [pull request][pull-request] which adds an interesting ease-of-use feature: integration with Cloudflare's tunneling technology using `cloudflared`, a tunnel client which simplifies proxying requests from behind a firewall by leveraging the Cloudflare network.
 
 [![pr 1427](/img/2022-04-05-pr-1427.png)][pull-request]
 
