@@ -211,11 +211,11 @@ navbar :
   archive :
     enabled : true
   categories :
-    enabled : false
+    enabled : true
   tags :
-    enabled : false
+    enabled : true
   github_projects :
-    enabled : false
+    enabled : true
   social_links :
     enabled : false
   external_links :
@@ -321,7 +321,7 @@ social_links :
 #     name : gh-pages-blog
 #     url : https://github.com/thedereck/gh-pages-blog
 github_projects :
-  header : GitHub Repos
+  header : Related GitHub Projects
   projects :
   - project :
     name : hello-go
@@ -329,6 +329,15 @@ github_projects :
   - project :
     name : michaellambgelo.github.io
     url : https://github.com/michaellambgelo/michaellambgelo.github.io
+  - project :
+    name : Spring Boot demo
+    url : https://github.com/michaellambgelo/demo
+  - project :
+    name : Uptime Kuma (Forked)
+    url : https://github.com/michaellambgelo/uptime-kuma
+  - project :
+    name : Nginx Proxy Manager
+    url : https://github.com/NginxProxyManager/nginx-proxy-manager
 
 
 # These are links to other websites outside of the blog that are not part of
@@ -363,7 +372,7 @@ external_links :
   header : michaellamb.dev Services
   links :
     - link :
-      name : Status
+      name : status.michaellamb.dev
       url : https://status.michaellamb.dev
     - link :
       name : Spring Boot demo
