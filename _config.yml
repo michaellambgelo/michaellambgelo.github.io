@@ -375,6 +375,9 @@ external_links :
       name : status.michaellamb.dev
       url : https://status.michaellamb.dev
     - link :
+      name : valheim.michaellamb.dev
+      url : https://valheim.michaellamb.dev
+    - link :
       name : Spring Boot demo
       url : https://demo.michaellamb.dev/swagger-ui/
 
