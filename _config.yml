@@ -180,7 +180,7 @@ sections:
   external_links :
     enabled : true
   archive :
-    enabled : false
+    enabled : true
   categories :
     enabled : true
   tags :
@@ -209,7 +209,7 @@ sections:
 #     enabled : false
 navbar :
   archive :
-    enabled : true
+    enabled : false
   categories :
     enabled : true
   tags :
