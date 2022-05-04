@@ -11,6 +11,8 @@ GitHub features a Discussions pane on code repositories so that communities can 
 
 This post is to announce that I want YOU to leave a comment on my announcement post over on GitHub. My blog is more informative than interactive (and I like it that way) but GitHub as a tool for organizing community around code is right up my alley. I hope you'll join me and we can connect.
 
+[Follow this link to see the Discussion announcement.][gh]
+
 [![discussions #1](/img/demo-discussions.png)][gh]
 
 ## Leave a comment on my announcement post
