@@ -298,7 +298,11 @@ social_links :
       name : Medium
       font_awesome_icon : fab fa-medium
       url : https://medium.com/@themichaellamb
-
+    - link : 
+      enabled : true
+      name : My CV
+      font_awesome_icon : fas fa-file
+      url : https://michaellamb.dev/docs/MichaelLambResume.pdf
 
 # These are a list of GitHub projects that the blog owner would like to
 # showcase. Although the intent is the projects showcased would be the
