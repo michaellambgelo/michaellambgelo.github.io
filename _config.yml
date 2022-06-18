@@ -376,13 +376,13 @@ external_links :
   header : Services
   links :
     - link :
-      name : status.michaellamb.dev
+      name : status.michaellamb.dev <img src="https://status.michaellamb.dev/api/badge/27/uptime/24"></img>
       url : https://status.michaellamb.dev
     - link :
-      name : valheim.michaellamb.dev
+      name : valheim.michaellamb.dev <img src="https://status.michaellamb.dev/api/badge/8/uptime/24"></img>
       url : https://valheim.michaellamb.dev
     - link :
-      name : Spring Boot demo
+      name : Spring Boot demo <img src="https://status.michaellamb.dev/api/badge/10/uptime/24"></img>
       url : https://demo.michaellamb.dev/swagger-ui/
 
 # These are the Bootstrap settings. These Bootstrap settings will control both
