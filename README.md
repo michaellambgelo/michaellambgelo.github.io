@@ -4,7 +4,7 @@ This is a tech & life blog written and maintained by Michael Lamb
 
 Available at <https://michaellamb.dev>
 
-https://status.michaellamb.dev/api/badge/8/uptime/24
+![uptime](https://status.michaellamb.dev/api/badge/8/uptime/24)
 
 ## About ##
 
