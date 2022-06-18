@@ -4,6 +4,8 @@ This is a tech & life blog written and maintained by Michael Lamb
 
 Available at <https://michaellamb.dev>
 
+https://status.michaellamb.dev/api/badge/8/uptime/24
+
 ## About ##
 
 Michael Lamb is a software engineer living in Jackson, Mississippi. He graduated from Mississippi State University with a bachelor of science in Software Engineering. He is happily employed full-time creating microservices using Java and Spring technologies but is open to consulting.
