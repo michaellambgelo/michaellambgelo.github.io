@@ -376,7 +376,7 @@ external_links :
   header : Services
   links :
     - link :
-      name : Status <img src="https://status.michaellamb.dev/api/badge/27//uptime/24"></img>
+      name : Status <img src="https://status.michaellamb.dev/api/badge/27/uptime/24"></img>
       url : https://status.michaellamb.dev
     - link :
       name : Valheim <img src="https://status.michaellamb.dev/api/badge/8/uptime/24"></img>
