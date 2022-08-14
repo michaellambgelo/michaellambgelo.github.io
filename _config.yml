@@ -379,7 +379,7 @@ external_links :
       name : Status <img src="https://status.michaellamb.dev/api/badge/27/uptime/24"></img>
       url : https://status.michaellamb.dev
     - link :
-      name : Valheim <img src="https://status.michaellamb.dev/api/badge/8/uptime/24"></img>
+      name : Valheim <img src="https://status.michaellamb.dev/api/badge/24/uptime/24"></img>
       url : https://valheim.michaellamb.dev
     - link :
       name : Spring Boot demo <img src="https://status.michaellamb.dev/api/badge/10/uptime/24"></img>
