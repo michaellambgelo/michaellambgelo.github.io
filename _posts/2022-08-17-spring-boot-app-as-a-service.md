@@ -57,6 +57,6 @@ sudo service demo start
 
 Other commands are available using the standard service script: `stop`, `restart`, and `status`. Moreover, logs can be viewed under `var/log/demo.log`.
 
-[baeldung]:[https://www.baeldung.com/spring-boot-app-as-a-service]
-[demo]:[https://github.com/michaellambgelo/demo]
-[update-pom]:[https://github.com/michaellambgelo/demo/commit/c8e42bad5eb8a901e68fdc0398582ce9bf41a450]
+[baeldung]:https://www.baeldung.com/spring-boot-app-as-a-service
+[demo]:https://github.com/michaellambgelo/demo
+[update-pom]:https://github.com/michaellambgelo/demo/commit/c8e42bad5eb8a901e68fdc0398582ce9bf41a450
