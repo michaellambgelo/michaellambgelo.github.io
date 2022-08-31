@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What I'm working on right now
-category: cluster computing
+category: cluster-computing
 image : "/seo/2021-03-25.png"
 ---
 

@@ -2,7 +2,7 @@
 layout : post
 title : Containers on k3s
 image : "/seo/2022-02-06.png"
-category : cluster computing
+category : cluster-computing
 ---
 
 How does one run containers on k3s? Here are a few things I did to play around with my cluster.

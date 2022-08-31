@@ -2,7 +2,7 @@
 layout : post
 title : Containers on k3s continued
 image : "/seo/2022-02-06.png"
-category : cluster computing
+category : cluster-computing
 ---
 
 ## Kubernetes Dashboard

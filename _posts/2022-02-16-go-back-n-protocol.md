@@ -2,7 +2,7 @@
 layout : post
 title : Go-Back-N Protocol
 image : "/seo/2022-02-16.png"
-category : distributed systems
+category : distributed-systems
 ---
 
 ## An algorithm solving for a lossy network

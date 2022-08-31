@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Uptime Kuma - cloudflared integration
-category: cluster computing
+category: cluster-computing
 image : "/seo/2022-04-05.png"
 ---
 

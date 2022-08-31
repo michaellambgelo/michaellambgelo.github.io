@@ -2,7 +2,7 @@
 layout : post
 title : Introducing status.michaellamb.dev
 image : "/seo/2022-03-07.png"
-category : cluster computing
+category : cluster-computing
 ---
 
 Using Docker, I wanted to create a new subdomain pointing to my Pi cluster to show the uptime for the cluster.

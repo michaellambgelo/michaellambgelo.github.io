@@ -2,7 +2,7 @@
 layout : post
 title : k3s Installation
 image : "/seo/2022-01-20.png"
-category : cluster computing
+category : cluster-computing
 ---
 
 ## k8s -> k3s

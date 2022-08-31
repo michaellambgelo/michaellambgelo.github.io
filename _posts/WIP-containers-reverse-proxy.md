@@ -2,7 +2,7 @@
 layout : post
 title : Containers - Reverse Proxy
 image : "/seo/2022-02-06.png"
-category : cluster computing
+category : cluster-computing
 ---
 
 docker volume create portainer_data

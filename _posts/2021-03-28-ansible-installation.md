@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ansible Installation
-category: cluster computing
+category: cluster-computing
 image : "/seo/2021-03-28.png"
 ---
 

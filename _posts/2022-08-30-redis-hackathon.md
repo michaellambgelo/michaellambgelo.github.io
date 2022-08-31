@@ -2,7 +2,7 @@
 layout : post
 title : Redis Hackathon Submission
 image : "/seo/2022-08-30.png"
-category : distributed systems
+category : distributed-systems
 ---
 
 I participated in a Redis Hackathon hosted on [Dev.to][dev.to] which required use of the Redis Stack. Anyone familiar with Redis knows it for its primary use case as a cache, with popular adoption as a primary database because of its ease-of-use and high developer happiness as part of the ecosystem's DX metric.
@@ -116,6 +116,10 @@ I'm not perfect.
 I got a good deal of exposure to Redis OM Spring and more experience with RedisInight, the GUI used to inspect Redis databases. I ran into issues with the meta-model generation, I'm not sure if that was because VS Code doesn't know about meta-modeling or if I was missing a Maven compilation step. Overall, Redis OM Spring seems like it's headed in a good direction!
 
 My code is not production ready but it's progress.
+
+## Music Corner
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5BZocbCgFBRjGHMwhzssbO?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
 <!-- docs -->
 [dev.to]:https://dev.to

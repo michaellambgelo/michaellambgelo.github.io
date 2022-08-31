@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pi Cluster Update
-category: cluster computing
+category: cluster-computing
 image : "/seo/2021-03-26.png"
 ---
 ## Pis on a Rack
