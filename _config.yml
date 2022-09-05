@@ -342,6 +342,9 @@ github_projects :
   - project :
     name : Nginx Proxy Manager
     url : https://github.com/NginxProxyManager/nginx-proxy-manager
+  - project :
+    name : stackathon
+    url : https://github.com/michaellambgelo/stackathon
 
 
 # These are links to other websites outside of the blog that are not part of
@@ -373,17 +376,20 @@ github_projects :
 #       name : The Dereck
 #       url: https://thedereck.github.io
 external_links :
-  header : Services
+  header : Self-hosted Services
   links :
     - link :
       name : Status <img src="https://status.michaellamb.dev/api/badge/27/uptime/24"></img>
       url : https://status.michaellamb.dev
     - link :
-      name : Valheim <img src="https://status.michaellamb.dev/api/badge/24/uptime/24"></img>
+      name : Valheim dedicated server <img src="https://status.michaellamb.dev/api/badge/24/uptime/24"></img>
       url : https://valheim.michaellamb.dev
     - link :
       name : Spring Boot demo <img src="https://status.michaellamb.dev/api/badge/10/uptime/24"></img>
       url : https://demo.michaellamb.dev/swagger-ui/
+    - link :
+      name : Personal Link Hub
+      url : https://link.michaellamb.dev
 
 # These are the Bootstrap settings. These Bootstrap settings will control both
 # the theme and responsive settings of this site.
