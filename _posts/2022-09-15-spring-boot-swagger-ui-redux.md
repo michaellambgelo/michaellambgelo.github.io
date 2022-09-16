@@ -6,9 +6,11 @@ image : "/seo/2022-09-15.png"
 ---
 ### This post copies and updates text from a previous version
 
+[Check out the previous version of this post if you want to compare the differences.][previous]
+
 Spring Boot is a powerful project from the Spring ecosystem which enables developers to maximize their leverage of Spring applications. Standalone projects can be generated at [start.spring.io](https://start.spring.io) with any other additional dependencies of Spring project included in just a few clicks.
 
-I have created a [Spring Boot demo project available on my GitHub][demo]. I use this project to demonstrate some tasks I perform regularly in Spring Boot. [Check out the previous version of this post if you want to compare the differences.][previous]
+I have created a [Spring Boot demo project available on my GitHub][demo]. I use this project to demonstrate some tasks I perform regularly in Spring Boot.
 
 [![Spring Logo](https://spring.io/images/spring-logo.svg)](https://spring.io/projects/spring-boot)
 
@@ -152,7 +154,7 @@ Great job! 🎉
 
 You have a Spring Boot app ready to start developing an auto-documented HTTP API.
 
-[previous]:https://michaellamb.dev/2022/03/01/spring-boot-swagger-ui.html
+[previous]:https://michaellamb.dev/2021/03/01/spring-boot-swagger-ui.html
 [demo]:https://github.com/michaellambgelo/demo
 [springfox-last-commit]:https://github.com/springfox/springfox/commit/ab5868471cdbaf54dac01af12933fe0437cf2b01
 [migration]:https://github.com/michaellambgelo/stackathon/commit/fae387b0f6a166aacd3e9bb829c120de4add3c01
