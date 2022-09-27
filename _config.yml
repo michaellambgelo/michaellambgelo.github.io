@@ -388,7 +388,7 @@ external_links :
       name : Spring Boot demo <img src="https://status.michaellamb.dev/api/badge/10/uptime/24"></img>
       url : https://demo.michaellamb.dev/swagger-ui/
     - link :
-      name : Personal Link Hub
+      name : Personal Link Hub <img src="https://status.michaellamb.dev/api/badge/33/uptime/24"></img>
       url : https://link.michaellamb.dev
 
 # These are the Bootstrap settings. These Bootstrap settings will control both
