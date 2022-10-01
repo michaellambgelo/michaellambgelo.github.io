@@ -26,7 +26,7 @@ _but first..._
 
 ## How this post is structured
 
-There are three MILE MARKER sections. #1 precedes the relevant code blocks for Springfox. #2 occurs after Springfox is concluded and before Springdox code blocks begin. #3 appears after the conclusion of Springdoc.
+There are three MILE MARKER sections. #1 precedes the relevant code blocks for Springfox. #2 occurs after Springfox is concluded and before Springdoc code blocks begin. #3 appears after the conclusion of Springdoc.
 
 ## MILE MARKER 1
 
