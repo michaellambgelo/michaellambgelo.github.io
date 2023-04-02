@@ -39,6 +39,8 @@ For C Spire Gaming Officers Game Night virtual events I use a technology called 
 
 While I haven't needed to use VDO.ninja for an in-person event yet, I have found it useful for streaming to my personal channel. Because it's P2P streaming, using another machine in my house to run the stream decouples the stream processing from my gaming machine.
 
+One drawback to VDO.ninja is that mixing audio for multiple people does not appear to be trivial, so for our purposes when streaming groups of people for C Spire Gaming everyone is muted in VDO.ninja and instead we use a Discord voice channel, which I'm then able to capture and send to the stream.
+
 ## Conclusion
 
 OBS is a powerful tool which I use to stream for multiple channels on Twitch. The last, perhaps most important aspect of OBS is the ability to save and switch between profiles and scene collections. I consider these components of OBS tightly coupled, with many scene collections intended for one profile.
