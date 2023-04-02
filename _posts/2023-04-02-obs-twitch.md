@@ -7,6 +7,8 @@ category: social
 
 ## What is OBS
 
+OBS is a video capture technology built as open source software. Plugins are available to extend functionality and add helpful features, such as a Twitch integration to view chat and live streaming stats. OBS is also capable of recording, helpful for people who are interested in sharing content like a code review.
+
 I use OBS to stream to two different channels: my personal channel [@michaellambgelo](https://twitch.tv/michaellambgelo) and the channel I run for work, [@cspiregaming](https://twitch.tv/cspiregaming). In general, I use OBS to put together the primary view for what I want to stream to Twitch.
 
 I use the same technologies for both channels but in different ways. For my personal channel, I'm primarily interested in interacting with the chat via microphone. With C Spire Gaming, I'm primarily interested in interacting with the chat myself via the camera and the group I have assembled. How that group is assembled is varied, and thus there are multiple implementations possible for streaming I've found. 
@@ -14,6 +16,8 @@ I use the same technologies for both channels but in different ways. For my pers
 ## Video first
 
 For most streams, I want a camera on myself and to capture at least one game screen. I've found it wonderfully trivial to use both my personal and my work iPhone as a camera to help me compartmentalize between the two streams. The Twitch app for iPhone enables use of the front-facing camera for livestreaming with a simple interface that also displays quick stats and offers a view of the chat. For people interested in streaming using the Just Chatting cateogry, this is really all that's needed to get started building your Twitch presence.
+
+Desktop capture can take place many ways. One method is to use a capture card: a video interface capable of copying a video feed; usually repeats an HDMI connection. The interface can be added directly to OBS and formatted with any other elements as desired. Other, more complex methods include use of virtual cameras in OBS and use of VDO.ninja. VDO.ninja will be discussed in a separate section below.
 
 ## Audio singularly
 
