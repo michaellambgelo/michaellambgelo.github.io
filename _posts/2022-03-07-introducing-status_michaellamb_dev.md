@@ -35,4 +35,4 @@ I am interested in hosting more applications and I wanted to leverage nginx as a
 
 [![status.michaellamb.dev](/img/favicon.png)](https://status.michaellamb.dev)
 
-[status.michaellamb.dev](https://status.michaellamb.dev) is where you can go to see the applications I'm running on my cluster. Since I consider the cluster to be an opportunity to pratice learning in public, I hope it is an interesting way for the people who happen to read this blog to stay connected. If you're in Jackson and want to talk tech, I regularly spend "office hours" at [The Bean](https://instagram.com/thebeanjxn). You can schedule a time with me at the link in the About section.
+[status.michaellamb.dev](https://status.michaellamb.dev) is where you can go to see the applications I'm running on my cluster. Since I consider the cluster to be an opportunity to pratice learning in public, I hope it is an interesting way for the people who happen to read this blog to stay connected. If you're in Jackson and want to talk tech, connect with me on my socials. Find them all at [link.michaellamb.dev](https://link.michaellamb.dev).
