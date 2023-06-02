@@ -592,6 +592,8 @@ disqus :
 #     tracking_id : UA-1234567
 analytics :
   enabled : false
+  google_analytics :
+    enabled : true
 
 twitter :
   username : themichaellamb
