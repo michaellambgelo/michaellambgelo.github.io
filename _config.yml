@@ -49,7 +49,7 @@ paginate : 1
 # alert : This is a sample alert message.
 # notice : This is a sample notice message.
 alert : false
-notice : false
+notice : "michaellamb.dev is now accepting requests for featured project writeups. email michael@michaellamb.dev for more"
 
 
 # The favicon image served up to web browsers. Enable the local if you want
@@ -325,7 +325,7 @@ social_links :
 #     name : gh-pages-blog
 #     url : https://github.com/thedereck/gh-pages-blog
 github_projects :
-  header : Repos
+  header : Public Repositories
   projects :
   - project :
     name : hello-go
@@ -336,15 +336,6 @@ github_projects :
   - project :
     name : Spring Boot demo
     url : https://github.com/michaellambgelo/demo
-  - project :
-    name : Uptime Kuma (Forked)
-    url : https://github.com/michaellambgelo/uptime-kuma
-  - project :
-    name : Nginx Proxy Manager
-    url : https://github.com/NginxProxyManager/nginx-proxy-manager
-  - project :
-    name : stackathon
-    url : https://github.com/michaellambgelo/stackathon
 
 
 # These are links to other websites outside of the blog that are not part of
@@ -591,10 +582,9 @@ disqus :
 #     enabled : true
 #     tracking_id : UA-1234567
 analytics :
-  enabled : true
+  enabled : false
   google_analytics :
     enabled : true
-    tracking_id : UA-158074190-1
 
 twitter :
   username : themichaellamb
