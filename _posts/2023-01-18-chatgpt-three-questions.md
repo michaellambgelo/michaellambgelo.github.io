@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Three Questions for ChatGPT
-category : spring
+category : machine-intelligence
 image : "/seo/2023-01-18.png"
 ---
 
