@@ -7,9 +7,9 @@ image : "/seo/2023-06-07.png"
 
 ## My Self-hosted Link Sharing Hub
 
-I use LinkStack as an app at [link.michaellamb.dev][linkstack-app] and have added it to my social media pages as a link dashboard. I reguarly share a link to the app with new contacts to provide all the options to connect with me. There are even a few other users with their own pages hosted in the app. My instance of LinkStack is running in the Raspberry Pi cluster<sup>[1][1]</sup> I have documented in the past<sup>[2][2]</sup>.
+I use LinkStack as an app at [link.michaellamb.dev][linkstack-app] and have added it to my social media pages as a link dashboard. I often share the link to the app with new contacts to give them all the options to connect with me. There are even a few other users on my LinkStack with their own pages as the app has an admin feature and a registration toggle (disabled by default). My instance of LinkStack is running in the Raspberry Pi cluster<sup>[1][1]</sup> I have documented in the past<sup>[2][2]</sup>.
 
-[LinkStack][linkstack] is an open source project which provides a platform for hosting a website which solves link sharing and management of shared links. It offers a customizable page like Linktree, but with so much more to opportunity and freedom -- as long as you're comfortable starting a Docker container!
+[LinkStack][linkstack] is an open source project which solves link sharing and management of shared links. It offers a customizable page like Linktree, but with so much more opportunity and freedom -- as long as you're comfortable starting a Docker container!
 
 I trust the project's [documentation on GitHub][linkstack-repo] and recommend using that to determine how you might want to add this free and available resource to your web properties.
 
@@ -29,6 +29,10 @@ Linktree isn't a project, it's a product. Their pricing model is a higher premiu
 
 Because it is an open source project, LinkStack offers community support on [Mastodon][linkstack-mastodon] and [Discord][linkstack-discord].
 
+## Developer Contribution Guide
+
+LinkStack is written in PHP with the Laravel framework. Developers may contribute bug reports, code discussions, code fixes, and new features. The [Discord server][linkstack-discord] is where communication around this work takes place. The maintainers use [GitHub Flow][ghflow] as an integration strategy.
+
 ![linkstack animated logo](https://raw.githubusercontent.com/LinkStackOrg/branding/main/logo/svg/logo_animated.svg)
 
 [1]:https://michaellamb.dev/cluster-computing/2021/03/25/cluster-computing.html
@@ -38,3 +42,4 @@ Because it is an open source project, LinkStack offers community support on [Mas
 [linkstack-repo]:https://github.com/LinkStackOrg/LinkStack
 [linkstack-discord]:https://discord.com/invite/MwEYK73erE/
 [linkstack-mastodon]:https://mstdn.social/@linkstack
+[ghflow]:https://docs.github.com/en/get-started/quickstart/github-flow
