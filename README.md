@@ -9,12 +9,13 @@ Available at <https://michaellamb.dev>
 
 ## About ##
 
-Michael Lamb is a software engineer living in Jackson, Mississippi. He graduated from Mississippi State University with a bachelor of science in Software Engineering. He is happily employed full-time creating microservices using Java and Spring technologies but is open to consulting.
+Michael Lamb is a software engineer living in Jackson, Mississippi. He graduated from Mississippi State University with a bachelor of science in Software Engineering. He is currently employed as a software developer at C Spire, headquartered in Ridgeland, Mississippi.
 
 [michael@michaellamb.dev](mailto:michael@michaellamb.dev)
 
 ## Resources ##
 
+[run this project locally](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
 [jekyll-seo-tag usage](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md)
 
 ## Credit ##
