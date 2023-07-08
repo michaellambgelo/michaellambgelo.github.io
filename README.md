@@ -15,6 +15,7 @@ Michael Lamb is a software engineer living in Jackson, Mississippi. He graduated
 
 ## Resources ##
 
+[run this project locally](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
 [jekyll-seo-tag usage](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md)
 
 ## Credit ##
