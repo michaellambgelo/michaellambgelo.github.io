@@ -9,7 +9,7 @@ Available at <https://michaellamb.dev>
 
 ## About ##
 
-Michael Lamb is a software engineer living in Jackson, Mississippi. He graduated from Mississippi State University with a bachelor of science in Software Engineering. He is happily employed full-time creating microservices using Java and Spring technologies but is open to consulting.
+Michael Lamb is a software engineer living in Jackson, Mississippi. He graduated from Mississippi State University with a bachelor of science in Software Engineering. He is currently employed as a software developer at C Spire, headquartered in Ridgeland, Mississippi.
 
 [michael@michaellamb.dev](mailto:michael@michaellamb.dev)
 
