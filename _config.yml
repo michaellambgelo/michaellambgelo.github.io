@@ -588,3 +588,4 @@ analytics :
 
 twitter :
   username : themichaellamb
+  card: summary
