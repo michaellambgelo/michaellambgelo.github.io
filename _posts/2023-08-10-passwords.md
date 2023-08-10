@@ -25,3 +25,6 @@ https://learn.microsoft.com/en-us/microsoft-365/admin/misc/password-policy-recom
 
 [6] Microsoft Password Guidance
 https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf
+
+[7] Microsoft's CISO: Why we're trying to banish passwords forever
+https://www.zdnet.com/article/microsofts-ciso-why-were-trying-to-banish-passwords-forever/
