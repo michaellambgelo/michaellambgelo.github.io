@@ -2,7 +2,7 @@
 layout : post
 title : Let's Expire Password Expiry
 category : social
-image: "/seo/2023-08-10.png"
+image: "/seo/2023-08-12.png"
 ---
 
 Too many organizations employ outmoded policies related to passwords that have been shown to be ineffective in providing security, namely, the requirement to change a memorized token on a regular periodic basis. I would like to present here various references which demonstrate that the industry standards have evolved in the last decade and do not require users to change a memorized token on a regular basis. It is best practice to require a changed password when credentials are found in other systems (I know of some orgs that use the [haveibeenpwned API](https://haveibeenpwned.com/API/v3) to provide intelligence when credentials are found on the dark web) but expiry should not be required until there is evidence a compromise has occurred.
@@ -17,7 +17,7 @@ Requirements set in the Payment Card Industry Data Security Standards state that
 
 ### FTC persuasive article against mandatory password changes<sup>3</sup>
 
-Lorrie Craner, Chief Technologist at FTC, wrote an article that makes the point of this blog post: mandatory password changes should be reconsidered. Compellingly, she details research that has demonstrated "[an] attacker who knows the previous password and has access to the hashed password file (generally because they stole it) and can carry out an offline attack can **guess the current password for 41% of accounts within 3 seconds per account (on a typical 2009 research computer)**. These results suggest that after a mandated password change, attackers who have previously learned a user’s password may be able to guess the user’s new password fairly easily."
+Lorrie Cranor, ACM and IEEE fellow & Chief Technologist at FTC (2016-2017), wrote an article that makes the point of this blog post: mandatory password changes should be reconsidered. Compellingly, she details research that has demonstrated "[an] attacker who knows the previous password and has access to the hashed password file (generally because they stole it) and can carry out an offline attack can **guess the current password for 41% of accounts within 3 seconds per account (on a typical 2009 research computer)**. These results suggest that after a mandated password change, attackers who have previously learned a user’s password may be able to guess the user’s new password fairly easily."
 
 ### Three different Microsoft articles make the case
 
