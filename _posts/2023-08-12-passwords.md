@@ -33,7 +33,9 @@ Lorrie Cranor, ACM and IEEE fellow & Chief Technologist at FTC (2016-2017), wrot
 
 In a research article, the Microsoft Identity Protection Team identifies password expiry as an "anti-pattern" (a practice which is believed to solve a problem but in fact does not).
 
-> Password expiration policies do more harm than good, because these policies drive users to very predictable passwords composed of sequential words and numbers which are closely related to each other (that is, the next password can be predicted based on the previous password). Password change offers no containment benefits cyber criminals almost always use credentials as soon as they compromise them.
+> Mandated password changes are a long-standing security practice, but current research strongly indicates that password expiration has a negative effect. Experiments have shown that users do not choose a new independent password; rather, they choose an update of the old one. There is evidence to suggest that users who are required to change their passwords frequently select weaker passwords to begin with and then change them in predictable ways that attackers can guess easily. 
+>
+> One study at the University of North Carolina found that 17% of new passwords could be guessed given the old one in at most 5 tries, and almost 50% in a few seconds of un-throttled guessing. Furthermore, cyber criminals generally exploit stolen passwords immediately.
 
 ## Microsoft CISO says the future is passwordless<sup>7</sup>
 
