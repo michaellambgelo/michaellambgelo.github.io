@@ -1,7 +1,7 @@
 ---
 layout : post
 title : MagnoliaJS 2023 - Recap
-category : social
+category : conference
 image: "/seo/2023-10-19.png"
 ---
 
