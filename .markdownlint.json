@@ -3,7 +3,7 @@
       "allowed_elements": [
         "iframe",
         "blockquote",
-        "p","a","script"
+        "p","a","script","div"
       ]
     },
     "MD013": {
