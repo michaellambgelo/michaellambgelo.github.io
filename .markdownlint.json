@@ -1,7 +1,9 @@
 {
     "MD033": {
       "allowed_elements": [
-        "iframe"
+        "iframe",
+        "blockquote",
+        "p","a","script","div"
       ]
     },
     "MD013": {
