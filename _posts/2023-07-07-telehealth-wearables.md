@@ -37,7 +37,7 @@ Wearable tech and telehealth should be adopted in areas with low access.
 
 Anyone is welcome to join the conversation, just reach out to me on my server or by DM for more details
 
-#### [C Spire Gaming](cspiregaming.com) will be hosting Community Game Night on July 20
+#### [C Spire Gaming](https://cspiregaming.com) will be hosting Community Game Night on July 20
 
 Zack Sistrunk will be looking for a squad in Planetside 2 on PC
 Watch on [Twitch](https://twitch.tv/cspiregaming) or join in on [Discord](https://discord.cspiregaming.com)
