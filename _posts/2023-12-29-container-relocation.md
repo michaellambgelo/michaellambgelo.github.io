@@ -110,3 +110,9 @@ docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
 <new_container_id>  <app_image>         "<startup_command>"     1 minute ago        Up 1 minute                             <new_container_name>
 ```
+
+## Conclusion
+
+The task I had identified was solved by ChatGPT.
+
+I was able to relocate the data for an application because it was decoupled from the runtime in the container, demonstrating how useful Docker Volumes can be.
