@@ -19,25 +19,23 @@ plugins:
 #
 # author - The default author for all posts. This can be overridden in the
 # front matter of a post.
-name : Michael Lamb
-title : Michael Lamb
-brand : Michael Lamb
-description : A tech & life blog written and maintained by Michael Lamb
-url : https://michaellamb.dev
-email : michael@michaellamb.dev
+name: Michael Lamb
+title: Michael Lamb
+brand: Michael Lamb
+description: A tech & life blog written and maintained by Michael Lamb
+url: https://michaellamb.dev
+email: michael@michaellamb.dev
 author: Michael Lamb
 image: "/seo/default.png"
 
 # The following is a list of files to exclude from inclusion in the
 # generated gh-pages website.
-exclude : [ README.md , version.txt ]
-
+exclude: [README.md, version.txt]
 
 # Replace the number with the default number of blog posts you want on each
 # page. A value of 0 will indicate that you don't want to paginate, and all
 # blog posts will be on the index page.
-paginate : 2
-
+paginate: 2
 
 # To put an alert or notice on every page served, change the appropriate value
 # below from false to the message you want displayed (alert : Alert message
@@ -48,9 +46,8 @@ paginate : 2
 # Here's an example configuration:
 # alert : This is a sample alert message.
 # notice : This is a sample notice message.
-alert : false
-notice : "michaellamb.dev is now accepting requests for featured project writeups. email michael@michaellamb.dev for more"
-
+alert: false
+notice: false
 
 # The favicon image served up to web browsers. Enable the local if you want
 # to serve up a file directly from the gh-pages-blog. The partial URL will be
@@ -71,17 +68,16 @@ notice : "michaellamb.dev is now accepting requests for featured project writeup
 #     enabled : true
 #     full_url : https://www.gravatar.com/avatar/2f8947394b8acb62e1055f27.png
 #     type : png
-favicon :
-  enabled : true
-  local :
-    enabled : true
-    partial_url : /img/favicon.png
-    type : png
-  remote :
-    enabled : false
-    full_url : false
-    type : false
-
+favicon:
+  enabled: true
+  local:
+    enabled: true
+    partial_url: /img/favicon.png
+    type: png
+  remote:
+    enabled: false
+    full_url: false
+    type: false
 
 # These are the sections of on the right hand column of the page (or at the
 # bottom if the responsive design has moved stuff around to accommodate
@@ -162,30 +158,29 @@ favicon :
 #   tags :
 #     enabled : true
 sections:
-  brief_bio :
-    enabled : true
-    image :
-      enabled : true
-      url : https://michaellamb.dev/img/bio.jpg
-    content :
-      enabled : true
-    social_links :
-      enabled : false
-    github_projects :
-      enabled : false
-  social_links :
-    enabled : true
-  github_projects :
-    enabled : true
-  external_links :
-    enabled : true
-  archive :
-    enabled : true
-  categories :
-    enabled : true
-  tags :
-    enabled : true
-
+  brief_bio:
+    enabled: true
+    image:
+      enabled: true
+      url: https://michaellamb.dev/img/bio.jpg
+    content:
+      enabled: true
+    social_links:
+      enabled: false
+    github_projects:
+      enabled: false
+  social_links:
+    enabled: true
+  github_projects:
+    enabled: true
+  external_links:
+    enabled: true
+  archive:
+    enabled: true
+  categories:
+    enabled: true
+  tags:
+    enabled: true
 
 # The navbar settings determine what menus are displayed on the navbar at the
 # top of the page. Any navbar menu can be enabled by setting the enabled
@@ -207,20 +202,19 @@ sections:
 #     enabled : false
 #   external_links :
 #     enabled : false
-navbar :
-  archive :
-    enabled : false
-  categories :
-    enabled : true
-  tags :
-    enabled : true
-  github_projects :
-    enabled : true
-  social_links :
-    enabled : false
-  external_links :
-    enabled : false
-
+navbar:
+  archive:
+    enabled: false
+  categories:
+    enabled: true
+  tags:
+    enabled: true
+  github_projects:
+    enabled: true
+  social_links:
+    enabled: false
+  external_links:
+    enabled: false
 
 # The social links are links to various social networking sites. Although
 # these were originally added with the intent of for use with personal
@@ -275,34 +269,34 @@ navbar :
 #       name : Twitter
 #       font_awesome_icon : icon-twitter
 #       url : https://www.twitter.com/dereckcurry
-social_links :
-  follow_name : Michael Lamb
-  links :
-    - link :
-      enabled : true
-      name : GitHub
-      font_awesome_icon : fab fa-github
-      url : https://github.com/michaellambgelo
-    - link :
-      enabled : true
-      name : Linkedin
-      font_awesome_icon : fab fa-linkedin
-      url : https://www.linkedin.com/in/michael-lamb-ms/
-    - link :
-      enabled : false
-      name : Twitter
-      font_awesome_icon : fab fa-twitter
-      url : https://twitter.com/themichaellamb
-    - link : 
-      enabled : true
-      name : Medium
-      font_awesome_icon : fab fa-medium
-      url : https://medium.com/@themichaellamb
-    - link : 
-      enabled : true
-      name : My CV
-      font_awesome_icon : fas fa-file
-      url : https://michaellamb.dev/docs/MichaelLambResume.pdf
+social_links:
+  follow_name: Michael Lamb
+  links:
+    - link:
+      enabled: true
+      name: GitHub
+      font_awesome_icon: fab fa-github
+      url: https://github.com/michaellambgelo
+    - link:
+      enabled: true
+      name: Linkedin
+      font_awesome_icon: fab fa-linkedin
+      url: https://www.linkedin.com/in/michael-lamb-ms/
+    - link:
+      enabled: false
+      name: Twitter
+      font_awesome_icon: fab fa-twitter
+      url: https://twitter.com/themichaellamb
+    - link:
+      enabled: true
+      name: Medium
+      font_awesome_icon: fab fa-medium
+      url: https://medium.com/@themichaellamb
+    - link:
+      enabled: true
+      name: My CV
+      font_awesome_icon: fas fa-file
+      url: https://michaellamb.dev/docs/MichaelLambResume.pdf
 
 # These are a list of GitHub projects that the blog owner would like to
 # showcase. Although the intent is the projects showcased would be the
@@ -324,19 +318,18 @@ social_links :
 #   - project :
 #     name : gh-pages-blog
 #     url : https://github.com/thedereck/gh-pages-blog
-github_projects :
-  header : Public Repositories
-  projects :
-  - project :
-    name : hello-go
-    url : https://github.com/michaellambgelo/hello-go
-  - project :
-    name : michaellambgelo.github.io
-    url : https://github.com/michaellambgelo/michaellambgelo.github.io
-  - project :
-    name : Spring Boot demo
-    url : https://github.com/michaellambgelo/demo
-
+github_projects:
+  header: Public Repositories
+  projects:
+    - project:
+      name: hello-go
+      url: https://github.com/michaellambgelo/hello-go
+    - project:
+      name: michaellambgelo.github.io
+      url: https://github.com/michaellambgelo/michaellambgelo.github.io
+    - project:
+      name: Spring Boot demo
+      url: https://github.com/michaellambgelo/demo
 
 # These are links to other websites outside of the blog that are not part of
 # the social links or github projects. Although they could be either of those
@@ -366,21 +359,21 @@ github_projects :
 #     - link :
 #       name : The Dereck
 #       url: https://thedereck.github.io
-external_links :
-  header : Self-hosted Services
-  links :
-    - link :
-      name : Status <img src="https://status.michaellamb.dev/api/badge/27/uptime/24"></img>
-      url : https://status.michaellamb.dev
-    - link :
-      name : Valheim dedicated server <img src="https://status.michaellamb.dev/api/badge/24/uptime/24"></img>
-      url : https://valheim.michaellamb.dev
-    - link :
-      name : Spring Boot demo <img src="https://status.michaellamb.dev/api/badge/10/uptime/24"></img>
-      url : https://demo.michaellamb.dev/swagger-ui/
-    - link :
-      name : Personal Link Hub <img src="https://status.michaellamb.dev/api/badge/33/uptime/24"></img>
-      url : https://link.michaellamb.dev
+external_links:
+  header: Self-hosted Services
+  links:
+    - link:
+      name: Status <img src="https://status.michaellamb.dev/api/badge/27/uptime/24"></img>
+      url: https://status.michaellamb.dev
+    - link:
+      name: Valheim dedicated server <img src="https://status.michaellamb.dev/api/badge/24/uptime/24"></img>
+      url: https://valheim.michaellamb.dev
+    - link:
+      name: Spring Boot demo <img src="https://status.michaellamb.dev/api/badge/10/uptime/24"></img>
+      url: https://demo.michaellamb.dev/swagger-ui/
+    - link:
+      name: Personal Link Hub <img src="https://status.michaellamb.dev/api/badge/33/uptime/24"></img>
+      url: https://link.michaellamb.dev
 
 # These are the Bootstrap settings. These Bootstrap settings will control both
 # the theme and responsive settings of this site.
@@ -415,14 +408,13 @@ external_links :
 #     enabled : true
 #     src : bootstrap.min.js
 bootstrap:
-  css : bootstrap.min.css
-  responsive :
-    enabled : true
-    css : bootstrap-responsive.min.css
-  js :
-    enabled : true
-    src : bootstrap.min.js
-
+  css: bootstrap.min.css
+  responsive:
+    enabled: true
+    css: bootstrap-responsive.min.css
+  js:
+    enabled: true
+    src: bootstrap.min.js
 
 # These are the configuration settings for the jQuery javascript. jQuery is
 # needed for responsive Bootstrap and for the filter.html file.
@@ -437,9 +429,8 @@ bootstrap:
 #   enabled : true
 #   src : jquery-1.9.1.min.js
 jquery:
-  enabled : true
-  src : jquery-1.9.1.min.js
-
+  enabled: true
+  src: jquery-1.9.1.min.js
 
 # Font Awesome includes many different fonts that are used throughout the
 # site. Although not required, the Font Awesome fonts make the website look
@@ -454,10 +445,9 @@ jquery:
 # font_awesome :
 #   enabled : true
 #   css : font-awesome.min.css
-font_awesome :
-  enabled : true
-  css : all.css
-
+font_awesome:
+  enabled: true
+  css: all.css
 
 # This section of the configuration determines how syntax highlighting is
 # configured and the css file to be used.
@@ -472,10 +462,9 @@ font_awesome :
 # syntax_highlighting :
 #   enabled : true
 #   css : syntax.css
-syntax_highlighting :
-  enabled : true
-  css : syntax.css
-
+syntax_highlighting:
+  enabled: true
+  css: syntax.css
 
 # This section of the configuration determines how the rss 2.0 xml file is
 # configured. The rss.xml is generated based upon the following settings,
@@ -525,21 +514,20 @@ syntax_highlighting :
 #   image :
 #     enabled : true
 #     image : https://www.gravatar.com/avatar/0f08df91055f27.png?s=200
-rss :
-  enabled : true
-  managing_editor :
-    enabled : true
-    managing_editor : michael@michaellamb.dev (Michael Lamb)
-  webmaster :
-    enabled : true
-    webmaster : michael@michaellamb.dev (Michael Lamb)
-  ttl :
-    enabled : true
-    ttl : 300
-  image :
-    enabled : false
-    image : false
-
+rss:
+  enabled: true
+  managing_editor:
+    enabled: true
+    managing_editor: michael@michaellamb.dev (Michael Lamb)
+  webmaster:
+    enabled: true
+    webmaster: michael@michaellamb.dev (Michael Lamb)
+  ttl:
+    enabled: true
+    ttl: 300
+  image:
+    enabled: false
+    image: false
 
 # This determines whether Disqus is enabled or disabled for the comments
 # on posts. You'll need to set up your own Disqus account for this to
@@ -558,11 +546,10 @@ rss :
 #   enabled : false
 #   shortname : TheDereck
 #   show_comment_count : false
-disqus :
-  enabled : false
-  shortname : myshortname
-  show_comment_count : true
-
+disqus:
+  enabled: false
+  shortname: myshortname
+  show_comment_count: true
 
 # This section determines whether to use Google Analytics to track site
 # visitors and statistics. In the future, other analytic engines will most
@@ -581,11 +568,11 @@ disqus :
 #   google_analytics :
 #     enabled : true
 #     tracking_id : UA-1234567
-analytics :
-  enabled : false
-  google_analytics :
-    enabled : false
+analytics:
+  enabled: false
+  google_analytics:
+    enabled: false
 
-twitter :
-  username : themichaellamb
+twitter:
+  username: themichaellamb
   card: summary
