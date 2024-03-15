@@ -78,3 +78,23 @@ Unless required by applicable law or agreed to in writing, software distributed 
 [syntax.css](https://github.com/mojombo/jekyll) by Tom Preston-Werner
 
 * The syntax.css is licensed under the MIT License - [http://opensource.org/licenses/mit-license.html](http://opensource.org/licenses/mit-license.html).
+
+# Categories
+
+[a11y](https://michaellamb.dev/filter.html?category=a11y)
+
+[cluster-computing](https://michaellamb.dev/filter.html?category=cluster-computing)
+
+[conference](https://michaellamb.dev/filter.html?category=cluster-computing)
+
+[distributed-systems](https://michaellamb.dev/distributed-systems/2022/08/30/redis-hackathon.html)
+
+[docker](https://michaellamb.dev/distributed-systems/2022/08/30/redis-hackathon.html)
+
+[golang](https://michaellamb.dev/distributed-systems/2022/08/30/redis-hackathon.html)
+
+[machine-intelligence](https://michaellamb.dev/filter.html?category=machine-intelligence)
+
+[social](https://michaellamb.dev/filter.html?category=social)
+
+[spring](https://michaellamb.dev/filter.html?category=spring)
