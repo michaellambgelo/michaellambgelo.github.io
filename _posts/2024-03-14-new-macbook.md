@@ -2,7 +2,7 @@
 layout : post
 title : New M3 MacBook Air && Ollama
 category : machine-intelligence
-image: "/seo/2023-12-29.png"
+image: "/seo/2024-03-14.png"
 ---
 
 I just got a new MacBook Air yesterday and I've been telling everyone. 
