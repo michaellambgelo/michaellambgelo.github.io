@@ -9,7 +9,7 @@ I just got a new MacBook Air yesterday and I've been telling everyone.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">just got an M3 MacBook Air and one of the first things I wanted to do was try out a LLM locally. it&#39;s pretty neat!</p>&mdash; Michael Lamb he/him (@themichaellamb) <a href="https://twitter.com/themichaellamb/status/1768105584136421428?ref_src=twsrc%5Etfw">March 14, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Here's what I've used a local LLM for so far!
+Here's how I've used a local LLM for so far!
 
 # Greetings from Ollamac -- a UI for interacting with private LLMs like yourself. Tell me the basic requirements of a desktop app developed for Mac OS!
 
