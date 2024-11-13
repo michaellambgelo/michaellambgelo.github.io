@@ -25,3 +25,43 @@
   font-size: larger;
   margin-bottom: 20px;
 }
+
+.bio-section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bio-section .well {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.bio-content {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.discord-embed-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 350px;
+  width: 100%;
+}
+
+.discord-embed-container iframe {
+  width: 100%;
+  min-width: 280px;
+  height: 400px;
+}
+
+@media (min-width: 768px) {
+  .bio-section {
+    padding: 30px;
+  }
+  
+  .discord-embed-container {
+    max-width: 400px;
+  }
+}

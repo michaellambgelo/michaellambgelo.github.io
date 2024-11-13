@@ -1,7 +1,7 @@
 {% if site.sections.brief_bio.enabled %}
 	{% assign section_brief_bio_html = null %}
 	{% capture section_brief_bio_html %}
-		<div class="well">
+		<div class="well bio-section">
 			{% if site.sections.brief_bio.image.enabled %}
 				<div class="thumbnail">
 					<img data-src="holder.js/200x200" alt="" src="{{ site.sections.brief_bio.image.url }}">
@@ -9,8 +9,7 @@
 			{% endif %}
 			
 			{% if site.sections.brief_bio.content.enabled %}
-				<br>
-				<div class="text-center">
+				<div class="bio-content">
 					{% include content/brief-bio.html %}
 				</div>
 			{% endif %}
