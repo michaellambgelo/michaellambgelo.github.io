@@ -1,8 +1,6 @@
 {
   "default": true,
-  "MD002": {
-    "level": 1
-  },
+  "MD002": false,
   "MD003": {
     "style": "atx"
   },
@@ -15,14 +13,30 @@
   "MD012": {
     "maximum": 1
   },
-  "MD013": false,
+  "MD013": {
+    "line_length": 120,
+    "code_blocks": false,
+    "tables": false
+  },
   "MD022": {
     "lines_above": 1,
     "lines_below": 1
   },
+  "MD024": {
+    "siblings_only": true
+  },
   "MD025": false,
+  "MD026": {
+    "punctuation": ".,;:!"
+  },
   "MD028": false,
   "MD029": false,
+  "MD030": {
+    "ul_single": 1,
+    "ol_single": 1,
+    "ul_multi": 1,
+    "ol_multi": 1
+  },
   "MD031": {
     "list_items": true
   },
