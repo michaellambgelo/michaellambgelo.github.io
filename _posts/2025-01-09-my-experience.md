@@ -57,12 +57,4 @@ I've employed Cascade to analyze and refactor aspects of this very blog site (mo
 
 I have a few ideas for things I'd like to create but haven't had the time, motivation, or resources to accomplish. With Cascade at my fingertips, I'm eager to build something new.
 
-## Maintenance Log
-
-### January 9, 2025
-
-- Updated Spring logo URL in Swagger UI posts from `spring-logo.svg` to `spring-2.svg` to match Spring's current branding
-  - Modified in `_posts/2022-03-01-spring-boot-swagger-ui.md`
-  - Modified in `_posts/2022-09-15-spring-boot-swagger-ui-redux.md`
-
 [autocoder]: https://github.com/ollama/ollama-autocoder

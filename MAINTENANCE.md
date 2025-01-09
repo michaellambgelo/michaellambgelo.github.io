@@ -146,6 +146,24 @@ This document tracks known issues, recommendations, and maintenance tasks for th
    - Moved `MAINTENANCE.md` to root directory
    - Improved formatting and organization
 
+1. Updated Spring logo URLs:
+
+   - Changed from `spring-logo.svg` to `spring-2.svg` in Swagger UI posts
+   - Modified in `_posts/2022-03-01-spring-boot-swagger-ui.md`
+   - Modified in `_posts/2022-09-15-spring-boot-swagger-ui-redux.md`
+
+1. Improved markdown formatting and linting:
+
+   - Updated `.markdownlint.json` with new rules and ignore patterns
+   - Added `scripts/fix_markdown.rb` to automatically fix common formatting issues
+   - Applied consistent formatting across all markdown files:
+     - Proper spacing around headers and lists
+     - Consistent code block formatting
+     - Normalized front matter spacing
+     - Fixed list indentation
+
+1. Moved maintenance log entries to MAINTENANCE.md and fixed formatting.
+
 _This section will be updated as changes are implemented._
 
 ---
