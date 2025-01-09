@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Get list of staged markdown files
+files=$(git diff --cached --name-only --diff-filter=d | grep '\.md$' || true)
+
+if [ -n "$files" ]; then
+    echo "Running markdownlint on staged markdown files..."
+    # Run markdownlint-cli2 on staged files
+    markdownlint-cli2 $files || {
+        echo "❌ Markdown linting failed. Please fix the issues and try again."
+        exit 1
+    }
+fi
+
+# If we got here, all checks passed
+exit 0
