@@ -1,7 +1,9 @@
 ---
+
 layout : post
 title : Let's Expire Password Expiry
 category : social
+
 image: "/seo/2023-08-12.png"
 ---
 
@@ -33,7 +35,7 @@ Lorrie Cranor, ACM and IEEE fellow & Chief Technologist at FTC (2016-2017), wrot
 
 In a research article, the Microsoft Identity Protection Team identifies password expiry as an "anti-pattern" (a practice which is believed to solve a problem but in fact does not).
 
-> Mandated password changes are a long-standing security practice, but current research strongly indicates that password expiration has a negative effect. Experiments have shown that users do not choose a new independent password; rather, they choose an update of the old one. There is evidence to suggest that users who are required to change their passwords frequently select weaker passwords to begin with and then change them in predictable ways that attackers can guess easily. 
+> Mandated password changes are a long-standing security practice, but current research strongly indicates that password expiration has a negative effect. Experiments have shown that users do not choose a new independent password; rather, they choose an update of the old one. There is evidence to suggest that users who are required to change their passwords frequently select weaker passwords to begin with and then change them in predictable ways that attackers can guess easily.
 >
 > One study at the University of North Carolina found that 17% of new passwords could be guessed given the old one in at most 5 tries, and almost 50% in a few seconds of un-throttled guessing. Furthermore, cyber criminals generally exploit stolen passwords immediately.
 
@@ -43,34 +45,34 @@ In a research article, the Microsoft Identity Protection Team identifies passwor
 >
 > "If I eliminate passwords and use any form of biometrics, it's much faster and the experience is so much better."
 
-Microsoft is moving towards a hybrid mode of work and, to support that shift, it's making a push towards a Zero Trust network design, which assumes the network has been breached, that the network extends beyond the corporate firewall, and caters to BYOD devices that could be used at home for work or at work for personal communications. 
+Microsoft is moving towards a hybrid mode of work and, to support that shift, it's making a push towards a Zero Trust network design, which assumes the network has been breached, that the network extends beyond the corporate firewall, and caters to BYOD devices that could be used at home for work or at work for personal communications.
 
 ## References
 
 [1] [NIST 800-63B Section 5.1.1.2 Memorized Secret Verifiers][NIST]
 
-[NIST]:https://pages.nist.gov/800-63-3/sp800-63b.html#sec5
+[NIST]:<<<<<<<<https://pages.nist.gov/800-63-3/sp800-63b.html#sec5>>>>>>>>
 
 [2] [PCI-DSS 4.0 Section 8.3.9][PCIDSS]
 
-[PCIDSS]:https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4-0-SAQ-A.pdf 
+[PCIDSS]:<<<<<<<<https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4-0-SAQ-A.pdf>>>>>>>>
 
 [3] [FTC Time to rethink mandatory password changes][FTC]
 
-[FTC]:https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2016/03/time-rethink-mandatory-password-changes 
+[FTC]:<<<<<<<<https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2016/03/time-rethink-mandatory-password-changes>>>>>>>>
 
 [4] [Microsoft Security baseline (FINAL) for Windows 10 v1903 and Windows Server v1903][msoft-secguide]
 
-[msoft-secguide]:https://learn.microsoft.com/en-us/archive/blogs/secguide/security-baseline-final-for-windows-10-v1903-and-windows-server-v1903
+[msoft-secguide]:<<<<<<<<https://learn.microsoft.com/en-us/archive/blogs/secguide/security-baseline-final-for-windows-10-v1903-and-windows-server-v1903>>>>>>>>
 
 [5] [Microsoft Password policy recommendations for Microsoft 365 passwords][m365]
 
-[m365]:https://learn.microsoft.com/en-us/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide#password-expiration-requirements-for-users
+[m365]:<<<<<<<<https://learn.microsoft.com/en-us/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide#password-expiration-requirements-for-users>>>>>>>>
 
 [6] [Microsoft Password Guidance][msoftpwd]
 
-[msoftpwd]:https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf
+[msoftpwd]:<<<<<<<<https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf>>>>>>>>
 
 [7] [Microsoft's CISO: Why we're trying to banish passwords forever][msoftciso]
 
-[msoftciso]:https://www.zdnet.com/article/microsofts-ciso-why-were-trying-to-banish-passwords-forever/
+[msoftciso]:<<<<<<<<https://www.zdnet.com/article/microsofts-ciso-why-were-trying-to-banish-passwords-forever/>>>>>>>>

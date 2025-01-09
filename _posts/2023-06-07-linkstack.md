@@ -1,7 +1,9 @@
 ---
+
 layout : post
 title : An overview of LinkStack
 category : social
+
 image : "/seo/2023-06-07.png"
 ---
 
@@ -35,11 +37,11 @@ LinkStack is written in PHP with the Laravel framework. Developers may contribut
 
 ![linkstack animated logo](https://raw.githubusercontent.com/LinkStackOrg/branding/main/logo/svg/logo_animated.svg)
 
-[1]:https://michaellamb.dev/cluster-computing/2021/03/25/cluster-computing.html
-[2]:https://michaellamb.dev/cluster-computing/2021/03/26/cluster-update.html
-[linkstack-app]:https://link.michaellamb.dev
-[linkstack]:https://linkstack.org/
-[linkstack-repo]:https://github.com/LinkStackOrg/LinkStack
-[linkstack-discord]:https://discord.com/invite/MwEYK73erE/
-[linkstack-mastodon]:https://mstdn.social/@linkstack
-[ghflow]:https://docs.github.com/en/get-started/quickstart/github-flow
+[1]:<<<<<<<<https://michaellamb.dev/cluster-computing/2021/03/25/cluster-computing.html>>>>>>>>
+[2]:<<<<<<<<https://michaellamb.dev/cluster-computing/2021/03/26/cluster-update.html>>>>>>>>
+[linkstack-app]:<<<<<<<<https://link.michaellamb.dev>>>>>>>>
+[linkstack]:<<<<<<<<https://linkstack.org/>>>>>>>>
+[linkstack-repo]:<<<<<<<<https://github.com/LinkStackOrg/LinkStack>>>>>>>>
+[linkstack-discord]:<<<<<<<<https://discord.com/invite/MwEYK73erE/>>>>>>>>
+[linkstack-mastodon]:<<<<<<<<https://mstdn.social/@linkstack>>>>>>>>
+[ghflow]:<<<<<<<<https://docs.github.com/en/get-started/quickstart/github-flow>>>>>>>>

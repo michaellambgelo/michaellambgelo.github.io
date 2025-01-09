@@ -1,7 +1,9 @@
 ---
+
 layout : post
 title : Error Handling
 category : golang
+
 image : "/seo/2021-10-04.png"
 ---
 
@@ -31,6 +33,7 @@ Review the following `go` packages for an example of returning an error. [Source
 `greetings.go`
 
 ```go
+
 package greetings
 
 import (
@@ -50,11 +53,13 @@ func Hello(name string) (string, error) {
     message := fmt.Sprintf("Hi, %v. Welcome!", name)
     return message, nil
 }
+
 ```
 
 `main.go`
 
 ```go
+
 package main
 
 import (
@@ -83,6 +88,7 @@ func main() {
     // to the console.
     fmt.Println(message)
 }
+
 ```
 
 ## Notes

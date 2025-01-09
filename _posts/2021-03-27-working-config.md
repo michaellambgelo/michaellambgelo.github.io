@@ -1,9 +1,12 @@
 ---
+
 layout: post
 title: Workspace Configuration
 category: cluster-computing
+
 image : "/seo/2021-03-27.png"
 ---
+
 ## Managing Remote Access
 
 Yesterday's post included a reminder that when setting up a new Pi it is important to change the default password of the `pi` user. In most distributed computing environments is it also best practice to create individual user accounts to manage access to the various nodes on the network.
@@ -19,23 +22,31 @@ I followed the steps outlined below with reference to [this guideline](https://w
 As the `pi` user I can set up a new user for myself.
 
 ```bash
+
 sudo adduser michael
+
 ```
 
 ```bash
+
 sudo usermod -a -G adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev,gpio,i2c,spi michael
+
 ```
 
 `michael` then has permission to act as a sudoer, so I finished the rest of my work on the node logged in as this user using `su` (swtich user).
 
 ```bash
+
 sudo su - michael
+
 ```
 
 ### 2. Finish `raspi-config` as new user
 
 ```bash
+
 sudo raspi-config
+
 ```
 
 `raspi-config` brings up an interactive menu. Here I set the hostname and timezone.
@@ -45,13 +56,17 @@ sudo raspi-config
 From my main computer I use `ssh-copy-id` which will install my public key onto the node.
 
 ```bash
+
 ssh-copy-id michael@node1
+
 ```
 
 The resulting output:
 
 ```bash
+
 Number of key(s) added:        1
+
 ```
 
 ### Result

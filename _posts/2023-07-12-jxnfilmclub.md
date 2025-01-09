@@ -1,7 +1,9 @@
 ---
+
 layout : post
 title : JXN Film Club - PODCAST REVIVAL
 category : social
+
 image: "/seo/2023-07-12.png"
 ---
 
@@ -13,7 +15,7 @@ If you've never listened to the podcast before, here's the last episode we recor
 
 <iframe src="https://podcasters.spotify.com/pod/show/jxnfilmclub/embed/episodes/Top-20-Breakdown-Brennan-White-e1j0dur/a-a803kva" height="102px" width="500" frameborder="0" scrolling="no"></iframe>
 
-## Are you on Discord?
+## Are you on Discord
 
 There is a chat and social app called Discord which was initially created for the gaming community. If you've ever used Slack or IRC, you're going to be familiar with the channel structure of Discord Servers. I have owned and maintained a personal Discord I use for development since 2017. You can join my server using the widget under my bio on this page.
 

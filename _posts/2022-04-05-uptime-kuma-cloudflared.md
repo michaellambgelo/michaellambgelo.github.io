@@ -1,7 +1,9 @@
 ---
+
 layout: post
 title: Uptime Kuma - cloudflared integration
 category: cluster-computing
+
 image : "/seo/2022-04-05.png"
 ---
 
@@ -28,8 +30,9 @@ Once installed, you can authenticate `cloudflared` into your Cloudflare account 
 
 1. Create a Tunnel with [these instructions](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/create-tunnel)
 2. Route traffic to that Tunnel:
-    - Via [public DNS records in Cloudflare](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/routing-to-tunnel/dns)
-    - Or via a [public hostname guided by a Cloudflare Load Balancer](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/routing-to-tunnel/lb)
-    - Or from [WARP client private traffic](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/configuration/private-networks)
 
-[pull-request]:https://github.com/louislam/uptime-kuma/pull/1427
+- Via [public DNS records in Cloudflare](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/routing-to-tunnel/dns)
+- Or via a [public hostname guided by a Cloudflare Load Balancer](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/routing-to-tunnel/lb)
+- Or from [WARP client private traffic](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/configuration/private-networks)
+
+[pull-request]:<<<<<<<<https://github.com/louislam/uptime-kuma/pull/1427>>>>>>>>

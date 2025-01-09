@@ -1,7 +1,9 @@
 ---
+
 layout : post
 title : Wearable Tech and Telehealth
 tags : feature
+
 image: "/seo/2023-07-07.png"
 ---
 
@@ -48,7 +50,8 @@ Watch on [Twitch](https://twitch.tv/cspiregaming) or join in on [Discord](https:
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3LOaJUKzS9V9MMIlMJJFj9?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-[article]:http://www.reflector-online.com/opinion/article_3bc9d08e-39f9-11e4-9509-001a4bcf6878.html
-[thesis]:https://egrove.olemiss.edu/hon_thesis/1607
+[article]: http://www.reflector-online.com/opinion/article_3bc9d08e-39f9-11e4-9509-001a4bcf6878.html
+
+[thesis]: https://egrove.olemiss.edu/hon_thesis/1607
 [article-pdf]:/docs/Apple%20Watch%20dares%20to%20enter%20world%20of%20wearable%20technology.pdf
 [thesis-pdf]:/docs/Wearables%20and%20Wearable%20Data%20in%20Tele-Health%20Applications.pdf

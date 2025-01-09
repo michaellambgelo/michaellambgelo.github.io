@@ -1,9 +1,12 @@
 ---
+
 layout: post
 title: Pi Cluster Update
 category: cluster-computing
+
 image : "/seo/2021-03-26.png"
 ---
+
 ## Pis on a Rack
 
 ![photo of bare metal pi cluster](/img/pi-cluster-bare-metal.png)
@@ -19,7 +22,9 @@ Using the [Raspberry Pi Imager](https://www.raspberrypi.org/blog/raspberry-pi-im
 The only additional step I took here was enabling SSH on each Pi by mounting the SD card and executing the following command (from Mac OS)
 
 ```bash
+
 touch /Volumes/boot/ssh
+
 ```
 
 If you don't already know what SSH is, there are [plenty of YouTube videos](https://www.youtube.com/watch?v=ORcvSkgdA58&ab_channel=Computerphile) to help you out. It's a common tool used to connect to computers, and the above command simply creates a file called `ssh` that the OS will look for to automatically enable SSH when the Pi nodes boot for the first time.
@@ -30,7 +35,9 @@ If you don't already know what SSH is, there are [plenty of YouTube videos](http
 I used `nmap` to figure out the IP addresses of the individual nodes.
 
 ```bash
+
 nmap -sT -p 22 192.168.1.0/24
+
 ```
 
 The arguments here specify TCP connections using port 22 within the given IP range.
@@ -38,12 +45,14 @@ The arguments here specify TCP connections using port 22 within the given IP ran
 From the report nmap provided I determined each node's dynamically-assigned IP address. I then assigned each node a static IP address so that they will always be accessible from predictable and known locations. I'm not very creative; my naming scheme was simply `node*` so my hostnames inventory looks like this:
 
 ```raw
+
 node1
 node2
 node3
 node4
 node5
 node6
+
 ```
 
 ## Security Side
@@ -55,6 +64,6 @@ The default user and password for Raspberry Pi OS is `pi` and `raspberry`.
 ## What's next
 
 - Ansible
-  - Installation
-  - Configuration
-  - Hello, world
+- Installation
+- Configuration
+- Hello, world

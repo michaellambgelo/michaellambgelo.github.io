@@ -1,8 +1,12 @@
 ---
+
 layout : post
 title : How I stream with OBS
+
 image : "/seo/2023-04-02.png"
+
 category: social
+
 ---
 
 ## What is OBS

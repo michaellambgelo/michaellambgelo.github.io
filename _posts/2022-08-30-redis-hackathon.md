@@ -1,8 +1,12 @@
 ---
+
 layout : post
 title : Redis Hackathon Submission
+
 image : "/seo/2022-08-30.png"
+
 category : distributed-systems
+
 ---
 
 I participated in a Redis Hackathon hosted on [Dev.to][dev.to] which required use of the Redis Stack. Anyone familiar with Redis knows it for its primary use case as a cache, with popular adoption as a primary database because of its ease-of-use and high developer happiness as part of the ecosystem's DX metric.
@@ -122,28 +126,28 @@ My code is not production ready but it's progress.
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5BZocbCgFBRjGHMwhzssbO?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
 <!-- docs -->
-[dev.to]:https://dev.to
-[skeleton-app]:https://github.com/redis-developer/redis-om-spring-skeleton-app
-[skeleton-app#repository]:https://github.com/redis-developer/redis-om-spring-skeleton-app#-the-repository
-[redis-stack]:https://redis.io/docs/stack/
-[stack-spring-tutorial]:https://redis.io/docs/stack/get-started/tutorials/stack-spring/
-[springdoc]:https://springdoc.org/migrating-from-springfox.html
+[dev.to]: https://dev.to
+[skeleton-app]: https://github.com/redis-developer/redis-om-spring-skeleton-app
+[skeleton-app#repository]: https://github.com/redis-developer/redis-om-spring-skeleton-app#-the-repository
+[redis-stack]: https://redis.io/docs/stack/
+[stack-spring-tutorial]: https://redis.io/docs/stack/get-started/tutorials/stack-spring/
+[springdoc]: https://springdoc.org/migrating-from-springfox.html
 <!-- commit shas -->
 <!-- 8/17 -->
-[a013eaac3177db02ccb9918f27d5e01d1016f3d0]:https://github.com/michaellambgelo/stackathon/commit/a013eaac3177db02ccb9918f27d5e01d1016f3d0
+[a013eaac3177db02ccb9918f27d5e01d1016f3d0]: https://github.com/michaellambgelo/stackathon/commit/a013eaac3177db02ccb9918f27d5e01d1016f3d0
 <!-- 8/20 -->
-[b396c77de5e795e8074d7fd50b5c8bfd294d6cab]:https://github.com/michaellambgelo/stackathon/commit/b396c77de5e795e8074d7fd50b5c8bfd294d6cab
+[b396c77de5e795e8074d7fd50b5c8bfd294d6cab]: https://github.com/michaellambgelo/stackathon/commit/b396c77de5e795e8074d7fd50b5c8bfd294d6cab
 <!-- 8/22 -->
-[fc68711d291160dac4dd39f3c285afaa8fdf0387]:https://github.com/michaellambgelo/stackathon/commit/fc68711d291160dac4dd39f3c285afaa8fdf0387
-[6de183fb46e2990f275eaea32879039c9e95d2cc]:https://github.com/michaellambgelo/stackathon/commit/6de183fb46e2990f275eaea32879039c9e95d2cc
-[c134d264139e4020173529890ec2babfb210d75b]:https://github.com/michaellambgelo/stackathon/commit/c134d264139e4020173529890ec2babfb210d75b
+[fc68711d291160dac4dd39f3c285afaa8fdf0387]: https://github.com/michaellambgelo/stackathon/commit/fc68711d291160dac4dd39f3c285afaa8fdf0387
+[6de183fb46e2990f275eaea32879039c9e95d2cc]: https://github.com/michaellambgelo/stackathon/commit/6de183fb46e2990f275eaea32879039c9e95d2cc
+[c134d264139e4020173529890ec2babfb210d75b]: https://github.com/michaellambgelo/stackathon/commit/c134d264139e4020173529890ec2babfb210d75b
 <!-- 8/23 -->
-[fae387b0f6a166aacd3e9bb829c120de4add3c01]:https://github.com/michaellambgelo/stackathon/commit/fae387b0f6a166aacd3e9bb829c120de4add3c01
-[12f46bc6f9919da4f10b7543e19c1ede0253a270]:https://github.com/michaellambgelo/stackathon/commit/12f46bc6f9919da4f10b7543e19c1ede0253a270
-[a8a39c4d5c56c4cae7b8bfe53ca66e556933707d]:https://github.com/michaellambgelo/stackathon/commit/a8a39c4d5c56c4cae7b8bfe53ca66e556933707d
-[fc69956ea1863d87069c9a106cb834c335a8aaba]:https://github.com/michaellambgelo/stackathon/commit/fc69956ea1863d87069c9a106cb834c335a8aaba
+[fae387b0f6a166aacd3e9bb829c120de4add3c01]: https://github.com/michaellambgelo/stackathon/commit/fae387b0f6a166aacd3e9bb829c120de4add3c01
+[12f46bc6f9919da4f10b7543e19c1ede0253a270]: https://github.com/michaellambgelo/stackathon/commit/12f46bc6f9919da4f10b7543e19c1ede0253a270
+[a8a39c4d5c56c4cae7b8bfe53ca66e556933707d]: https://github.com/michaellambgelo/stackathon/commit/a8a39c4d5c56c4cae7b8bfe53ca66e556933707d
+[fc69956ea1863d87069c9a106cb834c335a8aaba]: https://github.com/michaellambgelo/stackathon/commit/fc69956ea1863d87069c9a106cb834c335a8aaba
 <!-- 8/24 -->
-[0ae2657d51e8a8e1cb1e50eb38f7b3c32ad04a07]:https://github.com/michaellambgelo/stackathon/commit/0ae2657d51e8a8e1cb1e50eb38f7b3c32ad04a07
-[e9cfbb73508d43b399018c22a22c33a462e0e298]:https://github.com/michaellambgelo/stackathon/commit/e9cfbb73508d43b399018c22a22c33a462e0e298
-[25f2c603027790293b238d6c875aa19baeb247dc]:https://github.com/michaellambgelo/stackathon/commit/25f2c603027790293b238d6c875aa19baeb247dc
-[4469131638057b4fbc8f4b57e832b47cf07b6920]:https://github.com/michaellambgelo/stackathon/commit/4469131638057b4fbc8f4b57e832b47cf07b6920
+[0ae2657d51e8a8e1cb1e50eb38f7b3c32ad04a07]: https://github.com/michaellambgelo/stackathon/commit/0ae2657d51e8a8e1cb1e50eb38f7b3c32ad04a07
+[e9cfbb73508d43b399018c22a22c33a462e0e298]: https://github.com/michaellambgelo/stackathon/commit/e9cfbb73508d43b399018c22a22c33a462e0e298
+[25f2c603027790293b238d6c875aa19baeb247dc]: https://github.com/michaellambgelo/stackathon/commit/25f2c603027790293b238d6c875aa19baeb247dc
+[4469131638057b4fbc8f4b57e832b47cf07b6920]: https://github.com/michaellambgelo/stackathon/commit/4469131638057b4fbc8f4b57e832b47cf07b6920

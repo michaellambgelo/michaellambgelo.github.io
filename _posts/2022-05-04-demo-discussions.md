@@ -1,7 +1,9 @@
 ---
+
 layout: post
 title: GitHub Discussions - Spring Boot Demo App
 category: social
+
 image : "/seo/2022-05-04.png"
 ---
 
@@ -21,5 +23,5 @@ And when you're done, check out the repo! I've enabled Discussion on my [Spring 
 
 ## BE KIND ONLINE
 
-[gh]:https://github.com/michaellambgelo/demo/discussions/1
-[demo]:https://demo.michaellamb.dev/swagger-ui/
+[gh]: https://github.com/michaellambgelo/demo/discussions/1
+[demo]: https://demo.michaellamb.dev/swagger-ui/

@@ -1,7 +1,9 @@
 ---
+
 layout : post
 title : Getting Started with Go
 category: golang
+
 image : "/seo/2021-10-01.png"
 ---
 

@@ -1,7 +1,9 @@
 ---
+
 layout : post
 title : Trunk Based Development & More
 tag : feature
+
 image : "/seo/2022-09-07.png"
 ---
 
@@ -21,5 +23,5 @@ Birmingham’s premier IT event is back. And it means business. Network with the
 
 ## [Register Now][bb]
 
-[tbd]:https://trunkbaseddevelopment.com/
-[bb]:https://events.cspire.com/event/9998abf5-16ec-462f-a675-0c8a12696d52/summary
+[tbd]: https://trunkbaseddevelopment.com/
+[bb]: https://events.cspire.com/event/9998abf5-16ec-462f-a675-0c8a12696d52/summary

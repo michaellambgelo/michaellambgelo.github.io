@@ -1,8 +1,12 @@
 ---
+
 layout : post
 title : Go-Back-N Protocol
+
 image : "/seo/2022-02-16.png"
+
 category : distributed-systems
+
 ---
 
 ## An algorithm solving for a lossy network
@@ -70,6 +74,7 @@ The problem is that there is a chance this algorithm accidentally creates a port
 Here's how I'd rewrite it now:
 
 ```c++
+
 int randomPort(int n_port) //pick a random port
 {
     int val = n_port;
@@ -80,6 +85,7 @@ int randomPort(int n_port) //pick a random port
 
     return val;
 }
+
 ```
 
 If the return value would result in a reserved port number, the `while` loop would simply generate a new value until it finds one which satisfies the exit condition of the loop.
@@ -92,7 +98,7 @@ The `error` method provides a convenient way to fail fast by printing out a cust
 
 Command line arguments to the server configure how the server will connect to the emulator program, provided as part of the assignment as an executable with its own CLI. The client connects to the opposite send/receive ports to enable two-way messaging with the server. The filename argument specifies which file to use for logging messages.
 
-[repo]:https://github.com/michaellambgelo/DataComm/tree/master/PA2
+[repo]: https://github.com/michaellambgelo/DataComm/tree/master/PA2
 [makefileLink]: https://github.com/michaellambgelo/DataComm/blob/master/PA2/makefile
 [serverLink]: https://github.com/michaellambgelo/DataComm/blob/master/PA2/server.cpp
 [clientLink]: https://github.com/michaellambgelo/DataComm/blob/master/PA2/client.cpp
