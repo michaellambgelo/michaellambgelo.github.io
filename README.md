@@ -25,6 +25,15 @@ I want my blog to be accessible, but still have some of my fingerprints on it.
 
 If anything in my blog inspires you, I'd love to know about it. 
 
+## Documentation
+
+- [Maintenance Guide](MAINTENANCE.md) - Track site issues, improvements, and progress
+- [Post Template](_templates/post.md) - Template for creating new blog posts
+
+## Contributing
+
+Contributions are welcome! Please read the maintenance guide for current issues and improvements being tracked.
+
 ## Resources ##
 
 [run this project locally](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)

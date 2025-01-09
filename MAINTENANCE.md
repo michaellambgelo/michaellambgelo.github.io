@@ -1,6 +1,6 @@
 # Site Maintenance Documentation
 
-Last Updated: 2025-01-08
+Last Updated: 2025-01-09
 
 This document tracks known issues, recommendations, and maintenance tasks for the website.
 
@@ -117,6 +117,18 @@ This document tracks known issues, recommendations, and maintenance tasks for th
    - Integrated SEO image verification
    - Added markdown linting
    - Added front matter validation
+
+### 2025-01-09
+1. Improved template organization:
+   - Moved post template to dedicated `_templates` directory
+   - Updated config to exclude templates from build
+   - Added comprehensive template guidelines
+   - Fixed template visibility in navigation
+
+2. Enhanced documentation:
+   - Moved `MAINTENANCE.md` to root directory for better visibility
+   - Updated progress on all tracked issues
+   - Added links to documentation in README
 
 _This section will be updated as changes are implemented._
 
