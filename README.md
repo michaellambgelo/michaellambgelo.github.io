@@ -30,6 +30,22 @@ If anything in my blog inspires you, I'd love to know about it.
 - [Maintenance Guide](MAINTENANCE.md) - Track site issues, improvements, and progress
 - [Post Template](_templates/post.md) - Template for creating new blog posts
 
+## SEO Images
+
+Each post should have an associated SEO image in the `/seo` directory. The image filename should match the post date (e.g., `2025-01-09.png`).
+
+To verify SEO images for all posts:
+```bash
+# Run the verification script
+ruby scripts/verify_seo_images.rb
+
+# The script will:
+# 1. Check if all posts have an SEO image specified in front matter
+# 2. Verify that the specified images exist
+# 3. Check for the default fallback image (default.png)
+# 4. Report any missing or invalid images
+```
+
 ## Contributing
 
 Contributions are welcome! Please read the maintenance guide for current issues and improvements being tracked.
