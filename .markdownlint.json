@@ -20,14 +20,27 @@
     "lines_above": 1,
     "lines_below": 1
   },
+  "MD025": false,
+  "MD028": false,
+  "MD029": false,
   "MD031": {
     "list_items": true
   },
   "MD032": true,
   "MD033": false,
+  "MD034": false,
   "MD036": false,
   "MD040": true,
   "MD041": false,
   "MD042": true,
-  "MD047": true
+  "MD045": false,
+  "MD047": true,
+  "MD052": false,
+  "MD053": false,
+  "ignores": [
+    "README.md",
+    "MAINTENANCE.md",
+    "_templates/**/*.md",
+    "**/*instagram*.md"
+  ]
 }
