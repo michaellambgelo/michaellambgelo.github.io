@@ -46,6 +46,24 @@ ruby scripts/verify_seo_images.rb
 # 4. Report any missing or invalid images
 ```
 
+## Git Hooks
+
+This repository includes Git hooks to automate certain checks:
+
+1. Install the hooks:
+```bash
+# Make the install script executable
+chmod +x scripts/install-hooks.sh
+
+# Run the install script
+./scripts/install-hooks.sh
+```
+
+2. Pre-push hook:
+   - Automatically runs SEO image verification before each push
+   - Prevents pushing if any SEO images are missing
+   - Can be bypassed in emergencies with `git push --no-verify`
+
 ## Contributing
 
 Contributions are welcome! Please read the maintenance guide for current issues and improvements being tracked.

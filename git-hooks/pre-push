@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Run SEO image verification script
+echo "Running SEO image verification..."
+ruby scripts/verify_seo_images.rb
+result=$?
+
+if [ $result -ne 0 ]; then
+  echo "❌ SEO image verification failed. Please fix the issues before pushing."
+  exit 1
+fi
+
+echo "✅ SEO image verification passed."
+exit 0
