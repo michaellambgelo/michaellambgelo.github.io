@@ -53,6 +53,8 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - docs/
+  - _templates/
 
 # Replace the number with the default number of blog posts you want on each
 # page. A value of 0 will indicate that you don't want to paginate, and all
