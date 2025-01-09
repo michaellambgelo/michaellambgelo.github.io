@@ -1,6 +1,15 @@
 # gh-pages jekyll configuration
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-admin
+  - jekyll-paginate
+  - github-pages
+  - kramdown-parser-gfm
+
+# Encoding settings
+encoding: UTF-8
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # The following configuration items need set up specifically for your site
 #
@@ -30,12 +39,28 @@ image: "/seo/default.png"
 
 # The following is a list of files to exclude from inclusion in the
 # generated gh-pages website.
-exclude: [README.md, version.txt]
+exclude: 
+  - README.md
+  - version.txt
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 # Replace the number with the default number of blog posts you want on each
 # page. A value of 0 will indicate that you don't want to paginate, and all
 # blog posts will be on the index page.
-paginate: 2
+paginate: 5
+
+# Allow future posts to be built
+future: true
 
 # To put an alert or notice on every page served, change the appropriate value
 # below from false to the message you want displayed (alert : Alert message
