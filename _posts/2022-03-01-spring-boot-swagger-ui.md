@@ -1,7 +1,9 @@
 ---
+
 layout : post
 title : Adding Swagger UI to Spring Boot projects
 category : spring
+
 image : "/seo/2022-03-01.png"
 ---
 
@@ -9,7 +11,7 @@ Spring Boot is a powerful project from the Spring ecosystem which enables develo
 
 I have created a [Spring Boot demo project available on my GitHub](https://github.com/michaellambgelo/demo). I plan to use this project to demonstrate some tasks I perform regularly in Spring Boot.
 
-[![Spring Logo](https://spring.io/images/spring-logo.svg)](https://spring.io/projects/spring-boot)
+[![Spring Logo](https://spring.io/img/spring-2.svg)](https://spring.io/projects/spring-boot)
 
 ## Swagger UI
 
@@ -28,11 +30,15 @@ This configuration assumes an existing Spring Boot project and integrates io.spr
 Add the Springfox Spring Boot starter dependency.
 
 ```java
+
 <dependency>
     <groupId>io.springfox</groupId>
     <artifactId>springfox-boot-starter</artifactId>
+
     <version>3.0.0</version>
+
 </dependency>
+
 ```
 
 `springfox-boot-starter` provides the following artifacts from `io.springfox`:
@@ -50,8 +56,10 @@ Wherever your Spring Boot app starts is dependent on your project. In my demo, t
 In this file, only two annotations need to be added to the base class:
 
 ```java
+
 @EnableOpenApi
 @EnableSwagger2
+
 ```
 
 ## AppConfiguration.java
@@ -59,12 +67,14 @@ In this file, only two annotations need to be added to the base class:
 If it doesn't exist yet, create a new Java class called `AppConfiguration.java`. The class itself will be empty but it will have a few annotations that will enable Springfox to scan the application code and identify endpoints.
 
 ```java
+
 @Configuration
 @EnableWebMvc
 @ComponentScan("dev.michael.demo")
 @EnableOpenApi
 public class AppConfiguration {
 }
+
 ```
 
 ## SpringConfig.java
@@ -72,6 +82,7 @@ public class AppConfiguration {
 `SpringConfig.java` will implement the `WebMvcConfigurer` interface. It will override a couple of methods so that Spring Boot can serve Swagger UI alongside the Spring Boot app.
 
 ```java
+
 @Override
 public void addResourceHandlers(ResourceHandlerRegistry registry) {
 registry.
@@ -79,16 +90,19 @@ registry.
     .addResourceLocations("classpath:/META-INF/resources/webjars/springfox-swagger-ui/")
     .resourceChain(false);
 }
+
 ```
 
 `addResourceHandlers` will enable Spring Boot to find Swagger resources.
 
 ```java
+
 @Override
 public void addViewControllers(ViewControllerRegistry registry) {
 registry.addViewController("/swagger-ui/")
     .setViewName("forward:" + "/swagger-ui/index.html");
 }
+
 ```
 
 `addViewControllers` will enable Spring Boot to serve the main Swagger UI page.
