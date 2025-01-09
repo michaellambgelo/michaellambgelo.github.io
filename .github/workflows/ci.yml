@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.4'
+          bundler-cache: true
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Check Jekyll build
+        run: bundle exec jekyll build --safe
+
+      - name: Verify SEO images
+        run: ruby scripts/verify_seo_images.rb
+
+      - name: Markdown Lint
+        uses: DavidAnson/markdownlint-cli2-action@v11
+        with:
+          globs: |
+            **/*.md
+            !vendor/**/*.md
+            !_site/**/*.md
+
+      - name: Check front matter
+        run: |
+          bundle exec jekyll doctor
+          bundle exec jekyll build --strict_front_matter
