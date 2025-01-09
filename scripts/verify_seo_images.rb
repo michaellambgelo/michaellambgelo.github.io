@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# encoding: utf-8
 
 require 'yaml'
 require 'pathname'
@@ -18,10 +19,10 @@ def verify_seo_images
   # Scan all posts
   Dir.glob(File.join(posts_dir, '*.md')).each do |post|
     begin
-      content = File.read(post)
+      content = File.read(post, encoding: 'utf-8')
       # Extract YAML front matter
       if content =~ /\A(---\s*\n.*?\n?)^(---\s*$\n?)/m
-        front_matter = YAML.safe_load($1)
+        front_matter = YAML.safe_load($1, permitted_classes: [Time])
         
         if front_matter && front_matter['image']
           image_path = front_matter['image']
