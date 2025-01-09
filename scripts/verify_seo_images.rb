@@ -3,6 +3,7 @@
 
 require 'yaml'
 require 'pathname'
+require 'date'
 
 def verify_seo_images
   posts_dir = File.join(Dir.pwd, '_posts')
