@@ -15,6 +15,8 @@ He organizes meetups with Jackson Film Club, Jackson Devs, and C Spire Gaming ar
 Reach out by email if you're interested in connecting at one of these events!
 [michael@michaellamb.dev](mailto:michael@michaellamb.dev)
 
+### A note from Michael
+
 You'll find posts about a variety of topics at michaellamb.dev.
 I'm interested in exploring distributed systems both to educate myself and others.
 When this blog project started, I built and documented a Pi cluster as the initial posts.
@@ -77,6 +79,13 @@ chmod +x scripts/install-hooks.sh
    - Automatically runs SEO image verification before each push
    - Prevents pushing if any SEO images are missing
    - Can be bypassed in emergencies with `git push --no-verify`
+
+1. Pre-commit hook:
+
+   - Runs markdownlint on staged markdown files
+   - Ensures consistent markdown formatting
+   - Prevents commits if linting fails
+   - Can be bypassed with `git commit --no-verify`
 
 ## Contributing
 
