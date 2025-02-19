@@ -6,7 +6,7 @@ This is a template for creating new blog posts. Copy this file to the `_posts` d
 
 layout: post
 title: "Your Post Title Here"
-date: YYYY-MM-DD HH:MM:SS -0600
+date: YYYY-MM-DD
 category: category-name
 image: "/seo/YYYY-MM-DD.png"
 tags:
