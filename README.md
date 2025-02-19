@@ -1,11 +1,7 @@
 # michaellambgelo.github.io
-
-![uptime](https://status.michaellamb.dev/api/badge/8/uptime/24)
-![ping](https://status.michaellamb.dev/api/badge/8/ping/24)
-
 This is a tech & life blog written and maintained by Michael Lamb
 
-Available at <<<<https://michaellamb.dev>>>>
+Available at https://michaellamb.dev
 
 ## About
 
