@@ -34,4 +34,3 @@ The template features an About section which contains a contact form. For simpli
 Check out the repo [here](https://github.com/michaellambgelo/letterboxd-viewer) and feel free to fork and modify it to your needs. The README should have all the information you need to get started if you know how to poke around some code.
 
 ### [Open the Letterboxd Diary Viewer now](https://michaellambgelo.github.io/letterboxd-viewer/)
-
