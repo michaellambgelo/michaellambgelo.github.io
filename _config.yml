@@ -349,14 +349,14 @@ github_projects:
   header: Public Repositories
   projects:
     - project:
-      name: hello-go
-      url: https://github.com/michaellambgelo/hello-go
-    - project:
       name: michaellambgelo.github.io
       url: https://github.com/michaellambgelo/michaellambgelo.github.io
     - project:
-      name: Spring Boot demo
-      url: https://github.com/michaellambgelo/demo
+      name: discord-member-matchmaker
+      url: https://github.com/michaellambgelo/hello-go
+    - project:
+      name: Letterboxd Diary Viewer
+      url: https://michaellamb.dev/letterboxd-viewer/
 
 # These are links to other websites outside of the blog that are not part of
 # the social links or github projects. Although they could be either of those
