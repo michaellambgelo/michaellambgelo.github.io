@@ -31,7 +31,7 @@ The template features an About section which contains a contact form. For simpli
 
 ## Architecture
 
-![Architecture](/img/letterboxd-viewer-architecture.png)
+[![Architecture](/img/letterboxd-viewer-architecture.png)](/img/letterboxd-viewer-architecture.png)
 
 ## Links
 
