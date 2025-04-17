@@ -32,5 +32,6 @@
 		<link rel="icon" type="image/{{ site.favicon.remote.type }}" href="{{ site.favicon.remote.full_url }}" />
 	{% endif %}
 	
+	<script src="{{ site.url }}/js/grafana-faro.js"></script>
 {% endcapture %}
 {{ head_common_html | strip_newlines | remove:'	' }}
