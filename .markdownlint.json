@@ -10,6 +10,7 @@
   "MD007": {
     "indent": 2
   },
+  "MD009": false,
   "MD012": {
     "maximum": 1
   },
@@ -22,9 +23,7 @@
     "siblings_only": true
   },
   "MD025": false,
-  "MD026": {
-    "punctuation": ".,;:!"
-  },
+  "MD026": false,
   "MD028": false,
   "MD029": false,
   "MD030": {
