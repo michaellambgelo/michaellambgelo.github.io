@@ -53,7 +53,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - docs/
   - _templates/
 
 # Replace the number with the default number of blog posts you want on each
