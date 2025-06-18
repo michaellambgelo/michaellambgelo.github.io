@@ -27,9 +27,7 @@ Here's what I've purchased so far:
 | 6   | Raspberry Pi 4 Model B/4GB                         |                 [PiShop.us](https://www.pishop.us/product/raspberry-pi-4-model-b-4gb/)                  |   $55/node |
 | 6   | 32 GB SD cards                                     |                                                 various                                                 | < $10/card |
 | 1   | TP-Link Litewave 8 Port Gigabit Ethernet Switch    | [Amazon](https://www.amazon.com/gp/product/B086384H7C/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) |        $16 |
-
 | 1   | CAT 6 Ethernet Cable - 10 Pack (1.5 ft)            |   [Amazon](https://www.amazon.com/gp/product/B00GBBSX92/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1)   |        $13 |
-
 | 2   | AUKEY USB Charger 4 Ports                          |   [Amazon](https://www.amazon.com/gp/product/B084Z2DCPP/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1)   |        $13 |
 | 2   | USB Type C Cable, Anker [3-Pack, 6 ft]             |   [Amazon](https://www.amazon.com/gp/product/B07VZZ8LXC/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1)   |        $17 |
 
