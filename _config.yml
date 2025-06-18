@@ -323,7 +323,7 @@ social_links:
       enabled: true
       name: My CV
       font_awesome_icon: fas fa-file
-      url: https://michaellamb.dev/docs/MichaelLambResume.pdf
+      url: /docs/MichaelLambResume.pdf
 
 # These are a list of GitHub projects that the blog owner would like to
 # showcase. Although the intent is the projects showcased would be the
@@ -387,20 +387,15 @@ github_projects:
 #       name : The Dereck
 #       url: https://thedereck.github.io
 external_links:
-  header: Self-hosted Services
+  header: Link Hubs
   links:
     - link:
-      name: Status <img src="https://status.michaellamb.dev/api/badge/27/uptime/24"></img>
-      url: https://status.michaellamb.dev
+      name: Bit.ly
+      url: https://bit.ly/m/michaellamb
     - link:
-      name: Valheim dedicated server <img src="https://status.michaellamb.dev/api/badge/24/uptime/24"></img>
-      url: https://valheim.michaellamb.dev
-    - link:
-      name: Spring Boot demo <img src="https://status.michaellamb.dev/api/badge/10/uptime/24"></img>
-      url: https://demo.michaellamb.dev/swagger-ui/
-    - link:
-      name: Personal Link Hub <img src="https://status.michaellamb.dev/api/badge/33/uptime/24"></img>
-      url: https://link.michaellamb.dev
+      name: carrd.co
+      url: https://michaellamb.carrd.co
+
 
 # These are the Bootstrap settings. These Bootstrap settings will control both
 # the theme and responsive settings of this site.
