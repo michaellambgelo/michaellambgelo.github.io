@@ -13,7 +13,6 @@ After working with Grafana at my company, I decided to see how far the free acco
 
 ## What I get from Grafana Faro
 
-
 ![Grafana Faro dashboard for the blog application](/img/2025-06-18-blog-observability.png)
 
 This is the current view of the dashboard with metrics from the blog application I'm observing. It's activity since my last blog post. Grafana Faro is loaded on the client-side and is blocked by some ad-blockers automatically, yet I get to see how my page performs for an end user for the folks who access my page without one. 
@@ -21,7 +20,6 @@ This is the current view of the dashboard with metrics from the blog application
 Sometimes, users visit a website without an ad-blocker without even realizing it because they're using something like a social media app and it loads a web browser to keep a user in-app. I've noticed most sessions like this are generated from my LinkedIn post advertising [last week's update]({% post_url 2025-06-13-lazy-sme %}).
 
 ## What it took to start using Faro
-
 
 Grafana makes it very easy to integrate Faro in a frontend app. Either through a web SDK or by importing it through the CDN, anyone can have observability in minutes. Most of the code below is generated within the Grafana dashboard, but I refactored it to work with my development flow. I have observability segmented by environment, so I can see how my website performs in dev and prod.
 
@@ -86,6 +84,8 @@ Grafana makes it very easy to integrate Faro in a frontend app. Either through a
 
 I don't really know.
 
-And in most ways, that's because I'm not a frontend developer -- because I *do* know that [Faro allows you to further instrument your application](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/) for error tracking and custom signals. But I _am_ a frontend developer, I just don't prefer it and so work on it begrudgingly.
+And in most ways, that's because I'm not a frontend developer -- but I *do* know that [Faro allows you to further instrument your application](https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/instrument/) for error tracking and custom signals. And yet, I *am* a frontend developer, I just don't prefer it and so work on it begrudgingly. Although I love me some HTML.
 
-In contexts where people care, Faro instrumentation enables things like conversion funnel analysis, feature usage, A/B testing, API response times, feature adoption, etc. If that's you and you want something to help you do that, I suggest Grafana Faro.
+In contexts where people care, Faro instrumentation enables things like conversion funnel analysis, feature usage tracking, A/B testing, monitoring and alerting longer API response times, feature adoption, etc. 
+
+If that's you and you want something to help you do that, I suggest Grafana Faro.
