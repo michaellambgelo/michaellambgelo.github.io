@@ -36,11 +36,6 @@ I think it's important to consider the contrasting goals of artificial intellige
 
 ### BSG Quotes for your consideration
 
-> There's a reason you separate military and the police. One fights the enemies of the state, the other serves and protects the people. When the military becomes both, then the enemies of the state tend to become the people. 
-> **Commander William Adama**
-
----
-
 > **Brother Cavil** In all your travels, have you ever seen a star go supernova?
 >
 > **Ellen Tigh** No.
@@ -50,3 +45,12 @@ I think it's important to consider the contrasting goals of artificial intellige
 > **Ellen Tigh** The five of us designed you to be as human as possible.
 >
 > **Brother Cavil** I don't want to be human! I want to see gamma rays! I want to hear X-rays! And I want to - I want to smell dark matter! Do you see the absurdity of what I am? I can't even express these things properly because I have to - I have to conceptualize complex ideas in this stupid limiting spoken language! But I know I want to reach out with something other than these prehensile paws! And feel the wind of a supernova flowing over me! I'm a machine! And I can know much more! I can experience so much more. But I'm trapped in this absurd body! And why? Because my five creators thought that God wanted it that way!
+
+---
+
+> There's a reason you separate military and the police. One fights the enemies of the state, the other serves and protects the people. When the military becomes both, then the enemies of the state tend to become the people. 
+> **Commander William Adama**
+
+---
+
+*The content of this post was edited by [Claude.ai](https://claude.ai)*
