@@ -8,23 +8,18 @@
   webSdkScript.src =
     "https://unpkg.com/@grafana/faro-web-sdk@^1.4.0/dist/bundle/faro-web-sdk.iife.js";
   webSdkScript.onload = () => {
-    // Configure Faro to use proxy for production, direct for development
+    // Configure Faro with different endpoints for production vs development
     const faroConfig = {
-      // Use proxy in production, direct endpoint in development
-      url: "https://michaellamb.dev/faro-proxy?app=blog",
+      // Use appropriate URL based on environment
+      url: isLocalDev 
+        ? "http://localhost:8787/faro-proxy?app=blog" // Local development proxy
+        : "https://michaellamb.dev/faro-proxy?app=blog", // Production proxy
       app: {
         name: "blog",
         version: "1.0.0",
         environment: isLocalDev ? "development" : "production",
       }
     };
-    
-    // Add transport configuration for local development to handle CORS
-    if (isLocalDev) {
-      faroConfig.transport = {
-        mode: 'no-cors'
-      };
-    }
     
     console.log('Faro config (blog):', faroConfig);
     
