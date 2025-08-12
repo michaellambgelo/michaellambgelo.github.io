@@ -26,7 +26,6 @@ If anything in my blog inspires you, I'd love to know about it.
 
 ## Documentation
 
-- [Maintenance Guide](MAINTENANCE.md) - Track site issues, improvements, and progress
 - [Post Template](_templates/post.md) - Template for creating new blog posts
 
 ## SEO Images
