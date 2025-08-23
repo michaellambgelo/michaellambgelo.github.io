@@ -351,11 +351,11 @@ github_projects:
       name: michaellambgelo.github.io
       url: https://github.com/michaellambgelo/michaellambgelo.github.io
     - project:
-      name: discord-member-matchmaker
-      url: https://github.com/michaellambgelo/hello-go
-    - project:
       name: Letterboxd Diary Viewer
-      url: https://michaellamb.dev/letterboxd-viewer/
+      url: https://github.com/michaellambgelo/letterboxd-viewer
+    - project:
+      name: grafana-faro-proxy
+      url: https://github.com/michaellambgelo/grafana-faro-proxy
 
 # These are links to other websites outside of the blog that are not part of
 # the social links or github projects. Although they could be either of those
