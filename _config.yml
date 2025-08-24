@@ -188,7 +188,7 @@ sections:
     enabled: true
     image:
       enabled: true
-      url: https://michaellamb.dev/img/bio.jpg
+      url: /img/bio.jpg
     content:
       enabled: true
     social_links:
