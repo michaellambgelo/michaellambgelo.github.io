@@ -80,13 +80,16 @@ Tags provide more specific classification within categories. **Each post should 
 ## Examples
 
 A post about setting up Kubernetes on your Raspberry Pi cluster:
+
 - Category: `infrastructure`
 - Tags: `kubernetes`, `raspberry-pi`, `cluster`, `tutorial`
 
 A post about a new personal project using Go:
+
 - Category: `projects`
 - Tags: `golang`, `web-app`, `feature`
 
 A post about community events:
+
 - Category: `community`
 - Tags: `event`, `learning`

@@ -4,16 +4,19 @@ This is a template for creating new blog posts. Copy this file to the `_posts` d
 
 > **Note:** Please refer to `_templates/taxonomy.md` for the complete list of standardized categories and tags.
 
+- A post should have one category
+- Include 2-5 relevant tags
+- Update the taxonomy document to add new categories or tags
+
 ---
 
 layout: post
 title: "Your Post Title Here"
 date: YYYY-MM-DD
-# Choose exactly ONE category from: development, infrastructure, machine-intelligence, community, projects, tutorials, reflections
 category: category-name
 image: "/seo/YYYY-MM-DD.png"
-# Include 2-5 relevant tags from the taxonomy document
 tags:
+
 - tag1
 - tag2
 - tag3
