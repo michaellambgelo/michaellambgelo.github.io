@@ -1,10 +1,16 @@
 ---
-
 layout : post
 title : Let's Expire Password Expiry
-category : social
-
+category : reflections
 image: "/seo/2023-08-12.png"
+
+tags:
+- opinion
+- feature
+
+redirect_from:
+- /social/2023/08/12/passwords.html
+
 ---
 
 Too many organizations employ outmoded policies related to passwords that have been shown to be ineffective in providing security, namely, the requirement to change a memorized token on a regular periodic basis. I would like to present here various references which demonstrate that the industry standards have evolved in the last decade and do not require users to change a memorized token on a regular basis. It is best practice to require a changed password when credentials are found in other systems (I know of some orgs that use the [haveibeenpwned API](https://haveibeenpwned.com/API/v3) to provide intelligence when credentials are found on the dark web) but expiry should not be required until there is evidence a compromise has occurred.

@@ -1,10 +1,17 @@
 ---
-
 layout : post
 title : MagnoliaJS 2023
-category : social
-
+category : community
 image: "/seo/2023-10-02.png"
+tags:
+- conference
+- community
+- event
+- learning
+
+redirect_from:
+- /social/2023/10/02/magnoliajs.html
+
 ---
 
 MagnoliaJS is the premier web development conference hosted in the capitol city of Mississippi at the Mississippi Museum of Art downtown. With all the stories of Mississippi as a failing state, it is important to recognize MagnoliaJS as an opportunity for people in the web industry to learn about the state from its storied museums. The art museum in particular is an excellent community center and venue for this conference, as well as being rich with catering options from close by!

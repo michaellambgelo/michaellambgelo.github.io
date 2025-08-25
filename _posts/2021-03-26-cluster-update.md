@@ -1,10 +1,16 @@
 ---
-
 layout: post
 title: Pi Cluster Update
-category: cluster-computing
-
+category: infrastructure
+tags:
+- raspberry-pi
+- cluster
+- tutorial
+- networking
 image : "/seo/2021-03-26.png"
+redirect_from:
+- /cluster-computing/2021/03/26/cluster-update.html
+
 ---
 
 ## Pis on a Rack

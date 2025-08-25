@@ -1,10 +1,16 @@
 ---
+layout: post
+title: Three Questions for ChatGPT
+category: development
+tags:
+- ai
+- chatgpt
+- machine-learning
+- opinion
+image: "/seo/2023-01-18.png"
+redirect_from:
+- /machine-intelligence/2023/01/18/chatgpt-three-questions.html
 
-layout : post
-title : Three Questions for ChatGPT
-category : machine-intelligence
-
-image : "/seo/2023-01-18.png"
 ---
 
 OpenAI currently runs ChatGPT for free at [chat.openai.com](https://chat.openai.com/chat). I've played around with it a bit and recently asked three questions. Those questions and ChatGPT's responses are logged here.

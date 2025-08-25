@@ -1,11 +1,19 @@
 ---
-
 layout: post
 title: "I built a custom Letterboxd diary viewer"
 date: 2025-02-21 
-category: Social
+category: development
+tags:
+- project
+- javascript
+- api
+- movies
+- web-design
 image: "/seo/2025-02-21.png"
 published: true
+
+redirect_from:
+- /social/2025/02/21/letterboxd-viewer.html
 
 ---
 

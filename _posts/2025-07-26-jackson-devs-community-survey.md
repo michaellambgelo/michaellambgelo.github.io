@@ -1,16 +1,17 @@
 ---
-
 layout: post
 title: "Jackson Area Web and App Developers Community Survey"
 date: 2025-07-26
-category: social
-image: "/seo/2025-07-26.png"
+category: community
 tags:
-
-- feature
-- community
-
+- meetup
+- survey
+- networking
+- local
 published: true
+
+redirect_from:
+- /social/2025/07/26/jackson-devs-community-survey.html
 
 ---
 

@@ -1,15 +1,23 @@
 ---
-
 layout: post
 title: "Using Cloudflare Workers to create a reverse proxy for Grafana Faro"
 date: 2025-08-08
-category: cloudflare
+category: infrastructure
+tags:
+- cloudflare
+- proxy
+- observability
+- grafana
+- javascript
 image: "/seo/2025-08-08.png"
 published: true
 
+redirect_from:
+- /cloudflare/2025/08/08/grafana-faro-proxy.html
+
 ---
 
-As I alluded to in [my original post discussing Grafana Faro](/social/2025/06/18/grafana-faro.html), ad-blockers and anti-tracking software can prevent my website from correctly sending telemetry to Grafana. My strategy to get around this is to proxy all Grafana Faro requests through a Cloudflare Worker. I created a proxy server which uses Cloudflare Workers environment secrets to keep the Grafana ingest tokens secure, allowing me to scale this proxy server for multiple apps. 
+As I alluded to in [my original post discussing Grafana Faro](/community/2025/06/18/grafana-faro.html), ad-blockers and anti-tracking software can prevent my website from correctly sending telemetry to Grafana. My strategy to get around this is to proxy all Grafana Faro requests through a Cloudflare Worker. I created a proxy server which uses Cloudflare Workers environment secrets to keep the Grafana ingest tokens secure, allowing me to scale this proxy server for multiple apps. 
 
 Here is the basic design:
 

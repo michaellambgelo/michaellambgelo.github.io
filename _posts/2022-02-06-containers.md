@@ -1,11 +1,15 @@
 ---
-
 layout : post
 title : Containers on k3s
-
 image : "/seo/2022-02-06.png"
+category : infrastructure
+tags:
 
-category : cluster-computing
+- kubernetes
+- raspberry-pi
+
+redirect_from:
+- /cluster-computing/2022/02/06/containers.html
 
 ---
 

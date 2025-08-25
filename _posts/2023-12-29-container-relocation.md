@@ -1,10 +1,15 @@
 ---
-
-layout : post
-title : Relocating a Docker Container
-category : docker
-
+layout: post
+title: Relocating a Docker Container
+category: infrastructure
 image: "/seo/2023-12-29.png"
+tags:
+- guide
+- docker
+- raspberry-pi
+redirect_from:
+- /docker/2023/12/29/container-relocation.html
+
 ---
 
 [Employing the help of ChatGPT](https://chat.openai.com/share/c944806a-de80-4384-908b-a4317108b638), I was able to successfuly relocate a Docker container from one host to another.

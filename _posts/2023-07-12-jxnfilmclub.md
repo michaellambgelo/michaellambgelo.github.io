@@ -1,10 +1,16 @@
 ---
-
-layout : post
-title : JXN Film Club - PODCAST REVIVAL
-category : social
-
+layout: post
+title: JXN Film Club - PODCAST REVIVAL
+category: community
+tags:
+- podcast
+- movies
+- local
+- event
 image: "/seo/2023-07-12.png"
+redirect_from:
+- /social/2023/07/12/jxnfilmclub.html
+
 ---
 
 As a film lover in Jackson, I've felt compelled to identify the people in my life who love talking about movies. A few years ago, the thought had crossed my mind to start a film club and try to create some community around this shared love. I asked some friends and started organizing events, and eventually was approached about starting a podcast. That's the brief history of Jackson Film Club (aka jxnfilmclub or JXN Film Club).

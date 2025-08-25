@@ -1,13 +1,19 @@
 ---
-
 layout : post
 title : Go-Back-N Protocol
-
 image : "/seo/2022-02-16.png"
+category : reflections
+tags: 
 
-category : distributed-systems
+- feature
+- learning
+
+redirect_from:
+- /distributed-systems/2022/02/16/go-back-n-protocol.html
 
 ---
+
+The content of this post is a feature of programming assignments from CSE 4153 Data Communication & Communication Network during my course of study at Mississippi State University. 
 
 ## An algorithm solving for a lossy network
 

@@ -1,11 +1,16 @@
 ---
-
 layout : post
 title : Spring Boot App as a Service
-
 image : "/seo/2022-08-17.png"
+category : development
+tags:
 
-category : spring
+- spring-boot
+- raspberry-pi
+- guide
+
+redirect_from:
+- /spring/2022/08/17/spring-boot-app-as-a-service.html
 
 ---
 

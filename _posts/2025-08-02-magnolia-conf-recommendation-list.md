@@ -1,12 +1,17 @@
 ---
-
 layout: post
 title: "JXN Recommendation List for Magnolia Conf"
 date: 2025-08-02
-category: social
+category: community
+tags:
+- conference
+- guide
+- recommendations
 image: "/seo/2025-08-02.png"
-
 published: true
+
+redirect_from:
+- /social/2025/08/02/magnolia-conf-recommendation-list.html
 
 ---
 

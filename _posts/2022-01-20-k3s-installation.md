@@ -1,11 +1,16 @@
 ---
-
 layout : post
 title : k3s Installation
-
 image : "/seo/2022-01-20.png"
-
-category : cluster-computing
+category: infrastructure
+tags:
+- kubernetes
+- k3s
+- raspberry-pi
+- cluster
+- tutorial
+redirect_from:
+- /cluster-computing/2022/01/20/k3s-installation.html
 
 ---
 

@@ -1,10 +1,16 @@
 ---
-
 layout : post
 title : Getting Started with Go
-category: golang
-
+category: development
+tags:
+- golang
+- tutorial
+- automation
+- git
 image : "/seo/2021-10-01.png"
+redirect_from:
+- /golang/2021/10/01/getting-started-with-go.html
+
 ---
 
 I'm working on some automation tasks and will be using golang to consume a RESTful API and generate reports on data. I've already had [vscode](https://code.visualstudio.com/) installed on my personal computer but I also had a few things to do to get my environment set up for learning and iterating. For my full-time job I work using Mac OS and my PC is a Windows machine for gaming; this is the first blog post I've written from my PC!

@@ -1,10 +1,18 @@
 ---
-
 layout : post
 title : Adding Swagger UI to Spring Boot projects
-category : spring
-
+category : development
 image : "/seo/2022-09-15.png"
+tags:
+
+- spring-boot
+- api
+- best-practices
+- tutorial
+
+redirect_from:
+- /spring/2022/09/15/spring-boot-swagger-ui-redux.html
+
 ---
 
 ### This post copies and updates text from a previous version

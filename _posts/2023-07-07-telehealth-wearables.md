@@ -1,10 +1,17 @@
 ---
-
 layout : post
 title : Wearable Tech and Telehealth
-tags : feature
-
 image: "/seo/2023-07-07.png"
+category: reflections
+tags:
+
+- community
+- review
+- opinion
+
+redirect_from:
+- /2023/07/telehealth-wearables.html
+
 ---
 
 Years ago, I was a contributor for the student newspaper *The Reflector* at Mississippi State University. I published articles under news, opinion, and life categories. In one particular opinion [article][article] ([pdf][article-pdf]) originally published in September, 2014, I am found invoking the famous "Websters Dictionary defines..." to discuss the innovation of the Apple Watch.  My opinion in the article was that the watch was fashion, and that Apple would fail miserably, and here I am now eating crow.

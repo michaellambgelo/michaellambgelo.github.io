@@ -1,11 +1,16 @@
 ---
-
 layout : post
 title : Introducing status.michaellamb.dev
-
 image : "/seo/2022-03-07.png"
+category : infrastructure
+tags:
 
-category : cluster-computing
+- docker
+- raspberry-pi	
+- monitoring	
+
+redirect_from:
+- /cluster-computing/2022/03/07/introducing-status_michaellamb_dev.html
 
 ---
 

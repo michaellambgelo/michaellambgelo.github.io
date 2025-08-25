@@ -1,11 +1,16 @@
 ---
-
 layout : post
 title : Docker Buildx and Platform-specific Images
-
 image : "/seo/2022-03-14.png"
+category : infrastructure
+tags:
 
-category : docker
+- docker
+- spring-boot
+- tutorial
+
+redirect_from:
+- /docker/2022/03/14/buildx-spring-boot.html
 
 ---
 
