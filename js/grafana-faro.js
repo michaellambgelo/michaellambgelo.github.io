@@ -13,7 +13,7 @@
       // Use appropriate URL based on environment
       url: isLocalDev 
         ? "http://localhost:8787/faro-proxy?app=blog" // Local development proxy
-        : "https://michaellamb.dev/faro-proxy?app=blog", // Production proxy
+        : "https://grafana.michaellamb.dev/faro-proxy?app=blog", // Production proxy
       app: {
         name: "blog",
         version: "1.0.0",
