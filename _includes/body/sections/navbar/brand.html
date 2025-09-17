@@ -1,5 +1,10 @@
 {% assign navbar_brand_html = null %}
 {% capture navbar_brand_html %}
-	<a class="brand" href="{{ site.url }}/"><strong>{{ site.brand | upcase }}</strong></a>
+	<a class="brand" href="{{ site.url }}/">	
+		{% if site.favicon.enabled and site.favicon.local.enabled %}
+		<img src="{{ site.url }}{{ site.favicon.local.partial_url }}" alt="{{ site.brand }}" style="height: 20px; width: 20px; margin-right: 8px; vertical-align: middle;">
+		{% endif %}
+		<strong>{{ site.brand | upcase }}</strong>
+	</a>
 {% endcapture %}
 {{ navbar_brand_html | strip_newlines | remove:'	' }}
