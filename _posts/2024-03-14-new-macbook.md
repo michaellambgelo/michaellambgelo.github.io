@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New M3 MacBook Air && Ollama
-category: development
+category: personal
 tags:
 - ai
 - machine-learning
