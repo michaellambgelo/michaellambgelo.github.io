@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% assign layout_newsletter_html = null %}
+{% capture layout_newsletter_html %}
+	<html lang="en">
+		{% include head/page.html %}
+		<body>
+			{% include body/sections/navbar.html %}
+			{% include body/sections/alerts_and_notices/site.html %}
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						{% include body/sections/header/page.html %}
+						{% include body/sections/alerts_and_notices/page.html %}
+						{{ content }}
+					</div>
+				</div>
+				{% include body/sections/footer.html %}
+			</div>
+			{% include body/sections/javascript.html %}
+		</body>
+
+		<!-- HTML Meta Tags -->
+		<title>{{ page.title }} - Michael Lamb Blog</title>
+		<meta name="description" content="Subscribe to the Michael Lamb newsletter for the latest tech posts, tutorials, and insights">
+
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://michaellamb.dev/newsletter.html">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="{{ page.title }} - Michael Lamb Blog">
+		<meta property="og:description" content="Subscribe to the Michael Lamb newsletter for the latest tech posts, tutorials, and insights">
+		<meta property="og:image" content="https://michaellamb.dev/seo/default.png">
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="twitter:domain" content="michaellamb.dev">
+		<meta property="twitter:url" content="https://michaellamb.dev/newsletter.html">
+		<meta name="twitter:title" content="{{ page.title }} - Michael Lamb Blog">
+		<meta name="twitter:description" content="Subscribe to the Michael Lamb newsletter for the latest tech posts, tutorials, and insights">
+		<meta name="twitter:image" content="https://michaellamb.dev/seo/default.png">
+
+		<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+			
+	</html>
+{% endcapture %}
+{{ layout_newsletter_html | remove:'	' }}
