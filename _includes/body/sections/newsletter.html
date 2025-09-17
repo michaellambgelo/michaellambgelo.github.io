@@ -1,0 +1,29 @@
+{% assign section_newsletter_html = null %}
+{% capture section_newsletter_html %}
+	<div class="row ghpb">
+		<div class="span12">
+			<div class="newsletter-container">
+				<h3 class="newsletter-title">Get updates from michaellamb.dev. Sign up for the newsletter.</h3>
+				
+				<form action="https://hakanai.io/campaign/33c130d9-115d-4297-9a4f-543ef77b3330/subscribe" method="get" class="newsletter-form">
+					<div class="row-fluid">
+						<div class="span8">
+							<input name="email" 
+								   autocomplete="email" 
+								   type="email" 
+								   placeholder="Your email" 
+								   class="newsletter-input"
+								   required>
+						</div>
+						<div class="span4">
+							<button type="submit" class="newsletter-button">
+								Subscribe
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+{% endcapture %}
+{{ section_newsletter_html | strip_newlines | remove:'	' }}
