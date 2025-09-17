@@ -9,7 +9,7 @@ tags:
 - networking
 - local
 published: true
-
+image: "/seo/2025-07-26.png"
 redirect_from:
 - /social/2025/07/26/jackson-devs-community-survey.html
 
