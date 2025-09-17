@@ -31,7 +31,7 @@ So, I will be spending time without social media apps on my phone.
 
 ## Inventory
 
-All social links on [michaellamb.dev](https://michaellamb.dev) are currently present on my phone, except for the Facebook app. All of those will be removed from my phone and I will only access them via desktop occasionally. 
+All social links listed on [michaellamb.dev](https://michaellamb.dev) are currently present on my phone, except for the Facebook app and LinkedIn because I'm crazy but not insane. All social apps will be removed from my phone and I will only access them via desktop occasionally. 
 
 - Discord
 - Threads
@@ -39,7 +39,7 @@ All social links on [michaellamb.dev](https://michaellamb.dev) are currently pre
 - Bluesky (including third-party clients)
 - YouTube
 
-There is only one exception I am making to social media apps on my mobile device: **Letterboxd**.
+There is only one exception I am making to social media apps on my mobile device: **Letterboxd**. If you know me, you might have just rolled your eyes.
 
 ## My reduction is targeting consumption
 
@@ -65,10 +65,10 @@ This idea was inspired by my friend and colleague, [**Jeana Smith**].(https://ww
 
 I've recently migrated the taxonomy of all blog posts on the site. 
 
-Categories are now simpler and more focused on the type of content I want to create. You can find categories in the navbar and the sidebar.
+Categories are now simpler and more focused on the type of content I want to create. You can find categories in the navbar and the sidebar (the sidebar is below the content and author bio on mobile).
 
 Tags are much more expanded and are featured only on the sidebar.
 
-Other than that, I hope you have a great day!
+Signing off now, I hope you have a great day!
 
 ### Thanks for reading
