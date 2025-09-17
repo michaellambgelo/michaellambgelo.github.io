@@ -1,11 +1,10 @@
 {% if site.navbar.tags.enabled and site.tags.size > 0 %}
 	{% assign navbar_dropdown_tags_html = null %}
 	{% capture navbar_dropdown_tags_html %}
-
-		{% assign navbar_tag_name = null %}
+		{% assign navbar_tag_names = null %}
 		{% capture navbar_tag_names %}
-			{% for t in site.tags %}
-				{{ t[0] | replace: ' ', '___' }}
+			{% for navbar_t in site.tags %}
+				{{ navbar_t[0] | replace: ' ', '___' }}
 			{% endfor %}
 		{% endcapture %}
 
@@ -19,62 +18,57 @@
 			{{ navbar_sorted_tag_names | number_of_words }}
 		{% endcapture %}
 
-		<ul class="nav pull-left">
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					{% if site.font_awesome.enabled %}
-						<i class="fas fa-tags"></i> 
-					{% endif %}
-					Tags 
-					<b class="caret"></b>
-				</a>
-				<ul class="dropdown-menu">
-					{% assign navbar_prev_tag = '' %}
-					{% for navbar_tag_i in (1..navbar_number_of_tags) %}
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				{% if site.font_awesome.enabled %}
+					<i class="fas fa-tags"></i> 
+				{% endif %}
+				Tags 
+				<b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu">
+				{% assign navbar_prev_tag = '' %}
+				{% for navbar_tag_i in (1..navbar_number_of_tags) %}
 
-						{% assign navbar_tag = null %}
-						{% capture navbar_tag %}{{ navbar_sorted_tag_names | truncatewords:navbar_tag_i | remove:'...' | split:' ' | last | downcase }}{% endcapture %}
+					{% assign navbar_tag = null %}
+					{% capture navbar_tag %}{{ navbar_sorted_tag_names | truncatewords:navbar_tag_i | remove:'...' | split:' ' | last | downcase | capitalize }}{% endcapture %}
 
-						{% if navbar_prev_tag != navbar_tag %}
-							{% assign navbar_prev_tag = navbar_tag %}
-							<li class="dropdown-submenu">
-								<a tabindex="-1" href="#">
-									{% if site.font_awesome.enabled %}
-										<i class="fas fa-tag"></i> 
-									{% endif %}
-									{{ navbar_tag | replace: '___', ' ' }} 
-								</a>
-								<ul class="dropdown-menu">
-									{% for navbar_tags_p in site.posts %}
+					{% if navbar_prev_tag != navbar_tag %}
+						{% assign navbar_prev_tag = navbar_tag %}
+						<li class="dropdown-submenu">
+							<a tabindex="-1" href="#">
+								{% if site.font_awesome.enabled %}
+									<i class="fas fa-tag"></i> 
+								{% endif %}
+								{{ navbar_tag | replace: '___', ' ' }} 
+							</a>
+							<ul class="dropdown-menu">
+								{% for navbar_tag_p in site.posts %}
 
-										{% assign navbar_tags_p_match = false %}
-										{% for navbar_tags_p_tag in navbar_tags_p.tags %}
-											{% assign navbar_tags_p_tag_name = null %}
-											{% capture navbar_tags_p_tag_name %}{{ navbar_tags_p_tag | replace: ' ', '___' | downcase }}{% endcapture %}
-
-											{% if navbar_tags_p_tag_name == navbar_tag %}
-												{% if navbar_tags_p_match == false %}
-													{% assign navbar_tags_p_match = true %}
-													<li>
-														<a href="{{ site.url }}{{ navbar_tags_p.url }}">
-															{% if site.font_awesome.enabled %}
-																<i class="fas fa-pencil-alt"></i> 
-															{% endif %}
-															{{ navbar_tags_p.title }}
-														</a>
-													</li>
-												{% endif %}
-											{% endif %}
+									{% assign navbar_tag_p_tags = null %}
+									{% capture navbar_tag_p_tags %}
+										{% for navbar_tag_p_tag in navbar_tag_p.tags %}
+											{{ navbar_tag_p_tag | replace: ' ', '___' | downcase | capitalize }}
 										{% endfor %}
-									{% endfor %}
-								</ul>
-							</li>
+									{% endcapture %}
 
-						{% endif %}
-					{% endfor %}
-				</ul>
-			</li>
-		</ul>
+									{% if navbar_tag_p_tags contains navbar_tag %}
+										<li>
+											<a href="{{ site.url }}{{ navbar_tag_p.url }}">
+												{% if site.font_awesome.enabled %}
+													<i class="fas fa-pencil-alt"></i> 
+												{% endif %}
+												{{ navbar_tag_p.title }}
+											</a>
+										</li>
+									{% endif %}
+								{% endfor %}
+							</ul>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</li>
 	{% endcapture %}
 	{{ navbar_dropdown_tags_html | strip_newlines | remove:'	' }}
 {% endif %}

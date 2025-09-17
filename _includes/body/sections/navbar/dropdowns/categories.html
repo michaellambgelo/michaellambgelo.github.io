@@ -18,55 +18,53 @@
 			{{ navbar_sorted_category_names | number_of_words }}
 		{% endcapture %}
 
-		<ul class="nav pull-left">
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					{% if site.font_awesome.enabled %}
-						<i class="fas fa-folder"></i> 
-					{% endif %}
-					Categories 
-					<b class="caret"></b>
-				</a>
-				<ul class="dropdown-menu">
-					{% assign navbar_prev_category = '' %}
-					{% for navbar_category_i in (1..navbar_number_of_categories) %}
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				{% if site.font_awesome.enabled %}
+					<i class="fas fa-folder"></i> 
+				{% endif %}
+				Categories 
+				<b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu">
+				{% assign navbar_prev_category = '' %}
+				{% for navbar_category_i in (1..navbar_number_of_categories) %}
 
-						{% assign navbar_category = null %}
-						{% capture navbar_category %}{{ navbar_sorted_category_names | truncatewords:navbar_category_i | remove:'...' | split:' ' | last | downcase | capitalize }}{% endcapture %}
+					{% assign navbar_category = null %}
+					{% capture navbar_category %}{{ navbar_sorted_category_names | truncatewords:navbar_category_i | remove:'...' | split:' ' | last | downcase | capitalize }}{% endcapture %}
 
-						{% if navbar_prev_category != navbar_category %}
-							{% assign navbar_prev_category = navbar_category %}
-							<li class="dropdown-submenu">
-								<a tabindex="-1" href="#">
-									{% if site.font_awesome.enabled %}
-										<i class="fas fa-folder-open"></i> 
+					{% if navbar_prev_category != navbar_category %}
+						{% assign navbar_prev_category = navbar_category %}
+						<li class="dropdown-submenu">
+							<a tabindex="-1" href="#">
+								{% if site.font_awesome.enabled %}
+									<i class="fas fa-folder-open"></i> 
+								{% endif %}
+								{{ navbar_category | replace: '___', ' ' }} 
+							</a>
+							<ul class="dropdown-menu">
+								{% for navbar_category_p in site.posts %}
+
+									{% assign navbar_category_p_category = null %}
+									{% capture navbar_category_p_category %}{{ navbar_category_p.category | replace: ' ', '___' | downcase | capitalize }}{% endcapture %}
+
+									{% if navbar_category_p_category == navbar_category %}
+										<li>
+											<a href="{{ site.url }}{{ navbar_category_p.url }}">
+												{% if site.font_awesome.enabled %}
+													<i class="fas fa-pencil-alt"></i> 
+												{% endif %}
+												{{ navbar_category_p.title }}
+											</a>
+										</li>
 									{% endif %}
-									{{ navbar_category | replace: '___', ' ' }} 
-								</a>
-								<ul class="dropdown-menu">
-									{% for navbar_category_p in site.posts %}
-
-										{% assign navbar_category_p_category = null %}
-										{% capture navbar_category_p_category %}{{ navbar_category_p.category | replace: ' ', '___' | downcase | capitalize }}{% endcapture %}
-
-										{% if navbar_category_p_category == navbar_category %}
-											<li>
-												<a href="{{ site.url }}{{ navbar_category_p.url }}">
-													{% if site.font_awesome.enabled %}
-														<i class="fas fa-pencil-alt"></i> 
-													{% endif %}
-													{{ navbar_category_p.title }}
-												</a>
-											</li>
-										{% endif %}
-									{% endfor %}
-								</ul>
-							</li>
-						{% endif %}
-					{% endfor %}
-				</ul>
-			</li>
-		</ul>
+								{% endfor %}
+							</ul>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</li>
 	{% endcapture %}
 	{{ navbar_dropdown_categories_html | strip_newlines | remove:'	' }}
 {% endif %}
