@@ -1,11 +1,13 @@
 ---
-
 layout : post
 title : Distributed Systems pt.0
 
 image : "/seo/2022-02-13.png"
 
-category : distributed-systems
+category : infrastructure
+
+redirect_from:
+- /distributed-systems/2022/02/13/distributed-systems-0.html
 
 ---
 

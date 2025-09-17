@@ -1,10 +1,16 @@
 ---
-
-layout : post
-title : MagnoliaJS 2023 - Recap
-category : conference
-
+layout: post
+title: MagnoliaJS 2023 - Recap
+category: community
+tags:
+- conference
+- javascript
+- event
+- learning
 image: "/seo/2023-10-19.png"
+redirect_from:
+- /conference/2023/10/19/magnoliajs-recap.html
+
 ---
 
 I recently attended MagnoliaJS, the premiere web dev conference in Mississippi. I'm lucky enough to be close, personal friends with both the founder and current organizers of the conference and was able to bring a group from C Spire to join in the event. The conference began on Tuesday, October 17 at the Mississippi Museum of Art, with a strong encouragement to create content. This blog post, this blog, and my social media presence were validated by Taylor Desseyn's first talk, and so I was doubly encouraged to share these notes so that others might be able to glean something from the time I spent in the company of web developers.

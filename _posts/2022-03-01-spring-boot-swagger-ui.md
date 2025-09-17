@@ -1,10 +1,18 @@
 ---
-
 layout : post
 title : Adding Swagger UI to Spring Boot projects
-category : spring
-
+category : development
 image : "/seo/2022-03-01.png"
+tags:
+
+- spring-boot
+- guide
+- learning
+- api
+
+redirect_from:
+- /spring/2022/03/01/spring-boot-swagger-ui.html
+
 ---
 
 Spring Boot is a powerful project from the Spring ecosystem which enables developers to maximize their leverage of Spring applications. Standalone projects can be generated at [start.spring.io](https://start.spring.io) with any other additional dependencies of Spring project included in just a few clicks.

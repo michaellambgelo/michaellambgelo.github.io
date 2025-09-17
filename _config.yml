@@ -6,6 +6,7 @@ plugins:
   - jekyll-paginate
   - github-pages
   - kramdown-parser-gfm
+  - jekyll-redirect-from
 
 # Encoding settings
 encoding: UTF-8
@@ -597,3 +598,9 @@ analytics:
 twitter:
   username: themichaellamb
   card: summary
+
+# Permalink structure - date-based but category-independent
+permalink: /:year/:month/:title/
+
+# Enable .html extension handling
+extensions: ['.html']

@@ -1,10 +1,17 @@
 ---
-
 layout: post
 title: Workspace Configuration
-category: cluster-computing
-
+category: infrastructure
+tags:
+- raspberry-pi
+- cluster
+- tutorial
+- ssh
+- security
 image : "/seo/2021-03-27.png"
+redirect_from:
+- /cluster-computing/2021/03/27/working-config.html
+
 ---
 
 ## Managing Remote Access

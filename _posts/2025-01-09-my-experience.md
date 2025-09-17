@@ -1,11 +1,15 @@
 ---
-
 layout: post
 title: "My experience with the Intelligence we have given machines"
 date: 2025-01-09
-category: machine-intelligence
-
+category: development
+tags:
+- machine-intelligence
+- personal
 image: "/seo/2025-01-09.png"
+redirect_from:
+- /machine-intelligence/2025/01/09/my-experience.html
+
 ---
 
 I have not posted a blog update since March when I announced that I had purchased an M3 MacBook Air.

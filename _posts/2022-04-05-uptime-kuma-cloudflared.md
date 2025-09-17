@@ -1,10 +1,16 @@
 ---
-
 layout: post
 title: Uptime Kuma - cloudflared integration
-category: cluster-computing
-
+category: infrastructure
+tags:
+- cloudflare
+- monitoring
+- tutorial
+- networking
 image : "/seo/2022-04-05.png"
+redirect_from:
+- /cluster-computing/2022/04/05/uptime-kuma-cloudflared.html
+
 ---
 
 Uptime Kuma, the project behind [status.michaellamb.dev](https://status.michaellamb.dev), recently merged a [pull request][pull-request] which adds an interesting ease-of-use feature: integration with Cloudflare's tunneling technology using `cloudflared`, a tunnel client which simplifies proxying requests from behind a firewall by leveraging the Cloudflare network.

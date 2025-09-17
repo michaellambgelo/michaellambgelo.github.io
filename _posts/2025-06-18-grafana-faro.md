@@ -1,12 +1,18 @@
 ---
-
 layout: post
 title: "Adding frontend observability to michaellamb.dev"
 date: 2025-06-18
-category: social
+category: infrastructure
+tags:
+- grafana
+- observability
+- tutorial
+- javascript
 image: "/seo/2025-06-18.png"
 published: true
 
+redirect_from:
+- /social/2025/06/18/grafana-faro.html
 ---
 
 After working with Grafana at my company, I decided to see how far the free accounts stretch. After all, I've got an internet domain and reasons to observe it, so why not use Grafana for observability?

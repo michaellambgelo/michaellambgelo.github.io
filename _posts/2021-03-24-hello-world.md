@@ -1,9 +1,14 @@
 ---
-
 layout : post
 title : Hello, world!
 image : "/seo/hello-world.png"
-tags: life-update
+category: personal
+tags:
+- life-update
+- introduction
+
+redirect_from:
+- /2021/03/hello-world.html
 
 ---
 

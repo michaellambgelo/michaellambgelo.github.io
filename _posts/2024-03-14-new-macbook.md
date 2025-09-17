@@ -1,10 +1,17 @@
 ---
-
-layout : post
-title : New M3 MacBook Air && Ollama
-category : machine-intelligence
-
+layout: post
+title: New M3 MacBook Air && Ollama
+category: personal
+tags:
+- ai
+- machine-learning
+- llm
+- apple
+- tools
 image: "/seo/2024-03-14.png"
+redirect_from:
+- /machine-intelligence/2024/03/14/new-macbook.html
+
 ---
 
 I just got a new MacBook Air yesterday and I've been telling everyone.

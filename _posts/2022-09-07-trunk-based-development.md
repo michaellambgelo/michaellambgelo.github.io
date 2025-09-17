@@ -1,10 +1,16 @@
 ---
-
 layout : post
 title : Trunk Based Development & More
-tag : feature
-
 image : "/seo/2022-09-07.png"
+category: projects
+tags:
+
+- guide
+- best-practices
+
+redirect_from:
+- /2022/09/trunk-based-development.html
+
 ---
 
 This overview of trunk based development was created for the Customer Applications team at C Spire. The information presented represents no proprietary systems or data, and this content uses [trunkbaseddevelopment.com][tbd] as a primary source. The presentation was recorded using Soapbox by Wistia.

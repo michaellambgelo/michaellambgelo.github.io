@@ -16,6 +16,9 @@ gem "minima", "~> 2.5"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
 
+# Pin ffi to a version compatible with RubyGems 3.1.6
+gem "ffi", "~> 1.15.5"
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.15.1"
@@ -23,6 +26,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-seo-tag"
   gem "kramdown-parser-gfm"
+  gem "jekyll-redirect-from"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -37,3 +41,5 @@ gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # Required for serving
 gem "webrick"
+
+gem 'jekyll-admin', group: :jekyll_plugins

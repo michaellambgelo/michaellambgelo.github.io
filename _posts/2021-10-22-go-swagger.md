@@ -1,10 +1,17 @@
 ---
-
 layout : post
 title : Swagger UI and Go
-category : golang
-
+category: development
+tags:
+- golang
+- swagger
+- api
+- documentation
+- tutorial
 image : "/seo/2021-10-22.png"
+redirect_from:
+- /golang/2021/10/22/go-swagger.html
+
 ---
 
 ## What is Swagger

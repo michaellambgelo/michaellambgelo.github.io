@@ -1,11 +1,18 @@
 ---
-
 layout : post
 title : How I stream with OBS
 
 image : "/seo/2023-04-02.png"
 
-category: social
+category: community
+tags:
+- streaming
+- twitch
+- tutorial
+- technology
+
+redirect_from:
+- /social/2023/04/02/obs-twitch.html
 
 ---
 

@@ -1,10 +1,17 @@
 ---
-
 layout: post
 title: Ansible Installation
-category: cluster-computing
-
+category: infrastructure
+tags:
+- ansible
+- raspberry-pi
+- cluster
+- tutorial
+- automation
 image : "/seo/2021-03-28.png"
+redirect_from:
+- /cluster-computing/2021/03/28/ansible-installation.html
+
 ---
 
 ## What is Ansible

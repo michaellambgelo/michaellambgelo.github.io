@@ -1,10 +1,16 @@
 ---
-
 layout : post
 title : Error Handling
-category : golang
-
+category: development
+tags:
+- golang
+- error-handling
+- tutorial
+- programming
 image : "/seo/2021-10-04.png"
+redirect_from:
+- /golang/2021/10/04/error-handling.html
+
 ---
 
 I am continuing to learn more about Go and its history.

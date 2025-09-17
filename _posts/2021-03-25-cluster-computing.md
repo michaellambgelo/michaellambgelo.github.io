@@ -1,10 +1,16 @@
 ---
-
 layout: post
 title: What I'm working on right now
-category: cluster-computing
-
+category: infrastructure
+tags:
+- raspberry-pi
+- cluster
+- kubernetes
+- ansible
 image : "/seo/2021-03-25.png"
+redirect_from:
+- /cluster-computing/2021/03/25/cluster-computing.html
+
 ---
 
 ## Welcome to my newly refabricated weblog
