@@ -57,7 +57,7 @@ In an effort to stay connected with friends, family, and community, I'd be honor
 
 [Want to subscribe?](/newsletter/)
 
-This idea was inspired by my friend and colleague, [**Jeana Smith**].(https://www.instagram.com/jeanachos/)
+This idea was inspired by my friend and colleague, [**Jeana Smith**](https://www.instagram.com/jeanachos/)
 
 [![idea](/img/2025-09-16-newsletter-idea.jpeg)](https://www.instagram.com/jeanachos/)
 
