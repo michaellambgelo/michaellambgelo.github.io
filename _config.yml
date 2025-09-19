@@ -387,14 +387,11 @@ github_projects:
 #       name : The Dereck
 #       url: https://thedereck.github.io
 external_links:
-  header: Link Hubs
+  header: External Links
   links:
     - link:
       name: Bit.ly
       url: https://bit.ly/m/michaellamb
-    - link:
-      name: carrd.co
-      url: https://michaellamb.carrd.co
 
 
 # These are the Bootstrap settings. These Bootstrap settings will control both
