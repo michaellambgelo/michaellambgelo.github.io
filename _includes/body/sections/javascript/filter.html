@@ -1,37 +1,32 @@
 {% assign javascript_tag_html = null %}
 {% capture javascript_tag_html %}
-	<script type="text/javascript">
-		var posts = [
-			{% for javascript_post in site.posts %}
-				{% if forloop.first %}
-					{
-				{% else %}
-					, {
-				{% endif %}
-						"title" : "{{ javascript_post.title | replace: '"', '\"' }}" , 
-						"subtitle" : "{{ javascript_post.subtitle | replace: '"', '\"' }}" , 
-						"author" : "{{ javascript_post.author | replace: '"', '\"' }}" , 
-						"description" : "{{ javascript_post.description | replace: '"', '\"' }}" , 
-						"url" : "{{ site.url }}{{ javascript_post.url | replace: '"', '\"' }}" , 
-						"date" : "{{ javascript_post.date | date_to_long_string | replace: '"', '\"' }}" , 
-						"category" : "{{ javascript_post.category | replace: ' ', '___' | capitalize | replace: '"', '\"' }}" , 
-						"tags" : 
-							[
-								{% for javascript_post_tag in javascript_post.tags %}
-									{% if forloop.first %}
-										"{{ javascript_post_tag | replace: ' ', '___' | replace: '"', '\"' | downcase }}"
-									{% else %}
-										, "{{ javascript_post_tag | replace: ' ', '___' | replace: '"', '\"' | downcase }}"
-									{% endif %}
-								{% endfor %}
-							]
-					}
-			{% endfor %}
-		];
+<script type="text/javascript">
+var posts = [
+{% for post in site.posts %}
+  {
+    "title": {{ post.title | jsonify }},
+    "subtitle": {{ post.subtitle | default: "" | jsonify }},
+    "author": {{ post.author | default: site.author | jsonify }},
+    "description": {{ post.description | default: "" | jsonify }},
+    "url": "{{ site.url }}{{ post.url }}",
+    "date": {{ post.date | date_to_long_string | jsonify }},
+    "category": "{{ post.category | default: '' | replace: ' ', '___' | capitalize }}",
+    "image": "{% if post.image %}{{ site.url }}{{ post.image }}{% endif %}",
+    "tags": [{% for tag in post.tags %}"{{ tag | replace: ' ', '___' | downcase }}"{% unless forloop.last %},{% endunless %}{% endfor %}]
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+];
 
 		var create_post_div = function(post) {
 			var post_div = '<div class="ghpb-post"><div class="well ghpb-well-outline">';
-			post_div = post_div + '<h2><a href="' + post.url + '">' + post.title + '</a></h2>';
+			
+			// Add SEO image if available
+			if (post.image && post.image.length > 0) {
+				post_div = post_div + '<div class="row"><div class="span2"><img src="' + post.image + '" class="img-rounded" style="width: 100%; max-width: 150px; height: auto;"></div><div class="span6">';
+				post_div = post_div + '<h2><a href="' + post.url + '">' + post.title + '</a></h2>';
+			} else {
+				post_div = post_div + '<h2><a href="' + post.url + '">' + post.title + '</a></h2>';
+			}
 
 			if (post.subtitle !== null && post.subtitle.length > 0) {
 				post_div = post_div + '<p>' + post.subtitle + '</p>';
@@ -39,6 +34,11 @@
 
 			if (post.description !== null && post.description.length > 0) {
 				post_div = post_div + '<p>&nbsp;</p><p>' + post.description + '</p>';
+			}
+			
+			// Close image column div if image was added
+			if (post.image && post.image.length > 0) {
+				post_div = post_div + '</div></div>';
 			}
 
 			post_div = post_div + '<br><div class="row">';
@@ -102,16 +102,23 @@
 			return post_div;
 		};
 
-		var requested_tag = null;
-		var url_tag_params = $(location).attr('href').match(/\?tag=.+/);
-		if (url_tag_params !== null) {
-			requested_tag = url_tag_params[0].split('&')[0].split('?tag=')[1];
-		}
+		// Improved URL parameter parsing
+		var getUrlParameter = function(name) {
+			name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+			var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+			var results = regex.exec(location.search);
+			return results === null ? null : decodeURIComponent(results[1].replace(/\+/g, ' '));
+		};
+		
+		var requested_tag = getUrlParameter('tag');
+		var requested_category = getUrlParameter('category');
 
-		var requested_category = null;
-		var url_category_params = $(location).attr('href').match(/\?category=.+/);
-		if (url_category_params !== null) {
-			requested_category = url_category_params[0].split('&')[0].split('?category=')[1];
+		// Debug logging
+		console.log('Posts array length:', posts.length);
+		console.log('Requested tag:', requested_tag);
+		console.log('Requested category:', requested_category);
+		if (posts.length > 0) {
+			console.log('Sample post:', posts[0]);
 		}
 
 		if (requested_tag === null && requested_category === null) {
@@ -119,28 +126,38 @@
 			$('div[name="filter-body"]').html('<p>A category or a tag must be supplied as a parameter in order to get a filtered list of posts.</p>');
 		} else if (requested_tag !== null) {
 			$('div.page-header > h1').append(' a tag of "' + requested_tag.replace(/___/g, ' ') + '"');
+			var matching_posts = 0;
 			for (var i = 0; i < posts.length; i++) {
 				if (posts[i].tags !== null) {
 					for (var j = 0; j < posts[i].tags.length; j++) {
-						if (posts[i].tags[j] === requested_tag) {
+						if (posts[i].tags[j].toLowerCase() === requested_tag.toLowerCase()) {
 							$('div[name="filter-body"]').append(create_post_div(posts[i]));
 							$('div[name="filter-body"]').append('<br><br>');
+							matching_posts++;
 							break;
 						}
 					}
 				}
 			}
+			if (matching_posts === 0) {
+				$('div[name="filter-body"]').html('<div class="alert alert-info"><strong>No posts found</strong><br>No posts were found with the tag "' + requested_tag.replace(/___/g, ' ') + '". <a href="{{ site.url }}">Browse all posts</a> or try a different filter.</div>');
+			}
 		} else {
 			$('div.page-header > h1').append(' a category of "' + requested_category.replace(/___/g, ' ') + '"');
+			var matching_posts = 0;
 			for (var i = 0; i < posts.length; i++) {
 				if (posts[i].category !== null) {
 					if (posts[i].category.toLowerCase() === requested_category.toLowerCase()) {
 						$('div[name="filter-body"]').append(create_post_div(posts[i]));
 						$('div[name="filter-body"]').append('<br><br>');
+						matching_posts++;
 					}
 				}
 			}
-		};
+			if (matching_posts === 0) {
+				$('div[name="filter-body"]').html('<div class="alert alert-info"><strong>No posts found</strong><br>No posts were found in the category "' + requested_category.replace(/___/g, ' ') + '". <a href="{{ site.url }}">Browse all posts</a> or try a different filter.</div>');
+			}
+		}
 	</script>
 {% endcapture %}
 {{ javascript_tag_html | strip_newlines | remove:'	' }}
