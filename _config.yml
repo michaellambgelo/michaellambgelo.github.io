@@ -241,7 +241,7 @@ navbar:
   social_links:
     enabled: false
   external_links:
-    enabled: false
+    enabled: true
 
 # The social links are links to various social networking sites. Although
 # these were originally added with the intent of for use with personal
