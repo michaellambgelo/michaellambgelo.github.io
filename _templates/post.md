@@ -14,7 +14,8 @@ This is a template for creating new blog posts.
 - Update the taxonomy document to add new categories or tags
 
 # Frontmatter template
-```
+
+```yaml
 ---
 
 layout: post
