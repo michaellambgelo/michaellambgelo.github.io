@@ -13,6 +13,8 @@ This is a template for creating new blog posts.
 - Include 2-5 relevant tags
 - Update the taxonomy document to add new categories or tags
 
+# Frontmatter template
+```
 ---
 
 layout: post
@@ -29,6 +31,7 @@ tags:
 published: true
 
 ---
+```
 
 Your post content here. Some guidelines:
 
