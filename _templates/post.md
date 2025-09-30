@@ -1,6 +1,11 @@
 # Post Template
 
-This is a template for creating new blog posts. Copy this file to the `_posts` directory and rename it following the format: `YYYY-MM-DD-title.md`.
+This is a template for creating new blog posts. 
+
+## Create a new post
+
+1. Copy this file to the `_posts` directory and rename it following the format: `YYYY-MM-DD-title.md`.
+2. **Alternatively**, the `jekyll-admin` gem provides a user-friendly admin panel can be used to create a new post. Start the jekyll server locally with `bundle exec jekyll serve` and use `http://localhost:4000/admin`
 
 > **Note:** Please refer to `_templates/taxonomy.md` for the complete list of standardized categories and tags.
 
