@@ -17,7 +17,7 @@ layout: post
 # What makes the comfort movie work
 In his video essay, Thomas Flight defines comfort films as a subjective category of movies that primarily bring joy and can be rewatched multiple times. He goes on to argue against the notion that films dealing with difficult themes are inherently more artistically credible than light-hearted ones. This is a foundational point to justify the video's exploration of comfort films. The entire video essay effectively serves as an extended argument and demonstration of why comfort films can possess just as much artistic intention and craft as more "serious" cinema.
 
-By discussing films like *Paterson*, *The Big Lebowski*, Wes Anderson's *Moonrise Kingdom* , Studio Ghibli's *Kiki's Delivery Service* , *Perfect Days*, *Good Morning* , and Jacques Tati's* My Uncle*, Thomas Flight provides concrete evidence of comfort films with unique artistic merits. He delves into specific cinematic qualities, such as *Paterson*'s anti-drama structure, *The Big Lebowski*'s intricate writing and parody elements, Wes Anderson's controlled compositions and storytelling style, Miyazaki's inventive worlds and hopeful storytelling, and Tati's focus on set design, blocking, and choreography for comedic effect.
+By discussing films like *Paterson*, *The Big Lebowski*, Wes Anderson's *Moonrise Kingdom*, Studio Ghibli's *Kiki's Delivery Service*, *Perfect Days*, *Good Morning*, and Jacques Tati's* My Uncle*, Thomas Flight provides concrete evidence of comfort films with unique artistic merits. He delves into specific cinematic qualities, such as *Paterson*'s anti-drama structure, *The Big Lebowski*'s intricate writing and parody elements, Wes Anderson's controlled compositions and storytelling style, Miyazaki's inventive worlds and hopeful storytelling, and Tati's focus on set design, blocking, and choreography for comedic effect.
 
 This is a particular approach to storytelling that allows filmmakers and audiences to explore deeper emotions and questions, and I am wholly grateful for the analysis provided by Thomas Flight. I have been watching him for a few years now and enjoy the way he discusses film and I feel that he is someone who loves the medium deeply.
 
@@ -40,3 +40,35 @@ While these films are intended to be thought-provoking and challenging, his defi
 Therefore, he would likely agree with me:
 
 *Being comfortable with a movie* can absolutely make it a personal comfort movie, despite not fitting the traditional "feel-good" genre. The key is the repeated viewing and the resulting familiarity. For "serious" films, rewatchability might stem from their depth and layers, allowing viewers to discover new nuances or appreciate the craft on subsequent viewings, even if the subject matter remains intense. The speaker mentions that his "stuff that stares directly into the void and the stuff I find kind of comforting sometimes overlaps," citing *Twin Peaks*  as a personal example of this phenomenon. This clearly indicates that a film doesn't need to be light-hearted to provide a form of comfort through repeated engagement.
+
+## My personal comfort movies
+
+![my most watched movies](/img/2025-09-30-most-watched.png)
+
+- 5 Ari Aster films
+- 3 Denis Villeneuve films
+- 2 Christopher Nolan films
+- Multiple entries with runtimes longer than 120 minutes
+- 4 comedy entries
+  - *But I'm a Cheerleader*
+  - *Hot Rod*
+  - *Barbie*
+  - *Mean Girls*
+- 7 horror entries
+  - *Midsommar*
+  - *Hereditary*
+  - *Sinners*
+  - *Munchausen*
+  - *Sunshine*
+  - *Portrait of God*
+  - *The Menu*
+
+## Conclusion
+
+The most striking revelation from examining my own viewing habits is the paradox that sits at the heart of Thomas Flight's argument: seven of my most-watched films are horror movies. *Midsommar*, *Hereditary*, *The Menu*, and *Sunshine* aren't exactly what most people would consider "comfort viewing," yet here they are, rewatched dozens of times alongside comedies like *Hot Rod* and *Barbie*.
+
+This paradox perfectly embodies Flight's insight that comfort doesn't necessarily mean "feel-good." When I return to Ari Aster's *Midsommar* for the fifth or the fiftieth time, I'm not seeking the warm embrace of a traditional comfort film — I'm finding solace in its meticulous craft, its hypnotic pacing, and yes, the familiarity of its horrors. The film's disturbing imagery becomes less shocking and more aesthetically appreciable with each viewing. Its ritualistic structure provides a strange kind of predictability that, paradoxically, comforts.
+
+The presence of multiple Denis Villeneuve and Christopher Nolan films in my rotation further supports this idea. These aren't light entertainments but dense, often challenging works that reward the kind of deep engagement Flight describes. *Dune*'s epic scope and *Tenet*'s temporal complexity become more satisfying, not less, through repetition.
+
+Perhaps this is the most radical aspect of Flight's analysis: it gives us permission to find comfort in complexity, beauty in darkness, and home in the most unexpected places. My comfort movies aren't an escape from intensity—they're a way of making peace with it, one viewing at a time. In a world that often demands we choose between "serious" art and "comfort" entertainment, Flight's framework suggests we don't have to choose at all. Sometimes the films that stare directly into the void are exactly the ones that help us feel less alone in the dark.
