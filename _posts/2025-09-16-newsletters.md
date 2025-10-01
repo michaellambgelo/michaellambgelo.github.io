@@ -1,7 +1,7 @@
 ---
 title: Now announcing michaellamb.dev as a newsletter
 layout: post
-date: 2025-09-16
+date: '2025-09-16'
 category: personal
 tags:
 - newsletters
@@ -9,10 +9,9 @@ tags:
 - social-media
 - digital-minimalism
 - email
-- blogging 
+- blogging
 - communication
 - indie-web
-
 image: "/seo/2025-09-16.png"
 published: true
 ---
@@ -33,21 +32,19 @@ So, I will be spending time without social media apps on my phone.
 
 All social links listed on [michaellamb.dev](https://michaellamb.dev) are currently present on my phone, except for the Facebook app and LinkedIn because I'm crazy but not insane. All social apps will be removed from my phone and I will only access them via desktop occasionally. 
 
-- Discord
 - Threads
 - Instagram
 - Bluesky (including third-party clients)
-- YouTube
 
-There is only one exception I am making to social media apps on my mobile device: **Letterboxd**. If you know me, you might have just rolled your eyes.
+There is one exception I am making to social media apps on my mobile device: **Letterboxd**. If you know me, you might have just rolled your eyes.
 
-## My reduction is targeting consumption
+## I am targeting reduced consumption by mobile device
 
-I am guilty of spending 30-45 minutes per day on Instagram alone. Threads is about the same. Discord is the worst. 
+I am guilty of spending 30-45 minutes per day on Instagram alone. Threads is about the same. 
 
 I use all these social media platforms on desktop, and will continue to do so in the ways that feel normal to me.
 
-It is much easier for me to focus on tasks at a desktop than it is on my mobile phone, and I find myself scrolling at all times of the day. 
+It is much easier for me to focus on tasks at a desktop than it is on my mobile phone, and I find myself scrolling at all times of the day. I'm less tempted to endlessly scroll a social media page and I tend to just go to those sites with the intention to post.
 
 Mobile social media apps will be removed from all of my mobile devices this week. I have decided to go without social apps for no specified period of time, but it will likely be a long while before I won't feel like I'm setting myself up for failure. 
 
