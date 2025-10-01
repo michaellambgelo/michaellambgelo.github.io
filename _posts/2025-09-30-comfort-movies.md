@@ -47,7 +47,7 @@ While these films are intended to be thought-provoking and challenging, his defi
 
 Therefore, he would likely agree with me:
 
-*Being comfortable with a movie* can absolutely make it a personal comfort movie, despite not fitting the traditional "feel-good" genre. The key is the repeated viewing and the resulting familiarity. For "serious" films, rewatchability might stem from their depth and layers, allowing viewers to discover new nuances or appreciate the craft on subsequent viewings, even if the subject matter remains intense. The speaker mentions that his "stuff that stares directly into the void and the stuff I find kind of comforting sometimes overlaps," citing *Twin Peaks*  as a personal example of this phenomenon. This clearly indicates that a film doesn't need to be light-hearted to provide a form of comfort through repeated engagement.
+*Being comfortable with a movie* can absolutely make it a personal comfort movie, despite not fitting the traditional "feel-good" genre. The key is the repeated viewing and the resulting familiarity. For "serious" films, rewatchability might stem from their depth and layers, allowing viewers to discover new nuances or appreciate the craft on subsequent viewings, even if the subject matter remains intense. Thomas Flight mentions that the "stuff that stares directly into the void and the stuff I find kind of comforting sometimes overlaps," citing *Twin Peaks*  as a personal example of this phenomenon. This clearly indicates that a film doesn't need to be light-hearted to provide a form of comfort through repeated engagement.
 
 ## My personal comfort movies
 
