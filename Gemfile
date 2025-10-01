@@ -42,4 +42,5 @@ gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 # Required for serving
 gem "webrick"
 
-gem 'jekyll-admin', group: :jekyll_plugins
+# Fix faraday retry warning
+gem "faraday-retry"
