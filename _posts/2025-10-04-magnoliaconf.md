@@ -38,7 +38,7 @@ Two full days of talks, community, and the best conference food ever. I'll be th
 
 ![michael lamb speaking at 2025 Magnolia Conf on the topic 'You Need a Static-site Blog'](/img/2025-10-04-magnoliaconf-speakercard.png)
 
-My talk will center on my experience writing and maintaing this blog at [blog.michaellamb.dev](https://blog.michaellamb.dev). If I can convince someone to create a blog (with or without static-site technology) then I will consider this talk a success.
+My talk will center on my experience writing and maintaining this blog at [blog.michaellamb.dev](https://blog.michaellamb.dev). If I can convince someone to create a blog (with or without static-site technology) then I will consider this talk a success.
 
 I'll be sharing my story on building my digital presence with a static-site generator to create a portable, maintainable hub for my personal brand and content. I'm not perfect at it, but maintaining a blog has taught me plenty and I'm looking forward to speaking about my insights.
 
