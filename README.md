@@ -27,6 +27,7 @@ If anything in my blog inspires you, I'd love to know about it.
 ## Documentation
 
 - [Post Template](_templates/post.md) - Template for creating new blog posts
+- [Taxonomy](_templates/taxonomy.md) - Guide for categories and tags
 
 ## SEO Images
 
