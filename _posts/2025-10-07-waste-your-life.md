@@ -6,10 +6,10 @@ tags:
 - life
 - philosophy
 - productivity
-
 published: true
 ---
 
+# "Don't Waste Your Life" 
 ## But How Do You Know It's a Waste?
 
 The problem with not wasting your life is that someone has to decide what counts as waste. Usually that someone is standing at a podium, or writing a book, or running a corporation, or—let's be honest—benefiting somehow from your anxiety about whether you're doing enough.
@@ -62,7 +62,7 @@ The village doctor tells him that old age is a terrible illness. The doctor resp
 
 The film doesn't argue against heaven. It just suggests: you're here now. The light is hitting the hillside now. The woman in the cellar is singing now. The turtle on its back needs turning over now.
 
-If that's waste, then waste me.
+If that's waste, then waste is sacred.
 
 ## The Metrics We Inherit
 
@@ -75,6 +75,27 @@ The people most worried about wasting their lives are rarely the ones enjoying t
 But meaning doesn't work like that. You can't arrive at it by following someone else's map. You have to risk the pathless places, the unproductive hours, the detours that lead nowhere but turned out to be somewhere after all.
 
 ## What Actually Matters
+
+In *The Wind Will Carry Us*, there's a conversation that happens in fragments, the engineer talking with the local doctor about life and death and what we're promised versus what we have:
+
+**Engineer:** Old age is a terrible illness.  
+**Doctor:** Yes, but there are worse illnesses. Death...  
+**Engineer:** Death?  
+**Doctor:** Yes. When you close your eyes on this world, this beauty, the wonders of nature and the generosity of God, it means you'll never be coming back.  
+**Engineer:** They say that the other world is more beautiful.  
+**Doctor:** But... who has come back from there to tell us if it's beautiful or not?
+
+Then the doctor quotes poetry, the kind that cuts through centuries:
+
+*"They tell me she is as beautiful as a houri from heaven!"*  
+*"Yet I say that the juice of the vine is better."*  
+*"Prefer the present to these fine promises."*  
+*"Even a drum sounds melodious from afar..."*  
+*"Prefer the present..."*
+
+This is the conversation that haunts me. Not because it's anti-religious—it's not, really. But because it refuses to let the promise of elsewhere justify absence here. The other world might be more beautiful. Fine. But you're in this one. The light is on these hills. The woman is singing in this cellar. The turtle is on its back on this road.
+
+Prefer the present.
 
 I think what actually matters is harder to measure and easier to miss. It's the quality of your attention. The integrity of your presence. Whether you loved the people in front of you. Whether you were curious about the world. Whether you let yourself be changed by beauty, or sorrow, or two films that had nothing to do with your goals.
 
