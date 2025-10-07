@@ -45,7 +45,7 @@ The watchlist sits on my phone like a second job. Films I should see, books I sh
 
 And yet: I will die having seen only a fraction of the films ever made. I will die having read only a sliver of what's been written. I will die with potential unrealized, languages unlearned, places unvisited, perfect versions of myself that never materialized.
 
-Unless waste isn't about what you failed to do. Unless waste is measuring yourself against these phantom obligations in the first place.
+Unless waste isn't about what you failed to do. Perhaps waste is measuring yourself against these phantom obligations in the first place.
 
 ## Enjoyed Hours Are Not Lost Hours
 
