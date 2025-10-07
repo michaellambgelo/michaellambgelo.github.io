@@ -19,7 +19,7 @@ The question itself is flawed because it sneaks in a values system through the b
 
 ## The Algebra of Enough
 
-I wasted four hours yesterday. At least, that's what I'd have to call it if I believed in waste. I watched two films back-to-back: *The Battle of Algiers*, a searing documentary-style chronicle of colonial violence and revolutionary resistance, and *The Wind Will Carry Us*, a slow Iranian meditation on life and death and the art of paying attention. Four hours I could have spent—what? Answering emails? Building something? Contributing?
+I wasted four hours yesterday. At least, that's what I'd have to call it if I believed in waste. I watched two films back-to-back: *The Battle of Algiers* (1966) directed by Gillo Pontecorvo, a searing documentary-style chronicle of colonial violence and revolutionary resistance, and *The Wind Will Carry Us* (1999), a slow Iranian meditation on life and death and the art of paying attention from director Abbas Kiarostami. Four hours I could have spent—what? Answering emails? Building something? Contributing?
 
 But here's what actually happened: I watched people fight for their freedom and die for it. I watched other people drink tea and wait for an old woman to die so they could film her funeral. I watched Pontecorvo's handheld urgency and Kiarostami's patient stillness. I watched war and peace, not in sequence, but as adjacent possibilities of human existence. I sat with the contrast until something in me shifted, some small recalibration of what matters.
 
@@ -53,7 +53,7 @@ Here's the whimsical truth: life isn't so serious that it can be wasted as long 
 
 I enjoyed those four hours. Not in a mindless way—I was paying attention, feeling things, thinking. But I enjoyed them in the sense that I was *there*, fully, not calculating their value or comparing them to what else I might have done.
 
-The Battle of Algiers showed me the cost of freedom. The Wind Will Carry Us showed me the art of waiting. Neither made me more productive. Neither advanced my career or my eternal soul's résumé. But I am different for having seen them, in small ways I couldn't articulate at a performance review or explain at heaven's gate.
+*The Battle of Algiers* showed me the cost of freedom. *The Wind Will Carry Us* showed me the art of waiting. Neither made me more productive. Neither advanced my career or my eternal soul's résumé. But I am different for having seen them, in small ways I couldn't articulate at a performance review or explain at heaven's gate.
 
 In Kiarostami's film, an engineer drives into a remote village, ostensibly for work, but really he's waiting. Waiting for an old woman to die so he can film the funeral rituals. He drives his SUV up winding roads, gets terrible cell reception on a hilltop, drinks milk from a woman in a cellar he never sees, talks to a gravedigger who recites poetry while working. Nothing happens, and everything happens. The film is about being there, about the texture of presence, about what you notice when you're not rushing toward the next thing.
 
