@@ -34,7 +34,7 @@ exclude:
 paginate: 5
 future: true
 alert: false
-notice: false
+notice: "michaellamb.dev is now available as an email newsletter. skip the algorithms and get new blog posts straight to your inbox!"
 favicon:
   enabled: true
   local:
