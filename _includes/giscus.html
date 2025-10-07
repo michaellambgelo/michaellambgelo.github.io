@@ -1,0 +1,36 @@
+{% comment %}
+Giscus Comments Integration
+Usage: {% include giscus.html %}
+Optional parameters:
+- term: Custom term for mapping (defaults to page.url)
+- mapping: Mapping type (defaults to "pathname" for single posts, "specific" for custom term)
+{% endcomment %}
+
+{% assign giscus_mapping = include.mapping | default: "pathname" %}
+{% assign giscus_term = include.term | default: page.url %}
+
+{% if giscus_mapping == "specific" %}
+	{% assign giscus_term_attr = 'data-term="' | append: giscus_term | append: '"' %}
+{% else %}
+	{% assign giscus_term_attr = '' %}
+{% endif %}
+
+<div id="giscus-comments" class="giscus-container" style="margin: 20px 0;">
+	<script src="https://giscus.app/client.js"
+		data-repo="michaellambgelo/michaellambgelo.github.io"
+		data-repo-id="MDEwOlJlcG9zaXRvcnkzNTExMDYyMTg="
+		data-category="Q&A"
+		data-category-id="MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyNzg5MjU0"
+		data-mapping="{{ giscus_mapping }}"
+		{{ giscus_term_attr }}
+		data-strict="0"
+		data-reactions-enabled="1"
+		data-emit-metadata="1"
+		data-input-position="top"
+		data-theme="preferred_color_scheme"
+		data-lang="en"
+		data-loading="lazy"
+		crossorigin="anonymous"
+		async>
+	</script>
+</div>
