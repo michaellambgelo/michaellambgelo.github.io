@@ -55,11 +55,7 @@ I enjoyed those four hours. Not in a mindless way—I was paying attention, feel
 
 *The Battle of Algiers* showed me the cost of freedom. *The Wind Will Carry Us* showed me the art of waiting. Neither made me more productive. Neither advanced my career or my eternal soul's résumé. But I am different for having seen them, in small ways I couldn't articulate at a performance review or explain at heaven's gate.
 
-In Kiarostami's film, an engineer drives into a remote village, ostensibly for work, but really he's waiting. Waiting for an old woman to die so he can film the funeral rituals. He drives his SUV up winding roads, gets terrible cell reception on a hilltop, drinks milk from a woman in a cellar he never sees, talks to a gravedigger who recites poetry while working. Nothing happens, and everything happens. The film is about being there, about the texture of presence, about what you notice when you're not rushing toward the next thing.
-
-The village doctor tells him that old age is a terrible illness. The doctor responds that death is worse—closing your eyes on this world, on beauty, on the wonders of nature, means never coming back. The engineer mentions the other world, the promised one, supposedly more beautiful. The doctor asks: who has returned to confirm this? He quotes poetry about preferring the present, about how even a drum sounds melodious from afar.
-
-The film doesn't argue against heaven. It just suggests: you're here now. The light is hitting the hillside now. The woman in the cellar is singing now. The turtle on its back needs turning over now.
+In Kiarostami's film, an engineer drives into a remote village, ostensibly for work, but really he's waiting. Waiting for an old woman to die so he can film the funeral rituals. He drives his SUV up winding roads, gets terrible cell reception unless he's on a hilltop, drinks milk in a cellar from a woman he never sees, and talks to a gravedigger who recites poetry while working. Nothing happens, and everything happens. The film is about being there, about the texture of presence, about what you notice when you're not rushing toward the next thing.
 
 If that's waste, then waste is sacred.
 
