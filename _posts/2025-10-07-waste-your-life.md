@@ -9,7 +9,6 @@ tags:
 published: true
 ---
 
-# "Don't Waste Your Life" 
 ## But How Do You Know It's a Waste?
 
 The problem with not wasting your life is that someone has to decide what counts as waste. Usually that someone is standing at a podium, or writing a book, or running a corporation, or—let's be honest—benefiting somehow from your anxiety about whether you're doing enough.
@@ -32,7 +31,7 @@ Only if you've already decided what my life is *for*.
 
 There's a certain type of religious messaging—let's not name names, but you know the one—that wraps ancient wisdom in the language of productivity. Don't waste your life on pleasure, on rest, on art that doesn't evangelize, on work that doesn't explicitly serve the mission. The mission, conveniently, looks a lot like showing up, signing up, giving up your time and money and energy to institutions that survive on your fear of insignificance.
 
-I'm not anti-Christian. I **am** anti-convenient. I'm suspicious when the path to eternal meaning happens to align perfectly with the needs of the contemporary American church, or the logic of late capitalism, or whatever power structure is currently selling you a solution to the problem of your own existence.
+I'm not anti-Christian. I'm anti-convenient. I'm suspicious when the path to eternal meaning happens to align perfectly with the needs of the contemporary American church, or the logic of late capitalism, or whatever power structure is currently selling you a solution to the problem of your own existence.
 
 When Jesus told people to leave their nets and follow him, he was asking them to abandon security, not find a better optimization strategy. When he praised Mary for sitting at his feet instead of helping Martha with dinner, he wasn't endorsing a productivity hack. He was saying: sometimes the correct use of time is to stop using it.
 
@@ -54,7 +53,7 @@ Here's the whimsical truth: life isn't so serious that it can be wasted as long 
 
 I enjoyed those four hours. Not in a mindless way—I was paying attention, feeling things, thinking. But I enjoyed them in the sense that I was *there*, fully, not calculating their value or comparing them to what else I might have done.
 
-*The Battle of Algiers* showed me the cost of freedom. *The Wind Will Carry Us* showed me the art of waiting. Neither made me more productive. Neither advanced my career or my eternal soul's résumé. But I am different for having seen them, in small ways I couldn't articulate at a performance review or explain at heaven's gate.
+The Battle of Algiers showed me the cost of freedom. The Wind Will Carry Us showed me the art of waiting. Neither made me more productive. Neither advanced my career or my eternal soul's résumé. But I am different for having seen them, in small ways I couldn't articulate at a performance review or explain at heaven's gate.
 
 In Kiarostami's film, an engineer drives into a remote village, ostensibly for work, but really he's waiting. Waiting for an old woman to die so he can film the funeral rituals. He drives his SUV up winding roads, gets terrible cell reception on a hilltop, drinks milk from a woman in a cellar he never sees, talks to a gravedigger who recites poetry while working. Nothing happens, and everything happens. The film is about being there, about the texture of presence, about what you notice when you're not rushing toward the next thing.
 
@@ -95,7 +94,7 @@ Then the doctor quotes poetry, the kind that cuts through centuries:
 
 This is the conversation that haunts me. Not because it's anti-religious—it's not, really. But because it refuses to let the promise of elsewhere justify absence here. The other world might be more beautiful. Fine. But you're in this one. The light is on these hills. The woman is singing in this cellar. The turtle is on its back on this road.
 
-Prefer the present.
+### Prefer the present.
 
 I think what actually matters is harder to measure and easier to miss. It's the quality of your attention. The integrity of your presence. Whether you loved the people in front of you. Whether you were curious about the world. Whether you let yourself be changed by beauty, or sorrow, or two films that had nothing to do with your goals.
 
