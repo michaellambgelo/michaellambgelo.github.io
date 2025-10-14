@@ -15,6 +15,7 @@ Categories represent the primary topic area of a post. **Each post must have exa
 | `projects` | Project showcases | For posts highlighting specific projects you've built |
 | `tutorials` | Step-by-step guides | For instructional content teaching specific skills or techniques |
 | `reflections` | Personal thoughts and updates | For more personal posts, life updates, and reflections |
+| `promotions` | Capitalism rocks 🤘 | Posts with content either self-promoting or from partner promotion |
 
 ## Tags
 
