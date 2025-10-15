@@ -85,6 +85,23 @@
 	text-decoration: none !important;
 }
 
+/* Shop Navigation Button */
+.shop-nav-btn {
+	background-color: #e91e63 !important;
+	color: white !important;
+	border-radius: 4px !important;
+	padding: 8px 16px !important;
+	margin: 6px 4px !important;
+	transition: background-color 0.2s !important;
+	text-decoration: none !important;
+}
+
+.shop-nav-btn:hover {
+	background-color: #c2185b !important;
+	color: white !important;
+	text-decoration: none !important;
+}
+
 /* Newsletter Page Styles */
 .newsletter-page .well {
 	background-color: #ffffff;
@@ -114,6 +131,11 @@
 	}
 
 	.newsletter-nav-btn {
+		padding: 6px 12px !important;
+		font-size: 14px !important;
+	}
+
+	.shop-nav-btn {
 		padding: 6px 12px !important;
 		font-size: 14px !important;
 	}

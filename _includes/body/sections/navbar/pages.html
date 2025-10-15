@@ -1,5 +1,11 @@
 {% assign navbar_pages_html = null %}
 {% capture navbar_pages_html %}
+	<!-- External Shop Link -->
+	<li class="pull-right">
+		<a href="https://shop.michaellamb.dev" class="shop-nav-btn" target="_blank">
+			🛍️ Shop
+		</a>
+	</li>
 	{% for pages_order in (0..100) %}
 		{% for pages_p in site.pages %}
 			{% if pages_p.order == pages_order %}
