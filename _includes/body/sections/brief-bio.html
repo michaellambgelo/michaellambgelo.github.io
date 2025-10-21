@@ -9,10 +9,10 @@
 			{% endif %}
 			
 			{% if site.sections.brief_bio.content.enabled %}
-				<br>
-				<div class="text-center">
-					{% include content/brief-bio.html %}
-				</div>
+			<br>
+			<div class="text-center" style="max-width: 100%; overflow: hidden;">
+				{% include content/brief-bio.html %}
+			</div>
 			{% endif %}
 			{% include body/sections/brief_bio/social-links.html %}
 			{% include body/sections/brief_bio/github-projects.html %}
