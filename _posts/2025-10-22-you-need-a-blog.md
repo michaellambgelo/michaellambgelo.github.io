@@ -1,5 +1,5 @@
 ---
-title: You Need a Static-Site Blog
+title: You Need a Static-Site Blog | My First Conference Talk 
 layout: post
 date: '2025-10-22'
 category: development
