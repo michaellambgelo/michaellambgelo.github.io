@@ -37,7 +37,7 @@ This blog post is a short outline and a brief reflection on my first conference 
 
 When I began speaking, I noted that I didn't really feel nervous. I actually felt a bit like a passenger, like I had slipped into autopilot mode and wanted to stay at cruising altitude.
 
-I'm embarrassed by my performance. My talk didn't last very long and I didn't highlight much of the technical content I wanted to.
+I'm embarrassed by my performance. My talk didn't last very long and I didn't highlight much of the content I wanted to.
 
 I worry that my approach to a slide deck came off as low-effort. The demo portion was the first time I actively felt nervous during my talk and (no one else knows this yet) I had two different outlines and I panick-ended the presentation when I had finished the shorter outline without referencing the longer one I had for my notes. I could have kept talking, but I chose to eject. I'm not sure if I should have pressed on, but I don't regret going through with the commitment.
 
