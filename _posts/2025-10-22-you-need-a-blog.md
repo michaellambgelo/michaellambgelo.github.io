@@ -39,7 +39,7 @@ When I began speaking, I noted that I didn't really feel nervous. I actually fel
 
 I'm embarrassed by my performance. My talk didn't last very long and I didn't highlight much of the technical content I wanted to.
 
-I worry that my approach to a slide deck came off as low-effort. The demo portion was the first time I actively felt nervous during my talk and (no one else knows this yet) I had two different outlines and I panick-finished when I finished the shorter outline without referencing the longer one I had for my notes. 
+I worry that my approach to a slide deck came off as low-effort. The demo portion was the first time I actively felt nervous during my talk and (no one else knows this yet) I had two different outlines and I panick-ended the presentation when I had finished the shorter outline without referencing the longer one I had for my notes. I could have kept talking, but I chose to eject. I'm not sure if I should have pressed on, but I don't regret going through with the commitment.
 
 I share these thoughts not because I want to criticize myself to shame, but I do want to critically analyze my experience and grow my skills. Speaking is not my strength, and writing is. I much prefer sharing the written word because it feels like all my intention can be communicated effectively and equitably, but I know that oral storytelling is a far more ancient practice and I should get better at it.
 
