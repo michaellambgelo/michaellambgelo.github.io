@@ -33,7 +33,6 @@ This blog post is a short outline and a brief reflection on my first conference 
 1. Visit blog.michaellamb.dev
 2. Leave a comment on this post
 
-
 ### Reflection on my first conference talk
 
 When I began speaking, I noted that I didn't really feel nervous. I actually felt a bit like a passenger, like I had slipped into autopilot mode and wanted to stay at cruising altitude.
