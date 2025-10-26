@@ -16,6 +16,7 @@ Categories represent the primary topic area of a post. **Each post must have exa
 | `tutorials` | Step-by-step guides | For instructional content teaching specific skills or techniques |
 | `reflections` | Personal thoughts and updates | For more personal posts, life updates, and reflections |
 | `promotions` | Capitalism rocks 🤘 | Posts with content either self-promoting or from partner promotion |
+| `troubleshooting` | Issues and more | For posts related to bugs or defects in apps |
 
 ## Tags
 
