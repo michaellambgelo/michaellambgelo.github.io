@@ -3,7 +3,6 @@ plugins:
   - jekyll-feed
   - jekyll-admin
   - jekyll-paginate
-  - github-pages
   - kramdown-parser-gfm
   - jekyll-redirect-from
 encoding: UTF-8
