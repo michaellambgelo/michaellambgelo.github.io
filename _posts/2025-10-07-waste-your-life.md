@@ -1,5 +1,5 @@
 ---
-title: Don't Waste Your Life
+title: "Don't Waste Your Life"
 category: reflections
 image: "/seo/2025-10-07.png"
 tags:
