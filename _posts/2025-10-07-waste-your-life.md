@@ -1,5 +1,7 @@
 ---
 title: "Don't Waste Your Life"
+layout: post
+date: 2025-10-07
 category: reflections
 image: "/seo/2025-10-07.png"
 tags:
