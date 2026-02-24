@@ -1,4 +1,4 @@
 # Cloudflare Pages–specific overrides for Jekyll
 # This file is merged on top of _config.yml when building on Cloudflare Pages.
 
-url: "https://blog.michael-dcc.workers.dev"
+url: "michaellambgelo-github-io.pages.dev"
