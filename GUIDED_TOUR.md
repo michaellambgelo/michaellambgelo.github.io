@@ -6,14 +6,16 @@ This is a comprehensive guided tour of Michael Lamb's Jekyll-powered static blog
 
 The content was generated using Claude Sonnet 4 and Windsurf Cascade and edited by Michael for accuracy.
 
-**Live Site:** https://blog.michaellamb.dev  
+**Live Site:** https://blog.michaellamb.dev
+
 **Repository:** https://github.com/michaellambgelo/michaellambgelo.github.io
 
 ---
 
-## 🏗️ Architecture & Technology Stack
+### 🏗️ Architecture & Technology Stack
 
 ### Core Technologies
+
 - **Jekyll 4.x** - Static site generator with Ruby
 - **Bootstrap 2.x** - Responsive CSS framework (legacy but functional)
 - **jQuery 1.9.1** - JavaScript library for interactivity
@@ -21,6 +23,7 @@ The content was generated using Claude Sonnet 4 and Windsurf Cascade and edited 
 - **GitHub Actions** - CI/CD automation
 
 ### Key Features
+
 - **52+ blog posts** spanning 4+ years of content
 - **Developer-focused comment system** powered by Giscus and GitHub Discussions
 - **SEO optimization** with automated image verification
@@ -37,6 +40,7 @@ The content was generated using Claude Sonnet 4 and Windsurf Cascade and edited 
 **Start Here:** Visit https://blog.michaellamb.dev
 
 #### Homepage Features
+
 - **Clean, professional layout** with Bootstrap grid system
 - **Bio section** with author photo and social links
 - **Recent posts** with pagination (5 posts per page)
@@ -44,7 +48,8 @@ The content was generated using Claude Sonnet 4 and Windsurf Cascade and edited 
 - **Newsletter signup** prominently featured
 
 #### Navigation Structure
-```
+
+```text
 ├── Home (/)
 ├── Categories (dropdown)
 │   ├── Development
@@ -60,6 +65,7 @@ The content was generated using Claude Sonnet 4 and Windsurf Cascade and edited 
 ```
 
 **Demo Points:**
+
 - Show responsive design by resizing browser
 - Navigate through different categories
 - Demonstrate dropdown functionality
@@ -68,9 +74,11 @@ The content was generated using Claude Sonnet 4 and Windsurf Cascade and edited 
 ### 2. Content Management & Structure
 
 #### Blog Post Structure
+
 **Example Post:** `/2025-09-30-comfort-movies/`
 
 **Front Matter Example:**
+
 ```yaml
 ---
 title: Why any movie can be a comfort movie
@@ -86,18 +94,22 @@ layout: post
 ```
 
 **Demo Points:**
+
 - Show how posts are organized by date
 - Explain the taxonomy system (categories + tags)
 - Demonstrate SEO image integration
 - Show embedded media (YouTube videos)
 
 #### Content Templates
+
 Located in `_templates/`:
+
 - **Post Template** (`post.md`) - Standardized format for new posts
 - **Taxonomy Guide** (`taxonomy.md`) - Comprehensive tag/category system
 
 **Demo the Taxonomy System:**
-```
+
+```text
 Categories (1 per post):
 ├── development
 ├── infrastructure
@@ -121,34 +133,40 @@ Tags (2-5 per post):
 **Automated Checks on Every Push/PR:**
 
 1. **Ruby Environment Setup**
+
    ```yaml
    - Ruby 2.7.4 with bundler caching
    - Dependency installation with Bundler 2.4.22
    ```
 
 2. **Jekyll Build Verification**
+
    ```bash
    bundle exec jekyll build --safe
    ```
 
 3. **SEO Image Verification**
+
    ```bash
    ruby scripts/verify_seo_images.rb
    ```
 
 4. **Markdown Linting**
+
    ```yaml
    - DavidAnson/markdownlint-cli2-action@v11
    - Custom rules in .markdownlint.json
    ```
 
 5. **Front Matter Validation**
+
    ```bash
    bundle exec jekyll doctor
    bundle exec jekyll build --strict_front_matter
    ```
 
 **Demo Points:**
+
 - Show recent workflow runs in GitHub Actions
 - Explain how failures prevent deployment
 - Demonstrate the safety net for content quality
@@ -156,6 +174,7 @@ Tags (2-5 per post):
 ### 4. Git Hooks & Local Development
 
 #### Pre-Commit Hook (`git-hooks/pre-commit`)
+
 ```bash
 # Runs markdownlint on staged markdown files
 # Prevents commits with formatting issues
@@ -163,6 +182,7 @@ Tags (2-5 per post):
 ```
 
 #### Pre-Push Hook (`git-hooks/pre-push`)
+
 ```bash
 # Runs SEO image verification
 # Prevents pushing without required images
@@ -170,12 +190,14 @@ Tags (2-5 per post):
 ```
 
 **Installation:**
+
 ```bash
 chmod +x scripts/install-hooks.sh
 ./scripts/install-hooks.sh
 ```
 
 **Demo Points:**
+
 - Show how hooks prevent bad commits
 - Explain the safety mechanisms
 - Demonstrate bypass options for emergencies
@@ -183,13 +205,16 @@ chmod +x scripts/install-hooks.sh
 ### 5. SEO & Performance Optimization
 
 #### SEO Image System
+
 **Every post requires an SEO image:**
+
 - Located in `/seo/` directory
 - Named by post date (e.g., `2025-09-30.png`)
 - Verified by automated script
 - Fallback to `default.png`
 
 #### SEO Features
+
 - **Jekyll SEO Tag** plugin for meta tags
 - **Structured data** for search engines
 - **Open Graph** and **Twitter Card** support
@@ -197,6 +222,7 @@ chmod +x scripts/install-hooks.sh
 - **Sitemap** generation
 
 #### Performance Features
+
 - **Static site generation** for fast loading
 - **CDN delivery** via GitHub Pages
 - **Responsive images** with proper sizing
@@ -205,6 +231,7 @@ chmod +x scripts/install-hooks.sh
 ### 6. Newsletter Integration
 
 #### Hakanai.io Integration
+
 **Two newsletter touchpoints:**
 
 1. **Dedicated Newsletter Page** (`/newsletter.html`)
@@ -218,6 +245,7 @@ chmod +x scripts/install-hooks.sh
    - Non-intrusive placement
 
 **Demo Points:**
+
 - Show both newsletter forms
 - Explain the dual-approach strategy
 - Demonstrate responsive design
@@ -225,6 +253,7 @@ chmod +x scripts/install-hooks.sh
 ### 7. Monitoring & Analytics
 
 #### Grafana Faro Web SDK Integration
+
 ```javascript
 // Environment-specific configuration
 // Local development: no-cors mode
@@ -232,6 +261,7 @@ chmod +x scripts/install-hooks.sh
 ```
 
 **Features:**
+
 - **Real User Monitoring (RUM)**
 - **Error tracking and reporting**
 - **Performance metrics collection**
@@ -240,6 +270,7 @@ chmod +x scripts/install-hooks.sh
 ### 8. Content Showcase
 
 #### Diverse Content Portfolio
+
 **52+ posts covering:**
 
 - **Technical Tutorials** (Kubernetes, Docker, Go)
@@ -249,6 +280,7 @@ chmod +x scripts/install-hooks.sh
 - **Infrastructure Deep-Dives** (K3s, Raspberry Pi Clusters)
 
 #### Recent Highlights
+
 - **Machine Intelligence series** (AI/ML exploration)
 - **Grafana Faro implementation** (Monitoring setup)
 - **Community survey results** (Jackson Devs)
@@ -259,6 +291,7 @@ chmod +x scripts/install-hooks.sh
 ## 🎯 Key Demonstration Points
 
 ### For Technical Audiences
+
 1. **Modern CI/CD Pipeline** - Automated testing, linting, and validation
 2. **Quality Gates** - Pre-commit hooks and automated checks
 3. **SEO Automation** - Image verification and metadata management
@@ -266,6 +299,7 @@ chmod +x scripts/install-hooks.sh
 5. **Monitoring Integration** - Real-time performance tracking
 
 ### For Content Creators
+
 1. **Structured Content Management** - Templates and taxonomy system
 2. **SEO Best Practices** - Automated image requirements and metadata
 3. **User Experience Focus** - Commenting, search, and navigation
@@ -273,6 +307,7 @@ chmod +x scripts/install-hooks.sh
 5. **Responsive Design** - Mobile-first approach
 
 ### For Business Stakeholders
+
 1. **Professional Presentation** - Clean, modern design
 2. **Content Discoverability** - Advanced filtering and categorization
 3. **Audience Engagement** - Newsletter integration and social links
@@ -284,6 +319,7 @@ chmod +x scripts/install-hooks.sh
 ## 🔧 Local Development Setup
 
 ### Prerequisites
+
 ```bash
 # Ruby 2.7.4 (check .ruby-version)
 # Bundler 2.4.22
@@ -291,6 +327,7 @@ chmod +x scripts/install-hooks.sh
 ```
 
 ### Quick Start
+
 ```bash
 # Clone the repository
 git clone https://github.com/michaellambgelo/michaellambgelo.github.io.git
@@ -312,6 +349,7 @@ bundle exec jekyll serve
 ```
 
 ### Development Workflow
+
 1. **Create new post** using template or admin panel
 2. **Add SEO image** to `/seo/` directory
 3. **Test locally** with `bundle exec jekyll serve`
@@ -324,18 +362,21 @@ bundle exec jekyll serve
 ## 📊 Metrics & Success Indicators
 
 ### Content Metrics
+
 - **52+ blog posts** over 4+ years
 - **7 categories** with consistent taxonomy
 - **50+ unique tags** for content discovery
 - **100% SEO image compliance** (automated verification)
 
 ### Technical Metrics
+
 - **100% uptime** via GitHub Pages
 - **Automated CI/CD** with 5 quality gates
 - **Zero manual deployment** steps
 - **Sub-second page loads** via static generation
 
 ### User Experience Metrics
+
 - **Responsive design** across all devices
 - **Newsletter integration** for audience building
 - **Professional presentation** with modern UX
@@ -354,6 +395,7 @@ This Jekyll blog demonstrates a sophisticated approach to static site developmen
 The site serves as an example of how static site generators can power professional blogs with enterprise-grade quality assurance and modern web development practices.
 
 **Perfect for demonstrating:**
+
 - Static site architecture and benefits
 - CI/CD implementation for content sites
 - SEO optimization and automation

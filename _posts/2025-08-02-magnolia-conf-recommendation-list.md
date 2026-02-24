@@ -107,4 +107,3 @@ The city tourism office is known as **[Visit Jackson](https://www.visitjackson.c
 <script async src="//www.instagram.com/embed.js"></script>
 
 ### See you at Magnolia Conf 2025!
-
