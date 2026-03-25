@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Get list of staged markdown files
-files=$(git diff --cached --name-only --diff-filter=d | grep '\.md$' || true)
+# Get list of staged markdown files (excluding deletions)
+files=$(git diff --cached --name-only --diff-filter=ACM | grep '\.md$' || true)
 
 if [ -n "$files" ]; then
     echo "Running markdownlint on staged markdown files..."
@@ -12,5 +12,21 @@ if [ -n "$files" ]; then
     }
 fi
 
-# If we got here, all checks passed
+# Generate SEO images for newly staged posts
+post_files=$(git diff --cached --name-only --diff-filter=ACM | grep '^_posts/.*\.md$' || true)
+
+if [ -n "$post_files" ]; then
+    echo "Generating SEO images for staged posts..."
+    for post in $post_files; do
+        output=$(ruby scripts/generate_seo_image.rb "$post" 2>&1)
+        echo "$output"
+        if echo "$output" | grep -q "^Generated SEO image:"; then
+            img_path=$(echo "$output" | grep "^Generated SEO image:" | sed 's/^Generated SEO image: //')
+            git add "$img_path"
+            echo "Auto-staged: $img_path"
+        fi
+    done
+fi
+
+# All checks passed
 exit 0

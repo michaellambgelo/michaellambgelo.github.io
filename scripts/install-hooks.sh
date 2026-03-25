@@ -13,3 +13,11 @@ chmod +x .git/hooks/pre-commit
 
 
 echo "Git hooks installed successfully!"
+
+# Check for optional dependencies
+if ! which convert > /dev/null 2>&1; then
+    echo ""
+    echo "Note: ImageMagick 'convert' not found."
+    echo "SEO images will NOT be auto-generated on commit."
+    echo "Install with: brew install imagemagick"
+fi

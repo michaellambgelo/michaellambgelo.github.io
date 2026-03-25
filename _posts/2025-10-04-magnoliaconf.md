@@ -3,7 +3,7 @@ title: Hear from me at this year's MagnoliaConf — October 21-23
 layout: post
 date: 2025-10-04
 category: community
-image: /img/2025-10-04-magnoliaconf-speakercard.png
+image: /seo/2025-10-04.png
 tags:
 - conference
 - development
