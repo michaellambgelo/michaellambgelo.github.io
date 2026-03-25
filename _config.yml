@@ -121,6 +121,9 @@ github_projects:
     - project: null
       name: grafana-faro-proxy
       url: 'https://github.com/michaellambgelo/grafana-faro-proxy'
+    - project: null
+      name: boxd-card
+      url: 'https://github.com/michaellambgelo/boxd-card'
 external_links:
   header: Important Links
   links:
