@@ -65,7 +65,7 @@ You're welcome to use slides, live code, a whiteboard, or nothing at all. Whatev
 
 Even if presenting isn't your thing right now, you can still help. Share this post with someone you think would give a great talk. Sometimes people just need a nudge.
 
-You can stay connected with the Jackson Developers Group through our [Meetup](https://www.meetup.com/) page and [Discord](https://discord.gg/) server. If you're in the Jackson area and you're interested in software development, you're welcome here.
+You can stay connected with the Jackson Developers Group through our [Meetup](https://www.meetup.com/jackson-area-web-and-app-developers/) page and [Discord](https://discord.gg/4kSfsXj8Vw) server. If you're in the Jackson area and you're interested in software development, you're welcome here.
 
 I'm looking forward to seeing what our community has to share.
 
