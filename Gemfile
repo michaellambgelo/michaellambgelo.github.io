@@ -11,7 +11,7 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 3.9.3"
 
-# Pin ffi to a version compatible with RubyGems 3.1.6
+# Pin ffi to a version compatible with Ruby 2.6–3.1
 gem "ffi", "~> 1.15.5"
 
 # If you have any plugins, put them here!

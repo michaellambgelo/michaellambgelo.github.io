@@ -3,7 +3,10 @@
    Designed for dark code blocks with --color-code-bg: #1e1e2e
    ========================================================================== */
 
-.highlight       { background: #1e1e2e; color: #cdd6f4; }
+/* High-specificity selectors to override Bootstrap 2 */
+.highlighter-rouge .highlight,
+div.highlight,
+.highlight       { background: #1e1e2e; color: #cdd6f4; border-radius: 10px; overflow: hidden; }
 .highlight .c    { color: #6c7086; font-style: italic } /* Comment */
 .highlight .err  { color: #f38ba8; } /* Error */
 .highlight .k    { color: #cba6f7; font-weight: bold } /* Keyword */
