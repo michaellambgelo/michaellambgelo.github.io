@@ -168,4 +168,8 @@ Building Boxd Card with Claude Code felt less like directing an assistant and mo
 
 A project of this size would have taken me months of attention and testing and research to build. I've never built a Chrome extension before, and I have a better idea of what it takes to do that now. It feels like I could reference this project as a template for future extensions, and in that way I have added more to my library of architectures. 
 
+I recommend building with Claude Code if you have an idea for something that you want to build. I've wanted an easy way to share my Letterboxd diary entries for a long time, and I think one thing that contributed to the ease of being able to build this tool was that the Letterboxd platform has well-structured data. I know about web scrapers, HTML, and DevTools, so I knew what to ask for.
+
+I've been Michael Lamb, and I approve of this blog post. Here's my Letterboxd favorites.
+
 ![Boxd Card: michaellamb's Favorites — Midsommar (2019), Tenet (2020), Wake Up Dead Man (2025), Sinners (2025)](/img/2026-04-07-boxd-card.png)
