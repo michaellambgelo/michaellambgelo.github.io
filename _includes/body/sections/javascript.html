@@ -1,8 +1,4 @@
-{% assign section_github_projects_html = null %}
-{% capture section_github_projects_html %}
-	{% include body/sections/javascript/jquery.html %}
-	{% include body/sections/javascript/bootstrap.html %}
-	{% include body/sections/javascript/google-analytics.html %}
-	{% include body/sections/javascript/disqus.html %}
-{% endcapture %}
-{{ section_github_projects_html | strip_newlines | remove:'	' }}
+{% comment %}
+Global JS bundle. The redesign strips Bootstrap/jQuery;
+page-specific scripts live in their own includes.
+{% endcomment %}

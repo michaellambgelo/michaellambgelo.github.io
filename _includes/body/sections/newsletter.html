@@ -1,14 +1,10 @@
 {% assign section_newsletter_html = null %}
 {% capture section_newsletter_html %}
-	<div class="row ghpb">
-		<div class="span12">
-			<div class="newsletter-container">
-				<h3 class="newsletter-title">Get updates from michaellamb.dev. Sign up for the newsletter.</h3>
-				<a href="https://subscribe.michaellamb.dev" class="newsletter-button" target="_blank">
-					Subscribe
-				</a>
-			</div>
+	<section class="sk-newsletter">
+		<div class="sk-newsletter__inner">
+			<h2 class="sk-newsletter__title">Skip the algorithms. Get new posts by email.</h2>
+			<a href="https://subscribe.michaellamb.dev" class="sk-btn sk-btn--on-dark sk-btn--primary" target="_blank" rel="noopener">Subscribe</a>
 		</div>
-	</div>
+	</section>
 {% endcapture %}
 {{ section_newsletter_html | strip_newlines | remove:'	' }}

@@ -1,0 +1,33 @@
+---
+layout: page
+title: Archive
+permalink: /archive.html
+order: 2
+image: "/seo/default.png"
+hide_title: true
+exclude: true
+---
+
+<main id="main" class="sk-filter">
+	<div class="sk-filter__header">
+		<p class="sk-eyebrow">Every post</p>
+		<h1 class="sk-filter__title">Archive</h1>
+	</div>
+	{% assign posts_by_year = site.posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+	{% for year in posts_by_year %}
+		<section class="sk-archive-year" style="margin-bottom: 56px;">
+			<h2 style="font-size: 28px; letter-spacing: 0.007em; font-weight: 600; margin: 0 0 20px; color: var(--sk-text-tertiary);">{{ year.name }}</h2>
+			<div class="sk-grid">
+				{% for p in year.items %}
+					<a class="sk-card" href="{{ site.url }}{{ p.url }}">
+						<p class="sk-card__date">{{ p.date | date: "%b %-d" }}</p>
+						<h3 class="sk-card__title">{{ p.title }}</h3>
+						{% if p.category %}
+							<p class="sk-card__meta">{{ p.category | capitalize }}</p>
+						{% endif %}
+					</a>
+				{% endfor %}
+			</div>
+		</section>
+	{% endfor %}
+</main>

@@ -2,9 +2,64 @@
 {% assign layout_post_html = null %}
 {% capture layout_post_html %}
 	<html lang="en">
-		{% include head/post.html %}
-		{% include body/post.html %}
-		{% seo %}
+		<head>
+			{% if page.title %}
+				<title>{{ site.name }} - {{ page.title }}</title>
+			{% else %}
+				<title>{{ site.name }} - {{ site.description }}</title>
+			{% endif %}
+			{% include head/common/common.html %}
+			{% seo %}
+		</head>
+		<body>
+			{% include body/sections/navbar.html %}
+			{% include body/sections/alerts_and_notices/site.html %}
+			<main id="main">
+				{% assign hero_tone = page.hero_tone | default: 'dark' %}
+				<header class="sk-post-hero sk-post-hero--{{ hero_tone }}">
+					<div class="sk-post-hero__inner">
+						{% if page.category %}
+							<p class="sk-eyebrow">{{ page.category | capitalize }}</p>
+						{% endif %}
+						<h1 class="sk-post-hero__title">{{ page.title }}</h1>
+						{% if page.subtitle %}
+							<p class="sk-post-hero__subtitle">{{ page.subtitle }}</p>
+						{% endif %}
+						<p class="sk-post-hero__meta">
+							{{ page.date | date: "%B %-d, %Y" }}
+							{% if page.author %} &middot; {{ page.author }}{% else %} &middot; {{ site.author }}{% endif %}
+						</p>
+					</div>
+				</header>
+
+				<article class="sk-article">
+					{{ content }}
+				</article>
+
+				<footer class="sk-post-footer">
+					{% if page.tags.size > 0 %}
+						<ul class="sk-tags">
+							{% for t in page.tags %}
+								<li><a class="sk-tag" href="{{ site.url }}/filter.html?tag={{ t | replace: ' ', '___' | downcase }}">{{ t }}</a></li>
+							{% endfor %}
+						</ul>
+					{% endif %}
+					<div class="sk-post-footer__row">
+						<span>Published {{ page.date | date: "%B %-d, %Y" }}</span>
+						{% if page.category %}
+							<span>&middot; <a class="sk-chev" href="{{ site.url }}/filter.html?category={{ page.category | replace: ' ', '___' | downcase }}">{{ page.category | capitalize }}</a></span>
+						{% endif %}
+					</div>
+				</footer>
+
+				<section class="sk-comments" aria-label="Comments">
+					{% include giscus.html %}
+				</section>
+
+				{% include body/sections/newsletter.html %}
+			</main>
+			{% include body/sections/footer.html %}
+		</body>
 	</html>
 {% endcapture %}
-{{ layout_post_html | remove:'	' }}
+{{ layout_post_html }}

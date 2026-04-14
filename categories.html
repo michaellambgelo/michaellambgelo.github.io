@@ -1,0 +1,29 @@
+---
+layout: page
+title: Categories
+permalink: /categories.html
+order: 3
+image: "/seo/default.png"
+hide_title: true
+exclude: true
+---
+
+<main id="main" class="sk-filter">
+	<div class="sk-filter__header">
+		<p class="sk-eyebrow">Browse by category</p>
+		<h1 class="sk-filter__title">Categories</h1>
+	</div>
+	{% assign grouped = site.posts | group_by: "category" | sort: "name" %}
+	<ul class="sk-taxonomy">
+		{% for group in grouped %}
+			{% if group.name and group.name != "" %}
+				<li>
+					<a class="sk-taxonomy__link" href="{{ site.url }}/filter.html?category={{ group.name | replace: ' ', '___' | downcase }}">
+						<span class="sk-taxonomy__name">{{ group.name | capitalize }}</span>
+						<span class="sk-taxonomy__count">{{ group.items.size }}</span>
+					</a>
+				</li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+</main>

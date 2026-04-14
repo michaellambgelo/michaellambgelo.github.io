@@ -1,6 +1,41 @@
 {% assign section_navbar_html = null %}
 {% capture section_navbar_html %}
-	{% include body/sections/navbar/bootstrap-responsive.html %}
-	{% include body/sections/navbar/bootstrap.html %}
+	<a class="sk-skip" href="#main">Skip to content</a>
+	<nav class="sk-nav" aria-label="Primary">
+		<div class="sk-nav__inner">
+			<a class="sk-nav__brand" href="{{ site.url }}/">{{ site.brand | default: site.name }}</a>
+			<button class="sk-nav__toggle" type="button" aria-expanded="false" aria-controls="sk-nav-list" aria-label="Toggle menu">
+				<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 5h14M2 9h14M2 13h14"/></svg>
+			</button>
+			<ul class="sk-nav__list" id="sk-nav-list">
+				<li><a href="{{ site.url }}/archive.html">Archive</a></li>
+				<li><a href="{{ site.url }}/categories.html">Categories</a></li>
+				<li><a href="{{ site.url }}/tags.html">Tags</a></li>
+				{% for pages_p in site.pages %}
+					{% unless pages_p.exclude %}
+						{% if pages_p.title and pages_p.title != 'Newsletter' %}
+							<li><a href="{{ site.url }}{{ pages_p.url }}">{{ pages_p.title }}</a></li>
+						{% endif %}
+					{% endunless %}
+				{% endfor %}
+				<li><a class="sk-nav__external" href="https://subscribe.michaellamb.dev" target="_blank" rel="noopener">Newsletter<span class="sk-nav__ext-icon" aria-hidden="true"></span><span class="sk-sr-only"> (opens in new tab)</span></a></li>
+				<li><a class="sk-nav__external" href="https://shop.michaellamb.dev" target="_blank" rel="noopener">Shop<span class="sk-nav__ext-icon" aria-hidden="true"></span><span class="sk-sr-only"> (opens in new tab)</span></a></li>
+			</ul>
+		</div>
+	</nav>
+	<script>
+		(function(){
+			var nav = document.currentScript.previousElementSibling;
+			while (nav && !nav.classList.contains('sk-nav')) nav = nav.previousElementSibling;
+			if (!nav) return;
+			var toggle = nav.querySelector('.sk-nav__toggle');
+			if (!toggle) return;
+			toggle.addEventListener('click', function(){
+				var open = nav.getAttribute('data-open') === 'true';
+				nav.setAttribute('data-open', open ? 'false' : 'true');
+				toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+			});
+		})();
+	</script>
 {% endcapture %}
 {{ section_navbar_html | strip_newlines | remove:'	' }}
