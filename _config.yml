@@ -2,11 +2,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-admin
-  - jekyll-paginate
   - kramdown-parser-gfm
   - jekyll-redirect-from
+
 encoding: UTF-8
 markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
+
 name: Michael Lamb
 title: Michael Lamb
 brand: Michael Lamb
@@ -15,6 +16,13 @@ url: 'https://blog.michaellamb.dev'
 email: michael@michaellamb.dev
 author: Michael Lamb
 image: /seo/default.png
+
+future: true
+
+permalink: '/:year/:month/:title/'
+extensions:
+  - .html
+
 exclude:
   - README.md
   - version.txt
@@ -30,129 +38,14 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - _templates/
-paginate: 5
-future: true
-alert: false
-notice: "michaellamb.dev is now available as an email newsletter. skip the algorithms and get new blog posts straight to your inbox!"
+
 favicon:
   enabled: true
   local:
     enabled: true
     partial_url: /img/favicon.png
     type: png
-  remote:
-    enabled: false
-    full_url: false
-    type: false
-sections:
-  brief_bio:
-    enabled: true
-    image:
-      enabled: true
-      url: /img/bio.jpg
-    content:
-      enabled: true
-    social_links:
-      enabled: false
-    github_projects:
-      enabled: false
-  social_links:
-    enabled: true
-  github_projects:
-    enabled: true
-  external_links:
-    enabled: true
-  archive:
-    enabled: 'false'
-  categories:
-    enabled: true
-  tags:
-    enabled: true
-navbar:
-  archive:
-    enabled: false
-  categories:
-    enabled: true
-  tags:
-    enabled: false
-  github_projects:
-    enabled: true
-  social_links:
-    enabled: false
-  external_links:
-    enabled: true
-social_links:
-  follow_name: Michael Lamb
-  links:
-    - link: null
-      enabled: true
-      name: GitHub
-      font_awesome_icon: fab fa-github
-      url: 'https://github.com/michaellambgelo'
-    - link: null
-      enabled: true
-      name: Linkedin
-      font_awesome_icon: fab fa-linkedin
-      url: 'https://www.linkedin.com/in/michael-lamb-ms/'
-    - link: null
-      enabled: false
-      name: Twitter
-      font_awesome_icon: fab fa-twitter
-      url: 'https://twitter.com/themichaellamb'
-    - link: null
-      enabled: true
-      name: Medium
-      font_awesome_icon: fab fa-medium
-      url: 'https://medium.com/@themichaellamb'
-    - link: null
-      enabled: true
-      name: My CV
-      font_awesome_icon: fas fa-file
-      url: /docs/MichaelLambResume.pdf
-github_projects:
-  header: Public Repositories
-  projects:
-    - project: null
-      name: michaellambgelo.github.io
-      url: 'https://github.com/michaellambgelo/michaellambgelo.github.io'
-    - project: null
-      name: Letterboxd Diary Viewer
-      url: 'https://github.com/michaellambgelo/letterboxd-viewer'
-    - project: null
-      name: grafana-faro-proxy
-      url: 'https://github.com/michaellambgelo/grafana-faro-proxy'
-    - project: null
-      name: boxd-card
-      url: 'https://github.com/michaellambgelo/boxd-card'
-external_links:
-  header: Important Links
-  links:
-    - link: 'null'
-      name: michaellamb.dev | landing page
-      url: 'https://michaellamb.dev'
-    - link: 'null'
-      name: Michael Lamb's Letterboxd Index
-      url: 'https://michaellamb-letterboxd.carrd.co/#'
-    - link: 'null'
-      name: Bit.ly | promotional links
-      url: 'https://bit.ly/m/michaellamb'
-bootstrap:
-  css: bootstrap.min.css
-  responsive:
-    enabled: true
-    css: bootstrap-responsive.min.css
-  js:
-    enabled: true
-    src: bootstrap.min.js
-jquery:
-  enabled: true
-  src: jquery-1.9.1.min.js
-font_awesome:
-  enabled: true
-  css: all.css
-syntax_highlighting:
-  enabled: true
-  css: syntax.css
+
 rss:
   enabled: true
   managing_editor:
@@ -167,17 +60,3 @@ rss:
   image:
     enabled: 'true'
     image: seo/default.png
-disqus:
-  enabled: false
-  shortname: myshortname
-  show_comment_count: true
-analytics:
-  enabled: false
-  google_analytics:
-    enabled: false
-twitter:
-  username: themichaellamb
-  card: summary
-permalink: '/:year/:month/:title/'
-extensions:
-  - .html

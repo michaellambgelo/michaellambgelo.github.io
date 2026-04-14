@@ -7,25 +7,41 @@
 		{% for footer_p in site.posts %}
 			{% assign footer_post_year = null %}
 			{% capture footer_post_year %}{{ footer_p.date | date: "%Y" }}{% endcapture %}
-			{% if footer_post_year < footer_earliest_year %}
-				{% assign footer_earliest_year = footer_post_year %}
-			{% endif %}
-			{% if footer_post_year > footer_latest_year %}
-				{% assign footer_latest_year = footer_post_year %}
-			{% endif %}
+			{% if footer_post_year < footer_earliest_year %}{% assign footer_earliest_year = footer_post_year %}{% endif %}
+			{% if footer_post_year > footer_latest_year %}{% assign footer_latest_year = footer_post_year %}{% endif %}
 		{% endfor %}
 	{% endif %}
 
 	<footer class="sk-footer">
-		<div class="sk-footer__inner">
-			<div>
-				&copy; {% if footer_earliest_year == footer_latest_year %}{{ footer_earliest_year }}{% else %}{{ footer_earliest_year }}&ndash;{{ footer_latest_year }}{% endif %} {{ site.author }}
+		<div class="sk-footer__inner sk-footer__grid">
+			<div class="sk-footer__col">
+				<p class="sk-footer__heading">michaellamb.dev</p>
+				<p class="sk-footer__bio">A tech &amp; life blog by Michael Lamb &mdash; software engineer in Jackson, Mississippi.</p>
+				<p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
 			</div>
-			<div>
-				<a href="{{ site.url }}/rss.xml">RSS</a> &middot;
-				<a href="{{ site.url }}/archive.html">Archive</a> &middot;
-				<a href="https://github.com/michaellambgelo" target="_blank" rel="noopener">GitHub</a>
+			<div class="sk-footer__col">
+				<p class="sk-footer__heading">Elsewhere</p>
+				<ul class="sk-footer__list">
+					<li><a href="https://github.com/michaellambgelo" target="_blank" rel="noopener">GitHub</a></li>
+					<li><a href="https://www.linkedin.com/in/michael-lamb-ms/" target="_blank" rel="noopener">LinkedIn</a></li>
+					<li><a href="https://medium.com/@themichaellamb" target="_blank" rel="noopener">Medium</a></li>
+					<li><a href="{{ site.url }}/docs/MichaelLambResume.pdf" target="_blank" rel="noopener">CV</a></li>
+				</ul>
 			</div>
+			<div class="sk-footer__col">
+				<p class="sk-footer__heading">This blog</p>
+				<ul class="sk-footer__list">
+					<li><a href="{{ site.url }}/archive.html">Archive</a></li>
+					<li><a href="{{ site.url }}/categories.html">Categories</a></li>
+					<li><a href="{{ site.url }}/tags.html">Tags</a></li>
+					<li><a href="{{ site.url }}/rss.xml">RSS</a></li>
+					<li><a href="{{ site.url }}/about.html">About</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="sk-footer__inner sk-footer__legal">
+			<span>&copy; {% if footer_earliest_year == footer_latest_year %}{{ footer_earliest_year }}{% else %}{{ footer_earliest_year }}&ndash;{{ footer_latest_year }}{% endif %} {{ site.author }}</span>
+			<span><a href="https://michaellamb.dev" target="_blank" rel="noopener">michaellamb.dev landing</a></span>
 		</div>
 	</footer>
 {% endcapture %}
