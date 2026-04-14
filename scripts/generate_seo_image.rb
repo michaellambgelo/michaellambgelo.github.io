@@ -61,13 +61,13 @@ def resolve_output_path(fm, post_path)
     rel = image_val.sub(/^\//, '')
     File.join(REPO_ROOT, rel)
   else
-    date_str = File.basename(post_path)[/\d{4}-\d{2}-\d{2}/]
-    unless date_str
+    basename = File.basename(post_path, '.md')
+    unless basename =~ /\A\d{4}-\d{2}-\d{2}-/
       warn "Warning: cannot determine date from filename #{post_path}; skipping generation."
       return nil
     end
-    warn "Warning: no 'image' field in front matter for #{post_path}; defaulting to seo/#{date_str}.png"
-    File.join(REPO_ROOT, 'seo', "#{date_str}.png")
+    warn "Warning: no 'image' field in front matter for #{post_path}; defaulting to seo/#{basename}.png"
+    File.join(REPO_ROOT, 'seo', "#{basename}.png")
   end
 end
 

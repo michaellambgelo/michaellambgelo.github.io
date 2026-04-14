@@ -28,7 +28,7 @@ Michael Lamb is a software engineer in Jackson, Mississippi. He organizes meetup
 
 Every post needs:
 
-1. Front-matter `image:` pointing to a file in `seo/` (e.g. `image: "/seo/YYYY-MM-DD.png"`)
+1. Front-matter `image:` pointing to a file in `seo/` (e.g. `image: "/seo/YYYY-MM-DD-<slug>.png"`)
 2. Exactly one `category` (from [taxonomy.md](_templates/taxonomy.md))
 3. 2–5 lowercase, hyphenated `tags`
 
@@ -43,7 +43,7 @@ bundle exec jekyll serve --drafts  # include drafts
 
 ## SEO images
 
-Each post needs `seo/YYYY-MM-DD.png`. The pre-commit hook auto-generates it via `scripts/generate_seo_image.rb` (requires ImageMagick: `brew install imagemagick`). Verify all posts:
+Each post needs `seo/YYYY-MM-DD-<slug>.png`. The pre-commit hook auto-generates it via `scripts/generate_seo_image.rb` (requires ImageMagick: `brew install imagemagick`). Verify all posts:
 
 ```bash
 ruby scripts/verify_seo_images.rb

@@ -22,7 +22,7 @@ layout: post
 title: "Your Post Title Here"
 date: YYYY-MM-DD
 category: category-name
-image: "/seo/YYYY-MM-DD.png"
+image: "/seo/YYYY-MM-DD-<slug>.png"
 tags:
 
 - tag1

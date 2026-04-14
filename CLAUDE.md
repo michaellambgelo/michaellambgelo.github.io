@@ -24,7 +24,7 @@ Jekyll 3 GitHub Pages blog at `blog.michaellamb.dev`. The design is Apple-inspir
 - `_templates/` — authoring guides (excluded from build via `_config.yml`)
 - `css/` — `theme.css` (tokens + base type), `gh-pages-blog.css` (components), `syntax.css` (code blocks), `newsletter.css`
 - `font/inter/` — self-hosted Inter woff2 (Light/Regular/SemiBold/Bold)
-- `seo/` — per-post SEO images `YYYY-MM-DD.png` + `default.png`
+- `seo/` — per-post SEO images `YYYY-MM-DD-<slug>.png` + `default.png`
 - `img/` — general images referenced in post content
 - `js/grafana-faro.js` — telemetry; only JS loaded site-wide
 
@@ -38,7 +38,7 @@ Defined in `css/theme.css` under `:root` with a `@media (prefers-color-scheme: d
 
 Every post requires:
 
-1. Front matter `image:` pointing to a file in `seo/` (e.g. `image: "/seo/YYYY-MM-DD.png"`)
+1. Front matter `image:` pointing to a file in `seo/` (e.g. `image: "/seo/YYYY-MM-DD-<slug>.png"`)
 2. Exactly one `category` (see `_templates/taxonomy.md` for the canonical list)
 3. 2–5 `tags` (lowercase, hyphenated)
 
@@ -55,7 +55,7 @@ layout: post
 title: "Your Post Title Here"
 date: YYYY-MM-DD
 category: category-name
-image: "/seo/YYYY-MM-DD.png"
+image: "/seo/YYYY-MM-DD-<slug>.png"
 tags:
 - tag1
 - tag2
@@ -74,7 +74,7 @@ Reinstall hooks after modifying them: `sh scripts/install-hooks.sh`
 
 ## SEO image auto-generation
 
-The pre-commit hook calls `scripts/generate_seo_image.rb` for each staged `_posts/*.md` and auto-stages the generated `seo/YYYY-MM-DD.png` into the same commit. Requires ImageMagick:
+The pre-commit hook calls `scripts/generate_seo_image.rb` for each staged `_posts/*.md` and auto-stages the generated `seo/YYYY-MM-DD-<slug>.png` into the same commit. Requires ImageMagick:
 
 ```bash
 brew install imagemagick
@@ -87,5 +87,5 @@ If ImageMagick is absent the hook warns but does not block the commit; the pre-p
 ```bash
 ruby scripts/generate_seo_image.rb _posts/YYYY-MM-DD-title.md
 # Force-regenerate (delete existing first):
-rm seo/YYYY-MM-DD.png && ruby scripts/generate_seo_image.rb _posts/YYYY-MM-DD-title.md
+rm seo/YYYY-MM-DD-title.png && ruby scripts/generate_seo_image.rb _posts/YYYY-MM-DD-title.md
 ```
