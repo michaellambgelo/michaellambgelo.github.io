@@ -12,7 +12,7 @@ tags:
 published: true
 ---
 
-![JAWAD @ C Spire — May 27 event flyer](/img/2026-04-23-event-flyer.jpg)
+[![JAWAD @ C Spire — May 27 event flyer](/img/2026-04-23-event-flyer.jpg)][meetup]
 
 ## A meetup worth leaving the house for
 
@@ -23,7 +23,7 @@ Here's what's on deck.
 - **Date & time**: Wednesday, May 27, 2026 — 5:30 to 7:30 PM CDT
 - **Venue**: C Spire Corporate, 1018 Highland Colony Parkway, Ridgeland, MS 39157
 - **Parking**: Guest spots near the north entrance. Check in with security in the main lobby, then head up to the 6th floor.
-- **RSVP**: [Meetup event page](https://www.meetup.com/jackson-area-web-and-app-developers/events/314401167/)
+- **RSVP**: [Meetup event page][meetup]
 - **Sponsors**: [michaellamb.dev](https://michaellamb.dev) and [C Spire](https://cspire.com)
 
 ## The headline talk: "The Potty Mouth Filter"
@@ -51,3 +51,5 @@ If you're a developer in the Jackson area -- or within driving distance, or just
 - **Discord**: [discord.gg/4kSfsXj8Vw](https://discord.gg/4kSfsXj8Vw)
 
 See you at C Spire.
+
+[meetup]:https://www.meetup.com/jackson-area-web-and-app-developers/events/314401167/
