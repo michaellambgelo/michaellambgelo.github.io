@@ -25,8 +25,7 @@
 	</nav>
 	<script>
 		(function(){
-			var nav = document.currentScript.previousElementSibling;
-			while (nav && !nav.classList.contains('sk-nav')) nav = nav.previousElementSibling;
+			var nav = document.querySelector('.sk-nav');
 			if (!nav) return;
 			var toggle = nav.querySelector('.sk-nav__toggle');
 			var list = nav.querySelector('.sk-nav__list');
@@ -35,14 +34,37 @@
 			var MOBILE = '(max-width: 720px)';
 			var isMobile = function(){ return window.matchMedia(MOBILE).matches; };
 
+			var lockedScrollY = 0;
+			var lockScroll = function(){
+				lockedScrollY = window.scrollY || window.pageYOffset || 0;
+				document.body.style.position = 'fixed';
+				document.body.style.top = '-' + lockedScrollY + 'px';
+				document.body.style.left = '0';
+				document.body.style.right = '0';
+				document.body.style.width = '100%';
+			};
+			var unlockScroll = function(){
+				document.body.style.position = '';
+				document.body.style.top = '';
+				document.body.style.left = '';
+				document.body.style.right = '';
+				document.body.style.width = '';
+				window.scrollTo(0, lockedScrollY);
+			};
+
 			var setOpen = function(open){
+				var wasOpen = nav.getAttribute('data-open') === 'true';
 				nav.setAttribute('data-open', open ? 'true' : 'false');
 				toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
 				toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-				document.documentElement.classList.toggle('sk-nav-open', open && isMobile());
+				var shouldLock = open && isMobile();
+				document.documentElement.classList.toggle('sk-nav-open', shouldLock);
+				if (shouldLock && !wasOpen) lockScroll();
+				else if (!open && wasOpen && document.body.style.position === 'fixed') unlockScroll();
 			};
 
-			toggle.addEventListener('click', function(){
+			toggle.addEventListener('click', function(e){
+				e.preventDefault();
 				setOpen(nav.getAttribute('data-open') !== 'true');
 			});
 
