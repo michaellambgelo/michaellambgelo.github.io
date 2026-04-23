@@ -1,0 +1,369 @@
+---
+layout: page
+title: Members
+permalink: /members.html
+order: 4
+image: "/seo/default.png"
+hide_title: true
+---
+
+<main id="main">
+	<section class="sk-post-hero sk-post-hero--dark">
+		<div class="sk-post-hero__inner">
+			<p class="sk-eyebrow">michaellamb.dev Discord</p>
+			<h1 class="sk-post-hero__title">Members</h1>
+			<p class="sk-post-hero__subtitle">Folks active in the Discord &mdash; cool folks, mods, devs, film club, and Twitch friends.</p>
+		</div>
+	</section>
+
+	<section class="sk-members" aria-labelledby="members-heading">
+		<h2 id="members-heading" class="sk-sr-only">Members directory</h2>
+
+		<div class="sk-members__toolbar" role="toolbar" aria-label="Filter members by role">
+			<button type="button" class="sk-chip is-active" data-role-filter="all" aria-pressed="true">
+				<span class="sk-chip__label">All</span>
+				<span class="sk-chip__count" aria-hidden="true">&middot;</span>
+			</button>
+		</div>
+
+		<p class="sk-members__status" id="members-status" role="status" aria-live="polite">Loading members&hellip;</p>
+
+		<ul class="sk-members__grid" id="members-grid" hidden></ul>
+
+		<p class="sk-members__footer sk-micro" id="members-footer" hidden>
+			<span id="members-fetched-at"></span>
+		</p>
+	</section>
+</main>
+
+<style>
+	.sk-members {
+		max-width: var(--sk-content-max);
+		margin: 0 auto;
+		padding: 64px 22px 88px;
+	}
+
+	.sk-members__toolbar {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin-bottom: 32px;
+	}
+
+	.sk-chip {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		padding: 6px 14px;
+		background: transparent;
+		color: var(--sk-text-body);
+		border: 1px solid var(--sk-rule);
+		border-radius: var(--sk-radius-pill);
+		font-size: 13px;
+		letter-spacing: -0.01em;
+		cursor: pointer;
+		transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+	}
+	.sk-chip:hover {
+		background: var(--sk-surface-muted);
+	}
+	.sk-chip.is-active {
+		background: var(--sk-text-primary);
+		color: var(--sk-page-bg);
+		border-color: var(--sk-text-primary);
+	}
+	.sk-chip__swatch {
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: currentColor;
+		opacity: 0.8;
+	}
+	.sk-chip__count {
+		font-variant-numeric: tabular-nums;
+		opacity: 0.6;
+		font-size: 12px;
+	}
+	.sk-chip.is-active .sk-chip__count {
+		opacity: 0.7;
+	}
+
+	.sk-members__status {
+		color: var(--sk-text-tertiary);
+		font-size: 14px;
+		letter-spacing: -0.016em;
+		margin: 0;
+	}
+
+	.sk-members__grid {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		gap: 24px 20px;
+	}
+
+	.sk-member {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+		padding: 24px 16px;
+		background: var(--sk-surface);
+		border: 1px solid var(--sk-rule);
+		border-radius: var(--sk-radius-lg);
+		text-align: center;
+		transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+	}
+	.sk-member:hover {
+		transform: translateY(-2px);
+		border-color: transparent;
+		box-shadow: var(--sk-card-shadow);
+	}
+	.sk-member[hidden] { display: none; }
+
+	.sk-member__avatar {
+		width: 88px;
+		height: 88px;
+		border-radius: 50%;
+		object-fit: cover;
+		background: var(--sk-surface-muted);
+	}
+
+	.sk-member__name {
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: -0.016em;
+		color: var(--sk-text-primary);
+		margin: 0;
+		line-height: 1.2;
+		word-break: break-word;
+	}
+
+	.sk-member__handle {
+		font-size: 12px;
+		color: var(--sk-text-tertiary);
+		letter-spacing: -0.01em;
+		margin: -6px 0 0;
+	}
+
+	.sk-member__roles {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 6px;
+		margin-top: 4px;
+		list-style: none;
+		padding: 0;
+	}
+
+	.sk-role-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 5px;
+		padding: 3px 9px;
+		font-size: 11px;
+		letter-spacing: -0.005em;
+		border-radius: var(--sk-radius-pill);
+		background: var(--sk-surface-muted);
+		color: var(--sk-text-body);
+		line-height: 1.4;
+	}
+	.sk-role-badge__dot {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: var(--sk-text-tertiary);
+		flex-shrink: 0;
+	}
+
+	.sk-members__footer {
+		margin: 32px 0 0;
+		text-align: center;
+		color: var(--sk-text-tertiary);
+	}
+	.sk-members__footer a {
+		color: var(--sk-link);
+	}
+
+	@media (max-width: 480px) {
+		.sk-members { padding: 48px 18px 64px; }
+		.sk-members__grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px 12px; }
+		.sk-member { padding: 18px 12px; }
+		.sk-member__avatar { width: 72px; height: 72px; }
+	}
+</style>
+
+<script>
+	(function(){
+		var GUILD_ID = '385148900341972992';
+		var ROLE_IDS = [
+			'965731779824730243',  // cool folks
+			'974731566154661888',  // michaellamb.dev mods
+			'1024777130829168751', // jackson devs
+			'1361757177068392568', // jxn film club
+			'1093751972265467915'  // twitch
+		];
+		var WORKER_BASE = (function(){
+			var host = window.location.hostname;
+			if (host === 'localhost' || host === '127.0.0.1') {
+				return 'http://localhost:8787';
+			}
+			return 'https://discord-oauth-proxy.michaellamb.workers.dev';
+		})();
+
+		var statusEl = document.getElementById('members-status');
+		var gridEl = document.getElementById('members-grid');
+		var toolbarEl = document.querySelector('.sk-members__toolbar');
+		var allChip = toolbarEl.querySelector('[data-role-filter="all"]');
+		var allCountEl = allChip.querySelector('.sk-chip__count');
+		var footerEl = document.getElementById('members-footer');
+		var fetchedAtEl = document.getElementById('members-fetched-at');
+
+		function setStatus(message, isError){
+			statusEl.hidden = false;
+			statusEl.textContent = message;
+			statusEl.style.color = isError ? '#c0392b' : '';
+		}
+
+		function escapeHtml(str){
+			return String(str).replace(/[&<>"']/g, function(ch){
+				return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch];
+			});
+		}
+
+		function relativeTime(iso){
+			try {
+				var then = new Date(iso).getTime();
+				var diff = Math.max(0, Date.now() - then);
+				var mins = Math.round(diff / 60000);
+				if (mins < 1) return 'just now';
+				if (mins < 60) return mins + ' min ago';
+				var hours = Math.round(mins / 60);
+				if (hours < 24) return hours + 'h ago';
+				return new Date(iso).toLocaleString();
+			} catch (e) {
+				return '';
+			}
+		}
+
+		function renderRoleBadge(role){
+			var color = role.color || null;
+			var dotStyle = color ? ' style="background:' + escapeHtml(color) + '"' : '';
+			return '<li class="sk-role-badge">' +
+				'<span class="sk-role-badge__dot"' + dotStyle + ' aria-hidden="true"></span>' +
+				escapeHtml(role.name) +
+				'</li>';
+		}
+
+		function renderMember(member, rolesById){
+			var roles = (member.roles || [])
+				.map(function(id){ return rolesById[id]; })
+				.filter(Boolean)
+				.sort(function(a, b){ return (b.position || 0) - (a.position || 0); });
+
+			var li = document.createElement('li');
+			li.className = 'sk-member';
+			li.dataset.roles = (member.roles || []).join(',');
+
+			li.innerHTML =
+				'<img class="sk-member__avatar" src="' + escapeHtml(member.avatar) + '" alt="" loading="lazy" referrerpolicy="no-referrer" decoding="async">' +
+				'<h3 class="sk-member__name">' + escapeHtml(member.displayName) + '</h3>' +
+				'<p class="sk-member__handle">@' + escapeHtml(member.username) + '</p>' +
+				'<ul class="sk-member__roles" aria-label="Roles">' + roles.map(renderRoleBadge).join('') + '</ul>';
+
+			return li;
+		}
+
+		function renderToolbar(roles, totalCount, perRoleCounts){
+			allCountEl.textContent = totalCount;
+			roles.forEach(function(role){
+				var btn = document.createElement('button');
+				btn.type = 'button';
+				btn.className = 'sk-chip';
+				btn.dataset.roleFilter = role.id;
+				btn.setAttribute('aria-pressed', 'false');
+				var swatch = role.color
+					? '<span class="sk-chip__swatch" style="background:' + escapeHtml(role.color) + '" aria-hidden="true"></span>'
+					: '';
+				btn.innerHTML = swatch +
+					'<span class="sk-chip__label">' + escapeHtml(role.name) + '</span>' +
+					'<span class="sk-chip__count">' + (perRoleCounts[role.id] || 0) + '</span>';
+				toolbarEl.appendChild(btn);
+			});
+		}
+
+		function applyFilter(roleId){
+			Array.prototype.forEach.call(toolbarEl.querySelectorAll('.sk-chip'), function(chip){
+				var active = chip.dataset.roleFilter === roleId;
+				chip.classList.toggle('is-active', active);
+				chip.setAttribute('aria-pressed', active ? 'true' : 'false');
+			});
+			Array.prototype.forEach.call(gridEl.children, function(li){
+				if (roleId === 'all') {
+					li.hidden = false;
+					return;
+				}
+				var roles = (li.dataset.roles || '').split(',');
+				li.hidden = roles.indexOf(roleId) === -1;
+			});
+		}
+
+		toolbarEl.addEventListener('click', function(e){
+			var btn = e.target.closest('.sk-chip');
+			if (!btn) return;
+			applyFilter(btn.dataset.roleFilter);
+		});
+
+		var url = WORKER_BASE + '/api/public/guilds/' + GUILD_ID + '/members?roles=' + ROLE_IDS.join(',');
+
+		fetch(url, { credentials: 'omit' })
+			.then(function(r){
+				if (!r.ok) {
+					return r.json().catch(function(){ return null; }).then(function(body){
+						var msg = body && body.error && body.error.message ? body.error.message : ('HTTP ' + r.status);
+						throw new Error(msg);
+					});
+				}
+				return r.json();
+			})
+			.then(function(data){
+				if (!data || !Array.isArray(data.members) || !Array.isArray(data.roles)) {
+					throw new Error('Unexpected response shape');
+				}
+				if (data.members.length === 0) {
+					setStatus('No members found in the selected roles yet.');
+					return;
+				}
+
+				var rolesById = {};
+				var perRoleCounts = {};
+				data.roles.forEach(function(r){
+					rolesById[r.id] = r;
+					perRoleCounts[r.id] = 0;
+				});
+				data.members.forEach(function(m){
+					(m.roles || []).forEach(function(rid){
+						if (perRoleCounts.hasOwnProperty(rid)) perRoleCounts[rid] += 1;
+					});
+				});
+
+				renderToolbar(data.roles, data.members.length, perRoleCounts);
+
+				var frag = document.createDocumentFragment();
+				data.members.forEach(function(m){ frag.appendChild(renderMember(m, rolesById)); });
+				gridEl.appendChild(frag);
+
+				statusEl.hidden = true;
+				gridEl.hidden = false;
+				footerEl.hidden = false;
+				fetchedAtEl.textContent = 'Updated ' + relativeTime(data.fetchedAt);
+			})
+			.catch(function(err){
+				console.error('Members fetch failed:', err);
+				setStatus('Could not load members right now. Please try again later.', true);
+			});
+	})();
+</script>
