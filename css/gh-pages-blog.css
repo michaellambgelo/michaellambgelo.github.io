@@ -606,6 +606,16 @@ html.sk-nav-open {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+.sk-footer__social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.sk-footer__icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
 .sk-footer__legal {
   padding-top: 24px;
   border-top: 1px solid var(--sk-rule);
