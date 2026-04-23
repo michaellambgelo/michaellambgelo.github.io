@@ -4,8 +4,8 @@
 	<nav class="sk-nav" aria-label="Primary">
 		<div class="sk-nav__inner">
 			<a class="sk-nav__brand" href="{{ site.url }}/">{{ site.brand | default: site.name }}</a>
-			<button class="sk-nav__toggle" type="button" aria-expanded="false" aria-controls="sk-nav-list" aria-label="Toggle menu">
-				<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 5h14M2 9h14M2 13h14"/></svg>
+			<button class="sk-nav__toggle" type="button" aria-expanded="false" aria-controls="sk-nav-list" aria-label="Open menu">
+				<span class="sk-nav__toggle-icon" aria-hidden="true"></span>
 			</button>
 			<ul class="sk-nav__list" id="sk-nav-list">
 				<li><a href="{{ site.url }}/archive.html">Archive</a></li>
@@ -29,11 +29,52 @@
 			while (nav && !nav.classList.contains('sk-nav')) nav = nav.previousElementSibling;
 			if (!nav) return;
 			var toggle = nav.querySelector('.sk-nav__toggle');
-			if (!toggle) return;
+			var list = nav.querySelector('.sk-nav__list');
+			if (!toggle || !list) return;
+
+			var MOBILE = '(max-width: 720px)';
+			var isMobile = function(){ return window.matchMedia(MOBILE).matches; };
+
+			var setOpen = function(open){
+				nav.setAttribute('data-open', open ? 'true' : 'false');
+				toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+				toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+				document.documentElement.classList.toggle('sk-nav-open', open && isMobile());
+			};
+
 			toggle.addEventListener('click', function(){
-				var open = nav.getAttribute('data-open') === 'true';
-				nav.setAttribute('data-open', open ? 'false' : 'true');
-				toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+				setOpen(nav.getAttribute('data-open') !== 'true');
+			});
+
+			list.addEventListener('click', function(e){
+				var link = e.target.closest('a');
+				if (link) setOpen(false);
+			});
+
+			document.addEventListener('keydown', function(e){
+				if (e.key !== 'Escape') return;
+				if (nav.getAttribute('data-open') !== 'true') return;
+				setOpen(false);
+				toggle.focus();
+			});
+
+			list.addEventListener('keydown', function(e){
+				if (e.key !== 'Tab') return;
+				if (nav.getAttribute('data-open') !== 'true' || !isMobile()) return;
+				var focusables = [toggle].concat(Array.prototype.slice.call(list.querySelectorAll('a')));
+				var first = focusables[0];
+				var last = focusables[focusables.length - 1];
+				if (e.shiftKey && document.activeElement === first) {
+					e.preventDefault();
+					last.focus();
+				} else if (!e.shiftKey && document.activeElement === last) {
+					e.preventDefault();
+					first.focus();
+				}
+			});
+
+			window.addEventListener('resize', function(){
+				if (!isMobile() && nav.getAttribute('data-open') === 'true') setOpen(false);
 			});
 		})();
 	</script>
