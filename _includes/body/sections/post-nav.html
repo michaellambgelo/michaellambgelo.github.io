@@ -1,0 +1,20 @@
+{% if page.previous or page.next %}
+<nav class="sk-post-nav" aria-label="Post navigation">
+	<div class="sk-post-nav__inner">
+		{% if page.previous %}
+			<a class="sk-post-nav__link sk-post-nav__link--prev" href="{{ page.previous.url | relative_url }}" rel="prev">
+				<span class="sk-post-nav__label">← Previous</span>
+				<span class="sk-post-nav__title">{{ page.previous.title }}</span>
+				<span class="sk-post-nav__date">{{ page.previous.date | date: "%B %-d, %Y" }}</span>
+			</a>
+		{% endif %}
+		{% if page.next %}
+			<a class="sk-post-nav__link sk-post-nav__link--next" href="{{ page.next.url | relative_url }}" rel="next">
+				<span class="sk-post-nav__label">Next →</span>
+				<span class="sk-post-nav__title">{{ page.next.title }}</span>
+				<span class="sk-post-nav__date">{{ page.next.date | date: "%B %-d, %Y" }}</span>
+			</a>
+		{% endif %}
+	</div>
+</nav>
+{% endif %}
