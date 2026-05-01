@@ -37,6 +37,8 @@ The reset turned out to be more interesting. The questions I want a status page 
 
 There's also a small physical-world consequence of this rebuild, thanks to Claude Code: my Pis were unlabeled in the rack, and I've since lost the 3x5 notecard I used to diagram which node hostname happened to map to which physical device. Each one now blinks its green ACT LED its own hostname digit, perpetually, courtesy of a tiny `systemd` LED-ID service. Before today I literally couldn't tell `node5` from `node6`. Now I can identify either in five seconds from across the room.
 
+![Pi cluster ACT LEDs blinking each node's hostname digit]({{ site.url }}/img/2026-04-30-node-led-id.gif)
+
 ## A short timeline
 
 - **2021-03**: [cluster built and brought up]({{ site.url }}/2021/03/cluster-computing/), Ansible installed on `node1`.
