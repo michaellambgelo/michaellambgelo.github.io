@@ -1,5 +1,8 @@
 # michaellambgelo.github.io
 
+[![Status](https://status.michaellamb.dev/api/badge/10/status)](https://status.michaellamb.dev)
+[![Uptime 30d](https://status.michaellamb.dev/api/badge/10/uptime/720?style=flat)](https://status.michaellamb.dev)
+
 Tech & life blog by Michael Lamb. Live at [blog.michaellamb.dev](https://blog.michaellamb.dev).
 
 ## About
