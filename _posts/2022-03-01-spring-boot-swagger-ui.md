@@ -23,7 +23,7 @@ I have created a [Spring Boot demo project available on my GitHub](https://githu
 
 ## Swagger UI
 
-If you've been a follower of this blog you might recall I have previously integrated Swagger UI into a Go application (check out [this blog post from October 2021](https://michaellamb.dev/golang/2021/10/22/go-swagger.html)).
+If you've been a follower of this blog you might recall I have previously integrated Swagger UI into a Go application (check out [this blog post from October 2021]({{ site.url }}/2021/10/go-swagger/)).
 
 Swagger is a suite of tools which seeks to provide OpenAPI specifications and definitions. Codebases can be generated from a Swagger doc, just as an existing codebase can be documented by adding Swagger-identifiable annotations.
 

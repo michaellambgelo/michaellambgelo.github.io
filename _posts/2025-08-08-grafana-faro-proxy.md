@@ -17,7 +17,7 @@ redirect_from:
 
 ---
 
-As I alluded to in [my original post discussing Grafana Faro](/community/2025/06/18/grafana-faro.html), ad-blockers and anti-tracking software can prevent my website from correctly sending telemetry to Grafana. My strategy to get around this is to proxy all Grafana Faro requests through a Cloudflare Worker. I created a proxy server which uses Cloudflare Workers environment secrets to keep the Grafana ingest tokens secure, allowing me to scale this proxy server for multiple apps. 
+As I alluded to in [my original post discussing Grafana Faro]({{ site.url }}/community/2025/06/18/grafana-faro.html), ad-blockers and anti-tracking software can prevent my website from correctly sending telemetry to Grafana. My strategy to get around this is to proxy all Grafana Faro requests through a Cloudflare Worker. I created a proxy server which uses Cloudflare Workers environment secrets to keep the Grafana ingest tokens secure, allowing me to scale this proxy server for multiple apps. 
 
 Here is the basic design:
 

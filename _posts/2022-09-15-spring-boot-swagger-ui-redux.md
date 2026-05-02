@@ -183,7 +183,7 @@ Great job! 🎉
 
 You have a Spring Boot app ready to start developing an auto-documented HTTP API.
 
-[previous]: https://michaellamb.dev/2021/03/01/spring-boot-swagger-ui.html
+[previous]:{{ site.url }}/2021/03/spring-boot-swagger-ui/
 [demo]: https://github.com/michaellambgelo/demo
 [springfox-last-commit]: https://github.com/springfox/springfox/commit/ab5868471cdbaf54dac01af12933fe0437cf2b01
 [migration]: https://github.com/michaellambgelo/stackathon/commit/fae387b0f6a166aacd3e9bb829c120de4add3c01
