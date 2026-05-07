@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Identifying unlabeled Pis with a systemd LED service"
-date: 2026-04-30
+date: 2026-05-06
 category: infrastructure
-image: "/seo/2026-04-30-cluster-led-id-systemd.png"
+image: "/seo/2026-05-06-cluster-led-id-systemd.png"
 tags:
 - raspberry-pi
 - cluster
