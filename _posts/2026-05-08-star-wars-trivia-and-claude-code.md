@@ -59,24 +59,24 @@ The trivia games are separate and secret — only I know where they truly live.
 
 ### 4. The deck — `star-wars-trivia-game`
 
-- I didn't specifically ask for a custom `<deck-stage>` web component handling slide layout for scaling and print geometry — so why I reached for vanilla JS instead of a React component is more up to Claude than me
-- Two windows, one keyboard: the display URL is `/`, the control URL is `/#/control`, and they talk over `BroadcastChannel` (`rounds:update`, `nav:next/prev/goto`, `timer:toggle/reset/adjust`, `pictures:update`) — this was a design I asked for to give myself the most flexibility as far as control over a public visual experience
-- Picture round: I wanted setting up the round to be as simple as pasting an image, drag-to-pan to crop, and export a 1920×1080 handout PNG that prints cleanly
-- Tiebreakers: three questions plus a Final Wager (similar to Final Jeopardy)
+- I didn't specifically ask for a custom `<deck-stage>` web component handling slide layout for scaling and print geometry — so while I reached for vanilla JS instead of a React component, Claude nudged me toward the framework to make things reusable
+- Two windows, one keyboard: the display URL is `/`, the control URL is `/#/control`, and they talk over `BroadcastChannel` (`rounds:update`, `nav:next/prev/goto`, `timer:toggle/reset/adjust`, `pictures:update`) — this was a design I asked for to give myself the most flexibile control over a public visual experience
+- Picture round: I wanted setting up the round to be as simple as pasting an image, drag-to-pan to crop, and click to export a 1920×1080 handout PNG that prints cleanly
+- Tiebreakers: up to three questions plus a Final Wager (similar to Final Jeopardy)
 - Question editor in the control window that buffers edits to localStorage with a dirty flag, so I never accidentally publish a half-typed change to the projector mid-round
 - Export questions: the trivia-scorer scaffold is reusable, so questions can be written and exported for games that happen in the future; the scaffold plus the `/new-trivia-game` skill allow for custom theming based on specific books/movies/tv shows/etc
 
 ### 5. The scorer — `trivia-scorer`
 
-- Cloudflare Pages Functions + D1, with the entire `Event` blob stored as JSON in a single row (Phase 1 simplicity over a normalized schema)
+- Cloudflare Pages Functions + D1, with the entire `Event` blob stored as JSON in a single row
 - Reducer-driven state machine: `setup → scoring → final → tiebreaker (if needed)`
 - Public leaderboard at `/leaderboard` polling every 5s, with the edge cache set to 5s so the polling loop doesn't hammer D1
 - QR code on the leaderboard so anyone in the brewery can pull the standings up on their phone
-- Cloudflare Access as an identity provider
+- Cloudflare Access as an identity provider for admin controls
 - CSV export plus an `npm run import:csv` round-trip for archived tournaments from before the D1 migration
 
 ### 6. The future
 
 I will need feedback to make these tools better — I am seeking this selectively but generally I am open.
 
-If you happen to find yourself reading this and you've got a specific opinion about the trivia tools I've generated, I'm all ears on how to improve them! Comment on this post to start off -- or keep exploring if you want to find another way to contact me. I've shared the whole spectrum on this blog and on social media — I'm extremely online.
+If you happen to find yourself reading this and you've got a specific opinion about the trivia tools I've generated, I'm all ears on how to improve them! Comment on this post to start off -- or keep exploring my blog if you want to find another way to contact me. I've shared the whole spectrum on this blog and on social media — I'm extremely online.
