@@ -66,7 +66,7 @@ The fact also remains that the trivia questions are relatively secret and the le
 - Reducer-driven state machine: `setup → scoring → final → tiebreaker (if needed)`
 - Public leaderboard at `/leaderboard` polling every 5s, with the edge cache set to 5s so the polling loop doesn't hammer D1
 - QR code on the leaderboard so anyone in the brewery can pull the standings up on their phone
-- Shared-secret bearer token for admin writes (Phase 1 stopgap; Cloudflare Access is the Phase 2 plan)
+- Cloudflare Access as an identity provider
 - CSV export plus an `npm run import:csv` round-trip for archived tournaments from before the D1 migration
 
 ### 6. The future
