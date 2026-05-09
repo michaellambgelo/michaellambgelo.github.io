@@ -21,8 +21,6 @@ This is the first Fertile Ground trivia system I built — the Star Wars night �
 
 > **Reader, I want your feedback.** What worked at your table? What was confusing? What would you want a different theme night to look like? Drop a comment at the bottom of this page — comments are open and powered by GitHub Discussions, so you'll need a GitHub login.
 
-## Prompts
-
 ### 1. Origin story — what's "Fertile Ground" and how did I end up running trivia?
 
 Fertile Ground Beer Co. will celebrate 4 years of operation on May 15th & 16th — Jackson's only brewery is now the latest venue for which I've written a trivia game. I have been working part-time in the taproom for over a year now and I'm ready to bring more of my talents to the 3 80" screens mounted on the walls. 
