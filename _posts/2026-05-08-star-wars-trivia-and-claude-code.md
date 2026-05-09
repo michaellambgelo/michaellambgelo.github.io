@@ -12,7 +12,7 @@ tags:
 published: true
 ---
 
-## Why this post
+## Your trivia host: yours, truly
 
 This is the first Fertile Ground trivia system I built — the Star Wars night — and I'm taking ownership of the event going forward. The system ended up as two small repos that talk to each other only through a host's hands and a paper answersheet:
 
@@ -26,6 +26,12 @@ This is the first Fertile Ground trivia system I built — the Star Wars night �
 Fertile Ground Beer Co. will celebrate 4 years of operation on May 15th & 16th — Jackson's only brewery is now the latest venue for which I've written a trivia game. I have been working part-time in the taproom for over a year now and I'm ready to bring more of my talents to the 3 80" screens mounted on the walls. 
 
 May the 4th — also known as Star Wars Day — was the perfect time to trial run a new trivia hosting crew. Previously, friends of the brewery volunteered to run trivia games on an every-other-week cadence, and eventually life caught up with their efforts. I'm reintroducing trivia events with my colleague Jack Smith, and I can't promise a regular cadence but I do want to fit in at least 2 each month.
+
+Star Wars Trivia was a fun success — 16 teams showed up for trivia and we had 3 entrants into a costume contest! 
+
+![Costume contest entrants](/img/2026-05-08-costumes.jpeg)
+
+## Princess Leia won
 
 ### 2. The brief — what does a trivia night actually need?
 
