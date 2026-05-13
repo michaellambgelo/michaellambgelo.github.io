@@ -1,0 +1,39 @@
+---
+layout: page
+title: Cluster
+permalink: /cluster.html
+order: 6
+image: "/seo/default.png"
+hide_title: true
+---
+
+<main id="main">
+	<section class="sk-post-hero sk-post-hero--dark">
+		<div class="sk-post-hero__inner">
+			<p class="sk-eyebrow">Cluster</p>
+			<h1 class="sk-post-hero__title">Homelab status</h1>
+			<p class="sk-post-hero__subtitle">Live status of the six-node Raspberry Pi cluster, sourced from <a href="https://status.michaellamb.dev" target="_blank" rel="noopener">Uptime Kuma</a> and rendered by a Ktor service on the cluster itself.</p>
+		</div>
+	</section>
+
+	<article class="sk-article">
+		<div id="cluster-widget" data-src="https://kotlin-tutorial.michaellamb.dev/widgets/cluster">Loading…</div>
+
+		<p style="margin-top: 2rem; font-size: 0.875rem; opacity: 0.7;">
+			Powered by <a href="https://kotlin-tutorial.michaellamb.dev" target="_blank" rel="noopener">kotlin-tutorial.michaellamb.dev</a> on the homelab cluster. See <a href="{{ site.url }}/now.html">/now</a> for personal activity.
+		</p>
+	</article>
+</main>
+
+<script>
+	document.querySelectorAll('[data-src]').forEach(async (el) => {
+		try {
+			const response = await fetch(el.dataset.src);
+			if (!response.ok) throw new Error('HTTP ' + response.status);
+			el.innerHTML = await response.text();
+		} catch (e) {
+			el.innerHTML = '<em>Widget unavailable.</em>';
+			window.GrafanaFaroWebSdk?.faro?.api?.pushError?.(e);
+		}
+	});
+</script>
