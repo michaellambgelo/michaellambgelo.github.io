@@ -16,23 +16,40 @@ hide_title: true
 			{% assign tone = 'dark' %}
 			{% if hero_index == 1 %}{% assign tone = 'light' %}{% endif %}
 			{% if hero_index == 2 %}{% assign tone = 'dark' %}{% endif %}
-			<section class="sk-hero sk-hero--{{ tone }}">
-				<div class="sk-hero__inner">
-					<p class="sk-eyebrow">{{ p.date | date: "%B %-d, %Y" }}{% if p.category %} &middot; {{ p.category | capitalize }}{% endif %}</p>
-					<h1 class="sk-hero__title"><a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a></h1>
-					{% if p.subtitle %}
-						<p class="sk-hero__subtitle">{{ p.subtitle }}</p>
-					{% else %}
-						<p class="sk-hero__subtitle">{{ p.content | strip_html | truncatewords: 28 }}</p>
+			{% assign media_side = 'left' %}
+			{% if hero_index == 1 %}{% assign media_side = 'right' %}{% endif %}
+			{% assign content_img = nil %}
+			{% assign img_parts = p.content | split: '<img src="' %}
+			{% if img_parts.size > 1 %}
+				{% assign content_img = img_parts[1] | split: '"' | first %}
+			{% endif %}
+			{% assign banner = content_img | default: p.image %}
+			{% assign banner_is_seo = false %}
+			{% unless content_img %}{% assign banner_is_seo = true %}{% endunless %}
+			<section class="sk-hero sk-hero--{{ tone }}{% if banner %} sk-hero--media sk-hero--media-{{ media_side }}{% endif %}">
+				<div class="sk-hero__layout">
+					{% if banner %}
+						<a class="sk-hero__media{% if banner_is_seo %} sk-hero__media--seo{% endif %}" href="{{ site.url }}{{ p.url }}" aria-hidden="true" tabindex="-1">
+							<img src="{{ banner }}" alt=""{% if hero_index == 0 %} loading="eager" fetchpriority="high"{% else %} loading="lazy"{% endif %}>
+						</a>
 					{% endif %}
-					<div class="sk-hero__ctas">
-						{% if tone == 'dark' %}
-							<a class="sk-btn sk-btn--on-dark sk-btn--primary" href="{{ site.url }}{{ p.url }}">Read</a>
-							<a class="sk-btn sk-btn--on-dark sk-btn--ghost" href="{{ site.url }}{{ p.url }}#giscus-comments">Comments</a>
+					<div class="sk-hero__inner">
+						<p class="sk-eyebrow">{{ p.date | date: "%B %-d, %Y" }}{% if p.category %} &middot; {{ p.category | capitalize }}{% endif %}</p>
+						<h1 class="sk-hero__title"><a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a></h1>
+						{% if p.subtitle %}
+							<p class="sk-hero__subtitle">{{ p.subtitle }}</p>
 						{% else %}
-							<a class="sk-btn sk-btn--primary" href="{{ site.url }}{{ p.url }}">Read</a>
-							<a class="sk-btn sk-btn--ghost" href="{{ site.url }}{{ p.url }}#giscus-comments">Comments</a>
+							<p class="sk-hero__subtitle">{{ p.content | strip_html | truncatewords: 28 }}</p>
 						{% endif %}
+						<div class="sk-hero__ctas">
+							{% if tone == 'dark' %}
+								<a class="sk-btn sk-btn--on-dark sk-btn--primary" href="{{ site.url }}{{ p.url }}">Read</a>
+								<a class="sk-btn sk-btn--on-dark sk-btn--ghost" href="{{ site.url }}{{ p.url }}#giscus-comments">Comments</a>
+							{% else %}
+								<a class="sk-btn sk-btn--primary" href="{{ site.url }}{{ p.url }}">Read</a>
+								<a class="sk-btn sk-btn--ghost" href="{{ site.url }}{{ p.url }}#giscus-comments">Comments</a>
+							{% endif %}
+						</div>
 					</div>
 				</div>
 			</section>
@@ -47,7 +64,20 @@ hide_title: true
 					</div>
 					<div class="sk-grid">
 						{% for p in older_posts %}
+							{% assign content_img = nil %}
+							{% assign img_parts = p.content | split: '<img src="' %}
+							{% if img_parts.size > 1 %}
+								{% assign content_img = img_parts[1] | split: '"' | first %}
+							{% endif %}
+							{% assign banner = content_img | default: p.image %}
+							{% assign banner_is_seo = false %}
+							{% unless content_img %}{% assign banner_is_seo = true %}{% endunless %}
 							<a class="sk-card" href="{{ site.url }}{{ p.url }}">
+								{% if banner %}
+									<span class="sk-card__image-wrap{% if banner_is_seo %} sk-card__image-wrap--seo{% endif %}">
+										<img class="sk-card__image" src="{{ banner }}" alt="" loading="lazy">
+									</span>
+								{% endif %}
 								<p class="sk-card__date">{{ p.date | date: "%b %-d, %Y" }}</p>
 								<h3 class="sk-card__title">{{ p.title }}</h3>
 								{% if p.category %}

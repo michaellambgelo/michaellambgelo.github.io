@@ -11,24 +11,24 @@
 	<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 	<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
 
-	<link rel="preload" href="{{ site.url }}/font/inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="{{ site.url }}/font/inter/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/font/inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/font/inter/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 
-	<link href="{{ site.url }}/css/theme.css" rel="stylesheet">
-	<link href="{{ site.url }}/css/gh-pages-blog.css" rel="stylesheet">
-	<link href="{{ site.url }}/css/newsletter.css" rel="stylesheet">
-	<link href="{{ site.url }}/css/syntax.css" rel="stylesheet">
+	<link href="/css/theme.css" rel="stylesheet">
+	<link href="/css/gh-pages-blog.css" rel="stylesheet">
+	<link href="/css/newsletter.css" rel="stylesheet">
+	<link href="/css/syntax.css" rel="stylesheet">
 
 	{% if site.rss.enabled %}
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url }}/rss.xml" />
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
 	{% endif %}
 
 	{% if site.favicon.enabled and site.favicon.local.enabled %}
-		<link rel="icon" type="image/{{ site.favicon.local.type }}" href="{{ site.url }}{{ site.favicon.local.partial_url }}" />
+		<link rel="icon" type="image/{{ site.favicon.local.type }}" href="{{ site.favicon.local.partial_url }}" />
 	{% elsif site.favicon.enabled and site.favicon.remote.enabled %}
 		<link rel="icon" type="image/{{ site.favicon.remote.type }}" href="{{ site.favicon.remote.full_url }}" />
 	{% endif %}
 
-	<script src="{{ site.url }}/js/grafana-faro.js"></script>
+	<script src="/js/grafana-faro.js"></script>
 {% endcapture %}
 {{ head_common_html | strip_newlines | remove:'	' }}
