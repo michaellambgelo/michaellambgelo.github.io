@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="-128 -128 256 256">
+  
+  
+  <circle cx="0" cy="0" r="128" fill="#100d18"></circle>
+  <circle cx="0" cy="0" r="127.25" fill="none" stroke="#2a2238" stroke-width="1.5"></circle>
+  <polygon points="0,62.171 -21.537,74.606 -21.537,49.737 0,37.303" fill="#100d18"></polygon>
+  <polygon points="0,62.171 21.537,74.606 21.537,49.737 0,37.303" fill="#100d18"></polygon>
+  <polygon points="0,37.303 21.537,49.737 0,62.171 -21.537,49.737" fill="#100d18"></polygon>
+  <line x1="0" y1="87.04" x2="21.537" y2="74.606" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="87.04" x2="-21.537" y2="74.606" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="87.04" x2="0" y2="62.171" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="62.171" x2="21.537" y2="74.606" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="62.171" x2="-21.537" y2="74.606" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="62.171" x2="0" y2="37.303" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="37.303" x2="21.537" y2="49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="37.303" x2="-21.537" y2="49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="21.537" y1="49.737" x2="0" y2="62.171" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="62.171" x2="-21.537" y2="49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="21.537" y1="74.606" x2="21.537" y2="49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="-21.537" y1="74.606" x2="-21.537" y2="49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <polygon points="0,37.303 -21.537,49.737 -21.537,24.869 0,12.434" fill="#100d18"></polygon>
+  <polygon points="0,37.303 21.537,49.737 21.537,24.869 0,12.434" fill="#100d18"></polygon>
+  <polygon points="0,12.434 21.537,24.869 0,37.303 -21.537,24.869" fill="#100d18"></polygon>
+  <line x1="0" y1="62.171" x2="21.537" y2="49.737" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="62.171" x2="-21.537" y2="49.737" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="62.171" x2="0" y2="37.303" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="37.303" x2="21.537" y2="49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="37.303" x2="-21.537" y2="49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="37.303" x2="0" y2="12.434" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="12.434" x2="21.537" y2="24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="12.434" x2="-21.537" y2="24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="21.537" y1="24.869" x2="0" y2="37.303" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="37.303" x2="-21.537" y2="24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="21.537" y1="49.737" x2="21.537" y2="24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="-21.537" y1="49.737" x2="-21.537" y2="24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <polygon points="0,12.434 -21.537,24.869 -21.537,0 0,-12.434" fill="#100d18"></polygon>
+  <polygon points="0,12.434 21.537,24.869 21.537,0 0,-12.434" fill="#100d18"></polygon>
+  <polygon points="0,-12.434 21.537,0 0,12.434 -21.537,0" fill="#100d18"></polygon>
+  <line x1="0" y1="37.303" x2="21.537" y2="24.869" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="37.303" x2="-21.537" y2="24.869" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="37.303" x2="0" y2="12.434" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="12.434" x2="21.537" y2="24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="12.434" x2="-21.537" y2="24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="12.434" x2="0" y2="-12.434" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-12.434" x2="21.537" y2="0" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-12.434" x2="-21.537" y2="0" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="21.537" y1="0" x2="0" y2="12.434" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="12.434" x2="-21.537" y2="0" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="21.537" y1="24.869" x2="21.537" y2="0" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="-21.537" y1="24.869" x2="-21.537" y2="0" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <polygon points="0,-12.434 -21.537,0 -21.537,-24.869 0,-37.303" fill="#100d18"></polygon>
+  <polygon points="0,-12.434 21.537,0 21.537,-24.869 0,-37.303" fill="#100d18"></polygon>
+  <polygon points="0,-37.303 21.537,-24.869 0,-12.434 -21.537,-24.869" fill="#100d18"></polygon>
+  <line x1="0" y1="12.434" x2="21.537" y2="0" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="12.434" x2="-21.537" y2="0" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="12.434" x2="0" y2="-12.434" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="-12.434" x2="21.537" y2="0" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-12.434" x2="-21.537" y2="0" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-12.434" x2="0" y2="-37.303" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-37.303" x2="21.537" y2="-24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-37.303" x2="-21.537" y2="-24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="21.537" y1="-24.869" x2="0" y2="-12.434" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-12.434" x2="-21.537" y2="-24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="21.537" y1="0" x2="21.537" y2="-24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="-21.537" y1="0" x2="-21.537" y2="-24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <polygon points="0,-37.303 -21.537,-24.869 -21.537,-49.737 0,-62.171" fill="#100d18"></polygon>
+  <polygon points="0,-37.303 21.537,-24.869 21.537,-49.737 0,-62.171" fill="#100d18"></polygon>
+  <polygon points="0,-62.171 21.537,-49.737 0,-37.303 -21.537,-49.737" fill="#100d18"></polygon>
+  <line x1="0" y1="-12.434" x2="21.537" y2="-24.869" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="-12.434" x2="-21.537" y2="-24.869" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="-12.434" x2="0" y2="-37.303" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="-37.303" x2="21.537" y2="-24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-37.303" x2="-21.537" y2="-24.869" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-37.303" x2="0" y2="-62.171" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-62.171" x2="21.537" y2="-49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-62.171" x2="-21.537" y2="-49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="21.537" y1="-49.737" x2="0" y2="-37.303" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-37.303" x2="-21.537" y2="-49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="21.537" y1="-24.869" x2="21.537" y2="-49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="-21.537" y1="-24.869" x2="-21.537" y2="-49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <polygon points="0,-62.171 -21.537,-49.737 -21.537,-74.606 0,-87.04" fill="#100d18"></polygon>
+  <polygon points="0,-62.171 21.537,-49.737 21.537,-74.606 0,-87.04" fill="#100d18"></polygon>
+  <polygon points="0,-87.04 21.537,-74.606 0,-62.171 -21.537,-74.606" fill="#100d18"></polygon>
+  <line x1="0" y1="-37.303" x2="21.537" y2="-49.737" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="-37.303" x2="-21.537" y2="-49.737" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="-37.303" x2="0" y2="-62.171" stroke="#4d4570" stroke-width="1.125" stroke-dasharray="2 2" stroke-linecap="round" opacity="0.6"></line>
+  <line x1="0" y1="-62.171" x2="21.537" y2="-49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-62.171" x2="-21.537" y2="-49.737" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-62.171" x2="0" y2="-87.04" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-87.04" x2="21.537" y2="-74.606" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-87.04" x2="-21.537" y2="-74.606" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="21.537" y1="-74.606" x2="0" y2="-62.171" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="0" y1="-62.171" x2="-21.537" y2="-74.606" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="21.537" y1="-49.737" x2="21.537" y2="-74.606" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <line x1="-21.537" y1="-49.737" x2="-21.537" y2="-74.606" stroke="#e479d3" stroke-width="1.5" stroke-linecap="round"></line>
+  <g class="scan scan-0" style="animation-delay:0.00s">
+    <polygon points="0,62.171 -21.537,74.606 -21.537,49.737 0,37.303" fill="#a55cc5"></polygon>
+    <polygon points="0,62.171 21.537,74.606 21.537,49.737 0,37.303" fill="#e479d3"></polygon>
+    <polygon points="0,37.303 21.537,49.737 0,62.171 -21.537,49.737" fill="#f4a3e2"></polygon>
+  </g>
+  <g class="scan scan-1" style="animation-delay:0.25s">
+    <polygon points="0,37.303 -21.537,49.737 -21.537,24.869 0,12.434" fill="#a55cc5"></polygon>
+    <polygon points="0,37.303 21.537,49.737 21.537,24.869 0,12.434" fill="#e479d3"></polygon>
+    <polygon points="0,12.434 21.537,24.869 0,37.303 -21.537,24.869" fill="#f4a3e2"></polygon>
+  </g>
+  <g class="scan scan-2" style="animation-delay:0.50s">
+    <polygon points="0,12.434 -21.537,24.869 -21.537,0 0,-12.434" fill="#a55cc5"></polygon>
+    <polygon points="0,12.434 21.537,24.869 21.537,0 0,-12.434" fill="#e479d3"></polygon>
+    <polygon points="0,-12.434 21.537,0 0,12.434 -21.537,0" fill="#f4a3e2"></polygon>
+  </g>
+  <g class="scan scan-3" style="animation-delay:0.75s">
+    <polygon points="0,-12.434 -21.537,0 -21.537,-24.869 0,-37.303" fill="#a55cc5"></polygon>
+    <polygon points="0,-12.434 21.537,0 21.537,-24.869 0,-37.303" fill="#e479d3"></polygon>
+    <polygon points="0,-37.303 21.537,-24.869 0,-12.434 -21.537,-24.869" fill="#f4a3e2"></polygon>
+  </g>
+  <g class="scan scan-4" style="animation-delay:1.00s">
+    <polygon points="0,-37.303 -21.537,-24.869 -21.537,-49.737 0,-62.171" fill="#a55cc5"></polygon>
+    <polygon points="0,-37.303 21.537,-24.869 21.537,-49.737 0,-62.171" fill="#e479d3"></polygon>
+    <polygon points="0,-62.171 21.537,-49.737 0,-37.303 -21.537,-49.737" fill="#f4a3e2"></polygon>
+  </g>
+  <g class="scan scan-5" style="animation-delay:1.25s">
+    <polygon points="0,-62.171 -21.537,-49.737 -21.537,-74.606 0,-87.04" fill="#a55cc5"></polygon>
+    <polygon points="0,-62.171 21.537,-49.737 21.537,-74.606 0,-87.04" fill="#e479d3"></polygon>
+    <polygon points="0,-87.04 21.537,-74.606 0,-62.171 -21.537,-74.606" fill="#f4a3e2"></polygon>
+  </g>
+</svg>
