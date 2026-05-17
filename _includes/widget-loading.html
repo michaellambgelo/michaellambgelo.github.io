@@ -1,0 +1,14 @@
+{% assign label = include.label | default: "loading…" %}
+<div class="sk-widget-loading" role="status" aria-live="polite">
+	<div class="sk-widget-loading__mark" aria-hidden="true">
+		<span class="sk-widget-loading__spinner"></span>
+		<svg class="sk-widget-loading__logo" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg">
+			<g font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="34">
+				<text x="32" y="32" text-anchor="middle" fill="#00ffff" transform="translate(-2,0)">ML</text>
+				<text x="32" y="32" text-anchor="middle" fill="#ff0000" transform="translate(2,0)">ML</text>
+				<text x="32" y="32" text-anchor="middle" fill="currentColor">ML</text>
+			</g>
+		</svg>
+	</div>
+	<span class="sk-widget-loading__label">{{ label }}</span>
+</div>
