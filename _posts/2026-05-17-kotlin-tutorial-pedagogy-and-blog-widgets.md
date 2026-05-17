@@ -19,7 +19,7 @@ This blog now has two pages with live data on them. [`/cluster`]({{ site.url }}/
 
 None of that data lives in the Jekyll source. The blog is still a static site generator; when it builds, both pages have empty `<div>`s where the live content goes. The HTML that fills them is fetched at page-load time from a Ktor service running on `node5` of the cluster itself.
 
-That service is called `kotlin-tutorial`. It exists for two reasons: it teaches Kotlin language features through deliberately-duplicated demo routes, and it serves the live widgets `/cluster` and `/now` embed.
+That service is called [`kotlin-tutorial`](https://kotlin-tutorial.michaellamb.dev). It exists for two reasons: it teaches Kotlin language features through deliberately-duplicated demo routes, and it serves the live widgets `/cluster` and `/now` embed.
 
 ## Why a Ktor service and not a static page
 
