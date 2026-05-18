@@ -15,7 +15,7 @@ published: true
 
 I've always viewed [the homelab cluster]({{ site.url }}/2021/03/cluster-computing/) and this blog as intrinsically related. What happens on the cluster ends up on the blog.
 
-This blog now has two pages with live data on them. [`/cluster`]({{ site.url }}/cluster.html) shows the up/down status of every service running on my six-node Raspberry Pi homelab, sourced from Uptime Kuma. [`/now`]({{ site.url }}/now.html) — modeled on the old-web [now-page convention](https://nownownow.com/about) — lists my recent Letterboxd watches and recently-played Steam games.
+This blog now has two pages with live data on them. [`/cluster`]({{ site.url }}/cluster.html) shows the up/down status of every service running on my six-node Raspberry Pi homelab, sourced from Uptime Kuma. [`/now`]({{ site.url }}/now.html) — modeled on the old-web [now-page convention](https://nownownow.com/about) — lists my recent Letterboxd watches, recently-played Steam games, and any commits I've pushed to GitHub in the last 24 hours.
 
 None of that data lives in the Jekyll source. The blog is still a static site generator; when it builds, both pages have empty `<div>`s where the live content goes. The HTML that fills them is fetched at page-load time from a Ktor service running on `node5` of the cluster itself.
 
@@ -97,13 +97,14 @@ The widget routes under `src/main/kotlin/dev/michaellamb/tutorial/widgets/` foll
 - `LetterboxdWidget.kt` — **kotlinx.html DSL**. Parses my Letterboxd RSS feed and emits a poster-grid `<div>` via type-safe Kotlin HTML builders.
 - `SteamWidget.kt` — **data classes + Jackson**. The `SteamGame` data class doubles as a JSON DTO, with `@JsonProperty` mapping Steam's snake_case fields (`playtime_2weeks`, `rtime_last_played`) onto camelCase Kotlin properties. The widget shows games played in the last two weeks with their recent + lifetime playtime.
 - `ClusterWidget.kt` — **structured concurrency**. Hits two Uptime Kuma endpoints in parallel via `coroutineScope { async { } ; async { } }` and combines the results into the per-group service table.
-- `WidgetCache.kt` — a 60-second in-memory TTL cache, used by all three.
+- `GitHubWidget.kt` — **java.time + collection ops**. Computes a 24-hour cutoff with `Instant.now().minus(Duration.ofHours(24))`, asks GitHub's search API for commits I've authored since, then `groupBy`/`sortedByDescending`s them into a per-repo list.
+- `WidgetCache.kt` — a 60-second in-memory TTL cache, used by all four.
 
 `WidgetCache` is the one place duplication earned the right to die: every widget genuinely needs a cache, and the cache logic isn't the feature being demonstrated. Everywhere else, the widgets stay as side-by-side standalone examples. They're the bridge between the two halves of the project — useful enough that the blog depends on them, instructive enough to belong in a folder called `tutorial`.
 
 The cluster widget today reads from Uptime Kuma at `status.michaellamb.dev`; eventually I want to replace that with a small Homelab Bot of my own (also Kotlin), but that's a different post.
 
-The deploy path is unremarkable in the way I like: GitHub Actions builds a multi-arch image to `ghcr.io/michaellambgelo/kotlin-tutorial`, the Ansible playbook at `cluster-ops/playbooks/update-kotlin-tutorial.yml` swaps the container on `node5`, and `cloudflared` on `node6` exposes it at `kotlin-tutorial.michaellamb.dev`. The blog's `/cluster` and `/now` pages each `fetch()` HTML fragments from `/widgets/cluster`, `/widgets/letterboxd`, and `/widgets/steam`, with CORS on the Ktor side configured for the blog's origin.
+The deploy path is unremarkable in the way I like: GitHub Actions builds a multi-arch image to `ghcr.io/michaellambgelo/kotlin-tutorial`, the Ansible playbook at `cluster-ops/playbooks/update-kotlin-tutorial.yml` swaps the container on `node5`, and `cloudflared` on `node6` exposes it at `kotlin-tutorial.michaellamb.dev`. The blog's `/cluster` and `/now` pages each `fetch()` HTML fragments from `/widgets/cluster`, `/widgets/letterboxd`, `/widgets/steam`, and `/widgets/github`, with CORS on the Ktor side configured for the blog's origin.
 
 ## Why I like this
 
