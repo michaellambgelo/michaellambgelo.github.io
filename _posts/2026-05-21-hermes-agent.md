@@ -374,13 +374,14 @@ With the plumbing working, I gave Hermes something real to chew on: find researc
 | Harness | Interface | Open source | Model flexibility | Niche |
 |---|---|---|---|---|
 | Claude Code | Terminal (+IDE) | ❌ Proprietary | 🔒 Claude only | Deep autonomous multi-file work |
-| OpenAI Codex CLI | Terminal | ✅ Apache-2.0 (~75k★, Rust) | Mostly OpenAI | Lightweight terminal agent |
-| Aider | Terminal | ✅ Apache-2.0 (~41k★, Python) | 🔓 Any model | Git-native pair programming |
+| OpenAI Codex CLI | Terminal | ✅ Apache-2.0 (84k★, Rust) | Mostly OpenAI | Lightweight terminal agent |
+| Aider | Terminal | ✅ Apache-2.0 (45k★, Python) | 🔓 Any model | Git-native pair programming |
 | Cline | IDE ext / CLI / SDK | ✅ Apache-2.0 (62k★) | 🔓 Any model | Autonomous agent in your editor |
 | Cursor | Full IDE (VS Code fork) | ❌ Proprietary | 🔓 Multi-model | Best-in-class IDE UX |
 | GitHub Copilot (agent mode) | IDE / CLI | ❌ Proprietary | Multi (GPT/Claude/Gemini) | Enterprise + ecosystem |
 | Windsurf | Full IDE | ❌ Proprietary | 🔓 Multi-model | "Flows" / agentic IDE |
 | Gemini CLI | Terminal | ✅ Open | 🔒 Gemini | Huge context, Google tie-in |
+| Hermes | Messaging (Discord/Telegram/Slack…) + Terminal | ✅ Open | 🔓 Any model (multi-provider) | Ambient always-on agent: memory, cron, subagents |
 
 *Star counts as of May 2026.*
 
