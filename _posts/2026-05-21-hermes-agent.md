@@ -381,7 +381,7 @@ With the plumbing working, I gave Hermes something real to chew on: find researc
 | GitHub Copilot (agent mode) | IDE / CLI | ❌ Proprietary | Multi (GPT/Claude/Gemini) | Enterprise + ecosystem |
 | Windsurf | Full IDE | ❌ Proprietary | 🔓 Multi-model | "Flows" / agentic IDE |
 | Gemini CLI | Terminal | ✅ Open | 🔒 Gemini | Huge context, Google tie-in |
-| Hermes | Messaging (Discord/Telegram/Slack…) + Terminal | ✅ Open | 🔓 Any model (multi-provider) | Ambient always-on agent: memory, cron, subagents |
+| Hermes | Messaging (Discord/Telegram/Slack…) + Terminal | ✅ MIT (163k★, Python) | 🔓 Any model (multi-provider) | Ambient always-on agent: memory, cron, subagents |
 
 *Star counts as of May 2026.*
 
