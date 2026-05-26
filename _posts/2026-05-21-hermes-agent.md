@@ -12,6 +12,8 @@ tags:
 published: true
 ---
 
+> **Correction (2026-05-26):** This post implies Hermes runs Claude under your existing Claude.ai subscription. In practice, Hermes's default request shape (Opus + full toolset, with auto-retries) gets routed onto Anthropic's overage / extra-usage path — real money, not subscription headroom. I burned through $60 in extra-usage credits before I figured this out. See [the follow-up post]({% post_url 2026-05-26-hermes-agent-cost-correction %}) for the full story.
+
 ## What is an AI harness?
 
 Honestly, I don't know. I'm doing this to learn it. [NetworkChuck happened to post about it today on YouTube](https://www.youtube.com/watch?v=QQEgIo4Juxg) and I liked the vibe of the [Hermes Agent](https://hermes-agent.nousresearch.com/) website.
