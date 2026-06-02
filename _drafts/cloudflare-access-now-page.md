@@ -129,6 +129,36 @@ read back globally. That second one is a non-issue here because the widget alrea
 caches for 60s, but it's the kind of thing that bites you if you expect read-
 your-writes.
 
+## Monitoring — a third face of Access
+
+I wanted Uptime Kuma to page me on a real outage, and two wrinkles made that
+interesting. First, the widget endpoint always returns `200` — it degrades to a
+friendly message, so a status-code check can't tell "working" from "broken."
+Second, the whole `now-store` hostname is behind Access, so a naïve probe just
+gets a `403`.
+
+The clean answer was a **public, KV-aware health endpoint**. The Worker's
+`/health` does a one-key `KV.list({ limit: 1 })` and returns `503` if it throws —
+so a plain `200` means *Worker + KV are both healthy*, no credential required:
+
+```js
+if (pathname === '/health') {
+  try {
+    await env.ENTRIES.list({ limit: 1 });   // light KV liveness
+    return json({ ok: true });
+  } catch (err) {
+    return json({ ok: false, kv: 'error' }, 503);
+  }
+}
+```
+
+To expose only that path, I carved it out of Access with a path-scoped **Bypass**
+policy on `now-store.michaellamb.dev/health` (more-specific path apps win),
+leaving `/entries` protected. So Access ended up wearing *three* faces in one
+small service: **service token** (machine), **One-time-PIN email** (human), and
+**Bypass** (public health check). Uptime Kuma just watches for `200` — no secret
+in its database.
+
 ## What it cost in infra
 
 Almost nothing, which is the point:
