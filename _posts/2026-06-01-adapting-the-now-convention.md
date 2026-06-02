@@ -63,9 +63,6 @@ already have a public face. Letterboxd is already public. My Steam profile is al
 GitHub commits are already public. The `/now` page doesn't expose anything new about me — it just
 gathers the feeds I'd already opted into and points them at one spot.
 
-*That's the line I'm comfortable with.* No location, no calendar, no what-I'm-actually-thinking. The
-page is a mirror of the me that's already out there, not a window into the me that isn't.
-
 ## The how lives in another post
 
 If you want the plumbing — the Ktor service on the homelab, the server-side cache so I'm not
@@ -81,14 +78,14 @@ directly, not as a footnote. The service isn't *described* on the now page; it *
 
 ## So that's where I'm at, now
 
-Claude Code handed me a nostalgic, hand-written convention and I promptly automated most of the
+Claude Code introduced me to a nostalgic, hand-written convention and I promptly automated most of the
 nostalgia out of it. I don't think that's a betrayal so much as a translation — the same "here's what
 I'm up to" impulse, wired to the feeds that already know the answer. The prose layer is still there
 when I want it. The rest writes itself.
 
 There's one piece I haven't built yet. Right now "when I want it" means editing HTML and pushing a
 commit — enough friction that I rarely do. So the next thing I want is a way to drop a one-line
-status that publishes in seconds and **clears itself at midnight**: a daily note with a built-in
+status that publishes in seconds and maybe **clears itself at midnight**: a daily note with a built-in
 expiration date, so the human layer can never sit there three weeks stale insisting I'm still
 "heads-down on the homelab bot." The feeds stay honest by being live; the prose should stay honest by
 being ephemeral. That's a different post — and the one I'm most looking forward to writing.
