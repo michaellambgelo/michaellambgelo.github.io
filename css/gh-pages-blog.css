@@ -962,8 +962,14 @@ html.sk-nav-open {
 
 @media (max-width: 860px) {
   .sk-hero--media .sk-hero__layout {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 32px;
+  }
+  .sk-hero--media .sk-hero__media {
+    flex: none;
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
   }
   .sk-hero--media .sk-hero__inner {
     align-items: center;
