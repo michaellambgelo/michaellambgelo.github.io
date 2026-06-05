@@ -34,11 +34,7 @@ hide_title: true
 		</ul>
 
 		<h2>Projects</h2>
-		<ul style="list-style: none; padding-left: 0;">
-			<li><a href="https://blog.michaellamb.dev" target="_blank" rel="noopener">blog.michaellamb.dev</a> &mdash; this blog <img src="https://status.michaellamb.dev/api/badge/10/status" alt="Blog status" style="display: inline-block; vertical-align: middle; height: 1.2em;"></li>
-			<li><a href="https://letterboxd.michaellamb.dev" target="_blank" rel="noopener">letterboxd.michaellamb.dev</a> &mdash; Custom Letterboxd Stats Page <img src="https://status.michaellamb.dev/api/badge/11/status" alt="Letterboxd Stats status" style="display: inline-block; vertical-align: middle; height: 1.2em;"></li>
-			<li><a href="https://boxd-card.michaellamb.dev" target="_blank" rel="noopener">boxd-card.michaellamb.dev</a> &mdash; Boxd Card <img src="https://status.michaellamb.dev/api/badge/12/status" alt="Boxd Card status" style="display: inline-block; vertical-align: middle; height: 1.2em;"></li>
-		</ul>
+		<div id="projects-widget" data-src="https://kotlin-tutorial.michaellamb.dev/widgets/projects">{% include widget-loading.html label="loading projects…" %}</div>
 
 		<h2>Important links</h2>
 		<ul style="list-style: none; padding-left: 0;">
@@ -48,4 +44,17 @@ hide_title: true
 			<li><a href="https://status.michaellamb.dev" target="_blank" rel="noopener">status.michaellamb.dev</a> &mdash; uptime monitoring</li>
 		</ul>
 	</article>
+
+	<script>
+		document.querySelectorAll('[data-src]').forEach(async (el) => {
+			try {
+				const response = await fetch(el.dataset.src);
+				if (!response.ok) throw new Error('HTTP ' + response.status);
+				el.innerHTML = await response.text();
+			} catch (e) {
+				el.innerHTML = '<em>Widget unavailable.</em>';
+				window.GrafanaFaroWebSdk?.faro?.api?.pushError?.(e);
+			}
+		});
+	</script>
 </main>
