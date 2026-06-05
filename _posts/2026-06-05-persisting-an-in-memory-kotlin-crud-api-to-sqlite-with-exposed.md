@@ -222,7 +222,7 @@ RUN mkdir -p /app/data && chown -R app:app /app/data
 ENV NOTES_DB_PATH=/app/data/notes.db
 ```
 
-And in my [cluster-ops](https://github.com/michaellambgelo/cluster-ops) Ansible repo, a named Docker volume mounted at that path, matching the convention my other stateful services already use:
+And in my Ansible deploy config, a named Docker volume mounted at that path, matching the convention my other stateful services already use:
 
 ```yaml
 -v kotlin-tutorial-data:/app/data
@@ -231,6 +231,8 @@ And in my [cluster-ops](https://github.com/michaellambgelo/cluster-ops) Ansible 
 Named volumes live outside the container's lifecycle, so the stop-remove-recreate dance the deploy playbook does on `node5` leaves the data untouched. The deploy itself is unremarkable in the way I like: `node0` (my Mac mini control node) builds the arm64 image natively, pushes it to GHCR, and the Ansible playbook health-gates the swap on `node5`.
 
 I verified the whole loop the only way that actually proves persistence — by killing the process. Locally: POST a note, stop the app, start it again pointing at the same file, GET the list, and watch the note still be there. Then in production after the deploy, `GET /notes` returns a clean `[ ]`, the schema having been created on first boot — and the note I added by hand a few minutes later is, satisfyingly, still there.
+
+> **Try it.** The store on `node5` is live and waiting for company — [add your own note at `/notes`](https://kotlin-tutorial.michaellamb.dev/#notes). It'll outlive my next deploy right alongside mine.
 
 ## Two lessons in one sitting
 
