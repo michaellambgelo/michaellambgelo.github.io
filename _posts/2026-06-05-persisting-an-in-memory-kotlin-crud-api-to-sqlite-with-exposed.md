@@ -240,4 +240,4 @@ This is just how a pedagogical codebase works. `kotlin-tutorial` is where I teac
 
 And the architecture half is worth taking with you on its own. In-memory storage behind a thin repository, backed by a few kilobytes of SQLite on disk, is enough to hold notes from every consumer of the API at once and trust them to still be there after the next deploy. That's not a toy — it's the honest minimum a great many small services actually need.
 
-So take it further than I did. Pick the Kotlin feature you keep forgetting, decide what *your* service actually needs to remember — and what its real requirements are — then add the file, register it in `Routing.kt`, and let the deploy carry it to `node5` like the rest. The next post will tell you what it taught me.
+So take it further than I did. Pick a Ktor in-memory proof-of-concept, decide what *your* service actually needs to remember — and what its real requirements are — then add the file, register it in `Routing.kt`, and let the deploy carry it to `node5` like the rest. The next post will tell you what it taught me.
