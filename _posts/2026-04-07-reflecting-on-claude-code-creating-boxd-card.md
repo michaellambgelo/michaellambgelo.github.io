@@ -12,7 +12,7 @@ tags:
 
 ## Introduction
 
-[Boxd Card](https://boxd-card.michaellamb.dev) is a tool I built with [Claude Code](https://claude.ai/code) that generates shareable PNG image cards from Letterboxd profiles. It started as a Chrome extension and grew into a dual-target project: the same codebase produces both a Chrome MV3 extension and a standalone web app at [boxd-card.michaellamb.dev/app/](https://boxd-card.michaellamb.dev/app/).
+[Boxd Card](https://boxd-card.com) is a tool I built with [Claude Code](https://claude.ai/code) that generates shareable PNG image cards from Letterboxd profiles. It started as a Chrome extension and grew into a dual-target project: the same codebase produces both a Chrome MV3 extension and a standalone web app at [boxd-card.com/app/](https://boxd-card.com/app/).
 
 This post is a reflection on what Claude Code built and the technical decisions it made along the way — particularly around managing two build targets from one codebase, the versioning and release pipeline, and the automation that keeps it all working smoothly.
 

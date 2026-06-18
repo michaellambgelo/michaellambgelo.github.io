@@ -11,7 +11,7 @@ tags:
 
 ## One-click install, finally
 
-[Boxd Card](https://boxd-card.michaellamb.dev) is now available on the Chrome Web Store:
+[Boxd Card](https://boxd-card.com) is now available on the Chrome Web Store:
 
 👉 [**Install Boxd Card**](https://chromewebstore.google.com/detail/boxd-card/kcholfdhfcojahebmneeeikelffkokdj?authuser=0&hl=en)
 

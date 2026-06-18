@@ -16,7 +16,7 @@ On Threads or Bluesky, I'll look for a post from the official Letterboxd account
 
 ## Introducing boxd-card (beta)
 
-[![Boxd Card logo](/img/2026-03-25-boxd-card-favicon.svg)](https://boxd-card.michaellamb.dev)
+[![Boxd Card logo](/img/2026-03-25-boxd-card-favicon.svg)](https://boxd-card.com)
 
 Boxd Card is web browser extension that generates a shareable image card from your Letterboxd profile. A web app version also exists but faces some technical limitations, so for the full-featured experience I recommend taking the 4 steps required to install the browser extension. 
 
@@ -44,7 +44,7 @@ The extension reads film metadata and poster images directly from the Letterboxd
 
 The web browser extension works with any Chromium-based browser with developer mode enabled.
 
-### Web app (beta boxd-card.michaellamb.dev/app/)
+### Web app (beta boxd-card.com/app/)
 
 The web app exists but has some technical limitations that prevent it from being as feature-rich as the browser extension. It uses a Cloudflare Worker to proxy requests to Letterboxd, which unfortunately blocks some requests using WAF rules. Last Four Watched and Favorites work fine, but other card types may not work as expected. This is because the web app cannot directly access the Letterboxd page DOM like the browser extension can, and the proxying adds an extra layer of complexity. WAF rules block known browser automation tools, making it difficult to scrape data directly from the page. An API integration with Letterboxd could assist with this, but I have not submitted a request for credentials.
 
