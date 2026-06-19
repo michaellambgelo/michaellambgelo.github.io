@@ -39,10 +39,6 @@ The move ships inside the extension too. **v0.8.0** is live on the [Chrome Web S
 
 If you already have it installed, the update rolls out automatically. If you don't, this is the easiest way in.
 
-## Your old links still work
-
-This is the part I cared about most: nothing you've already shared breaks. Every old `boxd-card.michaellamb.dev` address 301-redirects to its `boxd-card.com` equivalent — cards you've posted, bookmarks, links in group chats. They all quietly land in the right place.
-
 ## Go make one
 
 Head to **[boxd-card.com](https://boxd-card.com)**, paste in your profile, and see what your film taste looks like as a card. Or [add it to Chrome](https://chromewebstore.google.com/detail/boxd-card/kcholfdhfcojahebmneeeikelffkokdj) and generate one straight from any Letterboxd page you're on.
