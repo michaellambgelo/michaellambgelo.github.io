@@ -22,6 +22,8 @@ What I want to write down isn't the app so much as one *afternoon* of it. Here's
 
 Five builds: four features and one hotfix. Two were things I shot off quickly during the afternoon that I knew I wanted before trivia kicked off. Two changes were desired during the game. The singular fix was visually impacting.
 
+Builds average a 1 minute build time, so generally my workflow is to make a simple change, verify it locally, and then push to production since verification and user validation can happen within minutes of each other during a 2+ hour trivia event.
+
 ## Why the loop is this fast
 
 The stack is built to get out of the way. The front end is React + TypeScript + Vite + Tailwind. The back end is [Cloudflare Pages Functions](https://developers.cloudflare.com/pages/functions/) over a [D1](https://developers.cloudflare.com/d1/) SQLite database, with the admin console gated behind Cloudflare Access. There's no server to babysit and no container to rebuild.
