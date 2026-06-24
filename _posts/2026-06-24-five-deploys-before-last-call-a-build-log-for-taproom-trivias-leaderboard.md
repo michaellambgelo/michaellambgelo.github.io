@@ -112,4 +112,4 @@ The rest is just the compounding effect of a cheap deploy. A one-minute push fro
 
 None of these five commits is clever in isolation — a telemetry init, a tracked async action, an auto-scroll, a sort order, a column width. What made the day work was the shape around them: observability landed first, every change went out small, and the deploy was fast enough that fixing the thing you just saw on the TV cost about as much as ignoring it. That's the build log. The app happens to be a trivia scoreboard, but the loop — instrument, then iterate in small, fast, individually-shippable steps — is the part I keep reusing, whether the thing on the TV is a leaderboard or something a hundred times bigger.
 
-If you want to know more about Taproom Trivia — or just want to talk shop about AI-assisted development — come find me on my Discord server: <https://discord.gg/YOUR-INVITE>.
+If you want to know more about Taproom Trivia — or just want to talk shop about AI-assisted development — come find me on my Discord server: <https://discord.gg/5tYHVRresd>.
