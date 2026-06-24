@@ -20,7 +20,7 @@ What I want to write down isn't the app so much as one *afternoon* of it. Here's
 
 ![GitHub Actions deploy history: five green builds shipped in one evening, from a Grafana Faro instrumentation commit at 2:17 PM to a rank-column fix at 8:27 PM, each finishing in about a minute](/img/2026-06-24-fertile-ground-deploys.png)
 
-Five green checks, oldest at the bottom. Two telemetry commits in the early afternoon, then a gap, then three UX changes landing in a 40-minute window in the evening — some of them while trivia was actually happening. None of these is a heroic feature. The point is the *cadence*: five real changes to production between lunch and last call, each one a one-minute build.
+Five builds: four features and one hotfix. Two were things I shot off quickly during the afternoon that I knew I wanted before trivia kicked off. Two changes were desired during the game. The singular fix was visually impacting.
 
 ## Why the loop is this fast
 
