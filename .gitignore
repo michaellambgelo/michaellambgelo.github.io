@@ -4,3 +4,5 @@ _site/
 # Ruby dependencies
 .bundle/
 vendor/
+# Social post copy (local only)
+social/
