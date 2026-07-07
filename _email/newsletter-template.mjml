@@ -73,6 +73,27 @@
 
     {{/articles}}
 
+    <!-- Evergreen callout -->
+    <mj-section padding="24px 24px 8px 24px">
+      <mj-column>
+
+        <mj-text align="center" font-size="14px" color="#333333" line-height="1.6" padding="0 0 8px 0">
+          Get to know me and my projects about
+          <a href="https://blog.michaellamb.dev/about" style="color: #0088cc;">/about</a>
+          or see what I'm up to right
+          <a href="https://blog.michaellamb.dev/now" style="color: #0088cc;">/now</a>
+          <br />
+          Check the status of my homelab 
+          <a href="https://blog.michaellamb.dev/cluster" style="color: #0088cc;">/cluster</a>
+          <br />
+          See the <a href="https://blog.michaellamb.dev/members" style="color: #0088cc;">/members</a> of my Discord server
+        </mj-text>
+
+        <mj-divider border-color="#e2e8f0" border-width="1px" padding="8px 0 0 0" />
+
+      </mj-column>
+    </mj-section>
+
     <!-- Footer -->
     <mj-section padding="24px" background-color="#f9fafb">
       <mj-column>
