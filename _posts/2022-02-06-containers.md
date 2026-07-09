@@ -4,6 +4,7 @@ title : Containers on k3s
 image : "/seo/2022-02-06.png"
 category : infrastructure
 tags:
+- homelab
 
 - kubernetes
 - raspberry-pi

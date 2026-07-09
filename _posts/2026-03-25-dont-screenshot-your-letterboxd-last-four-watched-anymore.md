@@ -4,6 +4,7 @@ title: "Don't screenshot your Letterboxd Last Four Watched anymore"
 image: "/seo/2026-03-25.png"
 category: software
 tags:
+- movies
 - letterboxd
 - chrome-extension
 - react

@@ -2,8 +2,9 @@
 layout: post
 title: "I built a custom Letterboxd diary viewer"
 date: 2025-02-21 
-category: projects
+category: software
 tags:
+- letterboxd
 - project
 - javascript
 - api

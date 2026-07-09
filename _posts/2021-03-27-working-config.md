@@ -3,6 +3,7 @@ layout: post
 title: Workspace Configuration
 category: infrastructure
 tags:
+- homelab
 - raspberry-pi
 - cluster
 - tutorial

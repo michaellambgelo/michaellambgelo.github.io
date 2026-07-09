@@ -3,6 +3,7 @@ layout: post
 title: Pi Cluster Update
 category: infrastructure
 tags:
+- homelab
 - raspberry-pi
 - cluster
 - tutorial

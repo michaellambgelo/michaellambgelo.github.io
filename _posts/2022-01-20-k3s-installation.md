@@ -4,6 +4,7 @@ title : k3s Installation
 image : "/seo/2022-01-20.png"
 category: infrastructure
 tags:
+- homelab
 - kubernetes
 - k3s
 - raspberry-pi

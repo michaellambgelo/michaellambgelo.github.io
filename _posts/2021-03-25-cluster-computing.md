@@ -3,6 +3,7 @@ layout: post
 title: What I'm working on right now
 category: infrastructure
 tags:
+- homelab
 - raspberry-pi
 - cluster
 - kubernetes
