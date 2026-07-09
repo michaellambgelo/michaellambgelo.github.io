@@ -4,6 +4,7 @@ title : Introducing status.michaellamb.dev
 image : "/seo/2022-03-07.png"
 category : infrastructure
 tags:
+- homelab
 
 - docker
 - raspberry-pi	

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Three Questions for ChatGPT
-category: development
+category: machine-intelligence
 tags:
 - ai
 - chatgpt

@@ -2,10 +2,11 @@
 layout: post
 title: "Five deploys before last call: a build log for Taproom Trivia's leaderboard"
 date: 2026-06-24
-category: development
+category: software
 subtitle: "Published at 12:30 AM — three hours after trivia wrapped."
 image: "/seo/2026-06-24-five-deploys-before-last-call-a-build-log-for-taproom-trivias-leaderboard.png"
 tags:
+- trivia
 - claude-code
 - react
 - cloudflare

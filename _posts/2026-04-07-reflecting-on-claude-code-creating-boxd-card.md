@@ -2,7 +2,7 @@
 layout: post
 title: "Reflecting on Claude Code creating Boxd Card"
 date: 2026-04-07
-category: software
+category: machine-intelligence
 image: "/seo/2026-04-07.png"
 tags:
 - claude-code

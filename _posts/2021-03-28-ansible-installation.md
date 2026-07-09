@@ -3,6 +3,7 @@ layout: post
 title: Ansible Installation
 category: infrastructure
 tags:
+- homelab
 - ansible
 - raspberry-pi
 - cluster

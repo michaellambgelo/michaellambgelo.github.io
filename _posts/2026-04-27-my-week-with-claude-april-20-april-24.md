@@ -2,7 +2,7 @@
 layout: post
 title: "My week with Claude -- April 20 - April 24"
 date: 2026-04-27
-category: software
+category: machine-intelligence
 image: "/seo/2026-04-27-my-week-with-claude-april-20-april-24.png"
 tags:
 - claude-code

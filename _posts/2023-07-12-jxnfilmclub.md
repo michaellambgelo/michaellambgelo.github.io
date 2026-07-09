@@ -3,6 +3,7 @@ layout: post
 title: JXN Film Club - PODCAST REVIVAL
 category: community
 tags:
+- jxnfilmclub
 - podcast
 - movies
 - local

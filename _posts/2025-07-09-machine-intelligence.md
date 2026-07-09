@@ -4,8 +4,9 @@ title: "All of this has happened before"
 date: 2025-07-09
 image: "/seo/2025-07-09.png"
 published: true
-category: reflections
+category: machine-intelligence
 tags:
+- ai
 - opinion
 - machine-intelligence
 

@@ -4,6 +4,7 @@ title: "Custom Letterboxd Stats Viewer"
 image: "/seo/2026-04-14-custom-letterboxd-stats-viewer.png"
 category: software
 tags:
+- movies
 - letterboxd
 - data-pipeline
 - github-actions

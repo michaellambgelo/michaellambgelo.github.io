@@ -5,6 +5,7 @@ date: 2026-05-06
 category: infrastructure
 image: "/seo/2026-05-06-cluster-led-id-systemd.png"
 tags:
+- homelab
 - raspberry-pi
 - cluster
 - automation

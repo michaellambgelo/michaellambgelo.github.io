@@ -2,8 +2,9 @@
 layout: post
 title: "My experience with the Intelligence we have given machines"
 date: 2025-01-09
-category: development
+category: machine-intelligence
 tags:
+- ai
 - machine-intelligence
 - personal
 image: "/seo/2025-01-09.png"

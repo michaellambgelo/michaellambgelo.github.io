@@ -2,10 +2,11 @@
 layout: post
 title: "Anatomy of a trivia deck, part 1: a presentation app with no backend"
 date: 2026-07-07 09:00:00 -0500
-category: development
+category: software
 subtitle: "First in a five-part series on the architecture of the pub-trivia scaffold."
 image: "/seo/2026-07-07-anatomy-of-a-trivia-deck-part-1-no-backend.png"
 tags:
+- claude-code
 - react
 - javascript
 - architecture

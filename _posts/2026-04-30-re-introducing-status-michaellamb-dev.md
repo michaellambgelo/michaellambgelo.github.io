@@ -5,6 +5,8 @@ date: 2026-04-30
 category: infrastructure
 image: "/seo/2026-04-30-re-introducing-status-michaellamb-dev.png"
 tags:
+- claude-code
+- homelab
 - cloudflare
 - raspberry-pi
 - observability

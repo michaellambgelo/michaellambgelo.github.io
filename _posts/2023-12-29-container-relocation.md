@@ -4,6 +4,7 @@ title: Relocating a Docker Container
 category: infrastructure
 image: "/seo/2023-12-29.png"
 tags:
+- homelab
 - guide
 - docker
 - raspberry-pi

@@ -11,7 +11,7 @@ tags:
 - email
 - blogging
 - communication
-- indie-web
+- indieweb
 image: "/seo/2025-09-16.png"
 published: true
 ---

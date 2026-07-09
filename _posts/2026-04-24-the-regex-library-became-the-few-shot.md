@@ -2,7 +2,7 @@
 layout: post
 title: "The regex library became the few-shot"
 date: 2026-04-24
-category: software
+category: machine-intelligence
 image: "/seo/2026-04-24-the-regex-library-became-the-few-shot.png"
 tags:
 - llm

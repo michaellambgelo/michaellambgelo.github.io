@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New M3 MacBook Air && Ollama
-category: personal
+category: machine-intelligence
 tags:
 - ai
 - machine-learning

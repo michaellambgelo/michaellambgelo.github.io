@@ -2,7 +2,7 @@
 layout : post
 title : Go-Back-N Protocol
 image : "/seo/2022-02-16.png"
-category : projects
+category : infrastructure
 tags: 
 
 - feature

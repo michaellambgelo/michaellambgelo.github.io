@@ -1,7 +1,7 @@
 ---
 title: Why any movie can be a comfort movie
 image: seo/2025-09-30.png
-category: personal
+category: reflections
 date: '2025-09-30 00:00:00'
 tags:
 - movies
