@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Anatomy of a trivia deck, part 3: two windows, one channel"
-date: 2026-07-07 09:20:00 -0500
+date: 2026-07-09 19:00:00 -0500
 category: development
 subtitle: "Part 3 of 5 — the display/control split over BroadcastChannel, and a timer that knows when it's on stage."
-image: "/seo/2026-07-07-anatomy-of-a-trivia-deck-part-3-two-windows-one-channel.png"
+image: "/seo/2026-07-09-anatomy-of-a-trivia-deck-part-3-two-windows-one-channel.png"
 tags:
 - javascript
 - react
@@ -61,7 +61,7 @@ Two design choices matter more than the list itself.
 
 **Content messages carry full state, not diffs.** `rounds:update` ships the entire rounds array; `pictures:update` ships all ten picture slots. That sounds wasteful until you price in what diffs cost: ordering bugs, missed messages, merge logic. Full-state messages are idempotent — whatever arrives last is the truth. When a late-joining window might have missed anything, `sync:request` makes the display re-announce itself, and the same idempotence makes that trivially safe.
 
-**Edits are buffered; navigation is live.** The editor tab accumulates changes into a draft with a dirty flag and only broadcasts on "Save & Push to Display" — nobody wants a half-typed question flashing onto the taproom TV. But navigation and timer controls fire immediately, because that's the host performing.
+**Edits are buffered; navigation is live.** The editor tab accumulates changes into a draft with a dirty flag and only broadcasts on "Save & Push to Display" — nobody wants a half-typed question flashing onto the taproom TV. But navigation and timer controls fire immediately, because that's the host performing the action.
 
 ## The timer that knows it's on stage
 
