@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Anatomy of a trivia deck, part 2: a web component at the center of a React app"
-date: 2026-07-07 09:10:00 -0500
+date: 2026-07-08 23:45:00 -0500
 category: development
 subtitle: "Part 2 of 5 — the <deck-stage> element: scaling, navigation, and print in vanilla JS."
 image: "/seo/2026-07-07-anatomy-of-a-trivia-deck-part-2-deck-stage.png"
