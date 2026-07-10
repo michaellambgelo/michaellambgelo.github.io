@@ -18,6 +18,7 @@ author: Michael Lamb
 image: /seo/default.png
 
 future: true
+timezone: America/Chicago
 
 permalink: '/:year/:month/:title/'
 extensions:
