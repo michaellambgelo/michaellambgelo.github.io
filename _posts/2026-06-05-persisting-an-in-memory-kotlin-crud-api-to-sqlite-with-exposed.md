@@ -67,7 +67,7 @@ $ unzip -l sqlite-jdbc-3.50.1.0.jar | grep aarch64
   org/sqlite/native/Mac/aarch64/libsqlitejdbc.dylib
 ```
 
-Linux arm64 for the Pi matches the arm64 node0 build host. I will not cover building container images in this post, but this is a similar process I followed [when I first deployed a Spring Boot app]({{ % site.url }} /2022/03/buildx-spring-boot/) on the cluster. 
+Linux arm64 for the Pi matches the arm64 node0 build host. I will not cover building container images in this post, but this is a similar process I followed [when I first deployed a Spring Boot app]({{ site.url }}/2022/03/buildx-spring-boot/) on the cluster.
 
 ## The table
 
