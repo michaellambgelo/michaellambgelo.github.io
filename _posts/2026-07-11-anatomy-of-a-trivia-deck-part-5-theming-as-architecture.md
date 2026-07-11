@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Anatomy of a trivia deck, part 5: theming as architecture"
-date: 2026-07-07 09:40:00 -0500
+date: 2026-07-11 09:40:00 -0500
 category: development
 subtitle: "Part 5 of 5 — the palette contract, anchor strings, and one repo becoming many decks."
-image: "/seo/2026-07-07-anatomy-of-a-trivia-deck-part-5-theming-as-architecture.png"
+image: "/seo/2026-07-11-anatomy-of-a-trivia-deck-part-5-theming-as-architecture.png"
 tags:
 - design-systems
 - react
@@ -14,7 +14,7 @@ tags:
 
 ## The scaffold's second job
 
-Through this series the pub-trivia scaffold has been one app: [no backend]({% post_url 2026-07-07-anatomy-of-a-trivia-deck-part-1-no-backend %}), a [web-component stage]({% post_url 2026-07-07-anatomy-of-a-trivia-deck-part-2-deck-stage %}), [two windows over a channel]({% post_url 2026-07-07-anatomy-of-a-trivia-deck-part-3-two-windows-one-channel %}), [localStorage underneath]({% post_url 2026-07-07-anatomy-of-a-trivia-deck-part-4-the-data-layer %}). This last post is about its second job: being the template that themed decks are cloned from. A Star Wars night, a LOTR night, a Pokémon night — each is a full sibling repo produced by a Claude Code skill that copies the scaffold and re-skins it end to end.
+Through this series the pub-trivia scaffold has been one app: [no backend]({% post_url 2026-07-07-anatomy-of-a-trivia-deck-part-1-no-backend %}), a [web-component stage]({% post_url 2026-07-07-anatomy-of-a-trivia-deck-part-2-deck-stage %}), [two windows over a channel]({% post_url 2026-07-09-anatomy-of-a-trivia-deck-part-3-two-windows-one-channel %}), [localStorage underneath]({% post_url 2026-07-10-anatomy-of-a-trivia-deck-part-4-the-data-layer %}). This last post is about its second job: being the template that themed decks are cloned from. A Star Wars night, a LOTR night, a Pokémon night — each is a full sibling repo produced by a Claude Code skill that copies the scaffold and re-skins it end to end.
 
 That only works if "what is theme" versus "what is engine" is an explicit, written-down boundary. Making that boundary real changed decisions all the way down to how the CSS is written.
 

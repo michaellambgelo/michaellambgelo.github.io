@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Anatomy of a trivia deck, part 4: localStorage is the database"
-date: 2026-07-07 09:30:00 -0500
+date: 2026-07-10 09:30:00 -0500
 category: development
 subtitle: "Part 4 of 5 — persistence patterns, a storage-quota war story, and the one-file deck bundle."
-image: "/seo/2026-07-07-anatomy-of-a-trivia-deck-part-4-the-data-layer.png"
+image: "/seo/2026-07-10-anatomy-of-a-trivia-deck-part-4-the-data-layer.png"
 tags:
 - javascript
 - localstorage
