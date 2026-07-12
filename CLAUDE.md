@@ -23,7 +23,7 @@ Jekyll 3 GitHub Pages blog at `blog.michaellamb.dev`. The design is Apple-inspir
 - `_includes/` — only 6 files: `head/common/common.html`, `body/sections/{navbar,footer,newsletter,alerts_and_notices/site}.html`, `content/brief-bio.html`, `giscus.html`
 - `_templates/` — authoring guides (excluded from build via `_config.yml`)
 - `css/` — `theme.css` (tokens + base type), `gh-pages-blog.css` (components), `syntax.css` (code blocks), `newsletter.css`
-- `font/inter/` — self-hosted Inter woff2 (Light/Regular/SemiBold/Bold)
+- `font/inter/` — self-hosted Inter woff2 (Light/Regular/SemiBold/Bold), plus Regular/SemiBold `.ttf` used **only** by the SEO card generator (ImageMagick cannot read woff2). The site itself never serves the TTFs.
 - `seo/` — per-post SEO images `YYYY-MM-DD-<slug>.png` + `default.png`
 - `img/` — general images referenced in post content
 - `js/grafana-faro.js` — telemetry; only JS loaded site-wide
@@ -82,10 +82,18 @@ brew install imagemagick
 
 If ImageMagick is absent the hook warns but does not block the commit; the pre-push hook still catches missing images.
 
+**Card design.** The card is a 1200x630 rendering of the post hero band, built from the same tokens as `css/theme.css` — `#000000` (or `#f5f5f7` when `hero_tone: light`), the category as an accent-colored eyebrow, the title in Inter SemiBold with the hero's negative tracking, and a `--sk-rule` hairline above a tertiary footer. Change a token in `theme.css` and you should change it in `TONES` in the script.
+
+The **ML monogram** (`img/favicon.png`) fills the right of the card. Its letterforms are a rich black (`#231F20`), so on the dark tone they are recolored to `#f5f5f7` before compositing — otherwise only the cyan/red chromatic fringing survives against the black ground and the mark reads as a smudge. The text column is capped at 640px to clear it; the 79-character title cap wraps to at most five lines and still fits.
+
+Type is **Inter**, loaded from `font/inter/Inter-{SemiBold,Regular}.ttf`. ImageMagick here has no fontconfig, so `-weight` is a silent no-op on variable fonts and `.ttc` collections — the weight must come from the font *file*. That is why the TTFs exist.
+
 **Manual generation / force-regeneration:**
 
 ```bash
-ruby scripts/generate_seo_image.rb _posts/YYYY-MM-DD-title.md
-# Force-regenerate (delete existing first):
-rm seo/YYYY-MM-DD-title.png && ruby scripts/generate_seo_image.rb _posts/YYYY-MM-DD-title.md
+ruby scripts/generate_seo_image.rb _posts/YYYY-MM-DD-title.md          # skips if card exists
+ruby scripts/generate_seo_image.rb --force _posts/YYYY-MM-DD-title.md  # regenerate one
+ruby scripts/generate_seo_image.rb --force --all                       # regenerate every card
 ```
+
+Cards bake in the title, category, and date, so a post that is renamed or re-dated **must** be regenerated with `--force` — `verify_seo_images.rb` only checks that a file exists, not that it is current.

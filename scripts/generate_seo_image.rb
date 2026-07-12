@@ -2,32 +2,91 @@
 # encoding: utf-8
 # scripts/generate_seo_image.rb
 # Generates a 1200x630 OG image card for a blog post.
-# Usage: ruby scripts/generate_seo_image.rb <post_path>
+#
+# Usage:
+#   ruby scripts/generate_seo_image.rb <post_path>          # skips if the card exists
+#   ruby scripts/generate_seo_image.rb --force <post_path>  # regenerates in place
+#   ruby scripts/generate_seo_image.rb --force --all        # regenerates every post's card
+#
+# Design
+# ------
+# The card is a 1200x630 rendering of the site's own post hero band, using the
+# same tokens as css/theme.css, so the social preview and the page agree:
+#
+#   surface   --sk-bg-dark  #000000  (or --sk-bg-light #f5f5f7 when hero_tone: light)
+#   eyebrow   the category, in the tone's link color
+#   title     --sk-text-inverse / --sk-text-primary, 600 weight, tight tracking
+#   footer    --sk-text-tertiary, above a --sk-rule hairline
+#
+# `hero_tone: light` in front matter flips the card exactly as it flips the hero.
+#
+# Type is Inter — the same face the site serves. ImageMagick cannot read woff2,
+# so `font/inter/*.ttf` sit alongside the woff2 files purely for this script.
+# They are the same typeface at the same weights (SemiBold 600 / Regular 400),
+# which keeps the card machine-independent: no reliance on macOS system fonts.
 
 require 'yaml'
 require 'date'
 
 REPO_ROOT = Dir.pwd
-SITE_URL  = 'HTTPS://MICHAELLAMB.DEV'
-TAGLINE   = 'a blog written by a software engineer'
+SITE_URL  = 'michaellamb.dev'
 
-FAVICON_PATH = File.join(REPO_ROOT, 'img', 'favicon.png')
+LOGO_PATH = File.join(REPO_ROOT, 'img', 'favicon.png')
+LOGO_SIZE = 340
 
-FONT_CANDIDATES = [
-  '/System/Library/Fonts/HelveticaNeue.ttc',
-  '/System/Library/Fonts/Helvetica.ttc',
-  '/Library/Fonts/HelveticaNeue.ttc',
-  '/Library/Fonts/Helvetica.ttc',
-  '/Library/Fonts/Avenir Next.ttc',
-  nil
-].freeze
+# Shared, hand-maintained images that a post may *point at* but must never
+# overwrite. `seo/default.png` is the site-wide OG fallback declared in
+# _config.yml; a couple of older posts set `image: "/seo/default.png"` rather
+# than carrying their own card, and without this guard `--all` renders each of
+# them straight over the site default.
+RESERVED_IMAGES = ['seo/default.png'].freeze
 
-def find_font
-  FONT_CANDIDATES.find { |f| f.nil? || File.exist?(f) }
+# The logo's letterforms are a rich black (#231F20) over a grey Mississippi
+# outline, with cyan/red chromatic fringing. That reads well on the light card
+# and disappears entirely on the black one — only the fringes survive. On the
+# dark tone the letterforms are recolored to the site's light surface; the
+# fringing and the state outline are left alone.
+LOGO_INK       = '#231F20'
+LOGO_INK_ON_BG = '#f5f5f7' # --sk-bg-light
+
+# --- design tokens, mirrored from css/theme.css ------------------------------
+
+TONES = {
+  'dark' => {
+    bg:       '#000000',                 # --sk-bg-dark
+    title:    '#ffffff',                 # --sk-text-inverse
+    tertiary: 'rgba(255,255,255,0.56)',  # --sk-text-inverse-tertiary
+    accent:   '#2997ff',                 # --sk-link-dark-bg
+    rule:     'rgba(255,255,255,0.12)'   # --sk-rule-inverse
+  },
+  'light' => {
+    bg:       '#f5f5f7',                 # --sk-bg-light
+    title:    '#1d1d1f',                 # --sk-text-primary
+    tertiary: 'rgba(0,0,0,0.48)',        # --sk-text-tertiary
+    accent:   '#0066cc',                 # --sk-link
+    rule:     'rgba(0,0,0,0.08)'         # --sk-rule
+  }
+}.freeze
+
+# Inter, vendored as TTF for ImageMagick's benefit (it cannot read woff2).
+# ImageMagick has no fontconfig here, so `-weight` is a no-op on variable fonts
+# and collections — the weight must come from the file itself.
+FONT_SEMIBOLD = File.join(REPO_ROOT, 'font', 'inter', 'Inter-SemiBold.ttf')
+FONT_REGULAR  = File.join(REPO_ROOT, 'font', 'inter', 'Inter-Regular.ttf')
+
+# Last-resort fallbacks if the vendored TTFs are ever missing.
+FALLBACK_SEMIBOLD = '/System/Library/Fonts/Supplemental/Arial Bold.ttf'
+FALLBACK_REGULAR  = '/System/Library/Fonts/SFNS.ttf'
+
+def font_semibold
+  File.exist?(FONT_SEMIBOLD) ? FONT_SEMIBOLD : FALLBACK_SEMIBOLD
+end
+
+def font_regular
+  File.exist?(FONT_REGULAR) ? FONT_REGULAR : FALLBACK_REGULAR
 end
 
 def magick_binary
-  # ImageMagick 7 prefers `magick`; fall back to `convert` for older versions
   @magick_binary ||= begin
     if system('which magick > /dev/null 2>&1')
       'magick'
@@ -58,8 +117,7 @@ def resolve_output_path(fm, post_path)
       warn "Warning: 'image' field is a URL for #{post_path}; skipping generation."
       return nil
     end
-    rel = image_val.sub(/^\//, '')
-    File.join(REPO_ROOT, rel)
+    File.join(REPO_ROOT, image_val.sub(/^\//, ''))
   else
     basename = File.basename(post_path, '.md')
     unless basename =~ /\A\d{4}-\d{2}-\d{2}-/
@@ -71,7 +129,7 @@ def resolve_output_path(fm, post_path)
   end
 end
 
-def generate(post_path)
+def generate(post_path, force: false)
   unless convert_available?
     warn 'Warning: ImageMagick not found (`magick` or `convert`). Skipping SEO image generation.'
     warn 'Install with: brew install imagemagick'
@@ -84,67 +142,111 @@ def generate(post_path)
 
   rel_output = output_path.sub("#{REPO_ROOT}/", '')
 
-  if File.exist?(output_path)
-    puts "SEO image already exists, skipping: #{rel_output}"
+  if RESERVED_IMAGES.include?(rel_output)
+    puts "Shared image, refusing to overwrite: #{rel_output}  (#{File.basename(post_path)} points at it)"
     return output_path
   end
 
-  title    = (fm && fm['title'])&.to_s ||
-             File.basename(post_path, '.md').sub(/^\d{4}-\d{2}-\d{2}-/, '').tr('-', ' ').capitalize
-  title    = "#{title[0..76]}..." if title.length > 79
+  if File.exist?(output_path) && !force
+    puts "SEO image already exists, skipping: #{rel_output}  (use --force to regenerate)"
+    return output_path
+  end
+
+  title = (fm && fm['title'])&.to_s ||
+          File.basename(post_path, '.md').sub(/^\d{4}-\d{2}-\d{2}-/, '').tr('-', ' ').capitalize
+  title = "#{title[0..76]}..." if title.length > 79
+
   category = (fm && fm['category'])&.to_s&.upcase || ''
-  date_str = (fm && fm['date']&.to_s&.[](/\d{4}-\d{2}-\d{2}/)) ||
+
+  date_raw = (fm && fm['date']&.to_s&.[](/\d{4}-\d{2}-\d{2}/)) ||
              File.basename(post_path)[/\d{4}-\d{2}-\d{2}/] || ''
+  # Match the byline format the post footer renders: "July 13, 2026"
+  date_str = begin
+    date_raw.empty? ? '' : Date.parse(date_raw).strftime('%B %-d, %Y')
+  rescue ArgumentError
+    date_raw
+  end
+
+  tone = TONES[(fm && fm['hero_tone']).to_s] || TONES['dark']
 
   Dir.mkdir(File.join(REPO_ROOT, 'seo')) unless Dir.exist?(File.join(REPO_ROOT, 'seo'))
 
-  font = find_font
-  font_flags = font ? ['-font', font] : []
+  semibold = font_semibold
+  regular  = font_regular
+
+  # The eyebrow and title are built as one stacked group and composited as a
+  # unit, anchored so the title's baseline always sits a fixed distance above
+  # the footer rule. Short and long titles then share the same relationship to
+  # the rule, and the group simply grows upward as the title wraps.
+  #
+  # (A fixed-height title box, or centering the group, strands a short title in
+  # the middle of a large void — which is what the previous card did.)
+  # The logo occupies the right of the card, so the text column is narrowed to
+  # clear it. 79 characters (the title cap) still wraps to at most four lines.
+  text_width = 640
+
+  # Recolor the logo's ink for the dark tone. Transparent pixels are RGBA
+  # (0,0,0,0) and fall inside the fuzz radius, but recoloring a fully
+  # transparent pixel is a no-op, so alpha is preserved.
+  logo_recolor = tone[:bg] == '#000000' ? ['-fuzz', '15%', '-fill', LOGO_INK_ON_BG, '-opaque', LOGO_INK] : []
 
   cmd = [
     magick_binary,
-    # 1. Background: left-to-right blue-to-purple gradient
-    #    Create vertical gradient then rotate -90° so blue is on left, purple on right
-    '-size', '630x1200', 'gradient:#3b82f6-#8b5cf6', '-rotate', '-90',
-    # 2. Left accent bar (white for contrast against gradient)
-    '-fill', 'white', '-draw', 'rectangle 55,0 59,630',
-    # 3. Tagline
-    *font_flags, '-pointsize', '26', '-fill', '#e2e8f0',
-    '-annotate', '+90+75', TAGLINE,
-    # 4. Category pill background (white pill, purple text)
-    '-fill', 'white', '-draw', 'roundrectangle 88,90 368,130 8,8',
-    # 5. Category pill text
-    *font_flags, '-pointsize', '22', '-fill', '#5a4fcf',
-    '-annotate', '+102+121', category,
-    # 6. Title caption (word-wraps to fit 1000x330 box)
-    '(', '-size', '1000x400', '-background', 'none',
-    *font_flags, '-fill', 'white', '-pointsize', '72',
-    "caption:#{title}",
-    ')',
-    '-geometry', '+88+148', '-composite',
-    # 7. URL footer: SouthWest +x+y = x from left, y from bottom
-    '-gravity', 'SouthWest',
-    *font_flags, '-pointsize', '26', '-fill', '#e2e8f0',
-    '-annotate', '+90+36', SITE_URL,
-    # 8. Date footer: SouthEast +x+y = x from right, y from bottom
-    #    Offset enough to clear the 128x128 favicon at +40+40 (favicon left edge ≈ 1032px)
-    '-gravity', 'SouthEast',
-    *font_flags, '-pointsize', '26', '-fill', '#e2e8f0',
-    '-annotate', '+215+36', date_str,
-    # 10. Favicon: SouthEast 128x128, composited last so nothing overlaps it
-    *(File.exist?(FAVICON_PATH) ? [
-      '(', FAVICON_PATH, '-resize', '128x128', ')',
-      '-geometry', '+40+40', '-composite'
+    '-size', '1200x630', "xc:#{tone[:bg]}",
+
+    # Logo — right side, centered in the band above the rule.
+    *(File.exist?(LOGO_PATH) ? [
+      '(',
+        LOGO_PATH, *logo_recolor,
+        '-resize', "#{LOGO_SIZE}x#{LOGO_SIZE}",
+      ')',
+      '-gravity', 'NorthEast', '-geometry', "+88+#{(529 - LOGO_SIZE) / 2}", '-composite'
     ] : []),
-    # Reset gravity for any future operations
+
+    '(',
+      # Eyebrow — the category, in the tone's link color.
+      '(',
+        '-size', "#{text_width}x", '-background', 'none',
+        '-font', semibold, '-pointsize', '24', '-kerning', '-0.4',
+        '-fill', tone[:accent], '-gravity', 'NorthWest',
+        "caption:#{category}",
+      ')',
+      # Gap between eyebrow and title (the hero's 12px, scaled for the card).
+      '(', '-size', "#{text_width}x20", 'xc:none', ')',
+      # Title — the hero's treatment: 600 weight, negative tracking, tight leading.
+      '(',
+        '-size', "#{text_width}x", '-background', 'none',
+        '-font', semibold, '-pointsize', '62',
+        '-kerning', '-0.31', '-interline-spacing', '-6',
+        '-fill', tone[:title], '-gravity', 'NorthWest',
+        "caption:#{title}",
+      ')',
+      '-append',
+    ')',
+    # Bottom of the group sits 60px above the rule (630 - 529 + 60 = 161).
+    '-gravity', 'SouthWest', '-geometry', '+88+161', '-composite',
+
+    # Hairline above the footer — --sk-rule.
     '-gravity', 'NorthWest',
-    # Output
+    '-fill', tone[:rule], '-draw', 'rectangle 88,529 1112,530',
+
+    # Footer row: site URL left, date right, both tertiary. The logo now carries
+    # the brand, so the footer no longer repeats it as a favicon.
+    '-font', regular, '-pointsize', '26', '-kerning', '0',
+    '-fill', tone[:tertiary],
+    '-annotate', '+88+570', SITE_URL,
+
+    '-gravity', 'SouthEast',
+    '-font', regular, '-pointsize', '26',
+    '-fill', tone[:tertiary],
+    '-annotate', '+88+38', date_str,
+
+    '-gravity', 'NorthWest',
     '-depth', '8',
     output_path
   ]
 
-  success = system(*cmd)
-  if success
+  if system(*cmd)
     puts "Generated SEO image: #{rel_output}"
     output_path
   else
@@ -155,9 +257,16 @@ def generate(post_path)
 end
 
 if __FILE__ == $PROGRAM_NAME
-  if ARGV.empty?
-    warn "Usage: ruby scripts/generate_seo_image.rb <post_path>"
+  args  = ARGV.dup
+  force = !args.delete('--force').nil?
+  all   = !args.delete('--all').nil?
+
+  posts = all ? Dir[File.join(REPO_ROOT, '_posts', '*.md')].sort : args
+
+  if posts.empty?
+    warn 'Usage: ruby scripts/generate_seo_image.rb [--force] [--all] <post_path>'
     exit 1
   end
-  generate(ARGV[0])
+
+  posts.each { |p| generate(p, force: force) }
 end
