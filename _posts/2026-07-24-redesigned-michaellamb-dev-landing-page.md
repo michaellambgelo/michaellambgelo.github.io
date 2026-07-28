@@ -26,3 +26,9 @@ The freshened michaellamb.dev is a static page deployed to Cloudflare Pages, and
 ![The redesigned michaellamb.dev hero: a dark landing page with a subtle animated glitch effect on the site title, a photo, and links to the blog and contact](/img/2026-07-24-michaellamb-dev-hero.gif)
 
 There's a subtle canvas UI effect applied to the hero — the kind of detail a page builder would never let me have. See it live at [michaellamb.dev](https://michaellamb.dev).
+
+You'll need this experimental flag enabled in Chrome (for other Chromium browsers, swap out the browser name).
+
+```bash
+chrome://flags/#canvas-draw-element
+```
