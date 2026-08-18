@@ -7,6 +7,7 @@
 #   ruby scripts/generate_seo_image.rb <post_path>          # skips if the card exists
 #   ruby scripts/generate_seo_image.rb --force <post_path>  # regenerates in place
 #   ruby scripts/generate_seo_image.rb --force --all        # regenerates every post's card
+#   ruby scripts/generate_seo_image.rb --force --default    # regenerates the site-wide OG fallback
 #
 # Design
 # ------
@@ -169,6 +170,15 @@ def generate(post_path, force: false)
 
   tone = TONES[(fm && fm['hero_tone']).to_s] || TONES['dark']
 
+  render_card(output_path, rel_output, title: title, category: category,
+              date_str: date_str, tone: tone)
+end
+
+# Renders one card. Extracted so the site-wide default (`--default`) can share
+# the exact same layout, tokens, and typography as a post card — previously it
+# could not, and `seo/default.png` silently kept a 2023 post's title, date, and
+# a card design two revisions old.
+def render_card(output_path, rel_output, title:, category:, date_str:, tone:)
   Dir.mkdir(File.join(REPO_ROOT, 'seo')) unless Dir.exist?(File.join(REPO_ROOT, 'seo'))
 
   semibold = font_semibold
@@ -250,21 +260,75 @@ def generate(post_path, force: false)
     puts "Generated SEO image: #{rel_output}"
     output_path
   else
-    warn "Warning: SEO image generation failed for #{post_path}."
+    warn "Warning: SEO image generation failed for #{rel_output}."
     warn "Please create #{rel_output} manually before pushing."
     nil
   end
 end
 
+
+# --- site-wide default card -------------------------------------------------
+
+# `seo/default.png` is the Open Graph fallback declared in _config.yml and used
+# by every non-post page — /now, /about, /archive, the homepage. It must not
+# carry a post's title or date, which is exactly what went wrong: an old post
+# pointed `image:` at it, rendered its own card over the top, and every generic
+# page has advertised "Leadership Greater Jackson - Reflection, 2023-05-30"
+# ever since. RESERVED_IMAGES now stops posts writing here, and this renders a
+# card that is about the site rather than about any one post.
+def site_config
+  path = File.join(REPO_ROOT, '_config.yml')
+  return {} unless File.exist?(path)
+  YAML.safe_load(File.read(path, encoding: 'utf-8'), permitted_classes: [Date, Time], aliases: true) || {}
+rescue => e
+  warn "Warning: could not read _config.yml: #{e.message}"
+  {}
+end
+
+def generate_default(force: false)
+  unless convert_available?
+    warn 'Warning: ImageMagick not found (`magick` or `convert`). Skipping.'
+    return nil
+  end
+
+  output_path = File.join(REPO_ROOT, 'seo', 'default.png')
+  rel_output  = 'seo/default.png'
+
+  if File.exist?(output_path) && !force
+    puts "Site default already exists, skipping: #{rel_output}  (use --force to regenerate)"
+    return output_path
+  end
+
+  cfg   = site_config
+  title = (cfg['description'] || 'A tech & life blog').to_s
+  title = "#{title[0..76]}..." if title.length > 79
+
+  Dir.mkdir(File.join(REPO_ROOT, 'seo')) unless Dir.exist?(File.join(REPO_ROOT, 'seo'))
+
+  # No category pill and no date: this card is not about a post, and a date on
+  # a permanent fallback is precisely how it goes stale without anyone noticing.
+  render_card(output_path, rel_output,
+              title: title,
+              category: SITE_URL.upcase,
+              date_str: '',
+              tone: TONES['dark'])
+end
+
 if __FILE__ == $PROGRAM_NAME
-  args  = ARGV.dup
-  force = !args.delete('--force').nil?
-  all   = !args.delete('--all').nil?
+  args    = ARGV.dup
+  force   = !args.delete('--force').nil?
+  all     = !args.delete('--all').nil?
+  default = !args.delete('--default').nil?
+
+  if default
+    generate_default(force: force)
+    exit 0
+  end
 
   posts = all ? Dir[File.join(REPO_ROOT, '_posts', '*.md')].sort : args
 
   if posts.empty?
-    warn 'Usage: ruby scripts/generate_seo_image.rb [--force] [--all] <post_path>'
+    warn 'Usage: ruby scripts/generate_seo_image.rb [--force] [--all] [--default] <post_path>'
     exit 1
   end
 
