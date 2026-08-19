@@ -114,12 +114,16 @@ hanging the render, and telemetry stopped recording the Letterboxd URLs and slug
 copy promises not to collect. That last one was a real gap between what the page said and
 what the code did, and it is closed.
 
+## Custom Letterboxd apps
+
 The Letterboxd side of the house also got the
 [rolodex](https://letterboxd.michaellamb.dev/rolodex): a page of curated Letterboxd profiles
 showing each person's last four watched, streamed as NDJSON so cards fill in progressively
 instead of blocking on the slowest scrape, with a filter box, an A–Z rail, and sort options.
 
-## The homelab learned to talk to the TV
+My [custom Letterboxd stats dashboard](https://letterboxd.michaellamb.dev) was also enriched with archive data listing diary entries I created but the film was removed from Letterboxd, for whatever reason. I think some of the cases are artist takedown requests, but I suspect there are titles which are removed by Letterboxd editorial staff. I don't know that for certain, but I suspect it.
+
+## The homelab cluster learned to talk to the TV
 
 The [Kotlin tutorial service](https://kotlin-tutorial.michaellamb.dev) — still deliberately
 pedagogical, still one endpoint per language feature, still not refactored into cleverness —
@@ -127,12 +131,12 @@ picked up the `/now` widget that backs this blog's Now page, Steam cover art for
 section, and `/signage`: a full-page, TV-optimized digest of everything the service knows.
 This week it grew a commit ticker and QR codes for note links.
 
-My Discord bot learned to cast that page to the living room TV on a slash command, and
-grew a Hue widget so the display doubles as a light-status panel. Underneath all of it,
-the cluster migrated its Docker runtime off snap on four nodes, and image builds moved to a
-Mac mini that builds arm64 natively instead of emulating it in CI — a change that took
-deploys from "go get coffee" build times to "just wait a minute." My Ansible deploy config
-handles the rest once the image is built.
+I have a Discord bot hosted on the homelab cluster. It learned to cast that page to the living 
+room TV on a slash command, and grew a Hue widget so the display doubles as a light-status panel. 
+Underneath all of it, the cluster migrated its Docker runtime off snap on four nodes, and image 
+builds moved to a Mac mini that builds arm64 natively instead of emulating it in CI — a change 
+that took deploys from "go get coffee" build times to "just wait a minute." My Ansible deploy 
+config handles the rest once the image is built.
 
 ## What I'd tell you if you asked what I actually did
 
@@ -145,16 +149,15 @@ somebody is standing in a bar waiting for a leaderboard to load.
 
 ## Subscribe
 
-If you want this content directly — the posts, the build logs, the occasional
+If you want content like this sent to you directly — the posts, the build logs, the occasional
 correction when I got something wrong in public — the newsletter is at
-[subscribe.michaellamb.dev](https://subscribe.michaellamb.dev). No algorithm in between,
-no reshuffling, no "you might also like" — just the posts, in the order I wrote them.
+[subscribe.michaellamb.dev](https://subscribe.michaellamb.dev). No algorithm — just the posts, in the order I wrote them.
 
-One more thing about that page. It is not a form; it is a terminal. Type `help` and it will
+One more thing about that `subscribe` app. It is not a form; it is a terminal. Type `help` and it will
 list its commands.
 
 `help` is not the complete list.
 
-There is a chatbot in there, and it has opinions about a very specific set of sitcoms. If a
+There is a `chatbot` in there, and it has opinions about a very specific set of sitcoms. If a
 line from one of them comes to mind while you are sitting at that prompt, type it. Some of
 them answer back.
