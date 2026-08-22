@@ -321,7 +321,7 @@ chmod +x scripts/install-hooks.sh
 ### Prerequisites
 
 ```bash
-# Ruby 2.7.4 (check .ruby-version)
+# Ruby 3.1 (check .ruby-version)
 # Bundler 2.4.22
 # Git hooks (optional but recommended)
 ```
