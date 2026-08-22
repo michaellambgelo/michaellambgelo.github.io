@@ -43,5 +43,14 @@ gem "webrick", ">= 1.8.2"
 # and needs only ruby >= 2.3, so it is safe under the 2.7.4 pin.
 gem "rack", "~> 2.2.23"
 
+# Security pin: addressable >= 2.9.0 clears CVE-2026-35611 (high-severity
+# ReDoS). Transitive via jekyll/octokit, so a direct pin is the mechanism
+# for raising the floor. Needs only ruby >= 2.2.
+gem "addressable", ">= 2.9.0"
+
+# Security pin: concurrent-ruby >= 1.3.7 clears CVE-2026-54904/54905/54906.
+# Transitive via i18n (~> 1.0), which 1.3.7 satisfies. Needs ruby >= 2.3.
+gem "concurrent-ruby", ">= 1.3.7"
+
 # Fix faraday retry warning
 gem "faraday-retry"
