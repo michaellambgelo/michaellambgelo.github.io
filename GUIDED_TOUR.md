@@ -135,7 +135,7 @@ Tags (2-5 per post):
 1. **Ruby Environment Setup**
 
    ```yaml
-   - Ruby 2.7.4 with bundler caching
+   - Ruby 3.1 with bundler caching (matches the deploy workflow)
    - Dependency installation with Bundler 2.4.22
    ```
 
@@ -321,7 +321,7 @@ chmod +x scripts/install-hooks.sh
 ### Prerequisites
 
 ```bash
-# Ruby 2.7.4 (check .ruby-version)
+# Ruby 3.1 (check .ruby-version)
 # Bundler 2.4.22
 # Git hooks (optional but recommended)
 ```
