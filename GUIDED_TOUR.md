@@ -135,7 +135,7 @@ Tags (2-5 per post):
 1. **Ruby Environment Setup**
 
    ```yaml
-   - Ruby 2.7.4 with bundler caching
+   - Ruby 3.1 with bundler caching (matches the deploy workflow)
    - Dependency installation with Bundler 2.4.22
    ```
 
