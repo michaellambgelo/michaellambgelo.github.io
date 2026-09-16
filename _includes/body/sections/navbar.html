@@ -3,11 +3,12 @@
 	<a class="sk-skip" href="#main">Skip to content</a>
 	<nav class="sk-nav" aria-label="Primary">
 		<div class="sk-nav__inner">
-			<a class="sk-nav__brand" href="{{ site.url }}/">{{ site.brand | default: site.name }}</a>
+			<a class="sk-nav__brand" href="{{ site.landing_url | default: site.url }}/">{{ site.brand | default: site.name }}</a>
 			<button class="sk-nav__toggle" type="button" aria-expanded="false" aria-controls="sk-nav-list" aria-label="Open menu">
 				<span class="sk-nav__toggle-icon" aria-hidden="true"></span>
 			</button>
 			<ul class="sk-nav__list" id="sk-nav-list">
+				<li><a href="{{ site.url }}/">Blog</a></li>
 				<li><a href="{{ site.url }}/archive.html">Archive</a></li>
 				<li><a href="{{ site.url }}/categories.html">Categories</a></li>
 				<li><a href="{{ site.url }}/tags.html">Tags</a></li>
