@@ -134,7 +134,7 @@ html.sk-nav-open {
   overflow: hidden;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 820px) {
   .sk-nav__toggle { display: inline-flex; }
 
   .sk-nav__list {
