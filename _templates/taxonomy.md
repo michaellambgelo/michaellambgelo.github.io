@@ -33,6 +33,7 @@ Tags provide more specific classification within categories. **Each post should 
 | `cloudflare` | Cloudflare services |
 | `spring-boot` | Spring Boot framework |
 | `javascript` | JavaScript language |
+| `vue` | Vue.js framework (and Quasar) |
 | `python` | Python language |
 | `ansible` | Ansible automation |
 | `observability` | Monitoring and observability tools |
@@ -58,6 +59,7 @@ Tags provide more specific classification within categories. **Each post should 
 | `api` | API development projects |
 | `automation` | Automation projects |
 | `dashboard` | Dashboard and visualization projects |
+| `discord` | Discord bots, apps, and integrations |
 | `monitoring` | Monitoring and alerting projects |
 
 ### Other Common Tags
