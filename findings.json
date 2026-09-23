@@ -33,6 +33,6 @@
       "suggested_fix": "No action needed"
     }
   ],
-  "action": "audit_only",
-  "pr_url": null
+  "action": "pr_opened",
+  "pr_url": "https://github.com/michaellambgelo/michaellambgelo.github.io/pull/52"
 }
