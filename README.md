@@ -68,3 +68,6 @@ Emergency bypass: `--no-verify` on `git commit` or `git push`.
 ## License
 
 See [SOURCE_CODE_LICENSE.txt](SOURCE_CODE_LICENSE.txt).
+
+![Alt](https://repobeats.axiom.co/api/embed/a0af14fab59deebd52b21710dad5816369335609.svg "Repobeats analytics image")
+
