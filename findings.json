@@ -1,0 +1,38 @@
+{
+  "findings": [
+    {
+      "category": "failing_ci",
+      "severity": "error",
+      "title": "CI failure: README.md has multiple consecutive blank lines (MD012)",
+      "detail": "The 'CI' workflow on master failed on 2026-09-23 (run ID 35813238608). markdownlint-cli2 reported README.md:74 MD012/no-multiple-blanks — two consecutive blank lines where only one is allowed. The file ends with a double blank line after the Repobeats analytics image.",
+      "actionable": true,
+      "suggested_fix": "Remove the trailing extra blank line at the end of README.md (line 74)"
+    },
+    {
+      "category": "outdated_dep",
+      "severity": "warn",
+      "title": "Jekyll is one major version behind (3.9.3 installed, 4.4.1 latest)",
+      "detail": "Gemfile pins jekyll to '~> 3.9.3'. Latest stable release is 4.4.1. Jekyll 4 has breaking changes (Liquid 5 required, dropped Ruby < 2.5), so upgrading requires testing. Other notably behind gems: liquid (4.0.4 vs 5.14.0), rouge (3.26.0 vs 5.1.0), rack (2.2.24 vs 3.2.7, intentionally pinned for sinatra compat).",
+      "actionable": false,
+      "suggested_fix": "Update Gemfile to 'gem \"jekyll\", \"~> 4.4\"' and resolve transitive dependency conflicts"
+    },
+    {
+      "category": "security",
+      "severity": "info",
+      "title": "bundler-audit not available; security advisory check skipped",
+      "detail": "The bundler-audit gem was not installed in this environment and 'gem install' was not permitted. The Gemfile already contains recent security pins for webrick (>= 1.8.2), rack (~> 2.2.23), addressable (>= 2.9.0), and concurrent-ruby (>= 1.3.7). A manual 'bundle audit check --update' is recommended.",
+      "actionable": false,
+      "suggested_fix": "Run 'gem install bundler-audit && bundle audit check --update' in the project environment"
+    },
+    {
+      "category": "missing_tests",
+      "severity": "info",
+      "title": "No source code files changed in last 14 days requiring tests",
+      "detail": "Files changed in the last 14 days are: README.md, _config.pages.yml, _config.yml, _includes/body/sections/navbar.html, _posts/2026-09-21-discord-embed-builder.md, _templates/taxonomy.md, css/gh-pages-blog.css, and image/SEO assets. These are all content, configuration, or templates — no testable source code files. Jekyll _posts/ are excluded per audit rules.",
+      "actionable": false,
+      "suggested_fix": "No action needed"
+    }
+  ],
+  "action": "pr_opened",
+  "pr_url": "https://github.com/michaellambgelo/michaellambgelo.github.io/pull/52"
+}
