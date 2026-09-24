@@ -9,7 +9,7 @@ tags:
 - raspberry-pi
 - cluster
 - automation
-- guide
+- tutorial
 published: true
 ---
 

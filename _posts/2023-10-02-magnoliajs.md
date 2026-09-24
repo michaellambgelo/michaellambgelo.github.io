@@ -4,10 +4,8 @@ title : MagnoliaJS 2023
 category : community
 image: "/seo/2023-10-02.png"
 tags:
-- conference
+- events
 - community
-- event
-- learning
 
 redirect_from:
 - /social/2023/10/02/magnoliajs.html

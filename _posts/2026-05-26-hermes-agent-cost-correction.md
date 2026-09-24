@@ -6,10 +6,8 @@ category: machine-intelligence
 image: "/seo/2026-05-26-hermes-agent-cost-correction.png"
 tags:
 - ai
-- agents
-- hermes
-- billing
-- correction
+- merch
+- life-update
 published: true
 ---
 

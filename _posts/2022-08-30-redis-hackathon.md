@@ -3,10 +3,8 @@ layout : post
 title : Redis Hackathon Submission
 image : "/seo/2022-08-30.png"
 category : development
-tags: 
-
+tags:
 - community
-- learning
 
 redirect_from:
 - /distributed-systems/2022/08/30/redis-hackathon.html

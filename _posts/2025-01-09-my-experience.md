@@ -5,8 +5,7 @@ date: 2025-01-09
 category: machine-intelligence
 tags:
 - ai
-- machine-intelligence
-- personal
+- life-update
 image: "/seo/2025-01-09.png"
 redirect_from:
 - /machine-intelligence/2025/01/09/my-experience.html

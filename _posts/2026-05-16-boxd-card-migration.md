@@ -5,10 +5,9 @@ image: "/seo/2026-05-16-boxd-card-migration.png"
 category: software
 tags:
 - claude-code
-- movies
-- boxd-card
-- chrome-extension
+- film
 - letterboxd
+- chrome-extension
 ---
 
 ## Overview

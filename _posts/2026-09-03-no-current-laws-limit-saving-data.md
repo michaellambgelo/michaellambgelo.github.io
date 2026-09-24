@@ -5,7 +5,6 @@ date: 2026-09-03
 category: reflections
 image: "/seo/2026-09-03-no-current-laws-limit-saving-data.png"
 tags:
-- privacy
 - security
 - cloudflare
 ---

@@ -6,8 +6,7 @@ category: personal
 image: "/seo/2026-06-01-adapting-the-now-convention.png"
 tags:
 - claude-code
-- now-page
-- indieweb
+- blogging
 - letterboxd
 - homelab
 published: true

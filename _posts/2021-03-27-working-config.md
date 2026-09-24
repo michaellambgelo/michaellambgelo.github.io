@@ -7,7 +7,6 @@ tags:
 - raspberry-pi
 - cluster
 - tutorial
-- ssh
 - security
 image : "/seo/2021-03-27.png"
 redirect_from:

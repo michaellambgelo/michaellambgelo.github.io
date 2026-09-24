@@ -4,7 +4,6 @@ title: "Announcing the Redesigned michaellamb.dev Landing Page"
 image: "/seo/2026-07-24-redesigned-michaellamb-dev-landing-page.png"
 category: software
 tags:
-- software
 - design
 - life-update
 ---

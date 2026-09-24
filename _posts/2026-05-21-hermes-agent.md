@@ -6,9 +6,6 @@ category: machine-intelligence
 image: "/seo/2026-05-21-hermes-agent.png"
 tags:
 - ai
-- agents
-- llm
-- nous-research
 published: true
 ---
 

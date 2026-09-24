@@ -3,11 +3,11 @@ layout: post
 title: JXN Film Club - PODCAST REVIVAL
 category: community
 tags:
-- jxnfilmclub
-- podcast
-- movies
-- local
-- event
+- jxn-film-club
+- streaming
+- film
+- community
+- events
 image: "/seo/2023-07-12.png"
 redirect_from:
 - /social/2023/07/12/jxnfilmclub.html

@@ -7,7 +7,7 @@ subtitle: "Part 4 of 5 — persistence patterns, a storage-quota war story, and 
 image: "/seo/2026-07-10-anatomy-of-a-trivia-deck-part-4-the-data-layer.png"
 tags:
 - javascript
-- localstorage
+- databases
 - architecture
 - trivia
 ---

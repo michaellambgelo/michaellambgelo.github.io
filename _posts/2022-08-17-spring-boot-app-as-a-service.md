@@ -4,10 +4,9 @@ title : Spring Boot App as a Service
 image : "/seo/2022-08-17.png"
 category : development
 tags:
-
 - spring-boot
 - raspberry-pi
-- guide
+- tutorial
 
 redirect_from:
 - /spring/2022/08/17/spring-boot-app-as-a-service.html

@@ -4,9 +4,8 @@ title: "A Build Log of my custom Discord Embed Builder app"
 image: "/seo/2026-09-21-discord-embed-builder.png"
 category: software
 tags:
-- software
 - discord
-- vue
+- javascript
 - cloudflare
 - claude-code
 ---

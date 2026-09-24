@@ -8,7 +8,6 @@ category: machine-intelligence
 tags:
 - ai
 - opinion
-- machine-intelligence
 
 redirect_from:
 - /machine-intelligence/2025/07/09/machine-intelligence.html

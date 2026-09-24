@@ -6,7 +6,6 @@ category: software
 image: "/seo/2026-05-17-kotlin-tutorial-pedagogy-and-blog-widgets.png"
 tags:
 - kotlin
-- ktor
 - tutorial
 - cluster
 - homelab

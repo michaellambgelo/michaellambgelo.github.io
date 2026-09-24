@@ -4,10 +4,9 @@ title: "Boxd Card now lives at boxd-card.com"
 image: "/seo/2026-06-19.png"
 category: software
 tags:
-- movies
+- film
 - letterboxd
 - chrome-extension
-- boxd-card
 ---
 
 ## A real address, finally

@@ -4,8 +4,8 @@ image: seo/2025-09-30.png
 category: reflections
 date: '2025-09-30 00:00:00'
 tags:
-- movies
-- personal
+- film
+- life-update
 - opinion
 layout: post
 ---

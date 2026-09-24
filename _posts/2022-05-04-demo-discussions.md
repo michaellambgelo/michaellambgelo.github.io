@@ -3,10 +3,9 @@ layout: post
 title: GitHub Discussions - Spring Boot Demo App
 category: community
 tags:
-- github
+- git
 - spring-boot
-- open-source
-- collaboration
+- community
 image : "/seo/2022-05-04.png"
 redirect_from:
 - /social/2022/05/04/demo-discussions.html

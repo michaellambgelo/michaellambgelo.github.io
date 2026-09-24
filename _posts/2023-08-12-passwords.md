@@ -6,7 +6,7 @@ image: "/seo/2023-08-12.png"
 
 tags:
 - opinion
-- feature
+- security
 
 redirect_from:
 - /social/2023/08/12/passwords.html

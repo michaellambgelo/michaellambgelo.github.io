@@ -8,7 +8,9 @@ category : infrastructure
 
 redirect_from:
 - /distributed-systems/2022/02/13/distributed-systems-0.html
-
+tags:
+- networking
+- tutorial
 ---
 
 _This post is a work in progress._

@@ -5,9 +5,7 @@ image: "/seo/2026-06-05-building-a-feature-end-to-end-a-projects-widget-on-the-h
 category: software
 tags:
 - kotlin
-- ktor
 - homelab
-- software
 ---
 
 ## The smallest interesting feature

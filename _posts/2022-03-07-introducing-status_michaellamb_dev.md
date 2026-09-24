@@ -5,10 +5,9 @@ image : "/seo/2022-03-07.png"
 category : infrastructure
 tags:
 - homelab
-
 - docker
-- raspberry-pi	
-- monitoring	
+- raspberry-pi
+- observability
 
 redirect_from:
 - /cluster-computing/2022/03/07/introducing-status_michaellamb_dev.html

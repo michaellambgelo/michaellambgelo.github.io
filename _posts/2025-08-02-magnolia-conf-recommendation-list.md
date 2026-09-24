@@ -4,9 +4,9 @@ title: "JXN Recommendation List for Magnolia Conf"
 date: 2025-08-02
 category: community
 tags:
-- conference
-- guide
-- recommendations
+- events
+- tutorial
+- opinion
 image: "/seo/2025-08-02.png"
 published: true
 

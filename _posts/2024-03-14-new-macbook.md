@@ -4,10 +4,7 @@ title: New M3 MacBook Air && Ollama
 category: machine-intelligence
 tags:
 - ai
-- machine-learning
-- llm
-- apple
-- tools
+- productivity
 image: "/seo/2024-03-14.png"
 redirect_from:
 - /machine-intelligence/2024/03/14/new-macbook.html
