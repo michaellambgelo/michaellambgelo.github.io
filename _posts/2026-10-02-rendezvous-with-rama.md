@@ -8,7 +8,7 @@ tags:
 - science-fiction
 ---
 
-In September, the book club at C Spire read my pick: *Rendezvous with Rama*, Arthur C. Clarke's 1973 novel. The day before we met, I realized I couldn't find my copy, and in a panic I sent Claude a half-formed request: "Commonly quoted passages from RENDEZVOUS WITH RAMA."
+In September, the book club at C Spire read my pick: *Rendezvous with Rama*, Arthur C. Clarke's 1973 novel. The day we met, I realized I couldn't find my copy, and in a panic I sent Claude a half-formed request: "Commonly quoted passages from RENDEZVOUS WITH RAMA."
 
 What follows is the transcript of that three-minute exchange, which drifted from book club prep to whether Claude sees itself in the book. After it comes a short essay on the question the conversation left me with, and then a passage from the novel that complicates both.
 
