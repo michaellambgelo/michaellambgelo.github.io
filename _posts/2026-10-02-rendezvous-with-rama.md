@@ -138,7 +138,7 @@ Once I had the book in front of me again, I found the passage that undercuts Cla
 
 > ‘But I’ve got to have a specimen!’ ‘You may have to be content with Jimmy’s flower – unless one of these creatures cooperates with you. Force is out. How would you like it if something landed on Earth and decided that you would make a nice specimen for dissection?’
 
-Claude said nobody in the book ever considers whether a biot has a point of view. In fact, it misunderstood Ernst's suggestion to dissect a biot as a plot event instead of a device for dialogue. Norton does exactly that. He never thinks to talk to the biots, but he does ask Laura to imagine herself in their place, and even his phrasing, "unless one of these creatures cooperates with you," grants them something like agency.
+Claude said nobody in the book ever considers whether a biot has a point of view. In fact, it misunderstood Ernst's suggestion to dissect a biot as a plot event instead of a device for dialogue. Norton does provide an opposing perspective to Ernst's instinct, whether it was human or scientific. He never thinks to talk to the biots, but he does ask Laura to imagine herself in their place, and even his phrasing, "unless one of these creatures cooperates with you," grants them something like agency.
 
 The biots never speak, never respond, never look back, and they still get moral consideration from a human agent. Norton gets there by imagining the roles reversed, not through anything the biots say. Language isn't the only route to treating something as a someone. It's just the easiest one to trigger, and LLMs trigger it constantly. Claude's thought experiment imagined a biot saying "Please don't." In the book, Norton says it on their behalf to a human considering violence.
 
