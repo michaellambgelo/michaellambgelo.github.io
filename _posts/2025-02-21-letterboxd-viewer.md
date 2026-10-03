@@ -5,11 +5,10 @@ date: 2025-02-21
 category: software
 tags:
 - letterboxd
-- project
 - javascript
 - api
-- movies
-- web-design
+- film
+- design
 image: "/seo/2025-02-21.png"
 published: true
 

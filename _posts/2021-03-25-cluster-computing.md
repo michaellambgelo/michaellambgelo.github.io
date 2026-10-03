@@ -7,7 +7,7 @@ tags:
 - raspberry-pi
 - cluster
 - kubernetes
-- ansible
+- automation
 image : "/seo/2021-03-25.png"
 redirect_from:
 - /cluster-computing/2021/03/25/cluster-computing.html

@@ -6,7 +6,6 @@ category: infrastructure
 tags:
 - homelab
 - kubernetes
-- k3s
 - raspberry-pi
 - cluster
 - tutorial

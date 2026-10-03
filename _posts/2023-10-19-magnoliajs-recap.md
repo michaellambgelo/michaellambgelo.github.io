@@ -3,10 +3,8 @@ layout: post
 title: MagnoliaJS 2023 - Recap
 category: community
 tags:
-- conference
+- events
 - javascript
-- event
-- learning
 image: "/seo/2023-10-19.png"
 redirect_from:
 - /conference/2023/10/19/magnoliajs-recap.html

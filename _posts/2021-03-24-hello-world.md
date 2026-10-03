@@ -5,7 +5,6 @@ image : "/seo/hello-world.png"
 category: personal
 tags:
 - life-update
-- introduction
 
 redirect_from:
 - /2021/03/hello-world.html

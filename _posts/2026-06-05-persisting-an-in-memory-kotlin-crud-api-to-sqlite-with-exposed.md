@@ -6,9 +6,7 @@ category: software
 image: "/seo/2026-06-05-persisting-an-in-memory-kotlin-crud-api-to-sqlite-with-exposed.png"
 tags:
 - kotlin
-- ktor
-- sqlite
-- exposed
+- databases
 - homelab
 published: true
 ---

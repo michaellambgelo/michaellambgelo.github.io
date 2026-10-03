@@ -4,9 +4,10 @@ title: Uptime Kuma - cloudflared integration
 category: infrastructure
 tags:
 - cloudflare
-- monitoring
+- observability
 - tutorial
 - networking
+- kubernetes
 image : "/seo/2022-04-05.png"
 redirect_from:
 - /cluster-computing/2022/04/05/uptime-kuma-cloudflared.html

@@ -4,7 +4,6 @@ title : Docker Buildx and Platform-specific Images
 image : "/seo/2022-03-14.png"
 category : infrastructure
 tags:
-
 - docker
 - spring-boot
 - tutorial

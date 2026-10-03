@@ -4,9 +4,7 @@ title : Wearable Tech and Telehealth
 image: "/seo/2023-07-07.png"
 category: reflections
 tags:
-
 - community
-- review
 - opinion
 
 redirect_from:

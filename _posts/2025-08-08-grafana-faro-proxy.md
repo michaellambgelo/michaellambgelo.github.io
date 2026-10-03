@@ -5,9 +5,8 @@ date: 2025-08-08
 category: infrastructure
 tags:
 - cloudflare
-- proxy
+- networking
 - observability
-- grafana
 - javascript
 image: "/seo/2025-08-08.png"
 published: true

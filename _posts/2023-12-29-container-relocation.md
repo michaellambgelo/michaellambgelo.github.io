@@ -5,9 +5,10 @@ category: infrastructure
 image: "/seo/2023-12-29.png"
 tags:
 - homelab
-- guide
+- tutorial
 - docker
 - raspberry-pi
+- observability
 redirect_from:
 - /docker/2023/12/29/container-relocation.html
 

@@ -6,7 +6,7 @@ category: community
 image: "/seo/2026-04-23-jackson-devs-may-2026.png"
 tags:
 - jackson-developers-group
-- meetup
+- events
 - ai
 - community
 published: true

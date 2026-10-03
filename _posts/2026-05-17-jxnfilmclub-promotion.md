@@ -5,11 +5,9 @@ date: 2026-05-17
 category: promotions
 image: "/seo/2026-05-17-jxnfilmclub-promotion.png"
 tags:
-- jxnfilmclub
-- stickers
+- jxn-film-club
 - merch
 - community
-- local
 published: true
 ---
 

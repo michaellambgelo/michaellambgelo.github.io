@@ -5,11 +5,9 @@ date: '2025-10-22'
 category: development
 image: "/seo/2025-10-22.png"
 tags:
-- conference
+- events
 - blogging
-- github
 - git
-- jekyll
 published: true
 ---
 

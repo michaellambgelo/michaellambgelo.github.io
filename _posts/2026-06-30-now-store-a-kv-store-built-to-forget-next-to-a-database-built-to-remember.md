@@ -6,9 +6,8 @@ category: software
 image: "/seo/2026-06-30-now-store-a-kv-store-built-to-forget-next-to-a-database-built-to-remember.png"
 tags:
 - kotlin
-- ktor
 - cloudflare
-- sqlite
+- databases
 - homelab
 published: true
 ---

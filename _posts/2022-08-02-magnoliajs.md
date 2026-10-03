@@ -4,10 +4,7 @@ title : MagnoliaJS 2022
 image : "/seo/2022-08-02.png"
 category : community
 tags:
-- conference
-- event
-- feature
-- learning
+- events
 
 redirect_from:
 - /social/2022/08/02/magnoliajs.html

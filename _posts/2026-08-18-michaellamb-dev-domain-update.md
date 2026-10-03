@@ -4,9 +4,8 @@ title: "michaellamb.dev: A Three-Month Domain Update"
 image: "/seo/2026-08-18-michaellamb-dev-domain-update.png"
 category: software
 tags:
-- software
 - life-update
-- infrastructure
+- homelab
 ---
 
 ## Three months is long enough to lose the thread

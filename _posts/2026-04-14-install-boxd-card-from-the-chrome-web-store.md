@@ -4,10 +4,10 @@ title: "Install Boxd Card from the Chrome Web Store"
 image: "/seo/2026-04-14.png"
 category: software
 tags:
-- movies
+- film
 - letterboxd
 - chrome-extension
-- beta
+- life-update
 ---
 
 ## One-click install, finally

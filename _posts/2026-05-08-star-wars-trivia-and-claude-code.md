@@ -8,7 +8,6 @@ tags:
 - claude-code
 - trivia
 - react
-- fertile-ground
 published: true
 ---
 

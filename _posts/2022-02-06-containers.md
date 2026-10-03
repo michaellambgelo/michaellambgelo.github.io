@@ -5,9 +5,9 @@ image : "/seo/2022-02-06.png"
 category : infrastructure
 tags:
 - homelab
-
 - kubernetes
 - raspberry-pi
+- docker
 
 redirect_from:
 - /cluster-computing/2022/02/06/containers.html

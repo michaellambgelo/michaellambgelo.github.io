@@ -4,14 +4,9 @@ layout: post
 date: '2025-09-16'
 category: personal
 tags:
-- newsletters
-- community
-- social-media
-- digital-minimalism
-- email
 - blogging
-- communication
-- indieweb
+- community
+- productivity
 image: "/seo/2025-09-16.png"
 published: true
 ---

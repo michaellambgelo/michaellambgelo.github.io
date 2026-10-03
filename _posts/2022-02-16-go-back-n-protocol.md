@@ -3,10 +3,9 @@ layout : post
 title : Go-Back-N Protocol
 image : "/seo/2022-02-16.png"
 category : infrastructure
-tags: 
-
-- feature
-- learning
+tags:
+- networking
+- tutorial
 
 redirect_from:
 - /distributed-systems/2022/02/16/go-back-n-protocol.html

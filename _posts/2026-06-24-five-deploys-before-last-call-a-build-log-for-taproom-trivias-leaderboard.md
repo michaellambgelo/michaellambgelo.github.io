@@ -10,7 +10,7 @@ tags:
 - claude-code
 - react
 - cloudflare
-- grafana
+- observability
 ---
 
 ## A leaderboard with a deadline

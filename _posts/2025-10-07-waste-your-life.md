@@ -5,8 +5,8 @@ date: 2025-10-07
 category: reflections
 image: "/seo/2025-10-07.png"
 tags:
-- life
-- philosophy
+- life-update
+- opinion
 - productivity
 published: true
 ---

@@ -6,8 +6,7 @@ category: community
 image: "/seo/2026-03-30.png"
 tags:
 - jackson-developers-group
-- presentations
-- meetup
+- events
 - networking
 published: true
 ---

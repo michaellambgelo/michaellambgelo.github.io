@@ -4,11 +4,11 @@ title: "Don't screenshot your Letterboxd Last Four Watched anymore"
 image: "/seo/2026-03-25.png"
 category: software
 tags:
-- movies
+- film
 - letterboxd
 - chrome-extension
 - react
-- typescript
+- javascript
 ---
 
 ## On Fridays, we post our Last Four Watched

@@ -4,9 +4,7 @@ title : Swagger UI and Go
 category: development
 tags:
 - golang
-- swagger
 - api
-- documentation
 - tutorial
 image : "/seo/2021-10-22.png"
 redirect_from:

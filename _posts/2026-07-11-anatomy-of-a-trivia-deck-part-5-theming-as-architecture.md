@@ -6,7 +6,7 @@ category: development
 subtitle: "Part 5 of 5 — the palette contract, anchor strings, and one repo becoming many decks."
 image: "/seo/2026-07-11-anatomy-of-a-trivia-deck-part-5-theming-as-architecture.png"
 tags:
-- design-systems
+- design
 - react
 - claude-code
 - trivia

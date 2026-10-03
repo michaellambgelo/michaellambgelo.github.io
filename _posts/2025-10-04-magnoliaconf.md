@@ -5,9 +5,7 @@ date: 2025-10-04
 category: community
 image: /seo/2025-10-04.png
 tags:
-- conference
-- development
-- software
+- events
 published: true
 ---
 

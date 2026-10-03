@@ -4,7 +4,6 @@ title: "Adding frontend observability to michaellamb.dev"
 date: 2025-06-18
 category: infrastructure
 tags:
-- grafana
 - observability
 - tutorial
 - javascript

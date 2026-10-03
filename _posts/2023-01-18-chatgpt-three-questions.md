@@ -4,8 +4,6 @@ title: Three Questions for ChatGPT
 category: machine-intelligence
 tags:
 - ai
-- chatgpt
-- machine-learning
 - opinion
 image: "/seo/2023-01-18.png"
 redirect_from:

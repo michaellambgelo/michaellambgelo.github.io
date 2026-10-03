@@ -5,12 +5,10 @@ date: 2026-04-24
 category: machine-intelligence
 image: "/seo/2026-04-24-the-regex-library-became-the-few-shot.png"
 tags:
-- llm
-- cloudflare-workers
-- workers-ai
-- chatbot
-- claude-code
 - ai
+- cloudflare
+- discord
+- claude-code
 ---
 
 ## Introduction

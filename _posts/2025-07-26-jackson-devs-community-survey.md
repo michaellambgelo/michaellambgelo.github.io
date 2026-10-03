@@ -4,10 +4,9 @@ title: "Jackson Area Web and App Developers Community Survey"
 date: 2025-07-26
 category: community
 tags:
-- meetup
-- survey
+- events
+- community
 - networking
-- local
 published: true
 image: "/seo/2025-07-26.png"
 redirect_from:

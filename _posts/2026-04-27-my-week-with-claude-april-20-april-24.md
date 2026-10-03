@@ -7,7 +7,7 @@ image: "/seo/2026-04-27-my-week-with-claude-april-20-april-24.png"
 tags:
 - claude-code
 - ai
-- weekly-review
+- life-update
 ---
 
 ## The week at a glance
