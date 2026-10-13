@@ -10,7 +10,7 @@ tags:
 
 ## This post exists because of something I saw on an infinite feed
 
-I found this one the way you'd expect: scrolling LinkedIn. Someone had written a post about Aza Raskin, the designer who is usually credited with inventing infinite scroll, and how he has come to [regret it](https://mastersofscale.com/video/he-invented-infinite-scroll-and-says-he-regrets-it/). By his own back-of-the-envelope math, the feature burns through hundreds of thousands of human lifetimes of attention. I read that on an infinite feed, kept scrolling for a bit, and then followed a link back to 2006.
+I found this one the way you'd expect: scrolling LinkedIn. Someone had written a post about Aza Raskin, the designer who is usually credited with inventing infinite scroll, and how he has come to [regret it](https://mastersofscale.com/video/he-invented-infinite-scroll-and-says-he-regrets-it/). By his own back-of-the-envelope math, the feature burns through hundreds of thousands of human lifetimes of attention. I read that on an infinite feed and then followed a link back to 2006.
 
 The link went to a short post on 37signals' *Signal vs. Noise* blog titled ["No more 'more' pages?"](https://signalvnoise.com/archives2/no_more_more_pages). It's about Humanized Reader, a demo from Raskin's company at the time, which loaded more content automatically as you neared the bottom of the page. Their principle was "Don't force the user to ask for more content: just give it to them." The post's author liked the idea and named the two obvious problems: the scrollbar stops telling you anything, and finding your way back to something you already saw gets hard.
 
