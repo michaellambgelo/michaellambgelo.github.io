@@ -7,22 +7,43 @@
 			<button class="sk-nav__toggle" type="button" aria-expanded="false" aria-controls="sk-nav-list" aria-label="Open menu">
 				<span class="sk-nav__toggle-icon" aria-hidden="true"></span>
 			</button>
+			{% comment %}
+				Primary bar: the same links, in the same order, as the nav on michaellamb.dev
+				(michaellamb-dev repo, index.html and friends). Change one, change the other.
+				aria-current="page" marks the exact page; "true" marks the Blog section on posts
+				and the blog's own index pages listed in the second bar.
+			{% endcomment %}
+			{% assign nav_url = page.url | replace: '.html', '' %}
+			{% assign blog_section = false %}
+			{% if page.layout == 'post' or page.layout == 'filter' or nav_url == '/archive' or nav_url == '/categories' or nav_url == '/tags' or nav_url == '/cluster' or nav_url == '/members' %}{% assign blog_section = true %}{% endif %}
 			<ul class="sk-nav__list" id="sk-nav-list">
-				<li><a href="{{ site.url }}/">Blog</a></li>
-				<li><a href="{{ site.url }}/archive.html">Archive</a></li>
-				<li><a href="{{ site.url }}/categories.html">Categories</a></li>
-				<li><a href="{{ site.url }}/tags.html">Tags</a></li>
-				{% for pages_p in site.pages %}
-					{% unless pages_p.exclude %}
-						{% if pages_p.title and pages_p.title != 'Newsletter' %}
-							<li><a href="{{ site.url }}{{ pages_p.url }}">{{ pages_p.title }}</a></li>
-						{% endif %}
-					{% endunless %}
-				{% endfor %}
-				<li><a class="sk-nav__external" href="https://subscribe.michaellamb.dev" target="_blank" rel="noopener">Newsletter<span class="sk-nav__ext-icon" aria-hidden="true"></span><span class="sk-sr-only"> (opens in new tab)</span></a></li>
-				<li><a class="sk-nav__external" href="https://shop.michaellamb.dev" target="_blank" rel="noopener">Shop<span class="sk-nav__ext-icon" aria-hidden="true"></span><span class="sk-sr-only"> (opens in new tab)</span></a></li>
+				<li><a href="{{ site.url }}/"{% if nav_url == '/index' or nav_url == '/' %} aria-current="page"{% elsif blog_section %} aria-current="true"{% endif %}>Blog</a></li>
+				<li><a href="https://letterboxd.michaellamb.dev">Letterboxd</a></li>
+				<li><a href="https://subscribe.michaellamb.dev">Newsletter</a></li>
+				<li><a href="{{ site.url }}/now"{% if nav_url == '/now' %} aria-current="page"{% endif %}>Now</a></li>
+				<li><a href="{{ site.url }}/about"{% if nav_url == '/about' %} aria-current="page"{% endif %}>About</a></li>
+				<li><a href="{{ site.landing_url }}/book">Book</a></li>
 			</ul>
 		</div>
+	</nav>
+	{% comment %}
+		Second bar: blog-only pages. Titled pages show up automatically unless they are already
+		in the primary bar (About, Now) or are the Newsletter shim.
+	{% endcomment %}
+	<nav class="sk-subnav" aria-label="Blog">
+		<ul class="sk-subnav__list">
+			<li><a href="{{ site.url }}/archive.html"{% if nav_url == '/archive' %} aria-current="page"{% endif %}>Archive</a></li>
+			<li><a href="{{ site.url }}/categories.html"{% if nav_url == '/categories' %} aria-current="page"{% endif %}>Categories</a></li>
+			<li><a href="{{ site.url }}/tags.html"{% if nav_url == '/tags' %} aria-current="page"{% endif %}>Tags</a></li>
+			{% for pages_p in site.pages %}
+				{% unless pages_p.exclude %}
+					{% if pages_p.title and pages_p.title != 'Newsletter' and pages_p.title != 'About' and pages_p.title != 'Now' %}
+						<li><a href="{{ site.url }}{{ pages_p.url }}"{% if pages_p.url == page.url %} aria-current="page"{% endif %}>{{ pages_p.title }}</a></li>
+					{% endif %}
+				{% endunless %}
+			{% endfor %}
+			<li><a class="sk-nav__external" href="https://shop.michaellamb.dev" target="_blank" rel="noopener">Shop<span class="sk-nav__ext-icon" aria-hidden="true"></span><span class="sk-sr-only"> (opens in new tab)</span></a></li>
+		</ul>
 	</nav>
 	<script>
 		(function(){
@@ -32,7 +53,7 @@
 			var list = nav.querySelector('.sk-nav__list');
 			if (!toggle || !list) return;
 
-			var MOBILE = '(max-width: 820px)';
+			var MOBILE = '(max-width: 720px)';
 			var isMobile = function(){ return window.matchMedia(MOBILE).matches; };
 
 			var lockedScrollY = 0;
