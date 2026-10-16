@@ -14,7 +14,7 @@ Markdownlint runs as a pre-commit hook on all staged posts. Configuration is in 
 
 ## Architecture
 
-Jekyll 3 GitHub Pages blog at `blog.michaellamb.dev`. The design is Apple-inspired: pure CSS with custom properties, `prefers-color-scheme` inversion, self-hosted Inter as an SF Pro substitute, pill CTAs, translucent dark glass nav. **No Bootstrap, no jQuery, no Font Awesome.** `jekyll-seo-tag` handles Open Graph / Twitter Card meta.
+Jekyll 4 GitHub Pages blog at `blog.michaellamb.dev`. The design is Apple-inspired: pure CSS with custom properties, `prefers-color-scheme` inversion, self-hosted Inter as an SF Pro substitute, pill CTAs, translucent dark glass nav. **No Bootstrap, no jQuery, no Font Awesome.** `jekyll-seo-tag` handles Open Graph / Twitter Card meta.
 
 **Key directories:**
 

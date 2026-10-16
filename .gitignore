@@ -6,3 +6,4 @@ _site/
 vendor/
 # Social post copy (local only)
 social/
+.jekyll-cache/
