@@ -11,7 +11,7 @@ Michael Lamb is a software engineer in Jackson, Mississippi. He organizes meetup
 
 ## Stack
 
-- **Jekyll 3** (GitHub Pages) with `jekyll-seo-tag`, `jekyll-feed`, `jekyll-redirect-from`
+- **Jekyll 4** (GitHub Pages) with `jekyll-seo-tag`, `jekyll-feed`, `jekyll-redirect-from`
 - **Pure CSS** design system with CSS custom properties and `prefers-color-scheme` support — no Bootstrap, no jQuery, no Font Awesome
 - **Inter** self-hosted (Light/Regular/SemiBold/Bold) as an SF Pro substitute
 - **Giscus** for post comments (follows system color mode)

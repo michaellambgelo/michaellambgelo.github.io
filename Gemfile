@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-gem "jekyll", "~> 3.9.3"
+gem "jekyll", "~> 4.4"
 
 # Pin ffi to a version compatible with Ruby 2.6–3.1
 gem "ffi", "~> 1.15.5"
