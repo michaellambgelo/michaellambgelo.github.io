@@ -28,7 +28,7 @@ Jekyll 3 GitHub Pages blog at `blog.michaellamb.dev`. The design is Apple-inspir
 - `img/` — general images referenced in post content
 - `js/grafana-faro.js` — telemetry; only JS loaded site-wide
 
-**Navigation** (`_includes/body/sections/navbar.html`): two bars. The primary bar has the same links, in the same order, as the nav on `michaellamb.dev` (repo `michaellamb-dev`): Blog, Letterboxd, Newsletter, Now, About, Book. It also uses the same 720px hamburger breakpoint and the same `aria-current` style. Change one site and you must change the other; nothing checks that they match. The second bar (`.sk-subnav`) holds the blog-only pages: Archive, Categories, Tags, every titled page except About, Now and Newsletter, and Shop. It scrolls away with the page, and on phones it stays a row you can swipe sideways.
+**Navigation** (`_includes/body/sections/navbar.html`): two bars. The primary bar has the same links, in the same order, as the nav on `michaellamb.dev` (repo `michaellamb-dev`): Blog, Letterboxd, Newsletter, Now, About, Book. It also uses the same 720px hamburger breakpoint and the same `aria-current` style. Change one site and you must change the other; nothing checks that they match. The second bar (`.sk-subnav`) holds the blog-only pages: Archive, Categories, Tags, every titled page except About, Now and Newsletter, and Shop. Its links are right-aligned under the primary links. It scrolls away with the page, and on phones it stays a row you can swipe sideways, aligned left.
 
 **Entry pages:** `index.html` (cinematic hero stack), `archive.html`, `categories.html`, `tags.html`, `filter.html` (query-string filter), `about.html`, `newsletter.html` (redirect shim).
 

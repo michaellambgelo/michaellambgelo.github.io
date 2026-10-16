@@ -224,16 +224,22 @@ html.sk-nav-open {
   list-style: none;
   max-width: var(--sk-content-max);
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 22px; /* same as .sk-nav__inner, so both rows end at the same edge */
   height: 40px;
   display: flex;
   align-items: center;
+  justify-content: flex-end; /* right-aligned under the primary links */
   gap: 4px;
   overflow-x: auto;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
 }
 .sk-subnav__list::-webkit-scrollbar { display: none; }
+/* Phones: start-aligned, because a flex-end row that overflows can't be scrolled to its
+ * first items. */
+@media (max-width: 720px) {
+  .sk-subnav__list { justify-content: flex-start; padding: 0 12px; }
+}
 .sk-subnav__list li { flex: none; }
 .sk-subnav__list a {
   display: inline-block;
