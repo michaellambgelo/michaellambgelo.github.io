@@ -20,7 +20,7 @@ Jekyll 3 GitHub Pages blog at `blog.michaellamb.dev`. The design is Apple-inspir
 
 - `_posts/` — blog posts, named `YYYY-MM-DD-title.md`
 - `_layouts/` — `post`, `page`, `filter`, `newsletter`
-- `_includes/` — only 6 files: `head/common/common.html`, `body/sections/{navbar,footer,newsletter,alerts_and_notices/site}.html`, `content/brief-bio.html`, `giscus.html`
+- `_includes/` — 9 files: `head/common/common.html`, `body/sections/{navbar,footer,newsletter,post-nav,alerts_and_notices/site}.html`, `content/brief-bio.html`, `giscus.html`, `widget-loading.html`
 - `_templates/` — authoring guides (excluded from build via `_config.yml`)
 - `css/` — `theme.css` (tokens + base type), `gh-pages-blog.css` (components), `syntax.css` (code blocks), `newsletter.css`
 - `font/inter/` — self-hosted Inter woff2 (Light/Regular/SemiBold/Bold), plus Regular/SemiBold `.ttf` used **only** by the SEO card generator (ImageMagick cannot read woff2). The site itself never serves the TTFs.
