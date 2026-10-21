@@ -36,11 +36,12 @@ LOGO_PATH = File.join(REPO_ROOT, 'img', 'favicon.png')
 LOGO_SIZE = 340
 
 # Shared, hand-maintained images that a post may *point at* but must never
-# overwrite. `seo/default.png` is the site-wide OG fallback declared in
-# _config.yml; a couple of older posts set `image: "/seo/default.png"` rather
+# overwrite. `seo/default-card.png` is the site-wide OG fallback declared in
+# _config.yml; a couple of older posts set `image:` at the site default rather
 # than carrying their own card, and without this guard `--all` renders each of
-# them straight over the site default.
-RESERVED_IMAGES = ['seo/default.png'].freeze
+# them straight over it. `seo/default.png` is the retired name (see
+# generate_default) and stays reserved so nothing quietly resurrects it.
+RESERVED_IMAGES = ['seo/default-card.png', 'seo/default.png'].freeze
 
 # The logo's letterforms are a rich black (#231F20) over a grey Mississippi
 # outline, with cyan/red chromatic fringing. That reads well on the light card
@@ -176,7 +177,7 @@ end
 
 # Renders one card. Extracted so the site-wide default (`--default`) can share
 # the exact same layout, tokens, and typography as a post card — previously it
-# could not, and `seo/default.png` silently kept a 2023 post's title, date, and
+# could not, and the site default silently kept a 2023 post's title, date, and
 # a card design two revisions old.
 def render_card(output_path, rel_output, title:, category:, date_str:, tone:)
   Dir.mkdir(File.join(REPO_ROOT, 'seo')) unless Dir.exist?(File.join(REPO_ROOT, 'seo'))
@@ -269,13 +270,18 @@ end
 
 # --- site-wide default card -------------------------------------------------
 
-# `seo/default.png` is the Open Graph fallback declared in _config.yml and used
+# `seo/default-card.png` is the Open Graph fallback declared in _config.yml and used
 # by every non-post page — /now, /about, /archive, the homepage. It must not
 # carry a post's title or date, which is exactly what went wrong: an old post
 # pointed `image:` at it, rendered its own card over the top, and every generic
 # page has advertised "Leadership Greater Jackson - Reflection, 2023-05-30"
 # ever since. RESERVED_IMAGES now stops posts writing here, and this renders a
 # card that is about the site rather than about any one post.
+#
+# It used to live at `seo/default.png`. That card was fixed by regenerating it
+# in place, but link-preview scrapers cache by image URL, so the old URL kept
+# serving the 2023 card from their caches. A new filename is the only reliable
+# cache-bust; if this card ever changes again, give it a new name too.
 def site_config
   path = File.join(REPO_ROOT, '_config.yml')
   return {} unless File.exist?(path)
@@ -291,8 +297,8 @@ def generate_default(force: false)
     return nil
   end
 
-  output_path = File.join(REPO_ROOT, 'seo', 'default.png')
-  rel_output  = 'seo/default.png'
+  output_path = File.join(REPO_ROOT, 'seo', 'default-card.png')
+  rel_output  = 'seo/default-card.png'
 
   if File.exist?(output_path) && !force
     puts "Site default already exists, skipping: #{rel_output}  (use --force to regenerate)"

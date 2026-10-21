@@ -48,6 +48,8 @@ GEM
       sass (~> 3.4)
     jekyll-seo-tag (2.8.0)
       jekyll (>= 3.8, < 5.0)
+    jekyll-sitemap (1.4.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.3.2)
@@ -110,6 +112,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-redirect-from
   jekyll-seo-tag
+  jekyll-sitemap
   kramdown-parser-gfm
   rack (~> 2.2.23)
   tzinfo (~> 1.2)

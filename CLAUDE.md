@@ -24,13 +24,22 @@ Jekyll 3 GitHub Pages blog at `blog.michaellamb.dev`. The design is Apple-inspir
 - `_templates/` — authoring guides (excluded from build via `_config.yml`)
 - `css/` — `theme.css` (tokens + base type), `gh-pages-blog.css` (components), `syntax.css` (code blocks), `newsletter.css`
 - `font/inter/` — self-hosted Inter woff2 (Light/Regular/SemiBold/Bold), plus Regular/SemiBold `.ttf` used **only** by the SEO card generator (ImageMagick cannot read woff2). The site itself never serves the TTFs.
-- `seo/` — per-post SEO images `YYYY-MM-DD-<slug>.png` + `default.png`
+- `seo/` — per-post SEO images `YYYY-MM-DD-<slug>.png` + `default-card.png`, the site-wide Open Graph fallback (`image:` in `_config.yml`). It was `default.png` until 2026-10. Scrapers cache previews by image URL, so regenerating a card in place does not refresh old previews. If the default card ever changes, give it a **new filename** and update every reference.
 - `img/` — general images referenced in post content
 - `js/grafana-faro.js` — telemetry; only JS loaded site-wide
 
 **Navigation** (`_includes/body/sections/navbar.html`): two bars. The primary bar has the same links, in the same order, as the nav on `michaellamb.dev` (repo `michaellamb-dev`): Blog, Letterboxd, Newsletter, Now, About, Book. It also uses the same 720px hamburger breakpoint and the same `aria-current` style. Change one site and you must change the other; nothing checks that they match. The second bar (`.sk-subnav`) holds the blog-only pages: Archive, Categories, Tags, every titled page except About, Now and Newsletter, and Shop. Its links are right-aligned under the primary links. It scrolls away with the page, and on phones it stays a row you can swipe sideways, aligned left.
 
 **Entry pages:** `index.html` (cinematic hero stack), `archive.html`, `categories.html`, `tags.html`, `filter.html` (query-string filter), `about.html`, `newsletter.html` (redirect shim).
+
+**Site plumbing:** `404.html` (GitHub Pages serves it for any miss; `exclude: true` keeps it out of the subnav, `sitemap: false` keeps it out of the sitemap). `robots.txt` is plain text with no front matter and points at `/sitemap.xml`, which `jekyll-sitemap` generates (redirect shims such as `newsletter.html` are skipped automatically). `apple-touch-icon.png` is the 180x180 monogram on `#f5f5f7`, generated from `img/favicon.png`.
+
+## Feeds
+
+Two feeds are published, and **both must keep existing**. GitHub Pages cannot send a 301, and a meta-refresh redirect (`jekyll-redirect-from`) does nothing for a feed reader, so deleting either URL breaks its subscribers outright.
+
+- **`/feed.xml` (Atom, `jekyll-feed`) is the canonical feed.** `{% feed_meta %}` advertises it first in `<head>`. It is also reachable extensionless at `/feed`, and that is the URL the `discord-embed-builder` RSS subscription polls (`https://blog.michaellamb.dev/feed`; its test fixture is `feed.blog-michaellamb-dev.atom.xml`). That poller dedupes on the Atom `<id>` (`proxy/src/services/rss-fetcher.ts`), so changing a post's `<id>`, which comes from its date and slug, re-posts it to Discord.
+- **`/rss.xml` (RSS 2.0, `rss.xml` + `_layouts/rss.xml`)** is the older feed, kept for existing subscribers and advertised second. It carries the same items as the Atom feed, the newest `feed.posts_limit` (default 10). Every text field is `xml_escape`d; a raw `&` in a title made the whole feed invalid XML until 2026-10. Do not change `<guid>`: readers would show every item as new again.
 
 ## Design tokens
 
@@ -69,7 +78,7 @@ The `/new-blog-post` skill scaffolds this automatically. Use heading hierarchy H
 
 ## Git hooks
 
-- **pre-commit**: runs markdownlint on staged markdown files, then auto-generates any missing SEO images for staged posts and auto-stages them
+- **pre-commit**: first fails the commit if any staged file under `img/` is over 1 MiB (it measures the staged blob, not the working-tree file), printing each file, its size and a one-line `magick` command to shrink it. Set `ALLOW_LARGE_IMAGES=1` to commit a deliberate exception. It then runs markdownlint on staged markdown files, then auto-generates any missing SEO images for staged posts and auto-stages them
 - **pre-push**: runs `ruby scripts/verify_seo_images.rb` — will block push if any post is missing an SEO image
 
 Reinstall hooks after modifying them: `sh scripts/install-hooks.sh`

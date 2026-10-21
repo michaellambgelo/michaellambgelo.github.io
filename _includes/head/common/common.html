@@ -2,12 +2,6 @@
 {% capture head_common_html %}
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content='{{ site.author | site.email }}'>
-	{% if page.author and page.author_email %}
-		<meta name="author" content='{{ page.author }} | {{ page.author_email }}'>
-	{% elsif page.author %}
-		<meta name="author" content='{{ page.author }}'>
-	{% endif %}
 	<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 	<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
 
@@ -19,8 +13,10 @@
 	<link href="/css/newsletter.css" rel="stylesheet">
 	<link href="/css/syntax.css" rel="stylesheet">
 
+	{% comment %}Atom /feed.xml is canonical; /rss.xml is kept for older subscribers. See CLAUDE.md.{% endcomment %}
+	{% feed_meta %}
 	{% if site.rss.enabled %}
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
+		<link rel="alternate" type="application/rss+xml" title="{{ site.title }} (RSS)" href="{{ site.url }}/rss.xml" />
 	{% endif %}
 
 	{% if site.favicon.enabled and site.favicon.local.enabled %}
@@ -28,6 +24,7 @@
 	{% elsif site.favicon.enabled and site.favicon.remote.enabled %}
 		<link rel="icon" type="image/{{ site.favicon.remote.type }}" href="{{ site.favicon.remote.full_url }}" />
 	{% endif %}
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
 	<script src="/js/grafana-faro.js"></script>
 {% endcapture %}
