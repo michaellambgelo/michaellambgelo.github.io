@@ -3,13 +3,14 @@
 # Create hooks directory if it doesn't exist
 mkdir -p .git/hooks
 
-# Copy pre-push hook and make it executable
-cp git-hooks/pre-push .git/hooks/pre-push
-chmod +x .git/hooks/pre-push
-
-# Copy pre-commit hook and make it executable
-cp git-hooks/pre-commit .git/hooks/pre-commit
-chmod +x .git/hooks/pre-commit
+# Copy each hook and make it executable. A hook that is already a symlink
+# into git-hooks/ tracks the source on its own, so leave it alone.
+for hook in pre-push pre-commit; do
+    if [ ! -L ".git/hooks/$hook" ]; then
+        cp "git-hooks/$hook" ".git/hooks/$hook"
+    fi
+    chmod +x "git-hooks/$hook" ".git/hooks/$hook"
+done
 
 
 echo "Git hooks installed successfully!"

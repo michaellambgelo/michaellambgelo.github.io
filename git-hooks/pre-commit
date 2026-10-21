@@ -1,5 +1,36 @@
 #!/bin/sh
 
+# Block oversized images under img/ (1 MiB cap). Sizes come from the staged
+# blob, not the working tree. Set ALLOW_LARGE_IMAGES=1 for a deliberate exception.
+max_image_bytes=1048576
+# Convert to sRGB *before* -strip: iPhone/Mac originals often carry a Display P3
+# profile, and stripping it without converting shifts the colours.
+# PNG8 (256-colour palette) is what gets 1080p screenshots and photos under the
+# cap; it keeps only on/off transparency, so for a PNG with soft alpha edges
+# drop the PNG8:/-colors and use a smaller -resize instead.
+srgb_icc="/System/Library/ColorSync/Profiles/sRGB Profile.icc"
+if [ -f "$srgb_icc" ]; then to_srgb="-profile '$srgb_icc'"; else to_srgb="-colorspace sRGB"; fi
+if [ "${ALLOW_LARGE_IMAGES:-0}" != "1" ]; then
+    large=0
+    for img in $(git diff --cached --name-only --diff-filter=ACM -- 'img/*' || true); do
+        size=$(git cat-file -s ":$img" 2>/dev/null || echo 0)
+        if [ "$size" -gt "$max_image_bytes" ]; then
+            case "$img" in
+                *.jpg|*.jpeg|*.JPG|*.JPEG) fix="magick \"$img\" -auto-orient $to_srgb -strip -resize '2000x2000>' -sampling-factor 4:2:0 -interlace Plane -quality 82 \"$img\"" ;;
+                *.gif|*.GIF) fix="magick \"$img\" -coalesce -fuzz 6% -layers OptimizeTransparency \"$img\"" ;;
+                *) fix="magick \"$img\" $to_srgb -strip -resize '2000x2000>' -colors 256 -define png:compression-level=9 PNG8:\"$img\"" ;;
+            esac
+            echo "❌ $img is $(( size / 1024 )) KB (limit $(( max_image_bytes / 1024 )) KB)"
+            echo "   fix: $fix"
+            large=1
+        fi
+    done
+    if [ "$large" -eq 1 ]; then
+        echo "Shrink the image(s) above and re-stage, or commit with ALLOW_LARGE_IMAGES=1 for a deliberate exception."
+        exit 1
+    fi
+fi
+
 # Get list of staged markdown files (excluding deletions)
 files=$(git diff --cached --name-only --diff-filter=ACM | grep '\.md$' || true)
 
