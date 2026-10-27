@@ -211,7 +211,7 @@ chmod +x scripts/install-hooks.sh
 - Located in `/seo/` directory
 - Named by post date (e.g., `2025-09-30.png`)
 - Verified by automated script
-- Fallback to `default.png`
+- Fallback to `default-card.png`
 
 #### SEO Features
 

@@ -14,7 +14,7 @@ def verify_seo_images
   Dir.mkdir(seo_dir) unless Dir.exist?(seo_dir)
 
   # Check if default SEO image exists
-  default_seo = File.join(seo_dir, 'default.png')
+  default_seo = File.join(seo_dir, 'default-card.png')
   issues << "Missing default SEO image: #{default_seo}" unless File.exist?(default_seo)
 
   # Scan all posts

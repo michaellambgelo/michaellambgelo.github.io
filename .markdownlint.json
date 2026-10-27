@@ -1,6 +1,9 @@
 {
   "default": true,
   "MD002": false,
+  "MD001": {
+    "front_matter_title": ""
+  },
   "MD003": {
     "style": "atx"
   },
@@ -46,6 +49,8 @@
   "MD047": true,
   "MD052": false,
   "MD053": false,
+  "MD059": false,
+  "MD060": false,
   "ignores": [
     "README.md",
     "MAINTENANCE.md",

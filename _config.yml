@@ -1,6 +1,7 @@
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-admin
   - kramdown-parser-gfm
   - jekyll-redirect-from
@@ -16,7 +17,7 @@ url: 'https://blog.michaellamb.dev'
 landing_url: 'https://michaellamb.dev'
 email: michael@michaellamb.dev
 author: Michael Lamb
-image: /seo/default.png
+image: /seo/default-card.png
 
 future: true
 timezone: America/Chicago
@@ -61,4 +62,4 @@ rss:
     ttl: 300
   image:
     enabled: 'true'
-    image: seo/default.png
+    image: /seo/default-card.png
